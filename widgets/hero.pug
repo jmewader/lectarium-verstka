@@ -1,0 +1,21 @@
+.wide-container
+    section.hero
+        .hero__background 
+            img.hero__background-img(src=backgroundImgSrc || "../src/img/background/team-hero-bg.png", alt="background")
+        .hero__content
+            .hero__text-block
+                h1.main-title.hero__title= title || "Title"
+                //- p.hero__description= description || "Description"
+                .hero__description-block
+                    p “Нашей команде уже 5 лет. Мы прошли путь с маленькой школы, до резидента Сколково!
+                    p За этот период мы научились понятно объяснять любые школьные темы, раскрываем потенциал ребенка и увлекаем учёбой!”
+                    .hero__description-block_wrap
+                        span.hero__description-block_author Вероника Сорокина
+                        span.hero__description-block_text завуч проекта “Лектариум”
+            button.dark-button.hero__btn= textBtn || "Открыть"
+                +playWhiteSVG
+        .hero__image
+            picture
+                //- source(srcset=webpSrc || "../src/img/people/women1.png" type="image/webp")
+                source(srcset=jpgSrc || "../src/img/people/women1.png" type="image/jpeg")
+                img(src=jpgSrc || "../src/img/people/women1.png" alt="People")

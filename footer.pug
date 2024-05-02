@@ -1,0 +1,98 @@
+footer.footer
+    .container
+        .footer-top
+            .footer-info
+                .footer-logo
+                    //- img(:src="imgLogoFooter", alt="Logo")
+                    img(src="../../src/img/logoV2.svg", alt="Logo")
+                nav.footer-menu
+                    ul
+                        li
+                            a(href="#") О школе
+                        li
+                            a(href="#") Преподаватели
+                        li
+                            a(href="#") Отзывы
+                        li
+                            a(href="#") Правовая информация
+                        li
+                            a(href="#") Сведения об образовательной организации
+                        li
+                            a(href="#") Контакты
+                .footer-contacts
+                    a.footer-contacts-item(href="#")
+                        | 
+                        +telegramWhiteSVG
+                    a.footer-contacts-item(href="#")
+                        | 
+                        +whatsAppWhiteSVG
+            .footer-navigation
+                .footer-navigation-contact
+                    .footer-navigation-name Телефон
+                    .footer-navigation-contact-link
+                        a(href="tel:74993253723") +7 499 325 37-23
+                .footer-navigation-contact
+                    .footer-navigation-name Email
+                    .footer-navigation-contact-link
+                        a(href="mailto:info@lectarium.ru") info@lectarium.ru
+                .footer-navigation-subject.studies
+                    .footer-navigation-name Предметы
+                    .footer-navigation-subject-items
+                        ul
+                            li
+                                a(href="#") Русский язык
+                            li
+                                a(href="#") Профильная математика
+                            li
+                                a(href="#") Базовая математика
+                            li
+                                a(href="#") Английский язык
+                            li
+                                a(href="#") Обществознание
+                            li
+                                a(href="#") История
+                            li
+                                a(href="#") Биология
+                            li
+                                a(href="#") Химия
+                    // SVG here
+                .footer-navigation-subject.courses
+                    .footer-navigation-name Курсы и обучение
+                    .footer-navigation-subject-items
+                        ul
+                            li
+                                a(href="#") Личный кабинет
+                            li
+                                a(href="#") Курсы
+                            li
+                                a(href="#") Диагностика знаний
+                            li
+                                a(href="#") Полезные материалы
+                    // SVG here
+                .footer-navigation-subject-extra
+                    .footer-navigation-subject-extra-select
+                        .footer-navigation-name Социальные сети
+                            span ·
+                        .footer-navigation-subject-items
+                            span Математика
+                            +arrowDownWhiteSVG
+                    .footer-navigation-subject-extra-items
+                        a.footer-navigation-subject-extra-item.footer-contacts-item(href="#")
+                            | 
+                            +vkWhiteSVG
+                        a.footer-navigation-subject-extra-item.footer-contacts-item(href="#")
+                            | 
+                            +youTubeWhiteSVG
+                        a.footer-navigation-subject-extra-item.footer-contacts-item(href="#")
+                            | 
+                            +telegramWhiteSVG
+        .footer-bottom
+            .footer-bottom-content
+                .footer-copyright Лектариум © 2018-#{new Date().getFullYear()}
+                .footer-links
+                    a.footer-link(href="#") Карта сайта
+                    a.footer-link(href="#") Лицензия образовательной организации
+                .footer__wrap
+                    .footer-sk-logo
+                        //- img(:src="imgLogoSk", alt="Logo")
+                        img(src="/src/img/logo-sk.svg", alt="Logo-Sk")
