@@ -553,7 +553,6 @@ body {
 .hero__text-block {
   display: flex;
   flex-direction: column;
-  gap: 70px;
 }
 .hero__title {
   margin: 0 0 44px;
