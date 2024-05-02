@@ -12,14 +12,15 @@
     width: 100%;
     height: 100%;
     max-width: 482px;
-    padding: 64px 0 64px 64px;
+    padding: 64px 0 74px 64px;
     z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 640px;
+    min-height: 780px;
+    gap: 40px;
   }
 
   &__text-block {
@@ -57,7 +58,7 @@
     position: absolute;
     justify-content: flex-end;
 
-    &-img {
+    img {
       object-fit: contain;
       position: relative;
       height: auto;
@@ -69,6 +70,9 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    color: $dark-blue-color;
+    font-size: 20px;
+    line-height: 24px;
     color: $dark-blue-color;
 
     &_wrap {
@@ -84,6 +88,97 @@
     &_text {
       font-weight: 400;
       opacity: 0.6;
+    }
+  }
+
+  @media (max-width: 1830px) {
+    min-height: 580px;
+
+    &__content {
+      min-height: 492px;
+      padding: 44px 0 44px 44px;
+    }
+
+    &__title {
+      font-size: 66px;
+      line-height: 72px;
+      margin: 0 0 24px;
+    }
+
+    &__image {
+      img {
+        max-height: 580px;
+      }
+    }
+
+    &__background {
+      img {
+        max-height: 580px;
+      }
+    }
+  }
+
+  @media (max-width: 1560px) {
+    min-height: 375px;
+
+    &__content {
+      min-height: 240px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    &__description-block {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__image {
+      img {
+        max-height: 380px;
+      }
+    }
+
+    &__background {
+      img {
+        max-height: 380px;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__content {
+      min-height: auto;
+      max-width: 100%;
+      padding: 24px 16px;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    &__description-block {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__image {
+      img {
+        max-height: 380px;
+      }
+    }
+
+    &__background {
+      height: 100%;
+      img {
+        max-height: 530px;
+      }
     }
   }
 }
