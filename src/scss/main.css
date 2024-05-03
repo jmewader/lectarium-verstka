@@ -60,6 +60,7 @@ body {
   margin-bottom: 20px;
   font-weight: 500;
   letter-spacing: -4px;
+  margin: 0 0 64px;
 }
 
 .button {
@@ -718,24 +719,25 @@ body {
   }
 }
 
-.our-team {
+.slider-block {
+  display: flex;
+  flex-direction: column;
   margin: 120px 0;
 }
-.our-team__title {
+.slider-block__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.slider-block__title {
   margin: 0 0 32px;
 }
-.our-team__actions {
+.slider-block__actions {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   margin: 0 0 64px;
-}
-
-.slider-block {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 .slider-block .violet {
   background-color: #a069fa;
@@ -870,6 +872,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  min-height: 430px;
 }
 .slider-block__content_header {
   display: flex;

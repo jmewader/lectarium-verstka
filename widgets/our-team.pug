@@ -1,7 +1,7 @@
 .container
-    section.our-team
-        h2.main-subtitle.our-team__title Наша команда
-        .our-team__actions
+    section.slider-block
+        h2.main-subtitle.slider-block__title Наша команда
+        .slider-block__actions
             ul.tabs
                 li
                     button.tabs__tab.action Преподаватели
@@ -15,130 +15,129 @@
                 option(value="1") Все предметы
                 option(value="2") Русский язык
                 option(value="3") Базовая математика
-        .our-team__content
-            .slider-block
-                .slider-block__content
-                    .slider-block__content_preview.violet
-                        .slider-block__content_bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__content_img
-                            img(src="/src/img/people/teacher1.png", alt="preview")
-                        .slider-block__content_preview--wrap
-                            .slider-block__markers
-                                    span.slider-block__markers_item-blur 0:32
-                            .slider-block__content_actions
-                                button.slider-block__content_btn
-                                    +playWhiteSVG('74', '74')
+        .slider-block__wrap
+            .slider-block__content
+                .slider-block__content_preview.violet
+                    .slider-block__content_bg
+                        img(src="/src/img/background/figures/code.png", alt="bg")
+                    .slider-block__content_img
+                        img(src="/src/img/people/teacher1.png", alt="preview")
+                    .slider-block__content_preview--wrap
+                        .slider-block__markers
+                                span.slider-block__markers_item-blur 0:32
+                        .slider-block__content_actions
+                            button.slider-block__content_btn
+                                +playWhiteSVG('74', '74')
 
-                    .slider-block__content_info
-                        .slider-block__content_wrap
-                            div
-                                .slider-block__content_header
-                                    .slider-block__content_header--wrapper
-                                        h3.slider-block__content_title Мария Армянинова
-                                        ul.slider-block__content_social
-                                            li
-                                                a(href="#")
-                                                    +vkSVG
-                                            li
-                                                a(href="#")  
-                                                    +tgSVG
-                                            li
-                                                a(href="#")
-                                                    +youTubeSVG
-                                    .slider-block__arrows
-                                        button.slider-block__arrows_arrow.left.disabled
-                                            +arrowSliderSVG
-                                        button.slider-block__arrows_arrow
-                                            +arrowSliderSVG
-                                ul.tags
-                                    li.tags__item.tags__item--gray Информатика
-                                    li.tags__item ЕГЭ
-                                    li.tags__item ОГЭ
+                .slider-block__content_info
+                    .slider-block__content_wrap
+                        div
+                            .slider-block__content_header
+                                .slider-block__content_header--wrapper
+                                    h3.slider-block__content_title Мария Армянинова
+                                    ul.slider-block__content_social
+                                        li
+                                            a(href="#")
+                                                +vkSVG
+                                        li
+                                            a(href="#")  
+                                                +tgSVG
+                                        li
+                                            a(href="#")
+                                                +youTubeSVG
+                                .slider-block__arrows
+                                    button.slider-block__arrows_arrow.left.disabled
+                                        +arrowSliderSVG
+                                    button.slider-block__arrows_arrow
+                                        +arrowSliderSVG
+                            ul.tags
+                                li.tags__item.tags__item--gray Информатика
+                                li.tags__item ЕГЭ
+                                li.tags__item ОГЭ
 
-                            .slider-block__content_descriptions Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему учеба становится понятной.
-                            ul.slider-block__content_list
-                                li.slider-block__content_list-item
-                                    span.slider-block__content_list-item--title 30
-                                    p.slider-block__content_list-item--text потоков выпущено
-                                li.slider-block__content_list-item
-                                    span.slider-block__content_list-item--title 76 баллов
-                                    p.slider-block__content_list-item--text Средний результат ученика
-                                li.slider-block__content_list-item
-                                    span.slider-block__content_list-item--title 10 лет
-                                    p.slider-block__content_list-item--text Опыт преподавания
-                                li.slider-block__content_list-item
-                                    span.slider-block__content_list-item--title 56
-                                    p.slider-block__content_list-item--text Стобальников
-                        
-                        .slider-block__content_buttons
-                            button.main-button Посмотреть курсы
-                                +arrowBtnWhiteSVG
-                            a(href="#").slider-block__content_buttons-link Подробнее о преподавателе
-                        
-                ul.slider-block__list
-                    li.slider-block__list_item.violet.slider-block__list_item--active
-                        .slider-block__list_item-bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__list_item-img
-                            img(src="/src/img/people/teacher1.png", alt="teacher")
-                        .slider-block__list_item--wrap
-                            .slider-block__markers
-                                span.slider-block__markers_item-blur ЕГЭ
-                                span.slider-block__markers_item Физика
-                            .slider-block__list_item-bottom
-                                .slider-block__list_item-title Мария Армянинова
-                                button.slider-block__list_item-btn 
-                                    +playWhiteSVG('54', '54')
-                    li.slider-block__list_item.bright-blue
-                        .slider-block__list_item-bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__list_item-img
-                            img(src="/src/img/people/teacher2.png", alt="teacher")
-                        .slider-block__list_item--wrap
-                            .slider-block__markers
-                                span.slider-block__markers_item-blur ЕГЭ
-                                span.slider-block__markers_item Математика
-                            .slider-block__list_item-bottom
-                                .slider-block__list_item-title Андрей Пулагин
-                                button.slider-block__list_item-btn 
-                                    +playWhiteSVG('54', '54')
-                    li.slider-block__list_item.turquoise
-                        .slider-block__list_item-bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__list_item-img
-                            img(src="/src/img/people/teacher3.png", alt="teacher")
-                        .slider-block__list_item--wrap
-                            .slider-block__markers
-                                span.slider-block__markers_item-blur ЕГЭ
-                                span.slider-block__markers_item Биология
-                            .slider-block__list_item-bottom
-                                .slider-block__list_item-title Елена Гордова
-                                button.slider-block__list_item-btn 
-                                    +playWhiteSVG('54', '54')
-                    li.slider-block__list_item.red
-                        .slider-block__list_item-bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__list_item-img
-                            img(src="/src/img/people/teacher1.png", alt="teacher")
-                        .slider-block__list_item--wrap
-                            .slider-block__markers
-                                span.slider-block__markers_item-blur ЕГЭ
-                                span.slider-block__markers_item Русский язык
-                            .slider-block__list_item-bottom
-                                .slider-block__list_item-title Катя Пулагина
-                                button.slider-block__list_item-btn 
-                                    +playWhiteSVG('54', '54')
-                    li.slider-block__list_item.blue
-                        .slider-block__list_item-bg
-                            img(src="/src/img/background/figures/code.png", alt="bg")
-                        .slider-block__list_item-img
-                            img(src="/src/img/people/teacher4.png", alt="teacher")
-                        .slider-block__list_item--wrap
-                            .slider-block__markers
-                                span.slider-block__markers_item-blur ЕГЭ
-                                span.slider-block__markers_item История
-                            .slider-block__list_item-bottom
-                                .slider-block__list_item-title Катя Пулагина
-                                button.slider-block__list_item-btn 
-                                    +playWhiteSVG('54', '54')
+                        .slider-block__content_descriptions Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему учеба становится понятной.
+                        ul.slider-block__content_list
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 30
+                                p.slider-block__content_list-item--text потоков выпущено
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 76 баллов
+                                p.slider-block__content_list-item--text Средний результат ученика
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 10 лет
+                                p.slider-block__content_list-item--text Опыт преподавания
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 56
+                                p.slider-block__content_list-item--text Стобальников
+                    
+                    .slider-block__content_buttons
+                        button.main-button Посмотреть курсы
+                            +arrowBtnWhiteSVG
+                        a(href="#").slider-block__content_buttons-link Подробнее о преподавателе
+                    
+            ul.slider-block__list
+                li.slider-block__list_item.violet.slider-block__list_item--active
+                    .slider-block__list_item-bg
+                        img(src="/src/img/background/figures/code.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="/src/img/people/teacher1.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Физика
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Мария Армянинова
+                            button.slider-block__list_item-btn 
+                                +playWhiteSVG('54', '54')
+                li.slider-block__list_item.bright-blue
+                    .slider-block__list_item-bg
+                        img(src="/src/img/background/figures/drawing.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="/src/img/people/teacher2.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Математика
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Андрей Пулагин
+                            button.slider-block__list_item-btn 
+                                +playWhiteSVG('54', '54')
+                li.slider-block__list_item.turquoise
+                    .slider-block__list_item-bg
+                        img(src="/src/img/background/figures/leaf.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="/src/img/people/teacher3.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Биология
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Елена Гордова
+                            button.slider-block__list_item-btn 
+                                +playWhiteSVG('54', '54')
+                li.slider-block__list_item.red
+                    .slider-block__list_item-bg
+                        img(src="/src/img/background/figures/kremlin.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="/src/img/people/teacher1.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Русский язык
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Катя Пулагина
+                            button.slider-block__list_item-btn 
+                                +playWhiteSVG('54', '54')
+                li.slider-block__list_item.blue
+                    .slider-block__list_item-bg
+                        img(src="/src/img/background/figures/globe.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="/src/img/people/teacher4.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item История
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Катя Пулагина
+                            button.slider-block__list_item-btn 
+                                +playWhiteSVG('54', '54')
