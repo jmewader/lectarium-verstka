@@ -7,28 +7,46 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   @include common-text;
   background: #fafcff;
+  color: $dark-blue-color;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1620px;
+  max-width: 1652px;
+  padding: 0 16px;
 }
 
 .wide-container {
   margin: 0 auto;
-  max-width: 1856px;
+  max-width: 1920px;
   padding: 0 32px;
 }
 
 .main-title {
   font-family: "TT Firs Neue", sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  font-size: 64px;
+  font-size: 88px;
+  line-height: 92px;
   color: $dark-blue-color;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+.main-subtitle {
+  font-family: "TT Firs Neue", sans-serif;
+  font-size: 64px;
+  line-height: 70px;
+  color: $dark-blue-color;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: -4px;
 }
 
 .button {
@@ -70,7 +88,6 @@ body {
   min-height: 68px;
   border-radius: 10px;
   font-size: 18px;
-  font-weight: 400;
   cursor: pointer;
   padding: 0 30px;
   border: none;
@@ -81,15 +98,6 @@ body {
 .dark-button {
   @extend .main-button;
   background-color: $dark-blue-color;
-}
-
-.main-title {
-  font-size: 88px;
-  line-height: 92px;
-  color: $dark-blue-color;
-  margin-bottom: 20px;
-  font-weight: 500;
-  letter-spacing: -4px;
 }
 
 .custom-checkbox-wrap {
