@@ -27,6 +27,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+
     &_arrow {
       width: 48px;
       height: 48px;
@@ -76,6 +81,10 @@
     display: grid;
     grid-template-columns: 527px 2fr;
     gap: 20px;
+
+    @media (max-width: $desktop-width) {
+      grid-template-columns: 1fr;
+    }
 
     &_preview {
       position: relative;
@@ -182,6 +191,7 @@
 
     &_list {
       display: flex;
+      flex-wrap: wrap;
       gap: 54px;
 
       &-item {
@@ -209,6 +219,7 @@
       display: flex;
       align-items: center;
       gap: 32px;
+      flex-wrap: wrap;
 
       &-link {
         text-decoration: none;
@@ -230,7 +241,26 @@
     grid-template-columns: repeat(5, 1fr);
     list-style: none;
     gap: 20px;
-    // overflow-x: auto;
+
+    @media (max-width: $large-desktop-width) {
+      padding: 6px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $light-gray-color;
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $dark-blue-color;
+        border-radius: 10px;
+        width: 2px;
+      }
+    }
 
     &_item {
       height: 258px;
