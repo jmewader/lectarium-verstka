@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  background-color: #edf2fe;
+  background-color: $light-blue-color;
   border-radius: 40px;
   position: relative;
   overflow: hidden;
@@ -104,7 +104,6 @@
       font-size: 66px;
       line-height: 72px;
       margin: 0 0 24px;
-      max-width: 227px;
     }
 
     &__image {
