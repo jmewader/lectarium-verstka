@@ -2,7 +2,9 @@
   .wide-container {
     padding: 0;
   }
+}
 
+@media (max-width: $tablet-width) {
   .main-subtitle {
     font-size: 32px;
     line-height: 36px;
