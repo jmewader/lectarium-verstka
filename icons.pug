@@ -77,6 +77,19 @@ mixin playWhiteSVG(width = '24', height = '24')
     rect(width="24" height="24" rx="12" fill="white")
     path(d="M9.04688 14.3788V9.62096C9.04688 8.86036 9.86234 8.37819 10.5288 8.74474L14.8541 11.1237C15.5449 11.5036 15.5449 12.4962 14.8541 12.8761L10.5288 15.255C9.86234 15.6216 9.04688 15.1394 9.04688 14.3788Z" fill="#0B1F33")
 
+mixin playBlurSVG(width = '32', height = '32')
+  svg(width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg")
+    g(filter="url(#filter0_b_2434_19400)")
+      rect(width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15")
+      path(d="M12.0547 19.7407V12.2694C12.0547 11.5088 12.8702 11.0266 13.5366 11.3932L20.3287 15.1289C21.0195 15.5088 21.0195 16.5014 20.3287 16.8813L13.5366 20.617C12.8702 20.9835 12.0547 20.5013 12.0547 19.7407Z" fill="white")
+    defs
+      filter#filter0_b_2434_19400(x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB")
+        feFlood(flood-opacity="0" result="BackgroundImageFix")
+        feGaussianBlur(in="BackgroundImageFix" stdDeviation="20.3946")
+        feComposite(in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2434_19400")
+        feBlend(mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2434_19400" result="shape")
+
+
 mixin arrowSliderSVG(width = '24', height = '24')
   svg(width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg")
     path(d="M1 7H13M13 7L7 1M13 7L7 13" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")

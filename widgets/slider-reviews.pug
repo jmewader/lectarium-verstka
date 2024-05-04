@@ -1,4 +1,4 @@
-.container
+.main-container
     section.slider-block
         h2.main-subtitle
             | Наш подход оценили
@@ -44,7 +44,7 @@
                             | разочарована. Я очень рада. что какая-то запись в соц. сети познакомила меня с данной онлайн-школой!
                     
                     .slider-block__content_buttons
-                        button.main-button Посмотреть курсы
+                        button.main-button.slider-block__content_buttons-btn Посмотреть курсы
                             +arrowBtnWhiteSVG
                         a(href="#").slider-block__content_buttons-link Смотреть другие отзывы
                     
@@ -59,7 +59,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Вероника Чижова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.bright-blue
                     .slider-block__list_item-bg
                         img(src="/src/img/people/reviews2.png", alt="reviews")
@@ -70,7 +73,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Ангелина Лобанова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.turquoise
                     .slider-block__list_item-bg
                         img(src="/src/img/people/reviews3.png", alt="reviews")
@@ -81,7 +87,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Катя Наумова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.red
                     .slider-block__list_item-bg
                         img(src="/src/img/people/reviews4.png", alt="reviews")
@@ -92,7 +101,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Лиза Буданова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.blue
                     .slider-block__list_item-bg
                         img(src="/src/img/people/reviews5.png", alt="reviews")
@@ -103,4 +115,7 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Евгений Караникола
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG

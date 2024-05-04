@@ -1,20 +1,20 @@
-.container
+.main-container
     section.slider-block
         h2.main-subtitle.slider-block__title Наша команда
-        .slider-block__actions
-            ul.tabs
-                li
-                    button.tabs__tab.action Преподаватели
-                li
-                    button.tabs__tab Методисты
-                li
-                    button.tabs__tab Кураторы
-                li
-                    button.tabs__tab Менеджеры
-            select(name="subjects")
-                option(value="1") Все предметы
-                option(value="2") Русский язык
-                option(value="3") Базовая математика
+        //- .slider-block__actions
+        //-     ul.tabs
+        //-         li
+        //-             button.tabs__tab.action Преподаватели
+        //-         li
+        //-             button.tabs__tab Методисты
+        //-         li
+        //-             button.tabs__tab Кураторы
+        //-         li
+        //-             button.tabs__tab Менеджеры
+        //-     select(name="subjects")
+        //-         option(value="1") Все предметы
+        //-         option(value="2") Русский язык
+        //-         option(value="3") Базовая математика
         .slider-block__wrap
             .slider-block__content
                 .slider-block__content_preview.violet
@@ -23,7 +23,7 @@
                     .slider-block__content_img
                         img(src="/src/img/people/teacher1.png", alt="preview")
                     .slider-block__content_preview--wrap
-                        .slider-block__markers
+                        .slider-block__markers.slider-block__markers_preview
                                 span.slider-block__markers_item-blur 0:32
                         .slider-block__content_actions
                             button.slider-block__content_btn
@@ -71,7 +71,7 @@
                                 p.slider-block__content_list-item--text Стобальников
                     
                     .slider-block__content_buttons
-                        button.main-button Посмотреть курсы
+                        button.main-button.slider-block__content_buttons-btn Посмотреть курсы
                             +arrowBtnWhiteSVG
                         a(href="#").slider-block__content_buttons-link Подробнее о преподавателе
                     
@@ -88,7 +88,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Мария Армянинова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.bright-blue
                     .slider-block__list_item-bg
                         img(src="/src/img/background/figures/drawing.png", alt="bg")
@@ -101,7 +104,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Андрей Пулагин
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.turquoise
                     .slider-block__list_item-bg
                         img(src="/src/img/background/figures/leaf.png", alt="bg")
@@ -114,7 +120,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Елена Гордова
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.red
                     .slider-block__list_item-bg
                         img(src="/src/img/background/figures/kremlin.png", alt="bg")
@@ -127,7 +136,10 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Катя Пулагина
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
                 li.slider-block__list_item.blue
                     .slider-block__list_item-bg
                         img(src="/src/img/background/figures/globe.png", alt="bg")
@@ -140,4 +152,7 @@
                         .slider-block__list_item-bottom
                             .slider-block__list_item-title Катя Пулагина
                             button.slider-block__list_item-btn 
-                                +playWhiteSVG('54', '54')
+                                .hidden-on-mobile
+                                    +playWhiteSVG('54', '54')
+                                .visible-on-mobile
+                                    +playBlurSVG
