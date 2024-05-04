@@ -4,7 +4,9 @@
 @import "global";
 @import "layout";
 @import "./widgets/hero";
+@import "./widgets/numbered-cards";
 @import "./components/slider-block.scss";
 @import "./components/tags.scss";
 @import "./adaptive/layout-adaptive";
 @import "./adaptive/global-adaptive";
+@import "./adaptive/media";

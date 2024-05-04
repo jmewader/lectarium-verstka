@@ -46,8 +46,15 @@ body {
   color: $dark-blue-color;
   margin-bottom: 20px;
   font-weight: 500;
-  letter-spacing: -4px;
+  letter-spacing: -2px;
   margin:  0 0 64px;
+}
+
+.main-descriptions {
+  @include common-text;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-blue-color;
 }
 
 .button {
@@ -94,6 +101,7 @@ body {
   border: none;
   background-color: $bright-blue-color;
   color: #fff;
+  justify-content: center;
 }
 
 .dark-button {

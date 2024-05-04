@@ -1,5 +1,16 @@
-@media (max-width: 786px) {
+@media (max-width: $mobile-width) {
   .wide-container {
     padding: 0;
+  }
+
+  .main-subtitle {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
+
+  .main-descriptions {
+    font-size: 15px;
+    line-height: 20px;
   }
 }

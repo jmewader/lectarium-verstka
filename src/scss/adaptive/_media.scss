@@ -1,0 +1,83 @@
+.visible-on-small-mobile {
+  display: none;
+  @media (max-width: $small-mobile-width) {
+    display: flex;
+  }
+}
+
+.visible-on-mobile {
+  display: none;
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.visible-on-tablet {
+  display: none;
+  @media (max-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.visible-on-large-tablet {
+  display: none;
+  @media (max-width: $large-tablet-width) {
+    display: flex;
+  }
+}
+
+.visible-on-desktop {
+  display: none;
+  @media (max-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.visible-on-large-desktop {
+  display: none;
+  @media (max-width: $large-desktop-width) {
+    display: flex;
+  }
+}
+
+.hidden-on-small-mobile {
+  display: flex;
+  @media (max-width: $small-mobile-width) {
+    display: none;
+  }
+}
+
+.hidden-on-mobile {
+  display: flex;
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.hidden-on-tablet {
+  display: flex;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.hidden-on-large-tablet {
+  display: flex;
+  @media (max-width: $large-tablet-width) {
+    display: none;
+  }
+}
+
+.hidden-on-desktop {
+  display: flex;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.hidden-on-large-desktop {
+  display: flex;
+  @media (max-width: $large-desktop-width) {
+    display: none;
+  }
+}
