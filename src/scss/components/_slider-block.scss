@@ -11,10 +11,20 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @media (max-width: $mobile-width) {
+      gap: 16px;
+    }
   }
 
   &__title {
     margin: 0 0 32px;
+
+    @media (max-width: $tablet-width) {
+      &.main-subtitle {
+        margin: 0 0 18px;
+      }
+    }
   }
 
   &__actions {
@@ -23,6 +33,20 @@
     width: 100%;
     justify-content: space-between;
     margin: 0 0 64px;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+      margin: 0 0 24px;
+    }
+  }
+
+  &__filters-btn {
+    @media (max-width: $tablet-width) {
+      &.button-with-frame {
+        width: 100%;
+        min-height: 50px;
+      }
+    }
   }
 
   .violet {
@@ -235,8 +259,13 @@
 
       &--wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 12px;
+
+        @media (max-width: $mobile-width) {
+          width: 100%;
+          justify-content: space-between;
+        }
       }
     }
 
@@ -251,6 +280,7 @@
       line-height: 32px;
       color: $dark-blue-color;
       font-weight: 500;
+      word-break: break-word;
 
       @media (max-width: $mobile-width) {
         font-size: 22px;
@@ -262,11 +292,29 @@
       color: $pale-blue-color;
       font-size: 18px;
       line-height: 22px;
+      padding: 0 88px 0 0;
+
+      @media (max-width: $desktop-width) {
+        padding: 0;
+      }
 
       @media (max-width: $mobile-width) {
         font-size: 15px;
         line-height: 20px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
       }
+    }
+
+    &_show-more {
+      border: none;
+      background: none;
+      color: $bright-blue-color;
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 20px;
     }
 
     &_list {
@@ -341,6 +389,11 @@
         color: $pale-blue-color;
         font-size: 18px;
         line-height: 22px;
+
+        @media (max-width: $tablet-width) {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
 
@@ -379,6 +432,10 @@
         border-radius: 10px;
         height: 2px;
       }
+    }
+
+    @media (max-width: $mobile-width) {
+      gap: 17px;
     }
 
     &_item {
@@ -463,6 +520,10 @@
         position: relative;
         object-fit: contain;
       }
+
+      @media (max-width: $mobile-width) {
+        right: -111px;
+      }
     }
 
     &_item-bottom {
@@ -525,9 +586,5 @@
       border: 1px solid $bright-blue-color;
       color: $bright-blue-color;
     }
-  }
-
-  @media (max-width: $mobile-width) {
-    display: none;
   }
 }

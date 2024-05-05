@@ -17,6 +17,10 @@ body {
   color: $dark-blue-color;
 }
 
+button {
+  font-family: "TT Firs Neue", sans-serif;
+}
+
 .main-container {
   margin: 0 auto;
   max-width: 1652px;
@@ -91,7 +95,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-  min-height: 68px;
+  min-height: 60px;
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
@@ -106,6 +110,14 @@ body {
 .dark-button {
   @extend .main-button;
   background-color: $dark-blue-color;
+}
+
+.button-with-frame {
+  @extend .main-button;
+  background-color: transparent;
+  color: $dark-blue-color;
+  border: 1px solid $dark-blue-color;
+  gap: 10px;
 }
 
 .custom-checkbox-wrap {

@@ -1,20 +1,70 @@
 .main-container
     section.slider-block
-        h2.main-subtitle.slider-block__title Наша команда
-        //- .slider-block__actions
-        //-     ul.tabs
-        //-         li
-        //-             button.tabs__tab.action Преподаватели
-        //-         li
-        //-             button.tabs__tab Методисты
-        //-         li
-        //-             button.tabs__tab Кураторы
-        //-         li
-        //-             button.tabs__tab Менеджеры
-        //-     select(name="subjects")
-        //-         option(value="1") Все предметы
-        //-         option(value="2") Русский язык
-        //-         option(value="3") Базовая математика
+        h2.slider-block__title.main-subtitle Наша команда
+        .slider-block__actions
+            .hidden-on-tablet
+                ul.tabs
+                    li
+                        button.tabs__tab.action Преподаватели
+                    li
+                        button.tabs__tab Методисты
+                    li
+                        button.tabs__tab Кураторы
+                    li
+                        button.tabs__tab Менеджеры
+            .hidden-on-tablet
+                select(name="subjects")
+                    option(value="1") Все предметы
+                    option(value="2") Русский язык
+                    option(value="3") Базовая математика
+            .visible-on-tablet
+                button.slider-block__filters-btn.button-with-frame
+                    +filtersSVG
+                    | Фильтры
+
+            .modal-overlay
+                .modal
+                    button.modal__close-btn
+                        +closeSVG
+                    .modal__content
+                        h3.modal__title Фильтры
+                        .modal__list-wrap
+                            details.accordion
+                                summary.accordion__summary
+                                    | Роль
+                                    +arrowDownSVG
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любая
+                                            +closeBlueSVG
+                                    li.filters__item
+                                        button.filters__button Преподаватели
+                                    li.filters__item
+                                        button.filters__button Методисты
+                            details.accordion
+                                summary.accordion__summary
+                                    | Предмет
+                                    +arrowDownSVG
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любой
+                                            +closeBlueSVG
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                    .modal__bottom
+                        button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                        button.main-button Применить  
+
         .slider-block__wrap
             .slider-block__content
                 .slider-block__content_preview.violet
@@ -55,7 +105,10 @@
                                 li.tags__item ЕГЭ
                                 li.tags__item ОГЭ
 
-                        .slider-block__content_descriptions Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему учеба становится понятной.
+                        .slider-block__content_descriptions-block
+                            p.slider-block__content_descriptions Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему учеба становится понятной.
+                            .visible-on-mobile
+                                button.slider-block__content_show-more Подробнее
                         ul.slider-block__content_list
                             li.slider-block__content_list-item
                                 span.slider-block__content_list-item--title 30
