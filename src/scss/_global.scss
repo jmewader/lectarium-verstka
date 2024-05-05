@@ -223,6 +223,10 @@ button {
     padding: 0 20px;
     font-size: 18px;
     font-weight: 400;
+
+    & > .text {
+      color: $dark-blue-color;
+    }
   }
 
   &.ui.scrolling.dropdown .menu {

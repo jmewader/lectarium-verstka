@@ -234,6 +234,9 @@ button {
   font-size: 18px;
   font-weight: 400;
 }
+.custom-select.ui.dropdown > .text {
+  color: #0b1f33;
+}
 .custom-select.ui.scrolling.dropdown .menu {
   margin: 12px 0 0;
   box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.0509803922);
