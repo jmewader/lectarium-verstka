@@ -37,7 +37,7 @@ button {
 .main-container {
   margin: 0 auto;
   max-width: 1652px;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 .wide-container {
@@ -2285,6 +2285,9 @@ button {
 @media (max-width: 767px) {
   .wide-container {
     padding: 0;
+  }
+  .main-container {
+    padding: 0 16px;
   }
   .main-button, .dark-button, .button-with-frame {
     width: 100%;
