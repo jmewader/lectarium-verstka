@@ -1,0 +1,36 @@
+.main-container
+    section.form
+        .form__text-block
+            div
+                h2.form__title.main-subtitle Оставьте заявку, и&nbsp;мы&nbsp;ответим на&nbsp;ваши вопросы
+                p.main-descriptions Задавайте любые вопросы, а&nbsp;мы ответим и&nbsp;поможем подобрать&nbsp;занятия
+            .form__bottom
+                +phoneBlueSVG 
+                | Позвоним с 8:00 до 20:00
+        .form__wrap
+            ul.form__steps
+                li.form__steps_item
+                    .form__steps_number 1
+                    span.form__steps_title Данные
+                li.form__steps_item.disabled
+                    .form__steps_number.disabled 2
+                    span.form__steps_title.disabled Выбор предмета
+
+            form(action="#" method="POST")
+                .form__fields
+                    div.form__field
+                        input.custom-input(type="text" id="name" name="name" placeholder="Ваше имя" required)
+                    div.form__field
+                        input.custom-input(type="email" id="email" name="email" placeholder="example@example.com" required)
+                    div.form__field
+                        input.custom-input(type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required)
+                button.form__submit-btn.main-button(type="submit") 
+                    | Далее
+                    +arrowBtnWhiteSVG
+                .form__agreements
+                    .form__agreements_item.custom-checkbox-wrap
+                        input.custom-checkbox(type="checkbox" id="agreement")
+                        label(for="agreement") Я согласен(-на) на обработку персональных данных
+                    .form__agreements_item.custom-checkbox-wrap
+                        input.custom-checkbox(type="checkbox" id="agreement2")
+                        label(for="agreement2") Я хочу получать рекламную рассылку

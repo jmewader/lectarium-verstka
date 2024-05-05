@@ -3,7 +3,7 @@
   background-color: $light-blue-color;
   border-radius: 40px;
   position: relative;
-  margin: 120px 0;
+  margin: 180px 0;
   min-height: 608px;
 
   @media (max-width: $desktop-width) {
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 60px 0;
+    margin: 70px 0;
     min-height: 380px;
   }
 

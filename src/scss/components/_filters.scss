@@ -4,9 +4,6 @@
   width: 100%;
   flex-wrap: wrap;
 
-  &__item {
-  }
-
   &__button {
     display: flex;
     align-items: center;
@@ -25,6 +22,4 @@
       color: $bright-blue-color;
     }
   }
-
- 
 }

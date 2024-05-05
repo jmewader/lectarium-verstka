@@ -72,7 +72,7 @@ button {
   letter-spacing: -0.01em;
   font-size: 18px;
   line-height: 22px;
-  color: #0b1f33;
+  color: #6d7985;
 }
 
 .button {
@@ -160,6 +160,7 @@ button {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .custom-checkbox-wrap .custom-checkbox + label::before {
   content: "";
@@ -181,18 +182,38 @@ button {
 .custom-checkbox-wrap .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #6d7985;
 }
-.custom-checkbox-wrap .custom-checkbox:not(:disabled):active + label::before {
-  background-color: #6d7985;
-  border-color: #6d7985;
-}
-.custom-checkbox-wrap .custom-checkbox:focus + label::before {
-  box-shadow: 0 0 0 0.2rem rgba(37, 84, 231, 0.25);
-}
 .custom-checkbox-wrap .custom-checkbox:focus:not(:checked) + label::before {
   border-color: #6d7985;
 }
 .custom-checkbox-wrap .custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
+}
+.custom-checkbox-wrap .custom-checkbox:checked + label::before {
+  border: 1px solid #0b1f33;
+}
+
+.custom-input {
+  border: 1px solid #9aa3ad;
+  border-radius: 12px;
+  padding: 0 24px;
+  width: 100%;
+  min-height: 72px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0b1f33;
+  font-family: "TT Firs Neue", sans-serif;
+  background-color: #f7f8f9;
+}
+.custom-input:focus {
+  border-color: #0b1f33;
+}
+.custom-input::-moz-placeholder {
+  color: #6d7985;
+}
+.custom-input::placeholder {
+  color: #6d7985;
 }
 
 /*MEDIA*/
@@ -743,11 +764,11 @@ button {
 .numbered-cards {
   display: flex;
   flex-direction: column;
-  margin: 120px 0;
+  margin: 180px 0;
 }
 @media (max-width: 1024px) {
   .numbered-cards {
-    margin: 60px 0;
+    margin: 70px 0;
   }
 }
 .numbered-cards__content {
@@ -823,9 +844,6 @@ button {
   font-weight: 500;
   line-height: 28px;
   margin: 0 0 16px;
-}
-.numbered-cards__list_item-descriptions {
-  color: #6d7985;
 }
 @media (max-width: 1024px) {
   .numbered-cards__list_item {
@@ -908,7 +926,7 @@ button {
   background-color: #EDF2FE;
   border-radius: 40px;
   position: relative;
-  margin: 120px 0;
+  margin: 180px 0;
   min-height: 608px;
 }
 @media (max-width: 1560px) {
@@ -918,7 +936,7 @@ button {
 }
 @media (max-width: 1024px) {
   .lektarik-block {
-    margin: 60px 0;
+    margin: 70px 0;
     min-height: 380px;
   }
 }
@@ -1651,6 +1669,172 @@ button {
   }
 }
 
+.form {
+  background-color: #ffffff;
+  border-radius: 40px;
+  position: relative;
+  margin: 180px 0;
+  padding: 64px;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1224px) {
+  .form {
+    padding: 44px;
+  }
+}
+@media (max-width: 1024px) {
+  .form {
+    margin: 70px 0;
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+}
+.form__text-block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  border-right: 1px solid #e7e9eb;
+  padding: 0 25% 0 0;
+}
+@media (max-width: 1024px) {
+  .form__text-block {
+    padding: 0 0 28px;
+    border-bottom: 1px solid #e7e9eb;
+    border-right: none;
+    gap: 24px;
+  }
+}
+.form__title.main-subtitle {
+  margin: 0 0 20px;
+}
+@media (max-width: 1024px) {
+  .form__title.main-subtitle {
+    margin: 0 0 12px;
+  }
+}
+.form__bottom {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 1024px) {
+  .form__bottom {
+    gap: 12px;
+  }
+  .form__bottom svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.form__wrap {
+  width: 100%;
+  padding: 0 0 0 25%;
+}
+@media (max-width: 1024px) {
+  .form__wrap {
+    padding: 28px 0 0;
+  }
+}
+.form__steps {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 58px;
+  gap: 10px;
+}
+@media (max-width: 1024px) {
+  .form__steps {
+    margin: 0 0 18px;
+  }
+}
+.form__steps_item {
+  display: flex;
+  align-items: center;
+}
+.form__steps_item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #0b1f33;
+  margin-left: 10px;
+  opacity: 0.2;
+}
+.form__steps_number {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1f33;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+  flex-shrink: 0;
+  margin: 0 8px 0 0;
+}
+.form__steps_number.disabled {
+  background-color: #9aa3ad;
+}
+.form__steps_title {
+  font-size: 18px;
+  line-height: 22px;
+}
+.form__steps_title.disabled {
+  color: #9aa3ad;
+}
+@media (max-width: 1024px) {
+  .form__steps_title {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 0 16px;
+}
+@media (max-width: 1024px) {
+  .form__fields {
+    gap: 10px;
+    margin: 0 0 10px;
+  }
+}
+.form__submit-btn {
+  width: 100%;
+  min-height: 73px;
+}
+@media (max-width: 1024px) {
+  .form__submit-btn.main-button, .form__submit-btn.dark-button, .form__submit-btn.button-with-frame {
+    min-height: 60px;
+  }
+}
+.form__agreements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 57px 0 0;
+}
+.form__agreements_item {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .form__agreements {
+    margin: 18px 0 0;
+  }
+  .form__agreements label {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1669,7 +1853,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 25px 25px 0 0;
   width: 100%;
   position: relative;
@@ -2022,13 +2206,19 @@ button {
     margin: 0 0 24px;
   }
   .main-descriptions {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
   .main-button, .dark-button, .button-with-frame {
     min-height: 54px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .custom-input {
+    min-height: 60px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 @media (max-width: 767px) {
