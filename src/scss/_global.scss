@@ -98,6 +98,7 @@ button {
   min-height: 60px;
   border-radius: 10px;
   font-size: 18px;
+  line-height: 22px;
   cursor: pointer;
   padding: 0 30px;
   border: none;
@@ -203,5 +204,73 @@ button {
   }
   &::placeholder {
     color: $pale-blue-color;
+  }
+}
+
+.custom-select {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $light-gray-color;
+  border-radius: 10px;
+  color: $dark-blue-color;
+  width: 290px;
+  background-color: $white-color;
+
+  &.ui.dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &.ui.scrolling.dropdown .menu {
+    margin: 12px 0 0;
+    box-shadow: 0px 4px 10px 0px #2554e70d;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+
+    & > .menu-wrap {
+      overflow: auto;
+      height: 222px;
+
+      &::-webkit-scrollbar {
+        width: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $light-gray-color !important;
+        border-radius: 10px !important;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $dark-blue-color !important;
+        border-radius: 10px !important;
+      }
+
+      & > .item {
+        color: $pale-blue-color;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0px !important;
+        margin: 0 0 18px;
+        background-color: transparent;
+        transition: 0.25s;
+        cursor: pointer;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &:hover {
+          color: $dark-blue-color;
+        }
+      }
+    }
   }
 }

@@ -13,10 +13,23 @@
                     li
                         button.tabs__tab Менеджеры
             .hidden-on-tablet
-                select(name="subjects")
-                    option(value="1") Все предметы
-                    option(value="2") Русский язык
-                    option(value="3") Базовая математика
+                div.ui.scrolling.dropdown.custom-select
+                    
+                    div.text Все предметы
+                    +arrowDownSVG
+                    div.menu
+                        div.menu-wrap
+                            div.item(value="1") Русский язык
+                            div.item(value="2") Базовая математика
+                            div.item(value="3") Профильная математика
+                            div.item(value="4") Биология
+                            div.item(value="5") Химия
+                            div.item(value="6") Обществознание
+                            div.item(value="7") Информатика
+                            div.item(value="8") Литературa
+               
+                
+                
             .visible-on-tablet
                 button.slider-block__filters-btn.button-with-frame
                     +filtersSVG
