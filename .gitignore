@@ -1,0 +1,5 @@
+/node_modules/
+/dist/
+/gulp/settings/ftp.json
+package-lock.json
+.idea/

@@ -1,0 +1,349 @@
+.main-container
+    section.slider-block
+        h2.slider-block__title.main-subtitle Наша команда
+        .slider-block__actions
+            .hidden-on-tablet
+                ul.tabs
+                    li
+                        button.tabs__tab.action Преподаватели
+                    li
+                        button.tabs__tab Методисты
+                    li
+                        button.tabs__tab Кураторы
+                    li
+                        button.tabs__tab Менеджеры
+            .hidden-on-tablet
+                div.ui.scrolling.dropdown.custom-select
+                    
+                    div.text Все предметы
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.44531 1.21875L5.00087 4.77431L8.55642 1.21875" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    div.menu
+                        div.menu-wrap
+                            div.item(value="1") Русский язык
+                            div.item(value="2") Базовая математика
+                            div.item(value="3") Профильная математика
+                            div.item(value="4") Биология
+                            div.item(value="5") Химия
+                            div.item(value="6") Обществознание
+                            div.item(value="7") Информатика
+                            div.item(value="8") Литературa
+            .visible-on-tablet
+                button.slider-block__filters-btn.button-with-frame
+                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.15625 12.5859H5.32292" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.8229 3.42188H13.6562" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3203 12.5859H17.8203" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.65625 3.42188H1.15625" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.82031 15C6.4396 15 5.32031 13.8807 5.32031 12.5C5.32031 11.1192 6.4396 10 7.82031 10C9.20106 10 10.3203 11.1192 10.3203 12.5C10.3203 13.8807 9.20106 15 7.82031 15Z" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.1562 5.83594C12.537 5.83594 13.6562 4.71665 13.6562 3.33594C13.6562 1.95523 12.537 0.835938 11.1562 0.835938C9.7755 0.835938 8.65625 1.95523 8.65625 3.33594C8.65625 4.71665 9.7755 5.83594 11.1562 5.83594Z" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    | Фильтры
+
+            .modal-overlay
+                .modal
+                    button.modal__close-btn
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2873_18660)">
+                            <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2873_18660">
+                            <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    .modal__content
+                        h3.modal__title Фильтры
+                        .modal__list-wrap
+                            details.accordion
+                                summary.accordion__summary
+                                    | Роль
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 1L5 5L1 1" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любая
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="18" height="18" rx="9" fill="#2554E7"/>
+                                                <path d="M6 6L12 12M12 6L6 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                    li.filters__item
+                                        button.filters__button Преподаватели
+                                    li.filters__item
+                                        button.filters__button Методисты
+                            details.accordion
+                                summary.accordion__summary
+                                    | Предмет
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 1L5 5L1 1" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любой
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="18" height="18" rx="9" fill="#2554E7"/>
+                                                <path d="M6 6L12 12M12 6L6 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                    .modal__bottom
+                        button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                        button.main-button Применить  
+
+        .slider-block__wrap
+            .slider-block__content
+                .slider-block__content_preview.violet
+                    .slider-block__content_bg
+                        img(src="../img/code.png", alt="bg")
+                    .slider-block__content_img
+                        img(src="../img/teacher1.png", alt="preview")
+                    .slider-block__content_preview--wrap
+                        .slider-block__markers.slider-block__markers_preview
+                                span.slider-block__markers_item-blur 0:32
+                        .slider-block__content_actions
+                            button.slider-block__content_btn
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="74.0038" height="74.0038" rx="37.0019" fill="white"/>
+                                    <path d="M31.0859 43.4489V30.5506C31.0859 29.79 31.9014 29.3079 32.5679 29.6744L44.2936 36.1236C44.9844 36.5035 44.9844 37.4961 44.2936 37.876L32.5679 44.3252C31.9014 44.6917 31.0859 44.2095 31.0859 43.4489Z" fill="#0B1F33"/>
+                                </svg>
+                .slider-block__content_info
+                    .slider-block__content_wrap
+                        div
+                            .slider-block__content_header
+                                .slider-block__content_header--wrapper
+                                    h3.slider-block__content_title Мария Армянинова
+                                    ul.slider-block__content_social
+                                        li
+                                            a(href="#")
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="32" height="32" rx="16" fill="#0077FF" fill-opacity="0.08"/>
+                                                    <path d="M16.8534 22.0217C10.3574 22.0217 6.65076 17.5044 6.49609 9.98438H9.74943C9.85609 15.5044 12.2561 17.8404 14.1574 18.323V9.98438H17.2241V14.7444C19.0988 14.539 21.0721 12.371 21.7361 9.98438H24.8054C24.2934 12.923 22.1548 15.0937 20.6348 15.9844C22.1548 16.707 24.5894 18.5977 25.5148 22.0217H22.1441C21.4188 19.7337 19.6108 17.9604 17.2268 17.7204V22.0217H16.8534Z" fill="#0077FF"/>
+                                                </svg>
+                                        li
+                                            a(href="#")  
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="32" height="32" rx="16" fill="#397EFF" fill-opacity="0.08"/>
+                                                    <path d="M8.98093 15.6426C8.98093 15.6426 16.0574 12.7157 18.5116 11.6851C19.4524 11.2729 22.6429 9.95364 22.6429 9.95364C22.6429 9.95364 24.1155 9.37653 23.9927 10.7781C23.9518 11.3553 23.6246 13.3753 23.2974 15.5602C22.8065 18.6521 22.2747 22.0324 22.2747 22.0324C22.2747 22.0324 22.1929 22.9806 21.4976 23.1455C20.8022 23.3104 19.6569 22.5684 19.4524 22.4035C19.2887 22.2798 16.3846 20.4247 15.3211 19.5177C15.0347 19.2704 14.7075 18.7757 15.3619 18.1986C16.8345 16.8382 18.5934 15.148 19.6569 14.0761C20.1477 13.5814 20.6386 12.4271 18.5934 13.8287C15.6892 15.8488 12.8259 17.7451 12.8259 17.7451C12.8259 17.7451 12.1714 18.1573 10.9443 17.7863C9.71716 17.4153 8.28552 16.9206 8.28552 16.9206C8.28552 16.9206 7.30388 16.3022 8.98093 15.6426Z" fill="#397EFF"/>
+                                                </svg>
+                                        li
+                                            a(href="#")
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="32" height="32" rx="16" fill="#FF0000" fill-opacity="0.08"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1896 18.2167V13.4065C15.9826 14.2101 17.3712 14.9863 19.0136 15.8231C17.659 16.5386 15.9826 17.3414 14.1896 18.2167ZM24.1819 11.0142C23.8726 10.6262 23.3455 10.3241 22.7843 10.2241C21.1347 9.92574 10.8439 9.92489 9.19524 10.2241C8.7452 10.3044 8.34445 10.4986 8.0002 10.8004C6.54967 12.0826 7.0042 18.9586 7.35383 20.0724C7.50086 20.5545 7.69092 20.9022 7.93028 21.1304C8.23868 21.4322 8.66092 21.64 9.14592 21.7331C10.5041 22.0007 17.5012 22.1503 22.7556 21.7733C23.2397 21.693 23.6682 21.4785 24.0062 21.1639C25.3473 19.8869 25.2559 12.6247 24.1819 11.0142Z" fill="#FF0000"/>
+                                                </svg>
+                                .slider-block__arrows
+                                    button.slider-block__arrows_arrow.left.disabled
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    button.slider-block__arrows_arrow
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            ul.tags
+                                li.tags__item.tags__item--gray Информатика
+                                li.tags__item ЕГЭ
+                                li.tags__item ОГЭ
+
+                        .slider-block__content_descriptions-block
+                            p.slider-block__content_descriptions Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему учеба становится понятной.
+                            .visible-on-mobile
+                                button.slider-block__content_show-more Подробнее
+                        ul.slider-block__content_list
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 30
+                                p.slider-block__content_list-item--text потоков выпущено
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 76 баллов
+                                p.slider-block__content_list-item--text Средний результат ученика
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 10 лет
+                                p.slider-block__content_list-item--text Опыт преподавания
+                            li.slider-block__content_list-item
+                                span.slider-block__content_list-item--title 56
+                                p.slider-block__content_list-item--text Стобальников
+                    
+                    .slider-block__content_buttons
+                        button.main-button.slider-block__content_buttons-btn Посмотреть курсы
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="12" fill="white"/>
+                                <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        a(href="#").slider-block__content_buttons-link Подробнее о преподавателе
+                    
+            ul.slider-block__list
+                li.slider-block__list_item.violet.slider-block__list_item--active
+                    .slider-block__list_item-bg
+                        img(src="../img/code.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="../img/teacher1.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Физика
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Мария Армянинова
+                            button.slider-block__list_item-btn 
+                                span.hidden-on-mobile
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="54" height="54" rx="27" fill="white"/>
+                                        <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                    </svg>
+                                span.visible-on-mobile
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_b_2873_19493)">
+                                        <rect width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15"/>
+                                        <path d="M12.0586 19.7407V12.2694C12.0586 11.5088 12.8741 11.0266 13.5405 11.3932L20.3326 15.1289C21.0234 15.5088 21.0234 16.5014 20.3326 16.8813L13.5405 20.617C12.8741 20.9835 12.0586 20.5013 12.0586 19.7407Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_2873_19493" x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.3946"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2873_19493"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2873_19493" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                li.slider-block__list_item.bright-blue
+                    .slider-block__list_item-bg
+                        img(src="../img/drawing.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="../img/teacher2.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Математика
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Андрей Пулагин
+                            button.slider-block__list_item-btn 
+                                span.hidden-on-mobile
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="54" height="54" rx="27" fill="white"/>
+                                        <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                    </svg>
+                                span.visible-on-mobile
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_b_2873_19493)">
+                                        <rect width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15"/>
+                                        <path d="M12.0586 19.7407V12.2694C12.0586 11.5088 12.8741 11.0266 13.5405 11.3932L20.3326 15.1289C21.0234 15.5088 21.0234 16.5014 20.3326 16.8813L13.5405 20.617C12.8741 20.9835 12.0586 20.5013 12.0586 19.7407Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_2873_19493" x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.3946"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2873_19493"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2873_19493" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                li.slider-block__list_item.turquoise
+                    .slider-block__list_item-bg
+                        img(src="../img/leaf.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="../img/teacher3.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Биология
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Елена Гордова
+                            button.slider-block__list_item-btn 
+                                span.hidden-on-mobile
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="54" height="54" rx="27" fill="white"/>
+                                        <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                    </svg>
+                                span.visible-on-mobile
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_b_2873_19493)">
+                                        <rect width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15"/>
+                                        <path d="M12.0586 19.7407V12.2694C12.0586 11.5088 12.8741 11.0266 13.5405 11.3932L20.3326 15.1289C21.0234 15.5088 21.0234 16.5014 20.3326 16.8813L13.5405 20.617C12.8741 20.9835 12.0586 20.5013 12.0586 19.7407Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_2873_19493" x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.3946"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2873_19493"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2873_19493" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                li.slider-block__list_item.red
+                    .slider-block__list_item-bg
+                        img(src="../img/kremlin.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="../img/teacher1.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item Русский язык
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Катя Пулагина
+                            button.slider-block__list_item-btn 
+                                span.hidden-on-mobile
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="54" height="54" rx="27" fill="white"/>
+                                        <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                    </svg>
+                                span.visible-on-mobile
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_b_2873_19493)">
+                                        <rect width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15"/>
+                                        <path d="M12.0586 19.7407V12.2694C12.0586 11.5088 12.8741 11.0266 13.5405 11.3932L20.3326 15.1289C21.0234 15.5088 21.0234 16.5014 20.3326 16.8813L13.5405 20.617C12.8741 20.9835 12.0586 20.5013 12.0586 19.7407Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_2873_19493" x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.3946"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2873_19493"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2873_19493" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                li.slider-block__list_item.blue
+                    .slider-block__list_item-bg
+                        img(src="../img/globe.png", alt="bg")
+                    .slider-block__list_item-img
+                        img(src="../img/teacher4.png", alt="teacher")
+                    .slider-block__list_item--wrap
+                        .slider-block__markers
+                            span.slider-block__markers_item-blur ЕГЭ
+                            span.slider-block__markers_item История
+                        .slider-block__list_item-bottom
+                            .slider-block__list_item-title Катя Пулагина
+                            button.slider-block__list_item-btn 
+                                span.hidden-on-mobile
+                                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="54" height="54" rx="27" fill="white"/>
+                                        <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                    </svg>
+                                span.visible-on-mobile
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_b_2873_19493)">
+                                        <rect width="32" height="32" rx="16" fill="#0B1F33" fill-opacity="0.15"/>
+                                        <path d="M12.0586 19.7407V12.2694C12.0586 11.5088 12.8741 11.0266 13.5405 11.3932L20.3326 15.1289C21.0234 15.5088 21.0234 16.5014 20.3326 16.8813L13.5405 20.617C12.8741 20.9835 12.0586 20.5013 12.0586 19.7407Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_b_2873_19493" x="-40.7892" y="-40.7892" width="113.578" height="113.578" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.3946"/>
+                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2873_19493"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2873_19493" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+

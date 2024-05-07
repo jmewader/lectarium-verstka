@@ -1,8 +1,8 @@
-@import "fonts";
-@import "variables";
-@import "mixins";
-@import "global";
-@import "layout";
+@import "./defaults/fonts";
+@import "./defaults/variables";
+@import "./defaults/mixins";
+@import "./defaults/global";
+@import "./defaults/layout";
 @import "./widgets/hero";
 @import "./widgets/numbered-cards";
 @import "./widgets/lektarik-block.scss";

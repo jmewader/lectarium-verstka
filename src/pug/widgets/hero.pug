@@ -1,0 +1,26 @@
+.wide-container
+    section.hero
+        .hero__background 
+            picture
+                source(srcset=mobileBgSrc || "../img/team-hero-bg-mobile.png", type="image/png", media="(max-width: 375px)")
+                source(srcset=tabletBgSrc || "../img/team-hero-bg-tablet.png", type="image/png", media="(max-width: 1024px)")
+                img(src=desktopBgSrc || "../img/team-hero-bg.png", alt="background")
+        .hero__content
+            .hero__text-block
+                h1.main-title.hero__title Команда Лектариума
+                .hero__description-block
+                    p “Нашей команде уже 5 лет. Мы прошли путь с маленькой школы, до резидента Сколково!
+                    p За этот период мы научились понятно объяснять любые школьные темы, раскрываем потенциал ребенка и увлекаем учёбой!”
+                    .hero__description-block_wrap
+                        span.hero__description-block_author Вероника Сорокина
+                        span.hero__description-block_text завуч проекта “Лектариум”
+            button.dark-button.hero__btn Видео о школе
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill="white"/>
+                    <path d="M9.04688 14.3788V9.62096C9.04688 8.86036 9.86234 8.37819 10.5288 8.74474L14.8541 11.1237C15.5449 11.5036 15.5449 12.4962 14.8541 12.8761L10.5288 15.255C9.86234 15.6216 9.04688 15.1394 9.04688 14.3788Z" fill="#0B1F33"/>
+                </svg>
+        .hero__image
+            picture
+                source(srcset=mobileImageSrc || "../img/women1-mobile.png", type="image/png", media="(max-width: 375px)")
+                source(srcset=tabletImageSrc || "../img/women1-tablet.png", type="image/png", media="(max-width: 767px)")
+                img(src=desktopImageSrc || "../img/women1.png", alt="People")
