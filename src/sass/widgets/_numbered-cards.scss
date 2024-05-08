@@ -126,14 +126,35 @@
     &_img {
       position: relative;
       width: 100%;
+      height: 360px;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: 202px;
+        height: 250px;
+        display: flex;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @media (max-width: $mobile-width) {
+          width: 180px;
+          height: 223px;
+        }
+      }
+
+      @media (max-width: $large-tablet-width) {
+        width: 380px;
       }
 
       @media (max-width: $tablet-width) {
         order: 1;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        max-width: 296px;
+        height: 320px;
       }
     }
 

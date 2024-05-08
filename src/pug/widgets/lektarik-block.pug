@@ -10,10 +10,11 @@
                     </svg>
             .lektarik-block__img
                 img(src="../img/lektarik.png", alt="lektarik")
-            .lektarik-block__img-chat
-                picture
-                    source(srcset="../img/lektarik-chat2.png", type="image/png", media="(max-width: 767px)")
-                    img(src="../img/lektarik-chat.png", alt="lektarikChat")
+            .lektarik-block__chat
+                ul.chat-bubbles
+                    ul.chat-bubbles__item.special Привет, я Лектарик -- твой навигатор в онлайн-школе!
+                    ul.chat-bubbles__item.second Моя задача помочь тебе найти то, что нужно
+                    ul.chat-bubbles__item Неважно кто ты: ученик, родитель или учитель. Расскажи о себе и я быстро тебе помогу!
             button.main-button.visible-on-mobile.lektarik-block__btn Проверить Лектарика
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="24" height="24" rx="12" fill="white"/>

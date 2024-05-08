@@ -51,7 +51,7 @@ function sassTask() {
 }
 
 function fontsTask() {
-  return gulp.src(path.fonts.src).pipe(gulp.dest(path.fonts.dest));
+  return gulp.src(path.fonts.src).pipe(gulp.dest(path.fonts.dest)).pipe(browsersync.stream());
 }
 
 function imgTask() {
@@ -59,9 +59,9 @@ function imgTask() {
     destination: path.img.dest,
     plugins: [
       imageminJpegRecompress({ quality: "high" }),
-      imageminPng({ quality: [0.6, 0.8] }), 
+      imageminPng({ quality: [0.6, 0.8] }),
       // imageminWebp({ quality: 50 }), // конвертация в WebP
-      imageminPng(), 
+      imageminPng(),
     ],
   })
     .then((files) => {
@@ -73,17 +73,20 @@ function imgTask() {
 }
 
 function watchTask() {
-  browsersync.init({
-    server: {
-      baseDir: "dist",
-      notify: false,
-    },
-  });
-  gulp.watch(path.pug.src).on("change", browsersync.reload);
-  gulp.watch(path.sass.src, sassTask);
-  gulp.watch(path.img.src, imgTask);
+  return gulp.series(cleanTask, gulp.parallel(htmlTask, pugTask, sassTask, fontsTask, imgTask), function () {
+    browsersync.init({
+      server: {
+        baseDir: "dist",
+        notify: false,
+      },
+      files: ["dist/**/*"],
+      reloadDebounce: 1000,
+    });
+    gulp.watch(path.pug.src, pugTask);
+    gulp.watch(path.sass.src, sassTask);
+    gulp.watch(path.img.src, imgTask);
+  })();
 }
-
 const build = gulp.series(cleanTask, gulp.parallel(htmlTask, pugTask, sassTask, fontsTask, imgTask), watchTask);
 
 exports.clean = cleanTask;
