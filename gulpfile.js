@@ -51,7 +51,7 @@ function sassTask() {
 }
 
 function fontsTask() {
-  return gulp.src(path.fonts.src).pipe(gulp.dest(path.fonts.dest)).pipe(browsersync.stream());
+  return gulp.src(path.fonts.src, { encoding: false }).pipe(gulp.dest(path.fonts.dest)).pipe(browsersync.stream());
 }
 
 function imgTask() {

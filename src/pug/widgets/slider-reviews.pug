@@ -10,21 +10,28 @@
                     .slider-block__content_bg
                         img(src="../img/reviews1.png", alt="reviews")
                     .slider-block__content_preview--wrap
-                        .slider-block__markers
-                                span.slider-block__markers_item-blur 0:32
+                        .slider-block__markers.slider-block__markers_preview
+                                span.slider-block__markers_item-blur.blur-preview 0:32
                         .slider-block__content_actions
-                            button.slider-block__content_btn
+                            button.slider-block__content_btn.hidden-on-mobile
                                 <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="74.0038" height="74.0038" rx="37.0019" fill="white"/>
                                     <path d="M31.0859 43.4489V30.5506C31.0859 29.79 31.9014 29.3079 32.5679 29.6744L44.2936 36.1236C44.9844 36.5035 44.9844 37.4961 44.2936 37.876L32.5679 44.3252C31.9014 44.6917 31.0859 44.2095 31.0859 43.4489Z" fill="#0B1F33"/>
                                 </svg>
-
+                            button.slider-block__content_btn.visible-on-mobile
+                                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="54" height="54" rx="27" fill="white"/>
+                                    <path d="M21.0859 33.4489V20.5506C21.0859 19.79 21.9014 19.3079 22.5679 19.6744L34.2936 26.1236C34.9844 26.5035 34.9844 27.4961 34.2936 27.876L22.5679 34.3252C21.9014 34.6917 21.0859 34.2095 21.0859 33.4489Z" fill="#0B1F33"/>
+                                </svg>
                 .slider-block__content_info
                     .slider-block__content_wrap
                         div
                             .slider-block__content_header
                                 .slider-block__content_header--wrapper
-                                    h3.slider-block__content_title Вероника Чижова
+                                    h3.slider-block__content_title
+                                        |Вероника
+                                        <br>
+                                        |Чижова
                                     ul.slider-block__content_social
                                         li
                                             a(href="#")
@@ -55,12 +62,11 @@
                             .visible-on-mobile
                                 button.slider-block__content_show-more Подробнее
                     .slider-block__content_buttons
-                        button.main-button.slider-block__content_buttons-btn Посмотреть курсы
+                        button.slider-block__content_buttons-btn.main-button Посмотреть курсы
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="24" height="24" rx="12" fill="white"/>
                                 <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        a(href="#").slider-block__content_buttons-link Смотреть другие отзывы
                     
             ul.slider-block__list
                 li.slider-block__list_item.violet.slider-block__list_item--active
@@ -131,7 +137,10 @@
                             span.slider-block__markers_item-blur ЕГЭ
                             span.slider-block__markers_item 89 баллов
                         .slider-block__list_item-bottom
-                            .slider-block__list_item-title Катя Наумова
+                            .slider-block__list_item-title 
+                                | Катя 
+                                <br>
+                                | Наумова
                             button.slider-block__list_item-btn 
                                 span.hidden-on-mobile
                                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">

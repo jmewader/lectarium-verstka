@@ -19,6 +19,12 @@
     border-radius: 20px;
   }
 
+  .padding-wrap {
+    @media (max-width: $tablet-width) {
+      padding: 0 8px;
+    }
+  }
+
   &__text-block {
     display: flex;
     flex-direction: column;
@@ -46,13 +52,33 @@
     }
   }
 
+  &__descriptions {
+    &.main-descriptions {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      max-width: 397px;
+
+      @media (max-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 267px;
+      }
+    }
+  }
+
   &__bottom {
     display: flex;
     align-items: center;
     gap: 16px;
+    font-size: 18px;
+    line-height: 25px;
+    color: $dark-blue-color;
 
     @media (max-width: $tablet-width) {
       gap: 12px;
+      font-size: 16px;
+      line-height: 20px;
 
       svg {
         width: 24px;
@@ -151,6 +177,7 @@
     @media (max-width: $tablet-width) {
       &.main-button {
         min-height: 60px;
+        gap: 10px;
       }
     }
   }

@@ -13,6 +13,7 @@
   @media (max-width: $tablet-width) {
     margin: 70px 0;
     min-height: 380px;
+    border-radius: 25px;
   }
 
   &__wrap {
@@ -23,6 +24,7 @@
     height: 100%;
     justify-content: space-between;
     width: 100%;
+    max-width: 581px;
 
     @media (max-width: $large-desktop-width) {
       padding: 44px 0 44px 44px;
@@ -83,6 +85,13 @@
       position: relative;
       height: auto;
       width: 100%;
+      right: -19px;
+      bottom: 4px;
+
+      @media (max-width: $tablet-width) {
+        right: 0px;
+        bottom: 0px;
+      }
     }
 
     @media (max-width: $tablet-width) {
@@ -103,8 +112,9 @@
     position: relative;
     width: 100%;
     padding: 64px 60px 64px 0;
-    max-width: 509px;
+    max-width: 572px;
     display: flex;
+    letter-spacing: -0.02em;
 
     img {
       width: 100%;
@@ -125,6 +135,7 @@
       margin: 0 0 24px;
       max-width: 100%;
       display: flex;
+      letter-spacing: -0.01em;
     }
   }
 

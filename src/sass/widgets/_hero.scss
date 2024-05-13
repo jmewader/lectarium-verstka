@@ -4,7 +4,7 @@
   border-radius: 40px;
   position: relative;
   overflow: hidden;
-  min-height: 780px;
+  min-height: 779px;
   align-items: flex-end;
   justify-content: space-between;
 
@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 780px;
+    min-height: 779px;
     gap: 40px;
   }
 
@@ -36,6 +36,11 @@
     font-size: 20px;
     line-height: 24px;
     color: $dark-blue-color;
+    letter-spacing: -0.01em;
+  }
+
+  &__btn {
+    min-height: 68px;
   }
 
   &__image {
@@ -47,7 +52,7 @@
     img {
       display: block;
       width: 100%;
-      max-height: 780px;
+      max-height: 779px;
     }
   }
 
@@ -62,7 +67,7 @@
       object-fit: contain;
       position: relative;
       height: auto;
-      max-height: 780px;
+      max-height: 779px;
       display: flex;
     }
   }
@@ -87,6 +92,9 @@
 
     &_text {
       font-weight: 400;
+      opacity: 0.6;
+      font-size: 18px;
+      line-height: 22px;
       opacity: 0.6;
     }
   }
@@ -155,10 +163,15 @@
     align-items: flex-start;
     border-radius: 25px;
 
+    &__text-block {
+      width: 100%;
+      max-width: 323px;
+    }
+
     &__content {
       min-height: auto;
       max-width: 100%;
-      padding: 24px 16px;
+      padding: 24px 16px 15px;
       gap: 32px;
     }
 
@@ -172,7 +185,23 @@
       font-size: 16px;
       line-height: 20px;
       gap: 16px;
+
+      &_text {
+        font-size: 15px;
+      }
+
+      &_wrap {
+        gap: 4px;
+      }
     }
+
+    &__description {
+      font-size: 16px;
+      line-height: 20px;
+      gap: 16px;
+    }
+
+
 
     &__image {
       justify-content: center;
@@ -188,6 +217,17 @@
 
       img {
         max-height: 530px;
+      }
+    }
+
+    &__btn {
+      &.dark-button {
+        width: fit-content;
+        min-height: 60px;
+        padding: 16px 24px;
+        gap: 10px;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }

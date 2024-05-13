@@ -15,7 +15,7 @@
     box-sizing: border-box;
 
     .header-logo {
-      margin-right: 32px;
+      margin: 4px 32px 0 0;
     }
 
     .header-items {
@@ -38,7 +38,7 @@
 
             &.button-menu {
               width: 130px;
-              height: 60px;
+              height: 56px;
               padding: 16px 22px;
               box-sizing: border-box;
               display: flex;
@@ -69,14 +69,14 @@
             input {
               border: 1px solid $light-gray-color;
               border-radius: 10px;
-              padding: 16px 58px 16px 22px;
+              padding: 16px 58px 16px 21px;
               width: 375px;
-              height: 60px;
+              height: 56px;
               outline: none;
               box-sizing: border-box;
               font-size: 16px;
               color: #6d737a;
-              font-family: "TT Firs Neue", sans-serif;
+              @include common-text;
 
               &::placeholder {
                 font-size: 16px;
@@ -89,7 +89,7 @@
               width: 24px;
               height: 24px;
               right: 22px;
-              top: 20px;
+              top: 16px;
               z-index: 2;
             }
           }
@@ -199,6 +199,9 @@
             .header-actions-user-arrow {
               width: 24px;
               height: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
           }
         }
@@ -434,4 +437,3 @@
     }
   }
 }
-
