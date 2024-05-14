@@ -11,6 +11,10 @@
   align-items: flex-end;
   z-index: 99999;
 
+  &.modal-visible {
+    display: flex;
+  }
+
   .modal {
     display: flex;
     flex-direction: column;

@@ -119,6 +119,12 @@ button {
   background-color: $dark-blue-color;
 }
 
+.light-button {
+  @extend .main-button;
+  background-color: $white-color;
+  color: $dark-blue-color;
+}
+
 .button-with-frame {
   @extend .main-button;
   background-color: transparent;
