@@ -1,0 +1,248 @@
+.slider-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 180px 0;
+  position: relative;
+
+  .main-container {
+    width: 100%;
+
+    @media (max-width: $mobile-width) {
+      padding: 0px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 70px 0;
+  }
+
+  &__title {
+    margin: 0;
+
+    @media (max-width: $mobile-width) {
+      padding: 0px 16px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 64px;
+    gap: 20px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+
+    &_arrow {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light-blue-color;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+
+      &.left {
+        transform: rotate(180deg);
+      }
+
+      &.disabled {
+        path {
+          stroke: #9aa3ad;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    @media (max-width: $desktop-width) {
+      overflow-x: scroll;
+      width: 100%;
+      display: flex;
+
+      &::-webkit-scrollbar {
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: $light-gray-color;
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $dark-blue-color;
+        border-radius: 10px;
+        height: 2px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      gap: 0;
+    }
+
+    &_item {
+      display: grid;
+      grid-template-rows: 266px 1fr;
+      grid-template-columns: 390px;
+
+      @media (max-width: $mobile-width) {
+        grid-template-columns: 329px;
+        grid-template-rows: 243px 1fr;
+        padding: 0 0 0 16px;
+      }
+
+      &-title {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+        color: $white-color;
+
+        @media (max-width: $mobile-width) {
+          font-size: 22px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    &_header {
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      border-radius: 24px 24px 0 0;
+      background-color: $red-color;
+      position: relative;
+
+      @media (max-width: $mobile-width) {
+        border-radius: 20px 20px 0 0;
+      }
+
+      &-content {
+        padding: 28px 28px 56px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @media (max-width: $mobile-width) {
+          padding: 24px 24px 52px;
+        }
+      }
+    }
+
+    &_body {
+      background-color: $white-color;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 24px;
+      top: -28px;
+      position: relative;
+      z-index: 1;
+      gap: 28px;
+      height: 100%;
+      justify-content: space-between;
+
+      @media (max-width: $mobile-width) {
+        border-radius: 20px;
+        padding: 24px;
+        gap: 24px;
+      }
+    }
+
+    &_bottom {
+    }
+
+    &_bottom-prices {
+      margin: 0 0 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &_crossed-price {
+      text-decoration: line-through;
+      color: #9aa3ad;
+      font-weight: 500;
+    }
+
+    &_bottom-wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &_price {
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 500;
+
+      @media (max-width: $mobile-width) {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+
+    &_price-block {
+      border-radius: 8px;
+      padding: 8px 12px;
+      background-color: rgba(243, 244, 245, 1);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      width: fit-content;
+      max-width: 163px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 13px;
+        line-height: 17px;
+        padding: 6px;
+        border-radius: 6px;
+        max-width: 100%;
+      }
+    }
+
+    .blue-text {
+      color: $bright-blue-color;
+    }
+
+    .grey-text {
+      color: #9aa3ad;
+
+      @media (max-width: $mobile-width) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+    &_bg {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: flex-end;
+      position: absolute;
+      justify-content: flex-end;
+
+      img {
+        object-fit: contain;
+        height: 100%;
+      }
+    }
+  }
+}

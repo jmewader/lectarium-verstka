@@ -114,6 +114,14 @@ button {
   width: max-content;
 }
 
+.main-button-small {
+  @extend .main-button;
+  min-height: 56px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 22px;
+}
+
 .dark-button {
   @extend .main-button;
   background-color: $dark-blue-color;
