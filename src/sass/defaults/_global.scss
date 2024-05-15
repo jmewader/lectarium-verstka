@@ -122,7 +122,7 @@ button {
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
-  padding: 0 30px;
+  padding: 0 26px;
   border: none;
   background-color: $bright-blue-color;
   color: #fff;
@@ -136,6 +136,14 @@ button {
   font-size: 16px;
   line-height: 20px;
   padding: 0 22px;
+}
+
+.main-button-large {
+  @extend .main-button;
+  min-height: 68px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 30px;
 }
 
 .dark-button {

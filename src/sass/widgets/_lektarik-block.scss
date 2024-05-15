@@ -13,6 +13,9 @@
   @media (max-width: $tablet-width) {
     margin: 70px 0;
     min-height: 380px;
+  }
+
+  @media (max-width: $mobile-width) {
     border-radius: 25px;
   }
 
@@ -25,17 +28,13 @@
     justify-content: space-between;
     width: 100%;
     max-width: 581px;
-
-    @media (max-width: $large-desktop-width) {
-      padding: 44px 0 44px 44px;
-    }
-
     @media (max-width: $tablet-width) {
       padding: 24px 0 24px 24px;
     }
 
     @media (max-width: $mobile-width) {
       padding: 0;
+      max-width: 100%;
     }
   }
 
@@ -48,9 +47,8 @@
     letter-spacing: -2px;
     margin: 0 0 64px;
 
-    @media (max-width: $large-desktop-width) {
-      font-size: 44px;
-      line-height: 50px;
+    @media (max-width: $large-tablet-width) {
+      margin: 0 0 44px;
     }
 
     @media (max-width: $tablet-width) {
@@ -66,6 +64,11 @@
     gap: 32px;
     width: 100%;
     justify-content: space-between;
+
+    @media (max-width: $large-tablet-width) {
+      flex-direction: column;
+      gap: 0;
+    }
 
     @media (max-width: $mobile-width) {
       flex-direction: column;
@@ -86,17 +89,21 @@
       height: auto;
       width: 100%;
       right: -19px;
-      bottom: 4px;
 
-      @media (max-width: $tablet-width) {
+      @media (max-width: $large-tablet-width) {
         right: 0px;
         bottom: 0px;
       }
     }
 
+    @media (max-width: $large-tablet-width) {
+      max-width: 484px;
+      margin: 0 0 0 64px;
+    }
+
     @media (max-width: $tablet-width) {
-      max-width: 344px;
-      padding: 0 24px 0 0;
+      margin: 0 0 0 24px;
+      max-width: 386px;
     }
 
     @media (max-width: $mobile-width) {
@@ -105,6 +112,7 @@
       width: 100%;
       max-width: 100%;
       padding: 0 20px;
+      margin: 0;
     }
   }
 
@@ -121,16 +129,25 @@
       object-fit: contain;
     }
 
-    @media (max-width: $large-desktop-width) {
-      padding: 44px 40px 44px 0;
+    @media (max-width: $large-tablet-width) {
+      padding: 44px 40px 0 0;
+      position: absolute;
+      right: 0;
+      bottom: 64px;
     }
 
     @media (max-width: $tablet-width) {
-      padding: 24px 20px 24px 0;
-      display: none;
+      padding: 0px 52px 0 0;
+      max-width: 407px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 0 24px 0 0;
     }
 
     @media (max-width: $mobile-width) {
+      position: relative;
+      bottom: 0;
       padding: 0;
       margin: 0 0 24px;
       max-width: 100%;
