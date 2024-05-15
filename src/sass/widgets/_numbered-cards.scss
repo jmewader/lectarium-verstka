@@ -17,7 +17,7 @@
     grid-template-columns: 1fr 390px;
     gap: 20px;
 
-    @media (max-width: $large-tablet-width) {
+    @media (max-width: $desktop-width) {
       grid-template-columns: 1fr;
     }
   }
@@ -27,7 +27,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $desktop-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile-width) {
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -45,6 +49,13 @@
         grid-column: span 2;
         display: grid;
         grid-template-columns: 373px 1fr;
+
+        @media (max-width: $desktop-width) {
+          grid-template-columns: 1fr;
+          gap: 50px;
+          grid-column: span 1;
+          grid-row: span 2;
+        }
       }
 
       &-wrap {
@@ -87,13 +98,14 @@
         font-weight: 500;
         line-height: 28px;
         margin: 0 0 16px;
-        
+        letter-spacing: -0.02em;
 
         @media (max-width: $tablet-width) {
           font-size: 18px;
           line-height: 22px;
           margin: 0 0 12px;
           max-width: 240px;
+          letter-spacing: -0.01em;
         }
       }
 
@@ -106,7 +118,7 @@
         }
       }
 
-      @media (max-width: $tablet-width) {
+      @media (max-width: $mobile-width) {
         padding: 24px;
         border-radius: 20px;
 
@@ -126,12 +138,24 @@
     border-radius: 24px;
     padding: 36px;
     justify-content: space-between;
-    gap: 34px;
+    gap: 32px;
+
+    @media (max-width: $desktop-width) {
+      gap: 24px;
+      border-radius: 20px;
+      gap: 24px;
+      padding: 36px 40% 36px 36px;
+      border-radius: 20px;
+      position: relative;
+      min-height: 431px;
+    }
 
     @media (max-width: $tablet-width) {
-      gap: 24px;
+      padding: 36px 50% 36px 36px;
+    }
+
+    @media (max-width: $mobile-width) {
       padding: 24px;
-      border-radius: 20px;
     }
 
     &_header {
@@ -165,18 +189,20 @@
         }
       }
 
-      @media (max-width: $large-tablet-width) {
+      @media (max-width: $desktop-width) {
         width: 380px;
-      }
-
-      @media (max-width: $tablet-width) {
-        order: 1;
+        position: absolute;
+        bottom: 36px;
+        right: 36px;
       }
 
       @media (max-width: $mobile-width) {
         width: 100%;
         max-width: 296px;
         height: 320px;
+        position: relative;
+        right: auto;
+        bottom: auto;
       }
     }
 
