@@ -86,7 +86,7 @@
       }
 
       &::-webkit-scrollbar-track {
-        background: $light-gray-color;
+        background: $light-grey-color;
         height: 2px;
       }
 
@@ -128,7 +128,6 @@
     &_header {
       box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
       border-radius: 24px 24px 0 0;
-      background-color: $red-color;
       position: relative;
       position: relative;
       bottom: -28px;

@@ -1,5 +1,5 @@
 .wide-container
-    section.hero-teacher
+    section.hero-teacher.red
         .hero-teacher__background 
             picture
                 source(srcset=tabletBgSrc || "../img/kremlin-tablet.png", type="image/png", media="(max-width: 1024px)")
@@ -43,9 +43,7 @@
                         <path d="M10 8L14 12L10 16" stroke="#FAFCFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
         .hero-teacher__image
-            picture
-                source(srcset=tabletImageSrc || "../img/teacher1-tablet.png", type="image/png", media="(max-width: 1024px)")
-                img(src=desktopImageSrc || "../img/teacher1.png", alt="Teacher")
+            img(src=desktopImageSrc || "../img/teacher1.png", alt="Teacher")
         .hero-teacher__quote
             p.hero-teacher__quote_text Делаю изучение скучных правил интересным. Используя свои методики по запоминанию сложных понятий, благодаря чему&nbsp;учеба становится понятной
             .hero-teacher__quote_icon

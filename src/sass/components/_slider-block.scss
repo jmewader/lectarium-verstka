@@ -49,26 +49,6 @@
     }
   }
 
-  .violet {
-    background-color: $violet-color;
-  }
-
-  .bright-blue {
-    background-color: $bright-blue-color;
-  }
-
-  .turquoise {
-    background-color: $turquoise-color;
-  }
-
-  .red {
-    background-color: $red-color;
-  }
-
-  .blue {
-    background-color: $blue-color;
-  }
-
   &__arrows {
     display: flex;
     align-items: center;
@@ -306,6 +286,7 @@
       @media (max-width: $mobile-width) {
         font-size: 22px;
         line-height: 25px;
+        max-width: 176px;
       }
     }
 
@@ -451,7 +432,7 @@
       }
 
       &::-webkit-scrollbar-track {
-        background: $light-gray-color;
+        background: $light-grey-color;
         height: 2px;
       }
 
@@ -468,7 +449,7 @@
       }
 
       &::-webkit-scrollbar-track {
-        background: $light-gray-color;
+        background: $light-grey-color;
         height: 1px;
       }
 
@@ -624,7 +605,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $light-gray-color;
+    border: 1px solid $light-grey-color;
     border-radius: 10px;
     background-color: $white-color;
     cursor: pointer;

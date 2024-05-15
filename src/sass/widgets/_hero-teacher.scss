@@ -1,6 +1,5 @@
 .hero-teacher {
   display: flex;
-  background-color: $red-color;
   border-radius: 40px;
   position: relative;
   overflow: hidden;
@@ -144,6 +143,7 @@
       @media (max-width: $mobile-width) {
         max-height: 100%;
         object-fit: cover;
+        min-height: 429px;
       }
     }
   }

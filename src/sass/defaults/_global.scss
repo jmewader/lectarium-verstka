@@ -21,6 +21,22 @@ button {
   @include common-text;
 }
 
+.violet {
+  background-color: $violet-color;
+}
+.bright-blue {
+  background-color: $bright-blue-color;
+}
+.turquoise {
+  background-color: $turquoise-color;
+}
+.red {
+  background-color: $red-color;
+}
+.blue {
+  background-color: $blue-color;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1620px;
@@ -83,7 +99,7 @@ button {
 
   &.button-transparent {
     background-color: transparent;
-    border: 1px solid $light-gray-color;
+    border: 1px solid $light-grey-color;
     color: $dark-blue-color;
   }
 
@@ -133,6 +149,12 @@ button {
   color: $dark-blue-color;
 }
 
+.grey-button {
+  @extend .main-button-small;
+  background-color: $grey-color;
+  color: $dark-blue-color;
+}
+
 .button-with-frame {
   @extend .main-button;
   background-color: transparent;
@@ -169,7 +191,7 @@ button {
     flex-shrink: 0;
     flex-grow: 0;
     border-radius: 5px;
-    border: 1px solid $light-gray-color;
+    border: 1px solid $light-grey-color;
     margin-right: 12px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -231,7 +253,7 @@ button {
   min-height: 62px;
   display: flex;
   align-items: center;
-  border: 1px solid $light-gray-color;
+  border: 1px solid $light-grey-color;
   border-radius: 10px;
   color: $dark-blue-color;
   width: 290px;
@@ -268,7 +290,7 @@ button {
       }
 
       &::-webkit-scrollbar-track {
-        background: $light-gray-color !important;
+        background: $light-grey-color !important;
         border-radius: 10px !important;
       }
 
