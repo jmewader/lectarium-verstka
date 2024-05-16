@@ -77,6 +77,8 @@ function watchTask() {
     browsersync.init({
       server: {
         baseDir: "dist",
+        directory: true,
+        index: "index.html",
         notify: false,
       },
       files: ["dist/**/*"],
