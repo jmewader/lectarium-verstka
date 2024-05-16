@@ -25,6 +25,16 @@
     }
   }
 
+  .disabled {
+    .form__steps_number {
+      background-color: #9aa3ad;
+    }
+
+    .form__steps_title {
+      color: #9aa3ad;
+    }
+  }
+
   &__text-block {
     display: flex;
     flex-direction: column;
@@ -138,19 +148,11 @@
       font-weight: 500;
       flex-shrink: 0;
       margin: 0 8px 0 0;
-
-      &.disabled {
-        background-color: #9aa3ad;
-      }
     }
 
     &_title {
       font-size: 18px;
       line-height: 22px;
-
-      &.disabled {
-        color: #9aa3ad;
-      }
 
       @media (max-width: $tablet-width) {
         font-size: 15px;
@@ -160,10 +162,14 @@
   }
 
   &__fields {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 16px;
     margin: 0 0 20px;
+
+    &.visible {
+      display: flex;
+    }
 
     @media (max-width: $tablet-width) {
       gap: 10px;

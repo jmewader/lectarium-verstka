@@ -20,17 +20,59 @@
                     .form__steps_number 1
                     span.form__steps_title Данные
                 li.form__steps_item.disabled
-                    .form__steps_number.disabled 2
-                    span.form__steps_title.disabled Выбор предмета
+                    .form__steps_number 2
+                    span.form__steps_title Выбор предмета
 
             form(action="#" method="POST")
                 .form__fields
                     div.form__field
-                        input.custom-input(type="text" id="name" name="name" placeholder="Ваше имя" required)
+                        input.custom-input.invalid(type="text" id="name" name="name" placeholder="Ваше имя")
                     div.form__field
-                        input.custom-input(type="email" id="email" name="email" placeholder="example@example.com" required)
+                        input.custom-input(type="email" id="email" name="email" placeholder="example@example.com")
                     div.form__field
-                        input.custom-input(type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required)
+                        input.custom-input(type="tel" id="phone" name="phone" placeholder="Введите ваш телефон")
+                .form__fields.visible
+                    .custom-select
+                        .custom-select__title.invalid Вы ученик, родитель или учитель?
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                        .custom-select__menu-wrap
+                            ul.custom-select__menu
+                                li.custom-select__menu_item(data-value="4") bo язык
+                                li.custom-select__menu_item(data-value="5") ja язык
+                                li.custom-select__menu_item(data-value="1") kj язык
+                                li.custom-select__menu_item(data-value="2") st язык
+                                li.custom-select__menu_item(data-value="3") Русский язык
+                                li.custom-select__menu_item(data-value="6") st язык
+                                li.custom-select__menu_item(data-value="7") Русский язык
+                                li.custom-select__menu_item(data-value="8") st язык
+                                li.custom-select__menu_item(data-value="9") Русский язык
+                    .custom-select
+                        .custom-select__title Предмет
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                        .custom-select__menu-wrap
+                            ul.custom-select__menu
+                                li.custom-select__menu_item(data-value="4") bo язык
+                                li.custom-select__menu_item(data-value="5") ja язык
+                                li.custom-select__menu_item(data-value="1") kj язык
+                                li.custom-select__menu_item(data-value="2") st язык
+                                li.custom-select__menu_item(data-value="3") Русский язык
+                                li.custom-select__menu_item(data-value="6") st язык
+                                li.custom-select__menu_item(data-value="7") Русский язык
+                    .custom-select
+                        .custom-select__title Класс
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                        .custom-select__menu-wrap
+                            ul.custom-select__menu
+                                li.custom-select__menu_item(data-value="4") bo язык
+                                li.custom-select__menu_item(data-value="5") ja язык
+                                li.custom-select__menu_item(data-value="1") kj язык
+                                li.custom-select__menu_item(data-value="2") st язык
+                                li.custom-select__menu_item(data-value="3") Русский язык
+
+                    span.warning-text.visible Пожалуйста, заполните все обязательные поля
                 button.form__submit-btn.main-button(type="submit") 
                     | Далее
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
