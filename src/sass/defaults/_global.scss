@@ -24,17 +24,46 @@ button {
 .violet {
   background-color: $violet-color;
 }
+.violet-icon {
+  svg path {
+    fill: $violet-color;
+  }
+}
+
 .bright-blue {
   background-color: $bright-blue-color;
 }
+.bright-blue-icon {
+  svg path {
+    fill: $bright-blue-color;
+  }
+}
+
 .turquoise {
   background-color: $turquoise-color;
 }
+.turquoise-icon {
+  svg path {
+    fill: $turquoise-color;
+  }
+}
+
 .red {
   background-color: $red-color;
 }
+.red-icon {
+  svg path {
+    fill: $red-color;
+  }
+}
+
 .blue {
   background-color: $blue-color;
+}
+.blue-icon {
+  svg path {
+    fill: $blue-color;
+  }
 }
 
 .container {
