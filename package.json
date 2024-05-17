@@ -10,6 +10,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-fonter": "^0.3.0",
     "gulp-load-plugins": "^2.0.8",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "imagemin": "^7.0.1",

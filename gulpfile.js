@@ -34,6 +34,12 @@ const path = {
   },
 };
 
+var plugins = require("gulp-load-plugins")()
+
+const getTask = (task) => {
+    return require("./tasks/" + task)(gulp, plugins, browsersync);
+};
+
 function cleanTask() {
   return del(["dist"]);
 }
@@ -72,13 +78,14 @@ function imgTask() {
     });
 }
 
+const pageList = () => getTask("pageList")
+
 function watchTask() {
-  return gulp.series(cleanTask, gulp.parallel(htmlTask, pugTask, sassTask, fontsTask, imgTask), function () {
+  return gulp.series(cleanTask, gulp.parallel(htmlTask, pugTask, sassTask, fontsTask, imgTask), pageList, function () {
     browsersync.init({
       server: {
         baseDir: "dist",
-        directory: true,
-        index: "index.html",
+        index: "app/pages/index.html",
         notify: false,
       },
       files: ["dist/**/*"],
@@ -97,6 +104,7 @@ exports.pug = pugTask;
 exports.sass = sassTask;
 exports.fonts = fontsTask;
 exports.img = imgTask;
+exports.pageList = pageList;
 exports.watch = watchTask;
 exports.build = build;
 exports.default = build;
