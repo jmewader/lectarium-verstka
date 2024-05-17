@@ -166,7 +166,6 @@
 
     &__text-block {
       width: 100%;
-      max-width: 323px;
     }
 
     &__content {
@@ -201,8 +200,6 @@
       line-height: 20px;
       gap: 16px;
     }
-
-
 
     &__image {
       justify-content: center;
@@ -239,6 +236,10 @@
         height: 530px;
         max-height: none;
       }
+    }
+
+    &__text-block {
+      max-width: 323px;
     }
 
     &__image {

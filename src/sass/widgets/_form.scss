@@ -12,6 +12,10 @@
     padding: 44px;
   }
 
+  @media (max-width: $large-tablet-width) {
+    margin: 110px 0;
+  }
+
   @media (max-width: $tablet-width) {
     margin: 70px 0;
     grid-template-columns: 1fr;
@@ -56,8 +60,15 @@
     &.main-subtitle {
       margin: 0 0 20px;
 
+      @media (max-width: $large-tablet-width) {
+        font-size: 40px;
+        line-height: 44px;
+      }
+
       @media (max-width: $tablet-width) {
         margin: 0 0 12px;
+        font-size: 32px;
+        line-height: 36px;
       }
     }
   }
@@ -69,9 +80,13 @@
       letter-spacing: -0.02em;
       max-width: 397px;
 
-      @media (max-width: $tablet-width) {
+      @media (max-width: $large-tablet-width) {
         font-size: 16px;
         line-height: 20px;
+        max-width: 100%;
+      }
+
+      @media (max-width: $mobile-width) {
         max-width: 267px;
       }
     }

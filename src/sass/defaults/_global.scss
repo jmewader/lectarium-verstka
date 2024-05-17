@@ -29,6 +29,9 @@ button {
     fill: $violet-color;
   }
 }
+.pale-violet {
+  background-color: #a069fa14;
+}
 
 .bright-blue {
   background-color: $bright-blue-color;
@@ -47,6 +50,9 @@ button {
     fill: $turquoise-color;
   }
 }
+.pale-turquoise {
+  background-color: $pale-turquoise-color;
+}
 
 .red {
   background-color: $red-color;
@@ -56,6 +62,13 @@ button {
     fill: $red-color;
   }
 }
+.pale-red {
+  background-color: #f2575714;
+}
+
+.pale-orange {
+  background-color: #ff944614;
+}
 
 .blue {
   background-color: $blue-color;
@@ -64,6 +77,9 @@ button {
   svg path {
     fill: $blue-color;
   }
+}
+.pale-blue {
+  background-color: #00ade314;
 }
 
 .container {

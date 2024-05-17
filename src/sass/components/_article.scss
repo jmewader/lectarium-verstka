@@ -1,0 +1,112 @@
+.article {
+  background-color: $white-color;
+  border-radius: 18px;
+  padding: 16px 16px 16px 32px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  &__date {
+    font-size: 15px;
+    line-height: 20px;
+    color: $bright-grey-color;
+    margin: 0 0 8px;
+    display: flex;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    width: 100%;
+    max-width: 438px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  &__stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    &_social {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        object-fit: cover;
+      }
+    }
+
+    &-img {
+      height: 100%;
+      position: relative;
+      bottom: 0;
+      width: 244px;
+      height: 168px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+      }
+
+      @media (max-width: $mobile-width) {
+        right: -18px;
+        top: -3px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 20px;
+      position: absolute;
+      background-color: $white-color;
+      padding: 8px 10px;
+      border-radius: 6px;
+      bottom: 16px;
+      right: 16px;
+    }
+  }
+}

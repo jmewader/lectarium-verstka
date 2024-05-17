@@ -5,6 +5,7 @@
 @import "./defaults/layout";
 @import "./widgets/hero";
 @import "./widgets/hero-teacher";
+@import "./widgets/hero-articles.scss";
 @import "./widgets/numbered-cards";
 @import "./widgets/lektarik-block.scss";
 @import "./widgets/two-cards-block.scss";
@@ -12,6 +13,7 @@
 @import "./widgets/slider-cards.scss";
 @import "./widgets/teachers-result.scss";
 @import "./components/slider-block.scss";
+@import "./components/article.scss";
 @import "./components/tags.scss";
 @import "./components/tags-with-icons.scss";
 @import "./components/list-with-choice.scss";

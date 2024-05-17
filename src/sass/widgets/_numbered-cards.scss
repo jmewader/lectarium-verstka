@@ -3,6 +3,10 @@
   flex-direction: column;
   margin: 180px 0;
 
+  @media (max-width: $large-tablet-width) {
+    margin: 110px 0;
+  }
+
   @media (max-width: $tablet-width) {
     margin: 70px 0;
   }
@@ -150,7 +154,7 @@
     }
 
     @media (max-width: $tablet-width) {
-      padding: 36px 50% 36px 36px;
+      padding: 36px 34% 36px 36px;
     }
 
     @media (max-width: $mobile-width) {

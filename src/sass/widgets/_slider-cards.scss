@@ -12,6 +12,10 @@
     }
   }
 
+  @media (max-width: $large-tablet-width) {
+    margin: 110px 0;
+  }
+
   @media (max-width: $tablet-width) {
     margin: 70px 0;
   }
