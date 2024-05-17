@@ -34,10 +34,10 @@ const path = {
   },
 };
 
-var plugins = require("gulp-load-plugins")()
+var plugins = require("gulp-load-plugins")();
 
 const getTask = (task) => {
-    return require("./tasks/" + task)(gulp, plugins, browsersync);
+  return require("./tasks/" + task)(gulp, plugins, browsersync);
 };
 
 function cleanTask() {
@@ -64,10 +64,12 @@ function imgTask() {
   return imagemin([path.img.src], {
     destination: path.img.dest,
     plugins: [
-      imageminJpegRecompress({ quality: "high" }),
-      imageminPng({ quality: [0.6, 0.8] }),
+      imageminJpegRecompress({
+        quality: "veryhigh", 
+        method: "smallfry", 
+      }),
+      imageminPng({ quality: [0.9, 1.0] }),
       // imageminWebp({ quality: 50 }), // конвертация в WebP
-      imageminPng(),
     ],
   })
     .then((files) => {
@@ -78,7 +80,7 @@ function imgTask() {
     });
 }
 
-const pageList = () => getTask("pageList")
+const pageList = () => getTask("pageList");
 
 function watchTask() {
   return gulp.series(cleanTask, gulp.parallel(htmlTask, pugTask, sassTask, fontsTask, imgTask), pageList, function () {

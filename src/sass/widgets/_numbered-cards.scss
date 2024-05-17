@@ -104,7 +104,6 @@
           font-size: 18px;
           line-height: 22px;
           margin: 0 0 12px;
-          max-width: 240px;
           letter-spacing: -0.01em;
         }
       }
@@ -203,6 +202,7 @@
         position: relative;
         right: auto;
         bottom: auto;
+        order: 1;
       }
     }
 
@@ -222,11 +222,22 @@
     &_descriptions {
       color: $white-color;
       opacity: 0.7;
+      @media (max-width: $tablet-width) {
+        &.main-descriptions {
+          font-size: 15px;
+        }
+      }
     }
   }
 
   &__btn {
     width: 100%;
+
+    &.main-button {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
     svg {
       transform: rotate(90deg);
     }
