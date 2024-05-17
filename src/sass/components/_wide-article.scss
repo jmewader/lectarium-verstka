@@ -1,11 +1,20 @@
-.article {
+.wide-article {
+  background-color: $white-color;
+  border-radius: 18px;
+  padding: 16px 16px 16px 32px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
   &__date {
     font-size: 15px;
     line-height: 20px;
     color: $bright-grey-color;
     margin: 0 0 8px;
     display: flex;
-    flex-direction: column;
   }
 
   &__title {
@@ -17,85 +26,13 @@
     max-width: 438px;
   }
 
-  &__header {
-    box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
-    border-radius: 24px 24px 0 0;
-    position: relative;
-    overflow: hidden;
-    height: 260px;
-
-    @media (max-width: $mobile-width) {
-      border-radius: 20px 20px 0 0;
-      bottom: -24px;
-    }
-
-    &_tag {
-      padding: 8px 10px;
-      border-radius: 6px;
-      font-size: 15px;
-      line-height: 20px;
-      background-color: $white-color;
-    }
-
-    &_time {
-      display: flex;
-      align-items: center;
-      padding: 8px 10px;
-      border-radius: 6px;
-      font-size: 15px;
-      line-height: 20px;
-      background-color: #0b1f332b;
-      color: $white-color;
-      gap: 6px;
-    }
-
-    &_content {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      padding: 24px 24px 0;
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-    }
-
-    &_bg {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      align-items: flex-end;
-      position: absolute;
-      justify-content: flex-end;
-
-      img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    &_img {
-      display: flex;
-      justify-content: center;
-      img {
-        object-fit: contain;
-        height: 100%;
-      }
-    }
-  }
-
-  &__body {
+  &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     width: 100%;
-    padding: 24px;
-    background-color: $white-color;
-    position: relative;
-    z-index: 1;
-    gap: 18px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+    padding: 16px 0;
   }
 
   &__stats {
