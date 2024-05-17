@@ -31,6 +31,8 @@
                         input.custom-input(type="email" id="email" name="email" placeholder="example@example.com")
                     div.form__field
                         input.custom-input(type="tel" id="phone" name="phone" placeholder="Введите ваш телефон")
+                    span.warning-text.visible Пожалуйста, заполните все обязательные поля
+
                 .form__fields.visible
                     .custom-select
                         .custom-select__title.invalid Вы ученик, родитель или учитель?
@@ -47,6 +49,37 @@
                                 li.custom-select__menu_item(data-value="7") Русский язык
                                 li.custom-select__menu_item(data-value="8") st язык
                                 li.custom-select__menu_item(data-value="9") Русский язык
+                        .visible-on-tablet
+                            .modal-overlay
+                                .modal
+                                    button.modal__close-btn
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2873_18660)">
+                                            <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                            <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_2873_18660">
+                                            <rect width="12" height="12" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    .modal__content
+                                        h3.modal__title Вы ученик, родитель или учитель?
+                                    .modal__wrapper
+                                        .custom-radio
+                                            label.custom-radio
+                                                input.custom-radio__input(type='radio', name='radio', checked)
+                                                span.custom-radio__label Ученик
+                                            label.custom-radio
+                                                input.custom-radio__input(type='radio', name='radio')
+                                                span.custom-radio__label Родитель
+                                            label.custom-radio
+                                                input.custom-radio__input(type='radio', name='radio')
+                                                span.custom-radio__label Учитель
+                                    .modal__bottom
+                                        button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                                        button.main-button Применить  
                     .custom-select
                         .custom-select__title Предмет
                             svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
