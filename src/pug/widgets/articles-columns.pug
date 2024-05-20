@@ -1,8 +1,33 @@
 .main-container
     section.articles-columns
-        .articles-columns
-            .articles-columns__item
-                h2.articles-columns__title Самое актуальное
-                include articles
-            .articles-columns__item Фильтры
-               
+        .articles-columns__item.main
+            h2.articles-columns__title Самое актуальное
+            include articles
+            .visible-on-desktop
+                include subscription
+        .articles-columns__item.right
+            ul.sorting-list
+                li.sorting-list__item.active
+                    .sorting-list__item_title Главная
+                    .sorting-list__item_number 24
+                li.sorting-list__item 
+                    .sorting-list__item_title Новости образования
+                    .sorting-list__item_number 12
+                li.sorting-list__item 
+                    .sorting-list__item_title Новости ЕГЭ
+                    .sorting-list__item_number 8
+                li.sorting-list__item 
+                    .sorting-list__item_title Новости ОГЭ
+                    .sorting-list__item_number 10
+                li.sorting-list__item 
+                    .sorting-list__item_title О поступлении
+                    .sorting-list__item_number 9
+                li.sorting-list__item 
+                    .sorting-list__item_title Лайфхаки
+                    .sorting-list__item_number 8
+                li.sorting-list__item 
+                    .sorting-list__item_title Исследования
+                    .sorting-list__item_number 4
+            .hidden-on-desktop
+                include subscription
+            

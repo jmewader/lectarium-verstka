@@ -1,0 +1,53 @@
+.sorting-list {
+  background-color: $white-color;
+  padding: 28px 24px;
+  border-radius: 40px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+
+  @media (max-width: $desktop-width) {
+    padding: 16px 12px;
+    border-radius: 24px;
+  }
+
+  &__item {
+    padding: 20px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+
+    @media (max-width: $desktop-width) {
+      padding: 16px;
+    }
+
+    &_title {
+      font-size: 18px;
+      line-height: 22px;
+
+      @media (max-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &_number {
+      font-size: 18px;
+      line-height: 22px;
+      color: #9aa3ad;
+
+      @media (max-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &.active {
+      background-color: #f7f8f9;
+    }
+  }
+}

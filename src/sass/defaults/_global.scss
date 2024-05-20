@@ -78,6 +78,11 @@ button {
     fill: $blue-color;
   }
 }
+
+.light-blue {
+  background-color: $light-blue-color;
+}
+
 .pale-blue {
   background-color: #00ade314;
 }
@@ -362,6 +367,17 @@ button {
     &::placeholder {
       color: $red-color;
     }
+  }
+
+  &.white {
+    min-height: 56px;
+    border: 1px solid #cad0d6;
+    border-radius: 10px;
+    background-color: $white-color;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 18px;
+    border-radius: 10px;
   }
 }
 

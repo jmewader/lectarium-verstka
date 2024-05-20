@@ -1,0 +1,115 @@
+.subscription {
+  width: 100%;
+  background-color: $white-color;
+  padding: 44px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+
+  @media (max-width: $mobile-width) {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    font-weight: 500;
+
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  &__descriptions {
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__actions {
+    margin: 24px 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__btn {
+    width: 100%;
+    gap: 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__field {
+    display: none;
+
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #f3f4f5;
+    padding: 8px;
+    border-radius: 10px;
+    gap: 8px;
+
+    &_item {
+      padding: 6px 28px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      border-radius: 10px;
+
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+
+      &--vk {
+        &.active {
+          background-color: #0077ff;
+
+          svg path {
+            fill: $white-color;
+          }
+        }
+      }
+
+      &--email {
+        &.active {
+          background-color: #f25757;
+
+          svg path {
+            fill: $white-color;
+            stroke: #f25757;
+          }
+        }
+      }
+
+      &--tg {
+        &.active {
+          background-color: #24a1de;
+
+          svg path {
+            fill: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
