@@ -1,20 +1,24 @@
-.dots {
+.carousel__pagination {
   display: flex;
   justify-content: center;
   gap: 10px;
   width: 100%;
   margin: 24px 0 0;
 
-  &__item {
-    width: 8px;
-    height: 8px;
-    background-color: $dark-blue-color;
-    border-radius: 100%;
-    opacity: 0.2;
-    cursor: pointer;
+  &-button {
+      width: 8px;
+      height: 8px;
+      background-color: $dark-blue-color;
+      border-radius: 100%;
+      opacity: 0.2;
+      cursor: pointer;
 
-    &.active {
-      opacity: 1;
-    }
+      &--active {
+          opacity: 1;
+      }
+
+      &::after {
+          display: none
+      }
   }
 }
