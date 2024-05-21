@@ -7,9 +7,11 @@
                             div
                                 h2.articles-columns__title Самое актуальное
                                 include articles
-                    .articles-columns__item_wrap
-                        h2.articles-columns__title Лайфхаки
-                        include articles-full
+            .articles-columns__item_wrap
+                include comments
+            .articles-columns__item_wrap
+                h2.articles-columns__title Лайфхаки
+                include articles-full
         .articles-columns__item.right
             .articles-columns__item_sticky
                 ul.sorting-list

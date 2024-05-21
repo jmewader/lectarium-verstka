@@ -1,0 +1,116 @@
+.comment {
+  width: 100%;
+  background-color: $white-color;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 168px 1fr;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 289px;
+    border-radius: 20px;
+    grid-template-rows: 152px 1fr;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+
+    @media (max-width: $mobile-width) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__time {
+    font-size: 16px;
+    line-height: 20px;
+    color: #6d7985;
+
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 16px;
+    gap: 8px;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__descriptions {
+    margin: 0 0 24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 0 18px;
+
+      .main-descriptions {
+        line-height: 19px;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 24px 0 0;
+    border-top: 1px solid $light-grey-color;
+
+    @media (max-width: $mobile-width) {
+      padding: 18px 0 0;
+    }
+
+    a {
+      color: $bright-blue-color;
+      font-size: 18px;
+      line-height: 22px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -87,6 +87,16 @@ button {
   background-color: #00ade314;
 }
 
+.bubble-image-red {
+  background-color: #f2575714;
+  color: #f25757;
+}
+
+.bubble-image-blue {
+  background-color: $light-blue-color;
+  color: $bright-blue-color;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1620px;

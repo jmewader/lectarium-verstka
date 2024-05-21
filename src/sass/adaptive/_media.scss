@@ -28,6 +28,10 @@
 
 .visible-on-desktop {
   display: none;
+
+  &.block {
+    display: none;
+  }
   @media (max-width: $desktop-width) {
     display: flex;
 
@@ -77,6 +81,10 @@
 
   &.block {
     display: block;
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
   }
 
   @media (max-width: $desktop-width) {
