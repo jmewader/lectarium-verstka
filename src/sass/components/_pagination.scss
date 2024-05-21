@@ -1,0 +1,84 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+      gap: 24px;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &_item-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @media (max-width: $mobile-width) {
+        gap: 24px;
+      }
+    }
+
+    &_item {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+
+      &.text {
+        @media (max-width: $mobile-width) {
+          display: none;
+        }
+      }
+
+      &--number {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+
+        &.active {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white-color;
+          border-radius: 100%;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 36px;
+            height: 36px;
+            background-color: $bright-blue-color;
+            border-radius: 100%;
+            z-index: -1;
+
+            @media (max-width: $mobile-width) {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+
+      &--dots {
+        color: #9aa3ad;
+      }
+    }
+  }
+}

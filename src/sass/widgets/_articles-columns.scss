@@ -2,7 +2,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 415px;
-  gap: 32px;
+  gap: 44px 32px;
   margin: 80px 0 180px;
   grid-template-areas: "main right";
 
@@ -13,6 +13,37 @@
       "main";
     margin: 40px 0 70px;
     gap: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    top: 0;
+    gap: 70px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 44px 0 0;
+
+    @media (max-width: $mobile-width) {
+      margin: 24px 0 0;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__btn {
+    &.main-button {
+      padding: 0 20px;
+
+      @media (max-width: $mobile-width) {
+        min-height: 60px;
+        width: 100%;
+      }
+    }
   }
 
   &__title {
@@ -42,16 +73,16 @@
       top: 20px;
       gap: 20px;
 
-      @media (max-width: $mobile-width) {
+      @media (max-width: $desktop-width) {
         position: relative;
         top: 0;
+        gap: 40px;
       }
     }
 
     &_wrap {
       display: flex;
       flex-direction: column;
-      gap: 20px;
     }
 
     &_wrap-blocks {

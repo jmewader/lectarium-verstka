@@ -12,6 +12,33 @@
             .articles-columns__item_wrap
                 h2.articles-columns__title Лайфхаки
                 include articles-full
+                .articles-columns__bottom
+                    button.articles-columns__btn.main-button Показать еще
+                    .pagination
+                        ul.pagination__list
+                            li.pagination__list_item
+                                button.pagination__list_item--number.active 1
+                            li.pagination__list_item
+                                button.pagination__list_item--number 2
+                            li.pagination__list_item
+                                button.pagination__list_item--number 3
+                            li.pagination__list_item
+                                button.pagination__list_item--number 4
+                            li.pagination__list_item
+                                button.pagination__list_item--number 5
+                            li.pagination__list_item
+                                .pagination__list_item-group
+                                    button.pagination__list_item 6
+                                    button.pagination__list_item--dots ...
+                                    button.pagination__list_item 10
+                            li.pagination__list_item.text
+                                button.pagination__list_item Следующая страница
+                            li.pagination__list_item
+                                button.pagination__list_item
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.33203 12.3359L6.66536 7.0026L1.33203 1.66927" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
         .articles-columns__item.right
             .articles-columns__item_sticky
                 ul.sorting-list
