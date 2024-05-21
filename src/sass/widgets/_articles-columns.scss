@@ -3,15 +3,22 @@
   width: 100%;
   grid-template-columns: 1fr 415px;
   gap: 44px 32px;
-  margin: 80px 0 180px;
   grid-template-areas: "main right";
+
+  &.main-container {
+    margin: 80px auto 180px;
+
+    @media (max-width: $desktop-width) {
+      margin: 40px 0 70px;
+      padding: 0;
+    }
+  }
 
   @media (max-width: $desktop-width) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "right"
       "main";
-    margin: 40px 0 70px;
     gap: 40px;
   }
 
@@ -80,9 +87,26 @@
       }
     }
 
+    &_wrap-slider {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $desktop-width) {
+        padding: 0 16px;
+      }
+
+      @media (max-width: $tablet-width) {
+        padding: 0;
+      }
+    }
+
     &_wrap {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $desktop-width) {
+        padding: 0 16px;
+      }
     }
 
     &_wrap-blocks {
@@ -103,6 +127,10 @@
       display: flex;
       flex-direction: column;
       grid-area: right;
+
+      @media (max-width: $desktop-width) {
+        padding: 0 16px;
+      }
 
       @media (max-width: $mobile-width) {
         gap: 0px;
