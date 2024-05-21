@@ -45,6 +45,9 @@
   &__btn {
     &.main-button {
       padding: 0 20px;
+      font-size: 16px;
+      line-height: 20px;
+      min-height: 56px;
 
       @media (max-width: $mobile-width) {
         min-height: 60px;
