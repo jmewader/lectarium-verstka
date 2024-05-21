@@ -30,6 +30,10 @@
   display: none;
   @media (max-width: $desktop-width) {
     display: flex;
+
+    &.block {
+      display: block;
+    }
   }
 }
 
@@ -70,6 +74,11 @@
 
 .hidden-on-desktop {
   display: flex;
+
+  &.block {
+    display: block;
+  }
+
   @media (max-width: $desktop-width) {
     display: none;
   }

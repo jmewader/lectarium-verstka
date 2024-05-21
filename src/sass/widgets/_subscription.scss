@@ -58,6 +58,18 @@
     }
   }
 
+  &__agreements {
+    position: relative;
+    z-index: 1;
+    
+    @media (max-width: $mobile-width) {
+      label {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

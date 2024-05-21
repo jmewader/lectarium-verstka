@@ -1,0 +1,31 @@
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999999;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    position: relative;
+    min-height: 30px;
+    padding: 12px 16px;
+    background-color: $white-color;
+  }
+
+  &__btn {
+    @media (max-width: $mobile-width) {
+      &.pale-blue-button {
+        min-height: 50px;
+      }
+    }
+  }
+}

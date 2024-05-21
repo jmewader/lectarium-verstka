@@ -213,6 +213,14 @@ button {
   color: $dark-blue-color;
 }
 
+.pale-blue-button {
+  @extend .main-button;
+  background-color: $light-blue-color;
+  color: $bright-blue-color;
+  gap: 12px;
+  min-height: 50px;
+}
+
 .button-with-frame {
   @extend .main-button;
   background-color: transparent;

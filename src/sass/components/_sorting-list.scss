@@ -7,12 +7,30 @@
   flex-direction: column;
   box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
 
+  &.without-wrapper {
+    gap: 20px;
+    padding: 0 0 36px;
+    border-radius: 0px;
+    box-shadow: none;
+
+    .sorting-list__btn {
+      padding: 0;
+      border-radius: 0px;
+    }
+
+    .sorting-list__btn_title,
+    .sorting-list__btn_number {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
   @media (max-width: $desktop-width) {
     padding: 16px 12px;
     border-radius: 24px;
   }
 
-  &__item {
+  &__btn {
     padding: 20px 16px;
     border-radius: 12px;
     display: flex;
@@ -20,6 +38,8 @@
     width: 100%;
     justify-content: space-between;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 
     @media (max-width: $desktop-width) {
       padding: 16px;

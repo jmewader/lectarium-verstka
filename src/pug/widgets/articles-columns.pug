@@ -1,38 +1,107 @@
 .main-container
     section.articles-columns
         .articles-columns__item.main
-            .articles-columns__item_wrap
-                h2.articles-columns__title Самое актуальное
-                include articles
-                .visible-on-desktop
-                    include subscription
-            .articles-columns__item_wrap
-                h2.articles-columns__title Лайфхаки
-                include articles-full
+            .hidden-on-desktop.block
+                .articles-columns__item_wrap-blocks
+                    .articles-columns__item_wrap
+                            div
+                                h2.articles-columns__title Самое актуальное
+                                include articles
+                    .articles-columns__item_wrap
+                        h2.articles-columns__title Лайфхаки
+                        include articles-full
         .articles-columns__item.right
             .articles-columns__item_sticky
                 ul.sorting-list
-                    li.sorting-list__item.active
-                        .sorting-list__item_title Главная
-                        .sorting-list__item_number 24
-                    li.sorting-list__item 
-                        .sorting-list__item_title Новости образования
-                        .sorting-list__item_number 12
-                    li.sorting-list__item 
-                        .sorting-list__item_title Новости ЕГЭ
-                        .sorting-list__item_number 8
-                    li.sorting-list__item 
-                        .sorting-list__item_title Новости ОГЭ
-                        .sorting-list__item_number 10
-                    li.sorting-list__item 
-                        .sorting-list__item_title О поступлении
-                        .sorting-list__item_number 9
-                    li.sorting-list__item 
-                        .sorting-list__item_title Лайфхаки
-                        .sorting-list__item_number 8
-                    li.sorting-list__item 
-                        .sorting-list__item_title Исследования
-                        .sorting-list__item_number 4
-                .hidden-on-desktop
-                    include subscription
+                    li
+                        button.sorting-list__btn.active
+                            .sorting-list__btn_title Главная
+                            .sorting-list__btn_number 24
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title Новости образования
+                            .sorting-list__btn_number 12
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title Новости ЕГЭ
+                            .sorting-list__btn_number 8
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title Новости ОГЭ
+                            .sorting-list__btn_number 10
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title О поступлении
+                            .sorting-list__btn_number 9
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title Лайфхаки
+                            .sorting-list__btn_number 8
+                    li
+                        button.sorting-list__btn
+                            .sorting-list__btn_title Исследования
+                            .sorting-list__btn_number 4
+                .visible-on-desktop.block
+                    div
+                        h2.articles-columns__title Самое актуальное
+                        include articles
+                include subscription
+            .visible-on-mobile
+                .sticky-bar.visible
+                    .sticky-bar__content
+                        button.sticky-bar__btn.pale-blue-button
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.48438 17.5H7.48438" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.4844 6.5H17.4844" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.4805 17.5H22.4805" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.4844 6.5H2.48438" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4805 20.3984C8.82362 20.3984 7.48047 19.0553 7.48047 17.3984C7.48047 15.7415 8.82362 14.3984 10.4805 14.3984C12.1374 14.3984 13.4805 15.7415 13.4805 17.3984C13.4805 19.0553 12.1374 20.3984 10.4805 20.3984Z" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.4844 9.39844C16.1413 9.39844 17.4844 8.0553 17.4844 6.39844C17.4844 4.74159 16.1413 3.39844 14.4844 3.39844C12.8275 3.39844 11.4844 4.74159 11.4844 6.39844C11.4844 8.0553 12.8275 9.39844 14.4844 9.39844Z" stroke="#2554E7" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            | Категории
+            .modal-overlay
+                .modal
+                    button.modal__close-btn
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2873_18660)">
+                            <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2873_18660">
+                            <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    .modal__content
+                        h3.modal__title Категории
+                        ul.sorting-list.without-wrapper
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Главная
+                                    .sorting-list__btn_number 24
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Новости образования
+                                    .sorting-list__btn_number 12
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Новости ЕГЭ
+                                    .sorting-list__btn_number 8
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Новости ОГЭ
+                                    .sorting-list__btn_number 10
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title О поступлении
+                                    .sorting-list__btn_number 9
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Лайфхаки
+                                    .sorting-list__btn_number 8
+                            li
+                                button.sorting-list__btn
+                                    .sorting-list__btn_title Исследования
+                                    .sorting-list__btn_number 4
             
