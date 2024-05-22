@@ -11,14 +11,14 @@
 
   &.article-hidden-on-tablet {
     display: grid;
-    @media (max-width:  $desktop-width) {
+    @media (max-width: $desktop-width) {
       display: none;
     }
   }
 
   &.article-visible-on-tablet {
     display: none;
-    @media (max-width:  $desktop-width) {
+    @media (max-width: $desktop-width) {
       display: grid;
     }
   }
@@ -82,9 +82,11 @@
 
     &_bottom {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       width: 100%;
       padding: 24px;
+      justify-content: space-between;
+      gap: 20px;
 
       &::before {
         content: "";
@@ -102,6 +104,26 @@
       position: relative;
       width: 100%;
       z-index: 1;
+    }
+
+    &_bottom-play {
+      position: relative;
+      z-index: 2;
+      background-color: $white-color;
+      border: none;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      width: 54px;
+      height: 54px;
+      cursor: pointer;
+
+      @media (max-width: $mobile-width) {
+        right: 16px;
+        bottom: 80px;
+      }
     }
   }
 
@@ -148,11 +170,13 @@
     display: flex;
     justify-content: center;
     height: 100%;
+    max-width: 100%;
+    position: relative;
 
     img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
+      object-fit: contain;
+      position: absolute;
+      max-height: 418px;
     }
   }
 

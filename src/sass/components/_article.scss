@@ -133,6 +133,26 @@
     }
   }
 
+  &__play {
+    position: absolute;
+    background-color: $white-color;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    bottom: 64px;
+    right: 24px;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+
+    @media (max-width: $mobile-width) {
+      right: 16px;
+      bottom: 80px;
+    }
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
