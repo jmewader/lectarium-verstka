@@ -3,6 +3,10 @@
   display: grid;
   grid-template-rows: 238px auto;
 
+  @media (max-width: $mobile-width) {
+    grid-template-rows: 215px auto;
+  }
+
   &.article-hidden-on-tablet {
     display: grid;
     @media (max-width: $desktop-width) {

@@ -22,8 +22,10 @@
     }
 
     @media (max-width: $mobile-width) {
-      font-size: 28px;
-      line-height: 32px;
+      &.main-subtitle {
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
   }
 

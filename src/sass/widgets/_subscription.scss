@@ -42,8 +42,27 @@
 
   &__btn {
     width: 100%;
-    gap: 10px;
+    gap: 12px;
     font-size: 18px;
+    min-height: 60px;
+
+    @media (max-width: $tablet-width) {
+      min-height: 56px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 446px;
+
+    @media (max-width: $tablet-width) {
+      max-width: 100%;
+    }
   }
 
   &__field {
@@ -75,13 +94,22 @@
     border-radius: 10px;
     gap: 8px;
 
+    @media (max-width: $tablet-width) {
+      padding: 4px;
+      gap: 3px;
+    }
+
     &_item {
-      padding: 6px 12px;
+      padding: 4px 12px;
       display: flex;
       align-items: center;
       cursor: pointer;
       justify-content: center;
       border-radius: 10px;
+
+      @media (max-width: $tablet-width) {
+        min-height: 48px;
+      }
 
       svg {
         width: 36px;
