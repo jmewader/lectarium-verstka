@@ -106,6 +106,8 @@
       cursor: pointer;
       justify-content: center;
       border-radius: 10px;
+      border: none;
+      background-color: transparent;
 
       @media (max-width: $tablet-width) {
         min-height: 48px;
