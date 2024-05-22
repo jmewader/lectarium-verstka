@@ -1,28 +1,37 @@
-.wide-container
-    section.lektarik-block
-        .lektarik-block__content
-            .lektarik-block__wrap
-                h2.lektarik-block__title.hidden-on-mobile
-                    | А так же
-                    <br>
-                    | в&nbsp;нашей команде ещё один игрок!
-                h2.lektarik-block__title.visible-on-mobile А так же в&nbsp;нашей команде ещё один игрок!
-                button.main-button.hidden-on-mobile Проверить Лектарика
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="24" height="24" rx="12" fill="white"/>
-                        <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-            .lektarik-block__img
-                img(src="../img/lektarik.png", alt="lektarik")
-            .lektarik-block__chat
-                ul.chat-bubbles
-                    li.chat-bubbles__item.special Привет, я&nbsp;Лектарик – твой навигатор в&nbsp;онлайн&#8209;школе!
-                    li.chat-bubbles__item.second Моя задача помочь тебе найти то, что нужно
-                    li.chat-bubbles__item Неважно кто ты: ученик, родитель или учитель. Расскажи о себе и я быстро тебе помогу!
-            button.main-button.visible-on-mobile.lektarik-block__btn Проверить Лектарика
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="24" height="24" rx="12" fill="white"/>
-                        <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>    
+block lektarik-block
+    - var defaultTitleDesktop = 'А так же<br>в&nbsp;нашей команде ещё один игрок!'
+    - var defaultTitleMobile = 'А так же в&nbsp;нашей команде ещё один игрок!'
+    - var titleDesktop = typeof(titleDesktop) !== 'undefined' ? titleDesktop : defaultTitleDesktop
+    - var titleMobile = typeof(titleMobile) !== 'undefined' ? titleMobile : defaultTitleMobile
+
+    .wide-container
+        section.lektarik-block
+            .lektarik-block__content
+                .lektarik-block__wrap
+                    .lektarik-block__text-block
+                        h2.lektarik-block__title.hidden-on-mobile
+                            | !{titleDesktop}
+                        h2.lektarik-block__title.visible-on-mobile
+                            | !{titleMobile}
+                        if descriptions
+                            p.lektarik-block__descriptions.main-descriptions
+                                | !{descriptions}
+                    button.main-button.hidden-on-mobile Проверить Лектарика
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="white"/>
+                            <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                .lektarik-block__img
+                    img(src="../img/lektarik.png", alt="lektarik")
+                .lektarik-block__chat
+                    ul.chat-bubbles
+                        li.chat-bubbles__item.special Привет, я&nbsp;Лектарик – твой навигатор в&nbsp;онлайн&#8209;школе!
+                        li.chat-bubbles__item.second Моя задача помочь тебе найти то, что нужно
+                        li.chat-bubbles__item Неважно кто ты: ученик, родитель или учитель. Расскажи о себе и я быстро тебе помогу!
+                button.main-button.visible-on-mobile.lektarik-block__btn Проверить Лектарика
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="white"/>
+                            <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
 
 
