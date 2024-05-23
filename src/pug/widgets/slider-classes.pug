@@ -7,54 +7,55 @@ section.slider-classes
                 <br>
                 | у нас свой подход
             .slider-classes__arrows.visible
-                button.slider-classes__arrows_arrow.left
+                button.slider-classes__arrows_arrow.left.carousel__prev
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                button.slider-classes__arrows_arrow
+                button.slider-classes__arrows_arrow.carousel__next
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-        ul.slider-classes__list
-            li.slider-classes__list_item
-                .slider-classes__list_item-bg
-                    img(src="../img/green-bg.png", alt="background")
-                .slider-classes__list_item-content
-                    .slider-classes__list_item-img
-                        img(src="../img/green-book.svg", alt="book")
-                    div
-                        h3.slider-classes__list_item-title Для 8 класса
-                        p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к ОГЭ
-            li.slider-classes__list_item
-                .slider-classes__list_item-bg
-                    img(src="../img/blue-bg.png", alt="background")
-                .slider-classes__list_item-content
-                    .slider-classes__list_item-img
-                        img(src="../img/blue-book.svg", alt="book")
-                    div
-                        h3.slider-classes__list_item-title Для 9 класса
-                        p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
-            li.slider-classes__list_item
-                .slider-classes__list_item-bg
-                    img(src="../img/orange-bg.png", alt="background")
-                .slider-classes__list_item-content
-                    .slider-classes__list_item-img
-                        img(src="../img/orange-book.svg", alt="book")
-                    div
-                        h3.slider-classes__list_item-title Для 10 класса
-                        p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
-            li.slider-classes__list_item
-                .slider-classes__list_item-bg
-                    img(src="../img/violet-bg.png", alt="background")
-                .slider-classes__list_item-content
-                    .slider-classes__list_item-img
-                        img(src="../img/violet-book.svg", alt="book")
-                    div
-                        h3.slider-classes__list_item-title Для 11 класса
-                        p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к&nbsp;ОГЭ
-        
-        .visible-on-tablet
-            ul.carousel__pagination
+        .carousel
+            .carousel__viewport
+                ol.slider-classes__list.carousel__track
+                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev.slider-classes__list_item
+                        .slider-classes__list_item-bg
+                            img(src="../img/green-bg.png", alt="background")
+                        .slider-classes__list_item-content
+                            .slider-classes__list_item-img
+                                img(src="../img/green-book.svg", alt="book")
+                            div
+                                h3.slider-classes__list_item-title Для 8 класса
+                                p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к ОГЭ
+                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--active.slider-classes__list_item
+                        .slider-classes__list_item-bg
+                            img(src="../img/blue-bg.png", alt="background")
+                        .slider-classes__list_item-content
+                            .slider-classes__list_item-img
+                                img(src="../img/blue-book.svg", alt="book")
+                            div
+                                h3.slider-classes__list_item-title Для 9 класса
+                                p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
+                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--next.slider-classes__list_item
+                        .slider-classes__list_item-bg
+                            img(src="../img/orange-bg.png", alt="background")
+                        .slider-classes__list_item-content
+                            .slider-classes__list_item-img
+                                img(src="../img/orange-book.svg", alt="book")
+                            div
+                                h3.slider-classes__list_item-title Для 10 класса
+                                p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
+                    li.slider-classes__list_item.carousel__slide.slider-classes__list_item
+                        .slider-classes__list_item-bg
+                            img(src="../img/violet-bg.png", alt="background")
+                        .slider-classes__list_item-content
+                            .slider-classes__list_item-img
+                                img(src="../img/violet-book.svg", alt="book")
+                            div
+                                h3.slider-classes__list_item-title Для 11 класса
+                                p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к&nbsp;ОГЭ
+        .visible-on-desktop
+            ol.carousel__pagination
                 li.carousel__pagination-item
                     button.carousel__pagination-button
                 li.carousel__pagination-item
