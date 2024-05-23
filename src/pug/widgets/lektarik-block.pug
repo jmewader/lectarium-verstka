@@ -1,8 +1,8 @@
 block lektarik-block
     - var defaultTitleDesktop = 'А так же<br>в&nbsp;нашей команде ещё один игрок!'
     - var defaultTitleMobile = 'А так же в&nbsp;нашей команде ещё один игрок!'
-    - var titleDesktop = typeof(titleDesktop) !== 'undefined' ? titleDesktop : defaultTitleDesktop
-    - var titleMobile = typeof(titleMobile) !== 'undefined' ? titleMobile : defaultTitleMobile
+    - var lektarikTitleDesktop = typeof(lektarikTitleDesktop) !== 'undefined' ? lektarikTitleDesktop : defaultTitleDesktop
+    - var lektarikTitleMobile = typeof(lektarikTitleMobile) !== 'undefined' ? lektarikTitleMobile : defaultTitleMobile
 
     .wide-container
         section.lektarik-block
@@ -10,12 +10,12 @@ block lektarik-block
                 .lektarik-block__wrap
                     .lektarik-block__text-block
                         h2.lektarik-block__title.hidden-on-mobile
-                            | !{titleDesktop}
+                            | !{lektarikTitleDesktop}
                         h2.lektarik-block__title.visible-on-mobile
-                            | !{titleMobile}
-                        if descriptions
+                            | !{lektarikTitleMobile}
+                        if lektarikDescriptions
                             p.lektarik-block__descriptions.main-descriptions
-                                | !{descriptions}
+                                | !{lektarikDescriptions}
                     button.main-button.hidden-on-mobile Проверить Лектарика
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" rx="12" fill="white"/>
