@@ -20,6 +20,7 @@
       border: none;
       background-color: transparent;
       cursor: pointer;
+      text-decoration: none;
     }
 
     &_item-group {
@@ -36,6 +37,8 @@
       font-size: 18px;
       line-height: 22px;
       font-weight: 500;
+      text-decoration: none;
+      color: $dark-blue-color;
 
       &.text {
         span {
@@ -53,6 +56,8 @@
         font-size: 18px;
         line-height: 22px;
         font-weight: 500;
+        text-decoration: none;
+        color: $dark-blue-color;
 
         &.active {
           display: flex;
@@ -84,6 +89,7 @@
 
       &--dots {
         color: #9aa3ad;
+        text-decoration: none;
       }
     }
   }

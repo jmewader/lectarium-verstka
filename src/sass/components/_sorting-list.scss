@@ -40,6 +40,8 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    text-decoration: none;
+    color: $dark-blue-color;
 
     @media (max-width: $desktop-width) {
       padding: 16px;
