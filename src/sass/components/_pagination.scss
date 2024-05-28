@@ -16,13 +16,6 @@
       gap: 24px;
     }
 
-    button {
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
     &_item-group {
       display: flex;
       align-items: center;
@@ -39,6 +32,9 @@
       font-weight: 500;
       text-decoration: none;
       color: $dark-blue-color;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
 
       &.text {
         span {
@@ -90,6 +86,9 @@
       &--dots {
         color: #9aa3ad;
         text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
       }
     }
   }
