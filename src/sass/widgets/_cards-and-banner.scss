@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   margin: 180px 0;
+  gap: 20px;
+
+  .main-container {
+    width: 100%;
+  }
 
   @media (max-width: $large-tablet-width) {
     margin: 110px 0;
@@ -9,6 +14,7 @@
 
   @media (max-width: $tablet-width) {
     margin: 70px 0;
+    gap: 70px;
   }
 
   &__title {
