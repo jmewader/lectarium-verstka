@@ -21,6 +21,10 @@ button {
   @include common-text;
 }
 
+.purple {
+  background-color: #853fea;
+}
+
 .violet {
   background-color: $violet-color;
 }
@@ -187,7 +191,7 @@ button {
   color: #fff;
   justify-content: center;
   width: max-content;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .main-button-small {

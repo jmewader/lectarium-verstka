@@ -47,3 +47,42 @@
     }
   }
 }
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow: auto;
+
+  @media (max-width: $tablet-width) {
+    gap: 8px;
+  }
+
+  &__tab {
+    font-size: 18px;
+    line-height: 22px;
+    min-height: 62px;
+    padding: 0 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $light-grey-color;
+    border-radius: 10px;
+    background-color: $white-color;
+    cursor: pointer;
+    width: max-content;
+
+    @media (max-width: $tablet-width) {
+      min-height: 50px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 20px;
+    }
+
+    &.action {
+      border: 1px solid $bright-blue-color;
+      color: $bright-blue-color;
+    }
+  }
+}

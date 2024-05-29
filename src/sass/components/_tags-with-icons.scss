@@ -4,6 +4,17 @@
   gap: 16px 28px;
   flex-wrap: wrap;
 
+  &.scroll {
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      overflow: auto;
+      flex-wrap: nowrap;
+      width: calc(100% + 44px);
+      margin: 0 -24px;
+      padding: 0 24px;
+    }
+  }
+
   @media (max-width: $mobile-width) {
     gap: 12px;
   }
@@ -16,10 +27,9 @@
     font-weight: 400;
     color: $dark-blue-color;
     gap: 10px;
+    min-width: fit-content;
 
     @media (max-width: $mobile-width) {
-      font-size: 13px;
-      line-height: 17px;
       gap: 6px;
 
       svg {
