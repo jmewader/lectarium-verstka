@@ -155,7 +155,7 @@
       }
     }
 
-    @media (max-width: $small-mobile-width) {
+    @media (max-width: $mobile-width) {
       height: 536px;
       justify-content: center;
       position: relative;
@@ -192,11 +192,8 @@
       @media (max-width: $mobile-width) {
         height: 100%;
         width: auto;
+        bottom: -128px;
       }
-    }
-
-    @media (max-width: $mobile-width) {
-      width: auto;
     }
   }
 

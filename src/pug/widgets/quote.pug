@@ -1,7 +1,9 @@
 .wide-container
     section.quote
         .quote__background
-            img(src="../img/background-quote.png", alt="background")
+            picture
+                    source(srcset="../img/background-quote-tablet.png", type="image/png", media="(max-width: 375px)")
+                    img(src="../img/background-quote.png", alt="background")
         .quote__content
             .quote__text-block
                 .quote__icon
