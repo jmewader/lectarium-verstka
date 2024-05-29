@@ -159,8 +159,7 @@
     flex-shrink: 0;
     z-index: 1;
     position: absolute;
-    width: 540px;
-    height: 528px;
+    max-width: 540px;
     right: 145px;
     bottom: 0;
 
@@ -176,8 +175,11 @@
 
     @media (max-width: $tablet-width) {
       width: 100%;
-      height: auto;
-      max-height: 400px;
+      max-width: 395px;
+    }
+
+    @media (max-width: $mobile-width) {
+      max-width: 295px;
     }
 
     img {
