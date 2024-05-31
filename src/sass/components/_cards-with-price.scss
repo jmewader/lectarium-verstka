@@ -131,11 +131,14 @@
       }
 
       &--img {
-        position: relative;
         display: flex;
+        max-height: 276px;
+        height: 100%;
+        position: relative;
+        right: -13px;
 
         @media (max-width: $tablet-width) {
-          height: 225px;
+          right: auto;
         }
 
         img {

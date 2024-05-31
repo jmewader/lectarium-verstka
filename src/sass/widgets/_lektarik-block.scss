@@ -83,6 +83,13 @@
       max-width: 100%;
     }
 
+    @media (max-width: $mobile-width) {
+      &.main-descriptions {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
     @media (max-width: $small-mobile-width) {
       max-width: 288px;
     }

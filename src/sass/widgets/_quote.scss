@@ -218,7 +218,7 @@
     &_wrap {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 7px;
 
       @media (max-width: $desktop-width) {
         gap: 4px;
@@ -232,7 +232,7 @@
     &_author {
       font-weight: 500;
       font-size: 24px;
-      line-height: 28px;
+      line-height: 32px;
       letter-spacing: -0.02em;
 
       @media (max-width: $mobile-width) {

@@ -159,6 +159,12 @@
         img {
           width: 100%;
           object-fit: contain;
+          right: 8px;
+          position: relative;
+
+          @media (max-width: $mobile-width) {
+            right: auto;
+          }
         }
 
         @media (max-width: $mobile-width) {

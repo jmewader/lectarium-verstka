@@ -97,7 +97,7 @@
 
     &_item-blur {
       color: $white-color;
-      padding: 7px 11px;
+      padding: 7px 12px;
       backdrop-filter: blur(44px);
       background: rgba(21, 20, 20, 0.1);
       border-radius: 5px;
@@ -119,7 +119,7 @@
     &_item {
       background-color: $white-color;
       color: $dark-blue-color;
-      padding: 7px 11px;
+      padding: 8px 11px 7px;
       border-radius: 5px;
     }
 
@@ -594,5 +594,3 @@
     }
   }
 }
-
-

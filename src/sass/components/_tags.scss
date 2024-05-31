@@ -54,6 +54,9 @@
   gap: 10px;
   width: 100%;
   overflow: auto;
+  width: calc(100% + 32px);
+  margin: 0 -16px;
+  padding: 0 16px;
 
   @media (max-width: $tablet-width) {
     gap: 8px;
