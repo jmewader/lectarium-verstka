@@ -193,5 +193,12 @@
     width: 100%;
     order: 1;
     margin: 0 0 24px;
+
+    @media (max-width: $tablet-width) {
+      &.main-button {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
   }
 }
