@@ -188,6 +188,7 @@
 
     @media (max-width: $small-mobile-width) {
       height: 100%;
+      max-height: 529px;
       justify-content: flex-end;
 
       img {

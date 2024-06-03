@@ -259,8 +259,14 @@
         height: 362px;
         width: auto;
         bottom: 0;
-        right: -29px;
         position: absolute;
+      }
+    }
+
+    @media (max-width: $small-mobile-width) {
+
+      img {
+        right: -29px;
       }
     }
   }

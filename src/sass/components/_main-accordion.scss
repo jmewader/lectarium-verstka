@@ -7,14 +7,14 @@
     display: flex;
     align-items: center;
     font-size: 28px;
-    line-height: 32px;
+    line-height: 31px;
     gap: 36px;
     font-weight: 500;
 
     @media (max-width: $tablet-width) {
       font-size: 18px;
-      line-height: 20px;
-      gap: 16px;
+      line-height: 19.7px;
+      gap: 15px;
       align-items: flex-start;
     }
   }
@@ -63,12 +63,24 @@
       width: 24px;
       height: 24px;
     }
+
+    @media (max-width: $mobile-width) {
+      svg {
+        width: 10px;
+      }
+    }
   }
 
   &[open] {
     .main-accordion__icon {
       svg {
         transform: rotate(180deg);
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      .main-accordion__title {
+        align-items: center;
       }
     }
   }
