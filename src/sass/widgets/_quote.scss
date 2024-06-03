@@ -156,7 +156,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      height: 536px;
+      height: 530px;
       justify-content: center;
       position: relative;
       right: -35px;
@@ -277,7 +277,7 @@
       @media (max-width: $mobile-width) {
         flex-direction: column;
         align-items: flex-end;
-        gap: 18px;
+        gap: 24px;
       }
     }
   }
