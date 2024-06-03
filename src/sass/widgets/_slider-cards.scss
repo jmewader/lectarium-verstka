@@ -79,9 +79,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    overflow-x: auto;
 
     @media (max-width: $desktop-width) {
-      overflow-x: scroll;
       width: 100%;
       display: flex;
 
@@ -170,8 +170,6 @@
         gap: 24px;
       }
     }
-
- 
 
     &_bottom-prices {
       margin: 0 0 18px;

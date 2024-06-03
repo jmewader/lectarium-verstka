@@ -1,3 +1,9 @@
+@media (max-width: $desktop-width) {
+  .wide-container {
+    padding: 0 16px;
+  }
+}
+
 @media (max-width: $large-tablet-width) {
   .main-subtitle {
     font-size: 32px;

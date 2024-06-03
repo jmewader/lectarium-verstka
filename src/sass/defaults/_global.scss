@@ -235,6 +235,19 @@ button {
   min-height: 50px;
 }
 
+.light-blue-button {
+  @extend .main-button;
+  background-color: $light-blue-color;
+  color: $bright-blue-color;
+}
+
+.transparent-button {
+  @extend .main-button;
+  background-color: transparent;
+  color: $bright-blue-color;
+  min-height: 56px;
+}
+
 .button-with-frame {
   @extend .main-button;
   background-color: transparent;

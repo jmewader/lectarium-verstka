@@ -1,0 +1,346 @@
+.header {
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: $large-tablet-width) {
+    padding: 16px 0;
+  }
+
+  .wide-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $large-tablet-width) {
+      padding: 0 16px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 208px;
+    flex-shrink: 0;
+    margin: 0 32px 0 0;
+
+    @media (max-width: $desktop-width) {
+      width: 158px;
+      margin: 0 16px 0 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $large-tablet-width) {
+      order: 1;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__btn {
+    padding: 0 22px;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 140px;
+    color: $dark-blue-color;
+
+    @media (max-width: $large-desktop-width) {
+      min-width: 60px;
+      padding: 0 18px;
+    }
+
+    @media (max-width: $large-tablet-width) {
+      &.main-button {
+        width: 52px;
+        height: 52px;
+        min-height: 52px;
+        padding: 0;
+        min-width: auto;
+        background-color: $light-blue-color;
+      }
+    }
+
+    &_icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $large-tablet-width) {
+        display: none;
+      }
+    }
+
+    &_icon-mobile {
+      display: none;
+
+      @media (max-width: $large-tablet-width) {
+        display: flex;
+      }
+    }
+
+    span {
+      @media (max-width: $large-desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  &__eye-btn {
+    padding: 0 18px;
+
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+  }
+
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $light-blue-color;
+    padding: 2px;
+    border-radius: 10px;
+
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+
+    &_input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: $white-color;
+      border-radius: 8px;
+      padding: 4px;
+      height: 56px;
+    }
+
+    &_input-btn {
+      background-color: $light-blue-color;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 6px;
+      gap: 4px;
+      font-size: 15px;
+      line-height: 19px;
+      min-height: 48px;
+    }
+
+    &_input-btn-icon {
+      display: flex;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      justify-content: center;
+    }
+
+    &_input {
+      border: none;
+      width: 414px;
+      outline: none;
+      box-sizing: border-box;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
+      padding: 0 16px;
+      height: inherit;
+      color: #6d737a;
+      @include common-text;
+
+      &::placeholder {
+        font-size: 18px;
+        line-height: 22px;
+        color: #9aa3ad;
+      }
+
+      @media (max-width: $desktop-width) {
+        width: 244px;
+      }
+    }
+
+    &_btn {
+      width: 62px;
+      height: 56px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+
+    &_phone {
+      font-size: 18px;
+      line-height: 22px;
+      color: $dark-blue-color;
+      text-decoration: none;
+    }
+
+    &_items {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      &-item {
+        display: flex;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    &_buttons {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 0 16px;
+
+      &.visible {
+        display: flex;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        &.visible {
+          display: none;
+        }
+      }
+
+      &-btn {
+        min-height: 52px;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 22px;
+
+        span {
+          color: $dark-blue-color;
+
+          @media (max-width: $large-desktop-width) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_authorization {
+      display: none;
+      align-items: center;
+      margin: 0 0 0 44px;
+
+      &.visible {
+        display: flex;
+      }
+
+      &-cart {
+        position: relative;
+        margin: 5px 24px 0 0;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          border-radius: 20px;
+          width: 18px;
+          height: 18px;
+          background: $bright-blue-color;
+          font-weight: 500;
+          font-size: 13px;
+          color: $white-color;
+          top: -5px;
+          right: -5px;
+        }
+      }
+
+      &-user {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @media (max-width: $large-tablet-width) {
+          display: none;
+        }
+
+        &-avatar-blue-border {
+          width: 44px;
+          height: 44px;
+          border: 1px solid $bright-blue-color;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 4px;
+        }
+
+        &-avatar {
+          border-radius: 50%;
+          border: 2px solid #f8fafe;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: auto 46px;
+          background-position: center;
+        }
+
+        &-arrow {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
