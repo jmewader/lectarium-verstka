@@ -21,6 +21,16 @@ button {
   @include common-text;
 }
 
+.chemistry {
+  background-color: $green-color;
+}
+
+.chemistry-icon {
+  svg path {
+    fill: $green-color;
+  }
+}
+
 .purple {
   background-color: #853fea;
 }

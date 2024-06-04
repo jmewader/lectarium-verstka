@@ -1,0 +1,1128 @@
+.popup {
+  display: none;
+  justify-content: center;
+  overflow: auto;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(11, 31, 51, 0.35);
+  z-index: 10;
+
+  .text-mobile {
+    display: none;
+  }
+
+  &.show {
+    display: flex;
+  }
+
+  &.popup-tariff.small-tariffs {
+    .popup-content {
+      .popup-arrow {
+        display: none;
+      }
+
+      .popup-items {
+        justify-content: center;
+
+        .popup-item {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .popup-content {
+    border-radius: 40px;
+    background: #fff;
+    position: relative;
+    padding: 44px;
+    height: fit-content;
+    box-sizing: border-box;
+    width: 1070px;
+
+    .popup-close {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      right: -48px;
+      top: 0;
+      cursor: pointer;
+    }
+
+    .popup-arrow {
+      border-radius: 60px;
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -24px;
+      cursor: pointer;
+
+      &.prev {
+        left: 20px;
+      }
+
+      &.next {
+        right: 20px;
+      }
+
+      .popup-arrow-icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .popup-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 44px;
+
+      .popup-title {
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        color: $dark-blue-color;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+      }
+
+      .popup-navigation {
+        display: flex;
+        align-items: center;
+
+        .popup-navigation-item {
+          display: flex;
+          align-items: center;
+
+          .popup-navigation-item-number {
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            background: #9aa3ad;
+            margin-right: 8px;
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .popup-navigation-item-text {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: #9aa3ad;
+            margin-top: 1px;
+          }
+
+          &.active {
+            .popup-navigation-item-number {
+              background: $dark-blue-color;
+            }
+
+            .popup-navigation-item-text {
+              color: $dark-blue-color;
+            }
+          }
+        }
+
+        .popup-navigation-line {
+          width: 10px;
+          height: 1px;
+          background: $dark-blue-color;
+          opacity: 0.2;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .popup-items {
+      display: flex;
+      gap: 44px;
+
+      .popup-item {
+        width: 298px;
+
+        .popup-item-head {
+          margin-bottom: 32px;
+          height: 228px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .popup-item-head-info {
+            .popup-item-head-title {
+              display: flex;
+              align-items: center;
+              margin-bottom: 18px;
+
+              .popup-item-head-icon {
+                height: 54px;
+              }
+
+              .popup-item-head-name {
+                margin-left: 18px;
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                letter-spacing: -0.02em;
+                color: $dark-blue-color;
+                line-height: 117%;
+                //margin-bottom: 2px;
+              }
+            }
+
+            .popup-item-head-text {
+              @include common-text;
+              font-size: 16px;
+              line-height: 125%;
+              color: $pale-blue-color;
+              letter-spacing: 0;
+            }
+          }
+
+          .popup-item-head-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              font-size: 24px;
+              letter-spacing: -0.02em;
+              color: $dark-blue-color;
+            }
+
+            .button {
+              padding: 14px 20px;
+              width: 139px;
+              height: 52px;
+              background: $bright-blue-color;
+              gap: 10px;
+              box-sizing: border-box;
+              @include common-text;
+              font-size: 16px;
+              color: #fff;
+
+              .selected-text {
+                display: none;
+
+                &.icon {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+
+              .regular-text {
+                &.icon {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+
+              &.selected {
+                color: $dark-blue-color;
+                background: #f3f4f5;
+
+                .selected-text {
+                  display: block;
+                }
+
+                .regular-text {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+
+        .popup-item-info-add {
+          border-radius: 10px;
+          padding: 12px 18px;
+          background: #f3f4f5;
+          @include common-text;
+          font-size: 15px;
+          color: $dark-blue-color;
+          margin-bottom: 10px;
+        }
+
+        .popup-item-info-items {
+          width: 100%;
+          border-radius: 12px;
+          padding: 18px;
+          background: #f7f8f9;
+          box-sizing: border-box;
+
+          .popup-item-info-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+
+            svg {
+              margin: -1px 8px 2px 0;
+            }
+
+            span {
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 133%;
+              color: $dark-blue-color;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .popup-action {
+      display: none;
+      border-radius: 25px 25px 0 0;
+      padding: 12px 16px;
+      width: 100%;
+      box-sizing: border-box;
+      box-shadow: 0 4px 16px 0 rgba(37, 84, 231, 0.1), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+      background: #fff;
+
+      button {
+        padding: 15px 18px;
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  &.popup-month {
+    &.small-month {
+      .popup-content {
+        padding: 44px 44px 152px;
+
+        .popup-items {
+          grid-template-rows: 1fr;
+          .product-card-rate {
+            &:nth-child(3),
+            &:nth-child(4) {
+              display: none;
+            }
+
+            .product-card-rate-info {
+              .product-card-rate-image {
+                display: block;
+                margin-bottom: 20px;
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .popup-content {
+      padding: 44px 44px 108px;
+
+      .popup-items {
+        display: grid;
+        grid-template-columns: repeat(2, 469px);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 44px;
+
+        .product-card-rate {
+          border: 1px solid $light-grey-color;
+          border-radius: 20px;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .product-card-rate-info {
+            margin-bottom: 20px;
+
+            .product-card-rate-image {
+              display: none;
+            }
+
+            .product-card-rate-info-head {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              margin-bottom: 16px;
+
+              .product-card-rate-info-term {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 117%;
+                letter-spacing: -0.02em;
+                color: $dark-blue-color;
+                min-width: 126px;
+              }
+
+              .product-card-rate-info-text {
+                @include common-text;
+                font-size: 16px;
+                text-align: right;
+                line-height: 125%;
+                color: $pale-blue-color;
+                width: 172px;
+
+                .text-mobile {
+                }
+              }
+            }
+
+            .product-card-rate-info-items {
+              .product-card-rate-info-item {
+                display: flex;
+                //align-items: center;
+
+                span {
+                  margin-left: 8px;
+                  @include common-text;
+                  font-size: 16px;
+                  color: $dark-blue-color;
+                  margin-bottom: -1px;
+                }
+
+                &.count {
+                  margin-bottom: 12px;
+                }
+              }
+            }
+          }
+
+          .product-card-button {
+            .button {
+              width: 100%;
+              border-radius: 10px;
+              padding: 15px 18px;
+              height: 60px;
+              box-sizing: border-box;
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              letter-spacing: -0.01em;
+              font-size: 20px;
+            }
+          }
+
+          &.rate-gray {
+            .button {
+              color: $dark-blue-color;
+              background: #f3f4f5;
+            }
+          }
+
+          &.rate-blue {
+            border: 1px solid $bright-blue-color;
+            background: #fafcff;
+
+            .product-card-rate-info {
+              .product-card-rate-info-term {
+                color: $bright-blue-color;
+              }
+
+              .product-card-rate-info-text {
+                margin-top: 1px;
+              }
+            }
+
+            .product-card-button {
+              .button {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                letter-spacing: -0.01em;
+                font-size: 20px;
+                width: 100%;
+                height: 60px;
+                padding: 15px 18px;
+                box-sizing: border-box;
+
+                .discount {
+                  margin-left: 12px;
+                  border-radius: 5px;
+                  padding: 6px;
+                  width: 58px;
+                  height: 34px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #fff;
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  font-size: 18px;
+                  letter-spacing: -0.01em;
+                  color: $bright-blue-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.about-teacher {
+    .popup-content {
+      display: flex;
+      width: 1162px;
+
+      .popup-teacher-info-title {
+        display: none;
+      }
+
+      .popup-teacher-image {
+        margin-right: 44px;
+        min-width: 296px;
+        height: 320px;
+        background-position: center;
+
+        img {
+          width: 296px;
+        }
+      }
+
+      .popup-teacher-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .popup-teacher-info-head {
+          .popup-teacher-info-name {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            letter-spacing: -0.01em;
+            color: $dark-blue-color;
+            margin-bottom: 18px;
+          }
+
+          .popup-teacher-info-description {
+            margin-left: 2px;
+
+            .popup-teacher-info-description-item {
+              margin-bottom: 8px;
+              @include common-text;
+              font-size: 18px;
+              color: $pale-blue-color;
+              display: flex;
+              align-items: center;
+
+              div {
+                width: 15px;
+                height: 1px;
+                margin-right: 5px;
+                margin-bottom: 2px;
+                background: $pale-blue-color;
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+        .popup-teacher-info-advantages {
+          display: flex;
+          gap: 44px;
+
+          .popup-teacher-info-advantage {
+            .popup-teacher-info-advantage-big {
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              font-size: 28px;
+              letter-spacing: -0.01em;
+              color: $dark-blue-color;
+            }
+
+            .popup-teacher-info-advantage-small {
+              @include common-text;
+              font-size: 16px;
+              color: $pale-blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.courses-page {
+  padding: 81px 0 119px;
+  background: #fafcff;
+
+  .container {
+    position: relative;
+  }
+
+  .add-to-cart-block {
+    right: -100px;
+    top: -92px;
+    position: absolute;
+    padding: 18px;
+    border-radius: 18px;
+    width: 314px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+    background: #fff;
+    @include common-text;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 54px;
+      bottom: 100%;
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid white;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+
+    .add-to-cart-block-text {
+      font-size: 16px;
+      line-height: 125%;
+      color: $dark-blue-color;
+      margin-bottom: 12px;
+    }
+
+    .button {
+      display: block;
+      border-radius: 10px;
+      padding: 14px 22px;
+      width: 278px;
+      height: 48px;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  .text-mobile {
+    display: none;
+  }
+
+  .main-title {
+    margin-bottom: 44px;
+  }
+
+  .filter-button {
+    display: none;
+
+    .filter-button-icon {
+      height: 20px;
+    }
+  }
+
+  .courses-content {
+    display: flex;
+    align-items: flex-start;
+
+    .courses-cards {
+      max-width: 1142px;
+      margin-right: 32px;
+
+      .courses-card {
+        padding: 24px 44px 44px 24px;
+        box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+        background: #fff;
+        border-radius: 40px;
+        display: flex;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .courses-card-image {
+          border-radius: 18px;
+          min-width: 296px;
+          height: 320px;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-right: 44px;
+          position: relative;
+          overflow: hidden;
+          align-items: center;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(180deg, rgba(11, 31, 51, 0) 0%, rgba(10, 29, 48, 0) 0.01%, rgba(11, 31, 51, 0.3) 100%);
+            z-index: 2;
+          }
+
+          .courses-card-image-img {
+            display: flex;
+            max-height: 353px;
+            height: 100%;
+            position: relative;
+            right: -100px;
+            z-index: 1;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .courses-card-image-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .courses-card-image-tab {
+            border-radius: 4px;
+            width: fit-content;
+            padding: 8px 10px;
+            box-sizing: border-box;
+            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.9);
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            color: $dark-blue-color;
+            position: absolute;
+            z-index: 2;
+            top: 24px;
+            left: 24px;
+            text-decoration: none;
+          }
+
+          .courses-card-image-name {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 114%;
+            letter-spacing: -0.01em;
+            color: #fff;
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            z-index: 2;
+            text-decoration: none;
+
+            &.text-mobile {
+              display: none;
+            }
+
+            .selector {
+              border-radius: 10px;
+              background: rgba(11, 31, 51, 0.15);
+              backdrop-filter: blur(44px);
+              width: 54px;
+              height: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 4px;
+              margin-bottom: 12px;
+
+              .selector-item {
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                background-color: #fff;
+                opacity: 0.3;
+
+                &.active {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+
+        .courses-card-details {
+          padding-top: 20px;
+          width: 100%;
+
+          .courses-card-details-name {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            letter-spacing: -0.01em;
+            line-height: 32px;
+            color: $dark-blue-color;
+            margin-bottom: 12px;
+
+            .to-mobile {
+              display: none;
+            }
+          }
+
+          .courses-card-details-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            gap: 6px;
+
+            &.text-mobile {
+              display: none;
+            }
+
+            .courses-card-details-tab {
+              border: 1px solid $light-grey-color;
+              border-radius: 5px;
+              padding: 7px 11px;
+              height: 34px;
+              box-sizing: border-box;
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              color: $dark-blue-color;
+
+              .teacher-info-icon {
+                display: none;
+              }
+
+              &.tab-gray {
+                backdrop-filter: blur(44px);
+                background: #f3f4f5;
+                border: 0;
+              }
+
+              &.teacher-info {
+                display: flex;
+                gap: 4px;
+                backdrop-filter: blur(44px);
+                background: #f3f4f5;
+                border: 0;
+                align-items: center;
+
+                .teacher-info-icon {
+                  display: block;
+                  height: 16px;
+                }
+              }
+            }
+          }
+
+          .courses-card-details-advantages {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+            gap: 16px;
+
+            &.text-mobile {
+              display: none;
+            }
+
+            .courses-card-details-advantage {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-right: 12px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+
+              .courses-card-details-advantage-icon {
+                width: 20px;
+                height: 20px;
+              }
+
+              .courses-card-details-advantage-text {
+                @include common-text;
+                font-size: 16px;
+                color: $dark-blue-color;
+
+                &.records {
+                  margin-bottom: -1px;
+                }
+              }
+            }
+          }
+
+          .courses-card-details-text {
+            @include common-text;
+            font-size: 16px;
+            line-height: 125%;
+            color: $pale-blue-color;
+            max-width: 650px;
+            margin-bottom: 42px;
+            margin-left: 1px;
+          }
+
+          .courses-card-details-action {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: flex-end;
+
+            .courses-card-details-action-info {
+              .courses-card-details-action-info-price {
+                display: flex;
+
+                .price-new {
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  font-size: 28px;
+                  letter-spacing: -0.01em;
+                  color: $dark-blue-color;
+                  margin-right: 10px;
+
+                  span {
+                    color: #2554e7;
+                  }
+                }
+
+                .price-old {
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  font-size: 16px;
+                  letter-spacing: -0.01em;
+                  text-decoration: line-through;
+                  color: #9aa3ad;
+                  margin-top: 2px;
+                }
+              }
+
+              .courses-card-details-action-info-extra {
+                @include common-text;
+                font-size: 16px;
+                color: #9aa3ad;
+
+                &.discount {
+                  margin-top: 4px;
+                  border-radius: 8px;
+                  padding: 8px;
+                  background: #f3f4f5;
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  letter-spacing: -0.01em;
+                  color: $dark-blue-color;
+
+                  span {
+                    color: $bright-blue-color;
+                  }
+                }
+              }
+            }
+
+            .courses-card-details-action-button {
+              margin-bottom: 1px;
+
+              .button {
+                padding: 16px 22px;
+                @include common-text;
+                font-size: 16px;
+                color: #fff;
+                gap: 16px;
+                width: 161px;
+                height: 56px;
+                box-sizing: border-box;
+
+                .selected-text {
+                  display: none;
+
+                  &.icon {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+
+                .regular-text {
+                  display: flex;
+
+                  &.icon {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+
+                &.selected {
+                  color: $dark-blue-color;
+                  background: #f3f4f5;
+
+                  .selected-text {
+                    display: flex;
+                  }
+
+                  .regular-text {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .courses-filter {
+      border-radius: 40px;
+      padding: 44px;
+      box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+      background: #fff;
+      box-sizing: border-box;
+      min-width: 446px;
+      width: 446px;
+
+      .courses-filter-title {
+        display: none;
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+        color: $dark-blue-color;
+        margin-bottom: 20px;
+      }
+
+      .courses-filter-close {
+        display: none;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+
+      .courses-filter-categories {
+        .courses-filter-category {
+          margin-bottom: 28px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .courses-filter-category-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            color: $dark-blue-color;
+            margin-bottom: 16px;
+            cursor: pointer;
+
+            .courses-filter-category-head-icon {
+              width: 24px;
+              height: 24px;
+              margin-bottom: 2px;
+            }
+          }
+
+          .courses-filter-category-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            &.text-mobile {
+              display: none;
+            }
+
+            .courses-filter-category-item {
+              border: 1px solid $light-grey-color;
+              border-radius: 8px;
+              padding: 10px 15px;
+              background: #fff;
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              color: $dark-blue-color;
+
+              .remove-filter {
+                display: none;
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+              }
+
+              &.active {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border: 1px solid $bright-blue-color;
+                color: $bright-blue-color;
+
+                .remove-filter {
+                  display: block;
+
+                  .mobile {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .courses-filter-action {
+        margin-top: 28px;
+
+        a {
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: -0.01em;
+          color: $bright-blue-color;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .link-icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}
