@@ -682,6 +682,10 @@
             .courses-card-image-img {
               right: -65px;
               width: fit-content;
+
+              img {
+                width: 100%;
+              }
             }
 
             .courses-card-image-name {
