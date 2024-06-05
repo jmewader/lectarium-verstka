@@ -33,18 +33,18 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin: 44px 0 0;
+    margin: 46px 0 0;
 
     @media (max-width: $mobile-width) {
-      margin: 24px 0 0;
+      margin: 24px 0 3px;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
   }
 
   &__btn {
     &.main-button {
-      padding: 0 20px;
+      padding: 0 22px;
       font-size: 16px;
       line-height: 20px;
       min-height: 56px;
@@ -52,6 +52,8 @@
       @media (max-width: $mobile-width) {
         min-height: 60px;
         width: 100%;
+        font-size: 18px;
+        line-height: 22px;
       }
     }
   }
@@ -61,10 +63,12 @@
     line-height: 38px;
     font-weight: 500;
     margin: 0 0 24px;
+    letter-spacing: -0.02em;
 
     @media (max-width: $mobile-width) {
       font-size: 28px;
       line-height: 32px;
+      letter-spacing: -0.01em;
     }
   }
 
@@ -79,13 +83,13 @@
     &_sticky {
       display: flex;
       flex-direction: column;
-      position: sticky;
-      top: 20px;
+      // position: sticky;
+      // top: 20px;
       gap: 20px;
 
       @media (max-width: $desktop-width) {
         position: relative;
-        top: 0;
+        // top: 0;
         gap: 40px;
       }
     }
@@ -146,7 +150,7 @@
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 18px 20px;
     width: 100%;
 
     @media (max-width: $large-tablet-width) {
@@ -155,6 +159,7 @@
 
     @media (max-width: $mobile-width) {
       grid-template-columns: 1fr;
+      gap: 16px;
     }
 
     &_item {

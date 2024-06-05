@@ -9,7 +9,7 @@
 
   &__list {
     display: flex;
-    gap: 32px;
+    gap: 33px;
     align-items: center;
 
     @media (max-width: $mobile-width) {
@@ -35,10 +35,12 @@
       border: none;
       background-color: transparent;
       cursor: pointer;
+      display: flex;
+      align-items: center;
 
       &.text {
         span {
-          margin-right: 20px;
+          margin-right: 16px;
         }
 
         @media (max-width: $mobile-width) {

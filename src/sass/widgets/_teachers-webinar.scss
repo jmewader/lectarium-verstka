@@ -104,7 +104,7 @@
   }
 
   &__title {
-    margin: 0 0 24px;
+    margin: 0 0 28px;
     color: $white-color;
     font-size: 64px;
     line-height: 70px;
@@ -139,10 +139,10 @@
       &.light-button {
         width: fit-content;
         min-height: 56px;
-        padding: 0 20px;
         gap: 10px;
         font-size: 16px;
         line-height: 20px;
+        padding: 0 22px;
 
         svg {
           width: 20px;
@@ -165,7 +165,7 @@
 
     @media (max-width: $tablet-width) {
       order: 1;
-      min-height: 525px;
+      min-height: 522px;
     }
 
     img {

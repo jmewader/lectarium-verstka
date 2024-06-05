@@ -33,7 +33,7 @@
     @media (max-width: $tablet-width) {
       min-height: auto;
       max-width: 100%;
-      padding: 24px 16px;
+      padding: 24px 16px 28px;
       gap: 24px;
     }
   }
@@ -53,14 +53,16 @@
 
   &__descriptions {
     width: 100%;
-    max-width: 300px;
+    max-width: 432px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   &__title {
-    margin: 0 0 36px;
+    margin: 0 0 24px;
     font-size: 88px;
     line-height: 92px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
 
     @media (max-width: $large-desktop-width) {
       font-size: 66px;
@@ -71,6 +73,7 @@
     @media (max-width: $desktop-width) {
       font-size: 40px;
       line-height: 44px;
+      letter-spacing: -0.02em;
     }
   }
 
@@ -127,7 +130,7 @@
       max-width: 644px;
     }
 
-    @media (max-width: $large-tablet-width) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
