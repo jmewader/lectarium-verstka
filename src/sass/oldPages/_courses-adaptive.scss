@@ -48,8 +48,7 @@
 
       .courses-filter {
         min-width: auto;
-        max-width: 1140px;
-        width: auto;
+        width: 100%;
       }
     }
   }
@@ -218,6 +217,7 @@
 @media screen and (max-width: 1037px) {
   .popup {
     align-items: normal;
+    padding-top: 84px;
 
     &.popup-tariff {
       .popup-content {
@@ -276,11 +276,11 @@
           grid-template-columns: auto;
           grid-template-rows: repeat(4, 1fr);
           gap: 15px;
+          display: flex;
+          width: 100%;
 
           .product-card-rate {
             .product-card-rate-info {
-              margin-bottom: 20px;
-
               .product-card-rate-info-head {
                 .product-card-rate-info-term {
                   font-size: 20px;
@@ -355,8 +355,9 @@
 
       .popup-items {
         flex-direction: column;
-        width: 343px;
         padding: 0 16px;
+        display: flex;
+        width: 100%;
 
         .popup-item {
           width: 100%;
@@ -402,7 +403,7 @@
           margin-right: 0;
           margin-bottom: 20px;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           height: 371px;
           width: 343px;
         }
@@ -670,6 +671,7 @@
             border-radius: 20px;
             margin-right: 0;
             margin-bottom: 24px;
+            width: 100%;
 
             .courses-card-image-tab {
               padding: 6px 8px;
@@ -911,7 +913,8 @@
     &.popup-month {
       .popup-content {
         .popup-items {
-          grid-template-columns: 1fr;
+          display: flex;
+          width: 100%;
         }
       }
 
