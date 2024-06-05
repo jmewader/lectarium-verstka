@@ -592,6 +592,10 @@
     position: relative;
   }
 
+  .courses-page-title {
+    margin:  0 0 44px;
+  }
+
   .add-to-cart-block {
     right: -100px;
     top: -92px;
@@ -614,6 +618,10 @@
       border-bottom: 10px solid white;
       border-right: 10px solid transparent;
       border-left: 10px solid transparent;
+    }
+
+    &.add-to-cart-block-title {
+      margin: 0 0 44px;
     }
 
     .add-to-cart-block-text {
@@ -879,6 +887,7 @@
                 @include common-text;
                 font-size: 16px;
                 color: $dark-blue-color;
+                width: max-content;
 
                 &.records {
                   margin-bottom: -1px;
@@ -1071,7 +1080,7 @@
             .courses-filter-category-item {
               border: 1px solid $light-grey-color;
               border-radius: 8px;
-              padding: 10px 15px;
+              padding: 9px 15px;
               background: #fff;
               font-family: "TT Firs Neue", sans-serif;
               font-weight: 400;

@@ -108,7 +108,7 @@
       }
     }
 
-    span {
+    span:not(.header__btn_icon, .header__btn_icon-mobile) {
       @media (max-width: $large-desktop-width) {
         display: none;
       }
