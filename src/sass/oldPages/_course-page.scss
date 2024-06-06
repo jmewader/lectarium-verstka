@@ -1,0 +1,1960 @@
+.course-head-back {
+  max-width: 1856px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 40px;
+  position: relative;
+  display: none;
+  gap: 10px;
+  overflow: hidden;
+  justify-content: space-between;
+  min-height: 779px;
+
+  &.show {
+    display: flex;
+  }
+  &.mar {
+    background: #2554e7;
+  }
+  &.docs {
+    background: #f14545;
+  }
+  &.obsh {
+    background: #fe7364;
+  }
+  &.eng {
+    background: #c782ff;
+  }
+  &.info {
+    background: #a069fa;
+  }
+  &.hist {
+    background: #00ade3;
+  }
+  &.lit {
+    background: #ff9446;
+  }
+  &.rus {
+    background: #f14545;
+  }
+  &.bio {
+    background: #00c19f;
+  }
+  &.phys {
+    background: #6c5df2;
+  }
+  // &.math {
+  //   background: #2554e7;
+  // }
+
+  &.mathematics {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      top: 533px;
+      left: -60px;
+      width: 261px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 243px;
+        width: 120px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 582px;
+      top: 288px;
+      z-index: 1;
+      width: 229px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 542px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 125px;
+        width: 120px;
+        left: 244px;
+      }
+    }
+  }
+
+  .course-head-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    max-width: 919px;
+    width: 100%;
+
+    .course-head-image-img {
+      position: relative;
+      z-index: 2;
+      object-fit: contain;
+    }
+  }
+
+  .course-head-figures {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    .course-head-figures-one,
+    .course-head-figures-two {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .course-head-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: bottom;
+    }
+  }
+
+  .course-head-info {
+    position: relative;
+    z-index: 2;
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 0 64px 64px;
+
+    .course-head-info-text {
+      .course-head-info-tab {
+        border-radius: 8px;
+        padding: 10px 12px;
+        backdrop-filter: blur(25px);
+        background: rgba(255, 255, 255, 0.2);
+        @include common-text;
+        font-size: 16px;
+        line-height: 125%;
+        color: #fff;
+        margin-bottom: 44px;
+        width: fit-content;
+      }
+
+      .course-head-info-description {
+        .course-head-info-description-title {
+          @include big-text-64;
+          color: #fff;
+          margin-bottom: 24px;
+        }
+
+        .course-head-info-description-text {
+          @include common-text;
+          font-size: 20px;
+          line-height: 120%;
+          color: #fff;
+          max-width: 535px;
+        }
+      }
+    }
+
+    .course-head-info-action {
+      display: flex;
+      align-items: center;
+
+      .button {
+        padding: 22px 30px;
+        width: 245px;
+        height: 78px;
+        box-sizing: border-box;
+        background: #fff;
+        @include common-text;
+        font-size: 20px;
+        color: $dark-blue-color;
+        margin-right: 44px;
+
+        span.button-icon {
+          width: 24px;
+          height: 24px;
+          margin-left: 16px;
+        }
+      }
+
+      .course-head-info-action-extra {
+        .course-head-info-action-extra-price {
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 119%;
+          letter-spacing: -0.02em;
+          color: #fff;
+          margin-bottom: 2px;
+
+          .old-price {
+            display: none;
+          }
+        }
+
+        .course-head-info-action-extra-block {
+          border-radius: 8px;
+          padding: 4px 8px;
+          background: $dark-blue-color;
+          @include common-text;
+          font-size: 16px;
+          line-height: 125%;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.course-head {
+  margin-bottom: 180px;
+
+  .container {
+    max-width: 1856px;
+    padding: 0;
+
+    .course-head-back {
+      border-radius: 40px;
+      padding: 64px;
+      position: relative;
+      display: block;
+
+      .course-head-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+          width: auto;
+          vertical-align: bottom;
+
+          &.to-mobile {
+            display: none;
+          }
+        }
+      }
+
+      .course-head-info {
+        position: relative;
+        z-index: 2;
+        max-width: 840px;
+        height: 651px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .course-head-info-text {
+          .course-head-info-tab {
+            border-radius: 8px;
+            padding: 10px 12px;
+            backdrop-filter: blur(25px);
+            background: rgba(255, 255, 255, 0.2);
+            @include common-text;
+            font-size: 16px;
+            line-height: 125%;
+            color: #fff;
+            margin-bottom: 44px;
+            width: fit-content;
+          }
+
+          .course-head-info-description {
+            .course-head-info-description-title {
+              @include big-text-64;
+              color: #fff;
+              margin-bottom: 24px;
+            }
+
+            .course-head-info-description-text {
+              @include common-text;
+              font-size: 20px;
+              line-height: 120%;
+              color: #fff;
+              max-width: 535px;
+            }
+          }
+        }
+
+        .course-head-info-action {
+          display: flex;
+          align-items: center;
+
+          .button {
+            padding: 22px 30px;
+            width: 245px;
+            height: 78px;
+            box-sizing: border-box;
+            background: #fff;
+            @include common-text;
+            font-size: 20px;
+            color: $dark-blue-color;
+            margin-right: 44px;
+
+            span.button-icon {
+              width: 24px;
+              height: 24px;
+              margin-left: 16px;
+            }
+          }
+
+          .course-head-info-action-extra {
+            .course-head-info-action-extra-price {
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 119%;
+              letter-spacing: -0.02em;
+              color: #fff;
+              margin-bottom: 2px;
+
+              .old-price {
+                display: none;
+              }
+            }
+
+            .course-head-info-action-extra-block {
+              border-radius: 8px;
+              padding: 4px 8px;
+              background: $dark-blue-color;
+              @include common-text;
+              font-size: 16px;
+              line-height: 125%;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .course-head-items {
+      max-width: 1620px;
+      margin: 64px auto 0;
+      display: flex;
+      justify-content: space-between;
+
+      .course-head-item {
+        display: flex;
+        width: 390px;
+
+        .course-head-item-icon {
+          width: 40px;
+          height: 40px;
+          margin-right: 24px;
+        }
+
+        .course-head-item-text {
+          max-width: 302px;
+
+          .course-head-item-text-name {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 114%;
+            letter-spacing: -0.01em;
+            color: $dark-blue-color;
+            margin-bottom: 16px;
+            margin-top: 1px;
+          }
+
+          .course-head-item-text-description {
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            color: #9aa3ad;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-program {
+  margin-bottom: 180px;
+
+  .course-program-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+    .course-program-head-text {
+      .course-program-head-text-title {
+        @include big-text-64;
+        color: $dark-blue-color;
+        margin-bottom: 20px;
+      }
+
+      .course-program-head-text-description {
+        @include common-text;
+        font-size: 20px;
+        line-height: 120%;
+        color: $pale-blue-color;
+        max-width: 628px;
+      }
+    }
+
+    .course-program-head-items {
+      display: flex;
+      align-items: center;
+
+      .course-program-head-item {
+        display: flex;
+        align-items: center;
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        //line-height: 120%;
+        letter-spacing: -0.01em;
+        color: $dark-blue-color;
+        margin-right: 24px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .course-program-head-item-icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+
+          &.to-mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .course-program-content {
+    .course-program-content-item {
+      border-radius: 24px;
+      box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+      background: #fff;
+      margin-bottom: 20px;
+
+      &.open {
+        .course-program-content-item-info {
+          display: block;
+        }
+
+        .course-program-content-item-head .course-program-content-item-head-subjects .course-program-content-item-head-subject-icon {
+          rotate: 0deg;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .course-program-content-item-head {
+        cursor: pointer;
+        padding: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .course-program-content-item-head-name {
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 500;
+          font-size: 28px;
+          letter-spacing: -0.01em;
+          color: $dark-blue-color;
+        }
+
+        .course-program-content-item-head-subjects {
+          display: flex;
+          align-items: center;
+
+          .course-program-content-item-head-subject-date {
+            display: none;
+            align-items: center;
+            margin-right: 36px;
+
+            .course-program-content-item-head-subject-date-icon {
+              width: 24px;
+              height: 24px;
+            }
+
+            .course-program-content-item-head-subject-date-text {
+              @include common-text;
+              font-size: 20px;
+              color: $dark-blue-color;
+              margin-left: 10px;
+            }
+          }
+
+          .course-program-content-item-head-subject-icon {
+            width: 36px;
+            height: 36px;
+            rotate: 180deg;
+
+            &.to-mobile {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .course-program-content-item-info {
+        display: none;
+        padding: 0 36px 36px;
+
+        .course-program-content-item-info-text {
+          max-width: 1476px;
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: $pale-blue-color;
+          margin-bottom: 24px;
+        }
+
+        .course-program-content-item-info-lessons {
+          .course-program-content-item-info-lesson {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .course-program-content-item-info-lesson-name {
+              display: flex;
+              align-items: center;
+
+              .course-program-content-item-info-lesson-name-number {
+                border: 1px solid $light-grey-color;
+                border-radius: 8px;
+                padding: 8px 12px;
+                width: 36px;
+                min-width: 36px;
+                height: 36px;
+                box-sizing: border-box;
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 125%;
+                color: $dark-blue-color;
+                text-align: center;
+                margin-right: 18px;
+              }
+
+              .course-program-content-item-info-lesson-name-text {
+                @include common-text;
+                font-size: 20px;
+                line-height: 120%;
+                color: $dark-blue-color;
+                margin-top: 3px;
+                margin-right: 20px;
+              }
+            }
+
+            .course-program-content-item-info-lesson-date {
+              border-radius: 8px;
+              padding: 9px 12px 7px;
+              background: #f7f8f9;
+              font-size: 16px;
+              line-height: 125%;
+              color: $dark-blue-color;
+              min-width: 121px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-teacher {
+  margin-bottom: 180px;
+
+  .container {
+    max-width: 1856px;
+    padding: 0;
+
+    .course-teacher-back {
+      position: relative;
+      border-radius: 40px;
+      background: #edf2fe;
+      background-image: url("../../images/course-page/course-big-letter.png");
+      background-repeat: no-repeat;
+      display: flex;
+      padding: 64px;
+      align-items: flex-end;
+      justify-content: space-between;
+      overflow-x: hidden;
+
+      .course-teacher-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+        img {
+          vertical-align: bottom;
+
+          &.to-mobile {
+            display: none;
+          }
+        }
+      }
+
+      .course-teacher-links {
+        position: relative;
+        z-index: 2;
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+        background: #fff;
+
+        .course-teacher-links-text {
+          margin-bottom: 12px;
+
+          .course-teacher-links-text-extra {
+            @include common-text;
+            font-size: 16px;
+            line-height: 125%;
+            color: #9aa3ad;
+            margin-bottom: 12px;
+          }
+
+          .course-teacher-links-text-name {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 117%;
+            letter-spacing: -0.02em;
+            color: $dark-blue-color;
+          }
+        }
+
+        .course-teacher-links-items {
+          display: flex;
+          gap: 8px;
+
+          .course-teacher-links-item {
+            width: 44px;
+            height: 44px;
+
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .course-teacher-info {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 64px auto;
+        column-gap: 54px;
+        row-gap: 28px;
+        margin: 82px 36px 82px 0;
+        max-width: 828px;
+
+        .course-teacher-info-icon {
+          width: 64px;
+          height: 64px;
+        }
+
+        .course-teacher-info-title {
+          @include big-text-64;
+          color: $dark-blue-color;
+        }
+
+        .course-teacher-info-descriptions {
+          grid-area: 2 / 2 / 3 / 3;
+
+          .course-teacher-info-descriptions-text {
+            @include common-text;
+            font-size: 20px;
+            line-height: 120%;
+            color: $pale-blue-color;
+            max-width: 600px;
+            margin-bottom: 44px;
+          }
+
+          .course-teacher-info-descriptions-items {
+            display: flex;
+            margin-bottom: 44px;
+
+            .course-teacher-info-descriptions-item {
+              margin-right: 54px;
+
+              .course-teacher-info-descriptions-item-head {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 114%;
+                letter-spacing: -0.01em;
+                color: $dark-blue-color;
+                margin-bottom: 8px;
+              }
+
+              .course-teacher-info-descriptions-item-wrap {
+                @include common-text;
+                font-size: 18px;
+                line-height: 122%;
+                color: $pale-blue-color;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+
+          .course-teacher-info-descriptions-actions {
+            display: flex;
+            gap: 8px;
+
+            .button {
+              padding: 18px 26px;
+              height: 60px;
+              box-sizing: border-box;
+              @include common-text;
+              font-size: 18px;
+              line-height: 122%;
+              text-align: center;
+
+              &.button-blue {
+                width: 192px;
+
+                .button-icon {
+                  margin-left: 16px;
+                  height: 24px;
+                }
+              }
+
+              &.button-white {
+                width: 148px;
+                background: #fff;
+                border: 1px solid $light-grey-color;
+                color: $dark-blue-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-tariff {
+  margin-bottom: 180px;
+
+  .course-tariff-content {
+    border-radius: 40px;
+    padding: 64px;
+    box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+    background: #fff;
+
+    .course-tariff-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 64px;
+
+      .course-tariff-title {
+        @include big-text-64;
+        color: $dark-blue-color;
+      }
+
+      .course-tariff-navigation {
+        display: flex;
+        align-items: center;
+
+        .course-tariff-navigation-item {
+          display: flex;
+          align-items: center;
+          &:nth-child(1) {
+            cursor: pointer;
+          }
+
+          .course-tariff-navigation-item-number {
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            background: #9aa3ad;
+            margin-right: 8px;
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .course-tariff-navigation-item-text {
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            color: #9aa3ad;
+          }
+
+          &.active {
+            .course-tariff-navigation-item-number {
+              background: $dark-blue-color;
+            }
+
+            .course-tariff-navigation-item-text {
+              color: $dark-blue-color;
+            }
+          }
+        }
+
+        .course-tariff-navigation-line {
+          width: 10px;
+          height: 1px;
+          background: $dark-blue-color;
+          opacity: 0.2;
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .course-tariff-items {
+      display: flex;
+    }
+
+    &.tariff {
+      .course-tariff-items {
+        gap: 21px;
+
+        .course-tariff-item {
+          width: 484px;
+          border-radius: 24px;
+          padding: 36px;
+          border: 1px solid #fff;
+          box-sizing: border-box;
+
+          &.recommendation {
+            border-color: $light-grey-color;
+            position: relative;
+
+            .course-tariff-item-recommendation {
+              display: block;
+              position: absolute;
+              top: -22px;
+              left: calc(50% - 68px);
+              border-radius: 10px;
+              padding: 12px 16px;
+              width: 136px;
+              box-sizing: border-box;
+              background: #f7f8f9;
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 125%;
+              letter-spacing: -0.01em;
+              color: #09c274;
+            }
+          }
+
+          .course-tariff-item-recommendation {
+            display: none;
+          }
+
+          .course-tariff-item-head {
+            margin-bottom: 32px;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .course-tariff-item-head-info {
+              .course-tariff-item-head-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                .course-tariff-item-head-icon {
+                  border-radius: 61px;
+                  width: 54px;
+                  height: 54px;
+                  background: #f3f4f5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+
+                .course-tariff-item-head-name {
+                  margin-left: 18px;
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  font-size: 32px;
+                  letter-spacing: -0.02em;
+                  color: $dark-blue-color;
+                  line-height: 119%;
+                  //margin-bottom: 2px;
+                }
+              }
+
+              .course-tariff-item-head-text {
+                @include common-text;
+                font-size: 18px;
+                line-height: 122%;
+                color: $pale-blue-color;
+              }
+            }
+
+            .course-tariff-item-head-price {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              div {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 28px;
+                //line-height: 114%;
+                letter-spacing: -0.01em;
+                color: $dark-blue-color;
+              }
+
+              .button {
+                padding: 14px 20px;
+                width: 147px;
+                height: 52px;
+                background: $bright-blue-color;
+                gap: 10px;
+                box-sizing: border-box;
+                @include common-text;
+                font-size: 18px;
+                line-height: 122%;
+                color: #fff;
+
+                .selected-text {
+                  display: none;
+
+                  &.icon {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+
+                .regular-text {
+                  &.icon {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+
+                &.selected {
+                  color: $dark-blue-color;
+                  background: #f3f4f5;
+
+                  .selected-text {
+                    display: block;
+                  }
+
+                  .regular-text {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .course-tariff-item-info-add {
+            border-radius: 10px;
+            padding: 16px 18px;
+            background: #f7f8f9;
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            color: $dark-blue-color;
+            margin-bottom: 10px;
+          }
+
+          .course-tariff-item-info-items {
+            width: 100%;
+            border-radius: 10px;
+            padding: 18px;
+            background: #f7f8f9;
+            box-sizing: border-box;
+
+            .course-tariff-item-info-item {
+              margin-bottom: 10px;
+              display: flex;
+              align-items: flex-start;
+
+              &.to-mobile {
+                display: none;
+              }
+
+              .item-icon {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+              }
+
+              span {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 122%;
+                color: $dark-blue-color;
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .course-tariff-action {
+        display: none;
+        border-radius: 25px 25px 0 0;
+        padding: 12px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 4px 16px 0 rgba(37, 84, 231, 0.1), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+        background: #fff;
+
+        button {
+          padding: 15px 18px;
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: -0.01em;
+          color: #fff;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+    &.month {
+      padding-bottom: 94px;
+
+      .course-tariff-close {
+        display: none;
+      }
+
+      .course-tariff-items {
+        gap: 20px;
+
+        .product-card-rate {
+          width: 100%;
+          border: 1px solid $light-grey-color;
+          border-radius: 20px;
+          padding: 36px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+
+          .product-card-rate-info {
+            margin-bottom: 36px;
+
+            .product-card-rate-image {
+            }
+
+            .product-card-rate-info-head {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              margin-bottom: 16px;
+
+              .product-card-rate-info-term {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 119%;
+                letter-spacing: -0.02em;
+                color: $dark-blue-color;
+                min-width: 126px;
+              }
+
+              .product-card-rate-info-text {
+                @include common-text;
+                font-size: 18px;
+                line-height: 122%;
+                text-align: right;
+                color: $pale-blue-color;
+                max-width: 207px;
+
+                .text-mobile {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .product-card-rate-action {
+            display: flex;
+            justify-content: space-between;
+
+            .product-card-rate-info-items {
+              .product-card-rate-info-item {
+                display: flex;
+                //align-items: center;
+
+                span {
+                  margin-left: 8px;
+                  @include common-text;
+                  font-size: 20px;
+                  line-height: 120%;
+                  color: $dark-blue-color;
+                  margin-bottom: -1px;
+                }
+
+                &.count {
+                  margin-bottom: 12px;
+                }
+              }
+            }
+            .product-card-button {
+              .button {
+                border-radius: 10px;
+                padding: 18px 24px;
+                height: 64px;
+                box-sizing: border-box;
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 117%;
+                letter-spacing: -0.02em;
+              }
+            }
+          }
+
+          &.rate-gray {
+            .button {
+              color: $dark-blue-color;
+              background: #f3f4f5;
+            }
+          }
+
+          &.rate-blue {
+            border: 1px solid $bright-blue-color;
+            background: #fafcff;
+
+            .product-card-rate-info {
+              .product-card-rate-info-term {
+                color: $bright-blue-color;
+              }
+
+              .product-card-rate-info-text {
+                margin-top: 1px;
+              }
+            }
+
+            .product-card-rate-action {
+              .product-card-button {
+                .button {
+                  .discount {
+                    margin-left: 12px;
+                    border-radius: 5px;
+                    padding: 6px;
+                    width: 58px;
+                    height: 34px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #fff;
+                    font-family: "TT Firs Neue", sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 122%;
+                    letter-spacing: -0.01em;
+                    color: $bright-blue-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .course-tariff-action {
+        display: none;
+      }
+    }
+  }
+
+  &.month-block {
+    .course-tariff-content {
+      &.tariff {
+        display: none;
+      }
+
+      &.month {
+        display: block;
+      }
+    }
+  }
+
+  &.tariff-block {
+    .course-tariff-content {
+      &.tariff {
+        display: block;
+      }
+
+      &.month {
+        display: none;
+      }
+    }
+  }
+}
+
+.course-advantages {
+  margin-bottom: 180px;
+
+  .course-advantages-title {
+    @include big-text-64;
+    color: $dark-blue-color;
+    margin-bottom: 64px;
+    max-width: 904px;
+  }
+
+  .course-advantages-items {
+    border-radius: 24px;
+    box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+
+    .course-advantages-item {
+      background: #fff;
+      &:first-child {
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        .course-advantages-item-head {
+          border-top: 0;
+        }
+      }
+
+      .course-advantages-item-head {
+        border-top: 1px solid $light-grey-color;
+        border-radius: 24px;
+        box-sizing: border-box;
+        padding: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .course-advantages-item-head-icon {
+          height: 36px;
+        }
+
+        .course-advantages-item-head-info {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+
+          .course-advantages-item-head-info-icon {
+            width: 44px;
+            height: 44px;
+            margin-right: 36px;
+          }
+
+          .course-advantages-item-head-info-text {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 28px;
+            //line-height: 114%;
+            letter-spacing: -0.01em;
+            color: $dark-blue-color;
+
+            .to-mobile {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .course-advantages-item-content {
+        display: none;
+        padding: 0 106px 42px 116px;
+        gap: 64px;
+
+        .course-advantages-item-content-image {
+          min-width: 680px;
+          height: 388px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .course-advantages-item-content-info {
+          padding-top: 20px;
+
+          .course-advantages-item-content-info-text {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: $pale-blue-color;
+            margin-bottom: 28px;
+          }
+
+          .button {
+            padding: 18px 26px;
+            width: 184px;
+            height: 60px;
+            box-sizing: border-box;
+            @include common-text;
+            font-size: 18px;
+            //line-height: 122%;
+            color: #fff;
+
+            .button-icon {
+              width: 24px;
+              height: 24px;
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+
+      &.open {
+        .course-advantages-item-head {
+          .course-advantages-item-head-icon {
+            rotate: 180deg;
+          }
+        }
+
+        .course-advantages-item-content {
+          display: flex;
+        }
+      }
+
+      &.highlighted {
+        .course-advantages-item-head {
+          border-top: 0;
+          background: #09c274;
+
+          .course-advantages-item-head-info {
+            .course-advantages-item-head-info-text {
+              color: #fff;
+            }
+          }
+
+          .course-advantages-item-head-icon svg path {
+            stroke: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-reviews {
+  margin-bottom: 180px;
+
+  .slider-points {
+    display: none;
+  }
+
+  .course-reviews-title {
+    @include big-text-64;
+    color: $dark-blue-color;
+    margin-bottom: 64px;
+  }
+
+  .course-reviews-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 312px);
+    grid-template-areas:
+      "first first second big"
+      "small third fourth big";
+
+    .course-reviews-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+
+      &.first {
+        grid-area: first;
+      }
+      &.second {
+        grid-area: second;
+      }
+      &.third {
+        grid-area: third;
+      }
+      &.fourth {
+        grid-area: fourth;
+      }
+      &.big {
+        grid-area: big;
+      }
+      &.small {
+        grid-area: small;
+      }
+
+      .review-head {
+        display: flex;
+        align-items: center;
+
+        .review-head-info {
+          .review-head-info-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+            height: 28px;
+
+            .review-head-info-name-text {
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 500;
+              font-size: 24px;
+              //line-height: 117%;
+              letter-spacing: -0.02em;
+            }
+
+            .review-head-info-name-contact {
+              text-decoration: none;
+              height: 24px;
+            }
+          }
+
+          .review-head-info-tabs {
+            display: flex;
+            gap: 6px;
+
+            .review-head-info-tab {
+              border: 1px solid #fff;
+              border-radius: 5px;
+              padding: 7px 11px;
+              height: 34px;
+              box-sizing: border-box;
+              backdrop-filter: blur(44px);
+              background: #fff;
+              font-family: "TT Firs Neue", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              //line-height: 133%;
+              color: $dark-blue-color;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      &.text-review {
+        border-radius: 24px;
+        padding: 36px;
+        background: #fff;
+
+        .review-head {
+          //margin-bottom: 36px;
+
+          .review-head-image {
+            border-radius: 120px;
+            width: 80px;
+            height: 80px;
+            margin-right: 28px;
+
+            img {
+              border-radius: 120px;
+              width: 100%;
+            }
+          }
+
+          .review-head-info {
+            .review-head-info-name {
+              color: $dark-blue-color;
+            }
+
+            .review-head-info-tabs {
+              .review-head-info-tab {
+                border: 1px solid $light-grey-color;
+              }
+            }
+          }
+        }
+
+        .review-text {
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: $pale-blue-color;
+          //margin-bottom: 36px;
+
+          &.to-mobile {
+            display: none;
+          }
+        }
+
+        .review-action {
+          a {
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            text-decoration: none;
+            color: $dark-blue-color;
+            border-bottom: 1px solid $dark-blue-color;
+          }
+        }
+      }
+
+      &.video-review {
+        background-size: cover;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &.small {
+          background-image: url("../../images/course-page/middle-review-photo.png");
+        }
+        &.big {
+          background-image: url("../../images/course-page/big-review-photo.png");
+        }
+
+        .review-wrap {
+          padding: 24px 24px 0;
+          display: flex;
+          gap: 6px;
+
+          .review-wrap-tab {
+            border-radius: 5px;
+            padding: 7px 11px;
+            height: 34px;
+            box-sizing: border-box;
+            background: #fff;
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            //line-height: 133%;
+            color: $dark-blue-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.brown-tab {
+              backdrop-filter: blur(44px);
+              background: rgba(11, 31, 51, 0.1);
+              color: #fff;
+            }
+          }
+        }
+
+        .review-head {
+          padding: 0 36px 36px;
+          justify-content: space-between;
+
+          .review-head-info {
+            .review-head-info-name {
+              color: #fff;
+            }
+          }
+
+          .review-head-action {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            width: 54px;
+            height: 54px;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-guarantees {
+  margin-bottom: 180px;
+
+  .course-guarantees-title {
+    @include big-text-64;
+    color: $dark-blue-color;
+    margin-bottom: 64px;
+  }
+
+  .course-guarantees-content {
+    position: relative;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+    padding: 64px 64px 76px;
+    background-color: #fff;
+
+    .course-guarantees-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    .course-guarantees-info {
+      position: relative;
+      z-index: 2;
+      max-width: 485px;
+
+      .course-guarantees-info-text {
+        margin-bottom: 64px;
+
+        .course-guarantees-info-text-title {
+          max-width: 391px;
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 117%;
+          letter-spacing: -0.02em;
+          color: $dark-blue-color;
+          margin-bottom: 20px;
+        }
+
+        .course-guarantees-info-text-description {
+          @include common-text;
+          font-size: 20px;
+          line-height: 120%;
+          color: $pale-blue-color;
+        }
+      }
+
+      .course-guarantees-info-action {
+        .button {
+          padding: 18px 26px;
+          height: 60px;
+          box-sizing: border-box;
+          background: #f3f4f5;
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: $dark-blue-color;
+
+          .button-icon {
+            margin-left: 12px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.course-form {
+  margin-bottom: 180px;
+
+  .course-form-content {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding: 44px 64px;
+    box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+    background: #fff;
+
+    .course-form-info {
+      max-width: 516px;
+      height: 528px;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .course-form-info-text {
+        .course-form-info-text-title {
+          @include big-text-64;
+          color: $dark-blue-color;
+          margin-bottom: 20px;
+        }
+
+        .course-form-info-text-description {
+          max-width: 397px;
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.02em;
+          color: $pale-blue-color;
+        }
+      }
+
+      .course-form-info-wrap {
+        display: flex;
+        align-items: center;
+
+        .course-form-info-wrap-icon {
+          height: 32px;
+          margin-right: 16px;
+        }
+
+        .course-form-info-wrap-text {
+          font-family: "TT Firs Neue", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          letter-spacing: -0.02em;
+          color: $dark-blue-color;
+        }
+      }
+    }
+
+    .course-form-line {
+      width: 1px;
+      height: auto;
+      background: $light-grey-color;
+    }
+
+    .course-form-actions {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .course-form-navigation {
+        display: flex;
+        align-items: center;
+
+        .course-form-navigation-item {
+          display: flex;
+          align-items: center;
+
+          .course-form-navigation-item-number {
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            background: #9aa3ad;
+            margin-right: 8px;
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .course-form-navigation-item-text {
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            color: #9aa3ad;
+          }
+
+          &.active {
+            .course-form-navigation-item-number {
+              background: $dark-blue-color;
+            }
+
+            .course-form-navigation-item-text {
+              color: $dark-blue-color;
+            }
+          }
+        }
+
+        .course-form-navigation-line {
+          width: 10px;
+          height: 1px;
+          background: $dark-blue-color;
+          opacity: 0.2;
+          margin: 0 10px;
+        }
+      }
+
+      .course-form-inputs {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          margin-bottom: 16px;
+          border: 1px solid #9aa3ad;
+          border-radius: 12px;
+          padding: 24px;
+          box-sizing: border-box;
+          width: 560px;
+          height: 72px;
+          background: #f7f8f9;
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: $dark-blue-color;
+          outline: none;
+
+          &:focus {
+            border: 1px solid $dark-blue-color;
+          }
+
+          &::placeholder {
+            @include common-text;
+            font-size: 18px;
+            line-height: 122%;
+            color: $pale-blue-color;
+          }
+
+          &:last-child {
+            margin-bottom: 20px;
+          }
+        }
+
+        .button {
+          padding: 18px 26px;
+          width: 560px;
+          height: 73px;
+          box-sizing: border-box;
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: #fff;
+
+          .button-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .confirms {
+        .custom-checkbox-wrap {
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .custom-checkbox + label::before {
+          border: 1px solid #cad0d6;
+        }
+
+        .custom-checkbox + label {
+          color: $pale-blue-color;
+        }
+
+        .custom-checkbox:checked + label::before {
+          border: 1px solid $dark-blue-color;
+          background-image: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 9L8 12L13 7" stroke="%230b1f33" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        }
+
+        .custom-checkbox:checked + label {
+          color: $dark-blue-color;
+        }
+      }
+    }
+  }
+}
+
+.course-faq {
+  margin-bottom: 125px;
+
+  .course-faq-content {
+    display: flex;
+    justify-content: space-between;
+
+    .course-faq-wrap {
+      max-width: 520px;
+
+      .course-faq-wrap-head {
+        margin-bottom: 24px;
+
+        .course-faq-wrap-head-title {
+          @include big-text-64;
+          color: $dark-blue-color;
+          margin-bottom: 32px;
+        }
+
+        .course-faq-wrap-head-text {
+          max-width: 368px;
+          @include common-text;
+          font-size: 20px;
+          line-height: 120%;
+          color: $pale-blue-color;
+        }
+      }
+
+      .course-faq-wrap-links {
+        display: flex;
+        gap: 8px;
+
+        .course-faq-wrap-link {
+          width: 56px;
+          height: 56px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .course-faq-questions {
+      max-width: 800px;
+
+      .course-faq-question {
+        margin-bottom: 20px;
+        border-radius: 24px;
+        box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+        background: #fff;
+
+        .course-faq-question-head {
+          padding: 36px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .course-faq-question-head-text {
+            font-family: "TT Firs Neue", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 117%;
+            letter-spacing: -0.02em;
+            color: $dark-blue-color;
+            max-width: 619px;
+          }
+
+          .course-faq-question-head-icon {
+            width: 36px;
+            height: 36px;
+          }
+        }
+
+        .course-faq-question-content {
+          display: none;
+          padding: 0 68px 36px 36px;
+          @include common-text;
+          font-size: 18px;
+          line-height: 122%;
+          color: $pale-blue-color;
+        }
+
+        &.open {
+          .course-faq-question-head {
+            .course-faq-question-head-icon {
+              rotate: 180deg;
+            }
+          }
+
+          .course-faq-question-content {
+            display: block;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
