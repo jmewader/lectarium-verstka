@@ -71,6 +71,10 @@
     &.visible {
       display: flex;
       min-height: 60px;
+
+      @media (max-width: $mobile-width) {
+        min-height: 56px;
+      }
     }
   }
 

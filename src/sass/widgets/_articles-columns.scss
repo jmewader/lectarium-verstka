@@ -90,7 +90,15 @@
       @media (max-width: $desktop-width) {
         position: relative;
         // top: 0;
-        gap: 40px;
+        gap: 0px;
+
+        .sorting-list {
+          margin: 0 0 40px;
+        }
+
+        .articles {
+          margin: 0 0 16px;
+        }
       }
     }
 
