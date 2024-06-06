@@ -1,11 +1,11 @@
 section.course
     .course-heads
-        .course-head-back.show.mathematics
+        .course-head-back.mathematics
             .course-head-info
                 .course-head-info-text
                     .course-head-info-tab Старт 10 сентября
-                    h1.course-head-info-description
-                        .course-head-info-description-title 
+                    .course-head-info-description
+                        h1.course-head-info-description-title 
                             | Подготовка к ЕГЭ
                             br
                             | по математике
@@ -37,32 +37,41 @@ section.course
             .course-head-bg
                 img(src="../img/drawing.png" alt="Background")
             
-        .course-head-back.phys
+        .course-head-back.show.physics
             .course-head-info
                 .course-head-info-text
                     .course-head-info-tab Старт 10 сентября
                     .course-head-info-description
-                        .course-head-info-description-title 
+                        h1.course-head-info-description-title 
                             | Подготовка к ЕГЭ
                             br
                             | по физике для 11 класса
-                        .course-head-info-description-text Летний подготовительный курс для тех, кто стремится начать подготовку ранее: освоим основные темы предмета с самого начала.
+                        p.course-head-info-description-text Летний подготовительный курс для тех, кто стремится начать подготовку ранее: освоим основные темы предмета с самого начала.
                 .course-head-info-action
                     button.button.button-with-icon
                         span Записаться
                         span.button-icon
-                            //- svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            //-     rect(width="24" height="24" rx="12" fill="#0B1F33")
-                            //-     path(d="M10 8L14 12L10 16" stroke="#FAFCFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="12" fill="#0B1F33"/>
+                                <path d="M10 8L14 12L10 16" stroke="#FAFCFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                     .course-head-info-action-extra
                         .course-head-info-action-extra-price
                             | От 1 150 ₽/мес
                             span.old-price 1 650 ₽
                         .course-head-info-action-extra-block
-                            span.discount-value -30%
+                            span.discount-value -30% 
                             span.discount-text при покупке всех месяцев
             .course-head-image
-                img(src="images/course-page/backs/phys.png" alt="Преподаватель")
+                img.course-head-image-img(src="../img/teacher4.png" alt="Преподаватель")
+                .course-head-figures
+                    .course-head-figures-one
+                        img(src="../img/physics1.png" alt="Figure")
+                    .course-head-figures-two
+                        img(src="../img/physics2.png" alt="Figure")
+            .course-head-bg
+                img(src="../img/atom.png" alt="Background")
+
         .course-head-back.bio
             .course-head-info
                 .course-head-info-text

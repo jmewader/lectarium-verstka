@@ -40,9 +40,9 @@
   &.bio {
     background: #00c19f;
   }
-  &.phys {
-    background: #6c5df2;
-  }
+  // &.phys {
+  //   background: #6c5df2;
+  // }
   // &.math {
   //   background: #2554e7;
   // }
@@ -80,6 +80,44 @@
         top: 125px;
         width: 120px;
         left: 244px;
+      }
+    }
+  }
+
+  &.physics {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 256px;
+      top: 559px;
+      left: -37px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 243px;
+        width: 120px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 656px;
+      top: 230px;
+      z-index: 1;
+      width: 185px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 647px;
+        top: 180px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 89px;
+        width: 74px;
+        left: 298px;
       }
     }
   }
