@@ -13,46 +13,13 @@
   &.show {
     display: flex;
   }
-  &.mar {
-    background: #2554e7;
-  }
-  &.docs {
-    background: #f14545;
-  }
-  &.obsh {
-    background: #fe7364;
-  }
-  &.eng {
-    background: #c782ff;
-  }
-  &.info {
-    background: #a069fa;
-  }
-  &.hist {
-    background: #00ade3;
-  }
-  &.lit {
-    background: #ff9446;
-  }
-  &.rus {
-    background: #f14545;
-  }
-  &.bio {
-    background: #00c19f;
-  }
-  // &.phys {
-  //   background: #6c5df2;
-  // }
-  // &.math {
-  //   background: #2554e7;
-  // }
 
   &.mathematics {
     .course-head-figures-one {
       z-index: 2;
       position: relative;
-      top: 533px;
-      left: -60px;
+      top: 531px;
+      left: 24px;
       width: 261px;
 
       @media (max-width: $large-desktop-width) {
@@ -67,8 +34,8 @@
 
     .course-head-figures-two {
       position: relative;
-      left: 582px;
-      top: 288px;
+      left: 665px;
+      top: 286px;
       z-index: 1;
       width: 229px;
 
@@ -90,7 +57,7 @@
       position: relative;
       width: 256px;
       top: 559px;
-      left: -37px;
+      left: 46px;
 
       @media (max-width: $large-desktop-width) {
         left: 0px;
@@ -104,7 +71,7 @@
 
     .course-head-figures-two {
       position: relative;
-      left: 656px;
+      left: 738px;
       top: 230px;
       z-index: 1;
       width: 185px;
@@ -122,11 +89,332 @@
     }
   }
 
+  &.biology {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 127px;
+      top: 387px;
+      left: 10px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 154px;
+        width: 62px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 582px;
+      top: 349px;
+      z-index: 2;
+      width: 261px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 523px;
+        top: 329px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 200px;
+        width: 118px;
+        left: 248px;
+      }
+    }
+  }
+
+  &.russian {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 254px;
+      top: 528px;
+      left: -82px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 90px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 234px;
+        width: 142px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 566px;
+      top: 364px;
+      z-index: 2;
+      width: 364px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 423px;
+        top: 399px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 160px;
+        width: 148px;
+        left: 228px;
+      }
+    }
+  }
+
+  &.literature {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 200px;
+      top: 340px;
+      left: -50px;
+
+      @media (max-width: $large-desktop-width) {
+        left: -30px;
+        top: 320px;
+        width: 130px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 164px;
+        width: 60px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 581px;
+      top: 280px;
+      z-index: 2;
+      width: 348px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 423px;
+        top: 379px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 180px;
+        width: 148px;
+        left: 208px;
+      }
+    }
+  }
+
+  &.history {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 397px;
+      top: 566px;
+      left: 3px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+        width: 301px;
+        top: 566px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 264px;
+        width: 160px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 747px;
+      top: 189px;
+      z-index: 2;
+      width: 150px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 637px;
+        top: 214px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 71px;
+        width: 88px;
+        left: 284px;
+      }
+    }
+  }
+
+  &.informatics {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 292px;
+      top: 566px;
+      left: 4px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+        width: 301px;
+        top: 566px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 264px;
+        width: 160px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 701px;
+      top: 304px;
+      z-index: 2;
+      width: 186px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 570px;
+        top: 214px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 121px;
+        width: 88px;
+        left: 284px;
+      }
+    }
+  }
+
+  &.english {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 276px;
+      top: 531px;
+      left: 7px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 0px;
+        width: 301px;
+        top: 566px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 264px;
+        width: 160px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 741px;
+      top: 430px;
+      z-index: 2;
+      width: 209px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 570px;
+        top: 344px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 121px;
+        width: 88px;
+        left: 284px;
+      }
+    }
+  }
+
+  &.social-science {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 429px;
+      top: 379px;
+      left: -78px;
+
+      @media (max-width: $large-desktop-width) {
+        width: 349px;
+        left: -60px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 126px;
+        width: 160px;
+        left: -33px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 582px;
+      top: 93px;
+      z-index: 2;
+      width: 276px;
+
+      @media (max-width: $large-desktop-width) {
+        width: 233px;
+        top: 221px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 103px;
+        width: 120px;
+        left: 246px;
+      }
+    }
+  }
+
+  &.chemistry {
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 154px;
+      top: 531px;
+      left: 27px;
+
+      @media (max-width: $large-desktop-width) {
+        left: -10px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: 206px;
+        width: 101px;
+        left: 14px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 701px;
+      top: -19px;
+      z-index: 1;
+      width: 237px;
+
+      @media (max-width: $large-desktop-width) {
+        left: 570px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: -26px;
+        width: 100px;
+        left: 257px;
+      }
+    }
+  }
+
   .course-head-image {
     position: relative;
     display: flex;
     align-items: flex-end;
-    max-width: 919px;
+    justify-content: center;
+    max-width: 54%;
     width: 100%;
 
     .course-head-image-img {
@@ -264,30 +552,14 @@
 
     .course-head-back {
       border-radius: 40px;
-      padding: 64px;
+      // padding: 64px;
       position: relative;
-      display: block;
-
-      .course-head-image {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        img {
-          width: auto;
-          vertical-align: bottom;
-
-          &.to-mobile {
-            display: none;
-          }
-        }
-      }
+      display: flex;
 
       .course-head-info {
         position: relative;
         z-index: 2;
         max-width: 840px;
-        height: 651px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

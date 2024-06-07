@@ -4,7 +4,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    gap: 61px;
+    gap: 72px;
   }
 
   .course-head-info {
@@ -683,14 +683,9 @@
     .container {
       .course-head-back {
         border-radius: 25px;
-        padding: 24px 16px 0;
 
         .course-head-info {
           height: auto;
-
-          .course-head-info-text {
-            margin-bottom: 32px;
-          }
         }
       }
     }
