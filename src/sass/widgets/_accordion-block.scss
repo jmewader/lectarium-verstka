@@ -27,8 +27,7 @@
         border-radius: 20px;
       }
 
-      &.blue-item {
-        background-color: $bright-blue-color;
+      &.highlighted {
         color: $white-color;
 
         .main-accordion__icon {

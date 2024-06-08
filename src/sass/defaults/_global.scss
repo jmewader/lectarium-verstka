@@ -22,6 +22,10 @@ button {
 }
 
 .chemistry {
+  background-color: $green-color;
+}
+
+.chemistry-page {
   .color-accent-bg {
     background-color: $green-color;
   }
@@ -41,9 +45,19 @@ button {
       fill: $green-color;
     }
   }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $green-color;
+    }
+  }
 }
 
 .russian {
+  background-color: $red-color;
+}
+
+.russian-page {
   .color-accent-bg {
     background-color: $red-color;
   }
@@ -63,9 +77,19 @@ button {
       fill: $red-color;
     }
   }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $red-color;
+    }
+  }
 }
 
 .mathematics {
+  background-color: $bright-blue-color;
+}
+
+.mathematics-page {
   .color-accent-bg {
     background-color: $bright-blue-color;
   }
@@ -85,31 +109,51 @@ button {
       fill: $bright-blue-color;
     }
   }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $bright-blue-color;
+    }
+  }
 }
 
 .physics {
+  background-color: $slate-blue;
+}
+
+.physics-page {
   .color-accent-bg {
-    background-color: #6c5df2;
+    background-color: $slate-blue;
   }
 
   .color-accent-text {
-    color: #6c5df2;
+    color: $slate-blue;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #6c5df2;
+      stroke: $slate-blue;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #6c5df2;
+      fill: $slate-blue;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $slate-blue;
     }
   }
 }
 
 .biology {
+  background-color: $turquoise-color;
+}
+
+.biology-page {
   .color-accent-bg {
     background-color: $turquoise-color;
   }
@@ -129,114 +173,170 @@ button {
       fill: $turquoise-color;
     }
   }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $turquoise-color;
+    }
+  }
 }
 
 .literature {
+  background-color: $orange-color;
+}
+
+.literature-page {
   .color-accent-bg {
-    background-color: #ff9446;
+    background-color: $orange-color;
   }
 
   .color-accent-text {
-    color: #ff9446;
+    color: $orange-color;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #ff9446;
+      stroke: $orange-color;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #ff9446;
+      fill: $orange-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $orange-color;
     }
   }
 }
 
 .history {
+  background-color: $blue-color;
+}
+
+.history-page {
   .color-accent-bg {
-    background-color: #00ade3;
+    background-color: $blue-color;
   }
 
   .color-accent-text {
-    color: #00ade3;
+    color: $blue-color;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #00ade3;
+      stroke: $blue-color;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #00ade3;
+      fill: $blue-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $blue-color;
     }
   }
 }
 
 .informatics {
+  background-color: $violet-color;
+}
+
+.informatics-page {
   .color-accent-bg {
-    background-color: #a069fa;
+    background-color: $violet-color;
   }
 
   .color-accent-text {
-    color: #a069fa;
+    color: $violet-color;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #a069fa;
+      stroke: $violet-color;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #a069fa;
+      fill: $violet-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $violet-color;
     }
   }
 }
 
 .english {
+  background-color: $heliotrope-color;
+}
+
+.english-page {
   .color-accent-bg {
-    background-color: #c782ff;
+    background-color: $heliotrope-color;
   }
 
   .color-accent-text {
-    color: #c782ff;
+    color: $heliotrope-color;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #c782ff;
+      stroke: $heliotrope-color;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #c782ff;
+      fill: $heliotrope-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $heliotrope-color;
     }
   }
 }
 
 .social-science {
+  background-color: $coral-color;
+}
+
+.social-science-page {
   .color-accent-bg {
-    background-color: #fe7364;
+    background-color: $coral-color;
   }
 
   .color-accent-text {
-    color: #fe7364;
+    color: $coral-color;
   }
 
   .color-accent-icon {
     svg path {
-      stroke: #fe7364;
+      stroke: $coral-color;
     }
   }
 
   .color-accent-icon-fill {
     svg path {
-      fill: #fe7364;
+      fill: $coral-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $coral-color;
     }
   }
 }
@@ -251,47 +351,14 @@ button {
   background-color: #853fea;
 }
 
-.violet {
-  background-color: $violet-color;
-}
-.violet-icon {
-  svg path {
-    fill: $violet-color;
-  }
-}
 .pale-violet {
   background-color: #a069fa14;
 }
 
-.bright-blue {
-  background-color: $bright-blue-color;
-}
-.bright-blue-icon {
-  svg path {
-    fill: $bright-blue-color;
-  }
-}
-
-.turquoise {
-  background-color: $turquoise-color;
-}
-.turquoise-icon {
-  svg path {
-    fill: $turquoise-color;
-  }
-}
 .pale-turquoise {
   background-color: $pale-turquoise-color;
 }
 
-.red {
-  background-color: $red-color;
-}
-.red-icon {
-  svg path {
-    fill: $red-color;
-  }
-}
 .pale-red {
   background-color: #f2575714;
 }
