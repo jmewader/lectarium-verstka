@@ -27,16 +27,6 @@
     }
   }
 
-  .course-head-bg {
-    @media (max-width: $tablet-width) {
-      img {
-        bottom: 127px;
-        object-fit: contain;
-        position: relative;
-      }
-    }
-  }
-
   .course-head-image {
     @media (max-width: $large-desktop-width) {
       max-width: 800px;
