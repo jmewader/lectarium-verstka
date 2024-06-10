@@ -159,8 +159,8 @@
 
     img {
       display: block;
-      width: 100%;
       max-height: 779px;
+      object-fit: contain;
     }
 
     @media (max-width: $large-desktop-width) {

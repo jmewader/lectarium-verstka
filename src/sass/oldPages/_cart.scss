@@ -1,0 +1,702 @@
+.popup {
+  display: none;
+}
+
+.cart {
+  padding-top: 80px;
+  padding-bottom: 150px;
+  background-color: $some-white-color;
+
+  .container {
+    .main-title {
+      margin-bottom: 48px;
+      font-weight: 500;
+    }
+
+    .cart-content {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 120px;
+
+      .cart-products {
+        margin-right: 32px;
+
+        .product-card {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .card-remove {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 500px;
+            box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+            background: #fff;
+            left: -56px;
+            cursor: pointer;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .product-card-content {
+          border-radius: 40px;
+          padding: 44px;
+          max-width: 1142px;
+          box-sizing: border-box;
+          box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+          background: #fff;
+          display: flex;
+          justify-content: space-between;
+
+          .product-card-image {
+            display: none;
+          }
+
+          .product-card-info {
+            width: 436px;
+            margin-right: 56px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .product-card-description {
+              .product-card-title {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                letter-spacing: -0.01em;
+                font-size: 28px;
+                line-height: 114%;
+                color: $dark-blue-color;
+                margin-bottom: 16px;
+
+                &.mobile {
+                  display: none;
+                }
+              }
+
+              .product-card-tabs {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin-bottom: 24px;
+
+                .product-card-tab {
+                  border: 1px solid $light-grey-color;
+                  border-radius: 5px;
+                  padding: 7px 11px;
+                  backdrop-filter: blur(44px);
+                  background: #fff;
+                  font-size: 15px;
+                  color: $dark-blue-color;
+
+                  &.tap-active {
+                    background: $bright-blue-color;
+                    color: #fff;
+                  }
+                }
+              }
+
+              .product-card-text {
+                @include common-text;
+                font-size: 18px;
+                line-height: 122%;
+                color: $pale-blue-color;
+                width: 386px;
+
+                span.showed {
+                  display: none;
+                }
+              }
+            }
+
+            .product-card-teacher {
+              display: flex;
+              align-items: center;
+
+              .product-card-teacher-image {
+                border-radius: 62px;
+                width: 48px;
+                height: 48px;
+                background-position: center;
+                background-size: cover;
+                margin-right: 18px;
+              }
+
+              .product-card-teacher-info {
+                .product-card-teacher-info-name {
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  letter-spacing: -0.01em;
+                  font-size: 18px;
+                  color: $dark-blue-color;
+                  margin-bottom: 6px;
+                }
+
+                .product-card-teacher-info-rate {
+                  display: flex;
+                  align-items: center;
+
+                  &.month {
+                    display: none;
+                  }
+
+                  span {
+                    @include common-text;
+                    font-size: 16px;
+                    color: $pale-blue-color;
+
+                    &.second {
+                      margin-right: 12px;
+                      margin-left: 5px;
+                    }
+                    &.mobile {
+                      display: none;
+                    }
+                  }
+
+                  a {
+                    @include common-text;
+                    font-size: 16px;
+                    color: $bright-blue-color;
+                    cursor: pointer;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .product-card-rates {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            overflow: hidden;
+
+            .product-card-rate {
+              border: 1px solid $dark-blue-color;
+              border-radius: 18px;
+              padding: 24px;
+              width: 272px;
+              height: 340px;
+              box-sizing: border-box;
+              background: #fff;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .product-card-rate-info {
+                .product-card-rate-info-term {
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  letter-spacing: -0.01em;
+                  font-size: 24px;
+                  text-align: center;
+                  color: $dark-blue-color;
+                  margin-bottom: 12px;
+                }
+
+                .product-card-rate-info-text {
+                  @include common-text;
+                  font-size: 16px;
+                  text-align: center;
+                  color: $pale-blue-color;
+                  line-height: 125%;
+                  margin-bottom: 24px;
+                }
+
+                .product-card-rate-info-items {
+                  .product-card-rate-info-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                      margin-left: 10px;
+                      @include common-text;
+                      font-size: 15px;
+                      color: $dark-blue-color;
+                    }
+
+                    &.count {
+                      margin-bottom: 8px;
+                    }
+                  }
+                }
+              }
+
+              .product-card-button {
+                .button {
+                  border-radius: 10px;
+                  padding: 18px;
+                  width: 100%;
+                  height: 60px;
+                  box-sizing: border-box;
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  letter-spacing: -0.01em;
+                  font-size: 20px;
+                }
+              }
+
+              &.rate-gray {
+                border: 1px solid $light-grey-color;
+
+                .button {
+                  color: $dark-blue-color;
+                  background: #f3f4f5;
+                }
+              }
+
+              &.rate-blue {
+                border: 1px solid $bright-blue-color;
+                background: $some-white-color;
+
+                .product-card-rate-info {
+                  .product-card-rate-info-term {
+                    color: $bright-blue-color;
+                  }
+                }
+
+                .product-card-button {
+                  .button {
+                    font-family: "TT Firs Neue", sans-serif;
+                    font-weight: 500;
+                    letter-spacing: -0.01em;
+                    font-size: 20px;
+                    padding: 16px 18px;
+
+                    .discount {
+                      margin-left: 9px;
+                      border-radius: 5px;
+                      width: 58px;
+                      height: 29px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background: #fff;
+                      font-family: "TT Firs Neue", sans-serif;
+                      font-weight: 500;
+                      letter-spacing: -0.01em;
+                      font-size: 18px;
+                      color: $bright-blue-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .product-pay-button {
+          display: none;
+        }
+      }
+      .add-product-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 36px;
+        margin-bottom: 20px;
+
+        span {
+          margin-left: 16px;
+          margin-top: 2px;
+          @include common-text;
+          font-size: 18px;
+          color: #0b1f33;
+        }
+      }
+
+      .cart-payment-title {
+        display: none;
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        letter-spacing: -0.01em;
+        color: $dark-blue-color;
+      }
+
+      .cart-payment {
+        border-radius: 40px;
+        padding: 32px;
+        width: 446px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+        background: #fff;
+
+        .cart-payment-info {
+          margin-bottom: 28px;
+
+          .cart-payment-info-item {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 18px;
+            border-bottom: 1px solid $light-grey-color;
+            margin-bottom: 18px;
+
+            .cart-payment-info-name {
+              width: 225px;
+              @include common-text;
+              font-size: 18px;
+              line-height: 122%;
+              color: $dark-blue-color;
+
+              &.first {
+                width: 195px;
+              }
+
+              .mobile {
+                display: none;
+              }
+            }
+
+            .cart-payment-price {
+              .cart-payment-price-value {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                letter-spacing: -0.01em;
+                font-size: 18px;
+                line-height: 122%;
+                color: $dark-blue-color;
+              }
+
+              .cart-payment-price-term {
+                @include common-text;
+                font-size: 15px;
+                line-height: 133%;
+                color: #9aa3ad;
+                text-align: right;
+              }
+            }
+
+            &.discount {
+              .cart-payment-price-value {
+                color: $bright-blue-color;
+              }
+            }
+
+            &.total-price {
+              padding-bottom: 0;
+              border-bottom: 0;
+              margin-bottom: 0;
+
+              .cart-payment-info-name {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                letter-spacing: -0.01em;
+                font-size: 24px;
+                color: $dark-blue-color;
+                width: auto;
+              }
+
+              .cart-payment-price {
+                .cart-payment-price-value {
+                  font-family: "TT Firs Neue", sans-serif;
+                  font-weight: 500;
+                  letter-spacing: -0.01em;
+                  font-size: 24px;
+                  color: $dark-blue-color;
+                }
+              }
+            }
+          }
+        }
+
+        .cart-payment-checkbox {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 28px;
+
+          label {
+            @include common-text;
+            font-size: 18px;
+            color: #0b1f33;
+          }
+
+          .pretty.p-switch {
+            width: 54px;
+            height: 32px;
+            margin-right: 0;
+
+            label {
+              display: inline-block;
+              height: 30px;
+            }
+          }
+
+          .pretty.p-switch .state:before {
+            width: 54px;
+            height: 30px;
+            top: 0;
+            border: 0;
+            background-color: $light-grey-color;
+          }
+
+          .pretty .state label:before,
+          .pretty .state label:after {
+            width: 30px;
+            height: 30px;
+            top: 0;
+          }
+
+          .pretty.p-switch.p-fill input:checked ~ .state label:after {
+            left: 1.35em;
+          }
+
+          .pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+            background-color: $bright-blue-color !important;
+          }
+
+          .pretty.p-switch input:checked ~ .state.p-primary:before {
+            border-color: $bright-blue-color;
+          }
+
+          .pretty.p-switch .state label:after {
+            background-color: white !important;
+          }
+        }
+
+        .cart-payment-actions {
+          .button {
+            width: 100%;
+
+            &.button-with-icon {
+              padding: 16px;
+
+              span {
+                @include common-text;
+                font-size: 16px;
+                text-align: center;
+                margin-right: 16px;
+              }
+            }
+
+            &.button-transparent {
+              margin-top: 8px;
+              text-align: center;
+              padding: 18px;
+              @include common-text;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .cart-extra {
+      .scrollbar {
+        display: none;
+      }
+
+      .cart-extra-title {
+        font-family: "TT Firs Neue", sans-serif;
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: -0.02em;
+        color: $dark-blue-color;
+        margin-bottom: 44px;
+      }
+
+      .cart-extra-cards {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 370px);
+        gap: 16px;
+
+        .cart-extra-card {
+          width: 370px;
+          height: 500px;
+          position: relative;
+          border-radius: 20px;
+          display: flex;
+          align-items: flex-end;
+
+          &.red {
+            .cart-extra-card-image {
+              .cart-extra-card-image-photo {
+                background-position-x: calc(50% - 30px);
+              }
+            }
+          }
+
+          &.blue {
+            .cart-extra-card-image {
+              .cart-extra-card-image-photo {
+                background-position-x: calc(50% + 15px);
+              }
+            }
+          }
+
+          .cart-extra-card-image {
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            width: 370px;
+            height: 260px;
+            background-position: center;
+            box-shadow: 0 0 53px 0 rgba(220, 231, 255, 0.16);
+
+            .cart-extra-card-image-tab {
+              position: absolute;
+              top: 18px;
+              left: 18px;
+              border-radius: 8px;
+              padding: 8px 12px;
+              backdrop-filter: blur(44px);
+              background: rgba(11, 31, 51, 0.15);
+              @include common-text;
+              font-size: 15px;
+              color: #fff;
+              z-index: 5;
+            }
+
+            .cart-extra-card-image-photo {
+              position: absolute;
+              width: 370px;
+              height: 260px;
+              background-position: center;
+              top: 0;
+            }
+
+            .cart-extra-card-image-img {
+              width: 100%;
+              display: flex;
+              max-width: 317px;
+              margin: 0 auto;
+
+              img {
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                object-fit: contain;
+              }
+            }
+
+            .cart-extra-card-image-bg {
+              position: absolute;
+              width: 571px;
+              height: 496px;
+              top: -106px;
+              right: -108px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .cart-extra-card-info {
+            border-radius: 20px;
+            padding: 28px;
+            width: 370px;
+            height: 280px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+            background: #fff;
+            z-index: 3;
+
+            .cart-extra-card-description {
+              margin-bottom: 60px;
+
+              .cart-extra-card-title {
+                display: block;
+                text-decoration: none;
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                letter-spacing: -0.02em;
+                color: $dark-blue-color;
+                margin-bottom: 8px;
+              }
+
+              .cart-extra-card-tabs {
+                display: flex;
+                gap: 6px;
+                margin-bottom: 18px;
+
+                .cart-extra-card-tab {
+                  border-radius: 8px;
+                  padding: 7px 11px;
+                  backdrop-filter: blur(44px);
+                  background: #f3f4f5;
+                  @include common-text;
+                  font-size: 15px;
+                  color: $dark-blue-color;
+
+                  &.tab-white {
+                    border: 1px solid $light-grey-color;
+                    background: #fff;
+                  }
+                }
+              }
+
+              .cart-extra-card-items {
+                display: flex;
+                gap: 20px;
+
+                .cart-extra-card-item {
+                  display: flex;
+                  align-items: center;
+
+                  span {
+                    margin-left: 8px;
+                    @include common-text;
+                    font-size: 15px;
+                    color: $dark-blue-color;
+                  }
+                }
+              }
+            }
+
+            .cart-extra-card-price {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              span {
+                font-family: "TT Firs Neue", sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 117%;
+                letter-spacing: -0.02em;
+                color: $dark-blue-color;
+                margin-top: 1px;
+              }
+
+              .button {
+                border-radius: 10px;
+                padding: 16px 22px;
+                width: 142px;
+                box-sizing: border-box;
+                background: #f3f4f5;
+
+                span {
+                  @include common-text;
+                  font-size: 16px;
+                  line-height: 125%;
+                  text-align: center;
+                  color: $dark-blue-color;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
