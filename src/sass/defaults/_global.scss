@@ -21,6 +21,12 @@ button {
   @include common-text;
 }
 
+.color-accent-icon-several-elements {
+  .white {
+    fill: $white-color;
+  }
+}
+
 .chemistry {
   background-color: $green-color;
 }
