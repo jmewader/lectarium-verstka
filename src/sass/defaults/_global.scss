@@ -47,14 +47,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $green-color;
+    }
+    svg path[stroke] {
+      stroke: $green-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $green-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -208,14 +214,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $red-color;
+    }
+    svg path[stroke] {
+      stroke: $red-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $red-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -304,14 +316,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $bright-blue-color;
+    }
+    svg path[stroke] {
+      stroke: $bright-blue-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $bright-blue-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -384,14 +402,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $bright-blue-color;
+    }
+    svg path[stroke] {
+      stroke: $bright-blue-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $bright-blue-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -446,14 +470,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $slate-blue;
+    }
+    svg path[stroke] {
+      stroke: $slate-blue;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $slate-blue;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -550,14 +580,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $turquoise-color;
+    }
+    svg path[stroke] {
+      stroke: $turquoise-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $turquoise-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -650,14 +686,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $orange-color;
+    }
+    svg path[stroke] {
+      stroke: $orange-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $orange-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -751,14 +793,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $blue-color;
+    }
+    svg path[stroke] {
+      stroke: $blue-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $blue-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -846,14 +894,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $violet-color;
+    }
+    svg path[stroke] {
+      stroke: $violet-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $violet-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -948,14 +1002,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $heliotrope-color;
+    }
+    svg path[stroke] {
+      stroke: $heliotrope-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $heliotrope-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 
@@ -1048,14 +1108,20 @@ button {
   }
 
   .color-accent-icon-fill {
-    svg path {
+    svg path[fill] {
       fill: $coral-color;
+    }
+    svg path[stroke] {
+      stroke: $coral-color;
     }
   }
 
   .color-accent-icon-several-elements {
     .accent {
       fill: $coral-color;
+    }
+    svg path[fill]:not(.accent) {
+      fill: $white-color;
     }
   }
 

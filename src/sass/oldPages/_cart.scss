@@ -513,12 +513,10 @@
         gap: 16px;
 
         .cart-extra-card {
-          width: 370px;
-          height: 500px;
           position: relative;
-          border-radius: 20px;
-          display: flex;
-          align-items: flex-end;
+          display: grid;
+          grid-template-rows: 260px 1fr;
+          grid-template-columns: 1fr;
 
           &.red {
             .cart-extra-card-image {
@@ -537,7 +535,7 @@
           }
 
           .cart-extra-card-image {
-            position: absolute;
+            position: relative;
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -602,16 +600,16 @@
           .cart-extra-card-info {
             border-radius: 20px;
             padding: 28px;
-            width: 370px;
-            height: 280px;
-            box-sizing: border-box;
             box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
             background: #fff;
             z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 24px;
+            margin-top: -40px;
 
             .cart-extra-card-description {
-              margin-bottom: 60px;
-
               .cart-extra-card-title {
                 display: block;
                 text-decoration: none;
@@ -621,6 +619,7 @@
                 letter-spacing: -0.02em;
                 color: $dark-blue-color;
                 margin-bottom: 8px;
+                word-break: break-word;
               }
 
               .cart-extra-card-tabs {
@@ -647,6 +646,7 @@
               .cart-extra-card-items {
                 display: flex;
                 gap: 20px;
+                flex-wrap: wrap;
 
                 .cart-extra-card-item {
                   display: flex;
