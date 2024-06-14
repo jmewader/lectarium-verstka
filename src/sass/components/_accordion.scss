@@ -16,15 +16,34 @@
     &::marker {
       content: "";
     }
+
+    ::after {
+      content: "";
+    }
+
+    &_icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
   }
 
   &[open] {
     .accordion__summary {
       margin: 0 0 13px;
+
+      ::after {
+        content: "";
+      }
     }
 
-    svg {
-      transform: rotate(180deg);
+    .accordion__summary_icon {
+      svg {
+        transform: rotate(180deg);
+      }
     }
   }
 }
