@@ -226,12 +226,16 @@
     }
 
     @media (max-width: $large-tablet-width) {
-      padding: 31px 82px 67px 24px;
+      padding: 59px 82px 24px 24px;
       gap: 16px;
       min-width: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 31px 82px 67px 24px;
     }
 
     @media (max-width: $mobile-width) {
