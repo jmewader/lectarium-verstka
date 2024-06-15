@@ -27,6 +27,10 @@
 
     &__content {
       padding: 44px;
+
+      @media (max-width: $mobile-width) {
+        padding: 24px 16px;
+      }
     }
 
     &__close-btn {
@@ -40,6 +44,26 @@
       color: #333;
       width: 32px;
       height: 32px;
+
+      @media (max-width: $mobile-width) {
+        top: 12px;
+        right: 12px;
+
+        svg {
+          rect {
+            fill: none;
+          }
+
+          g path {
+            stroke: #9aa3ad;
+          }
+        }
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      border-radius: 20px 20px 0 0;
+      height: auto;
     }
   }
 }
