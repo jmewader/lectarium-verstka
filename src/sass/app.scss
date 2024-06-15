@@ -16,6 +16,8 @@
 @import "./components/dots";
 @import "./components/sorting-list";
 @import "./components/modal-bottom";
+@import "./components/modal-right";
+@import "./components/modal-video";
 @import "./components/accordion";
 @import "./components/filters";
 @import "./components/sticky-bar";
@@ -24,6 +26,7 @@
 @import "./components/main-accordion";
 @import "./components/cards-with-price";
 @import "./components/price";
+@import "./components/review";
 
 @import "./widgets/offer";
 @import "./widgets/hero";
@@ -51,6 +54,7 @@
 @import "./widgets/license";
 @import "./widgets/organization-card";
 @import "./widgets/useful-materials";
+@import "./widgets/reviews-list";
 
 
 @import "./adaptive/layout-adaptive";

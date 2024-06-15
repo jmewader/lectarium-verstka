@@ -59,7 +59,7 @@ button {
     .accent {
       fill: $green-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -226,7 +226,7 @@ button {
     .accent {
       fill: $red-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -328,7 +328,7 @@ button {
     .accent {
       fill: $bright-blue-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -414,7 +414,7 @@ button {
     .accent {
       fill: $bright-blue-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -482,7 +482,7 @@ button {
     .accent {
       fill: $slate-blue;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -592,7 +592,7 @@ button {
     .accent {
       fill: $turquoise-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -698,7 +698,7 @@ button {
     .accent {
       fill: $orange-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -805,7 +805,7 @@ button {
     .accent {
       fill: $blue-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -906,7 +906,7 @@ button {
     .accent {
       fill: $violet-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -1014,7 +1014,7 @@ button {
     .accent {
       fill: $heliotrope-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }
@@ -1120,7 +1120,7 @@ button {
     .accent {
       fill: $coral-color;
     }
-    svg path[fill]:not(.accent) {
+    svg path[fill]:not(.accent):not(.circuit) {
       fill: $white-color;
     }
   }

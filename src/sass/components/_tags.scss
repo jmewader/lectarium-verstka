@@ -62,6 +62,13 @@
     gap: 8px;
   }
 
+  &.full {
+    li,
+    .tabs__tab {
+      width: 100%;
+    }
+  }
+
   &__tab {
     font-size: 18px;
     line-height: 22px;
