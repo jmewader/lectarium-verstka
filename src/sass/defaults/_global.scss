@@ -1615,12 +1615,7 @@ button {
     .custom-select__menu-wrap {
       top: 32px;
       min-width: 291px;
-      height: 258px;
       right: -17px;
-
-      @media (max-width: $mobile-width) {
-        height: 190px;
-      }
     }
   }
 
