@@ -3,7 +3,6 @@ footer.footer
         .footer-top
             .footer-info
                 .footer-logo
-                    //- img(:src="imgLogoFooter", alt="Logo")
                     img(src="../img/logoV2.svg", alt="Logo")
                 nav.footer-menu
                     ul
@@ -76,10 +75,22 @@ footer.footer
                         .footer-navigation-name Социальные сети
                             span ·
                         .footer-navigation-subject-items
-                            span Математика 
-                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                            .custom-select.second
+                                .custom-select__title Русский язык
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    .custom-select__menu-wrap
+                                        ul.custom-select__menu
+                                            li.custom-select__menu_item(data-value="4") Русский язык
+                                            li.custom-select__menu_item(data-value="5") Базовая математика
+                                            li.custom-select__menu_item(data-value="1") Профильная математика
+                                            li.custom-select__menu_item(data-value="2") Биология
+                                            li.custom-select__menu_item(data-value="3") Химия
+                                            li.custom-select__menu_item(data-value="6") Обществознание
+                                            li.custom-select__menu_item(data-value="7") Русский язык
+                                            li.custom-select__menu_item(data-value="8") st язык
+                                            li.custom-select__menu_item(data-value="9") Русский язык
                     .footer-navigation-subject-extra-items
                         a.footer-navigation-subject-extra-item.footer-contacts-item(href="#")
                             | 
@@ -104,5 +115,4 @@ footer.footer
                     a.footer-link(href="#") Лицензия образовательной организации
                 .footer__wrap
                     .footer-sk-logo
-                        //- img(:src="imgLogoSk", alt="Logo")
                         img(src="../img/logo-sk.svg", alt="Logo-Sk")
