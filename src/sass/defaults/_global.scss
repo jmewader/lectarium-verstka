@@ -1652,6 +1652,18 @@ button {
     border-radius: 12px;
     border: 1px solid #cad0d6;
 
+    &_wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
     &.invalid {
       border: 1px solid $red-color;
       color: $red-color;
