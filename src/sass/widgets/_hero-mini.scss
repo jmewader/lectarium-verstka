@@ -11,6 +11,67 @@
     border-radius: 25px;
   }
 
+  &.career {
+    .hero-mini__descriptions {
+      max-width: 100%;
+      @media (max-width: $mobile-width) {
+        max-width: 250px;
+      }
+    }
+
+    .hero-mini__image {
+      padding: 0 60px 0 0;
+
+      @media (max-width: $large-tablet-width) {
+        padding: 0;
+        position: absolute;
+        right: -126px;
+        max-width: 100%;
+      }
+
+      @media (max-width: $tablet-width) {
+        right: 0px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 360px;
+        position: relative;
+      }
+    }
+
+    .hero-mini__content {
+      @media (max-width: $tablet-width) {
+        padding: 24px 16px;
+      }
+
+      @media (max-width: $mobile-width) {
+        padding: 24px 16px 0;
+      }
+    }
+
+    .hero-mini__background {
+      @media (max-width: $tablet-width) {
+        justify-content: flex-end;
+        transform: inherit;
+      }
+
+      @media (max-width: $mobile-width) {
+        justify-content: center;
+        transform: rotateY(45deg);
+      }
+    }
+
+    .hero-mini__wrap {
+      @media (max-width: $tablet-width) {
+        flex-direction: row;
+      }
+      @media (max-width: $mobile-width) {
+        gap: 0;
+        flex-direction: column;
+      }
+    }
+  }
+
   &__logo {
     opacity: 0.6;
     display: flex;
@@ -46,7 +107,7 @@
       flex-direction: column;
       min-height: auto;
       max-width: 100%;
-      gap: 61px;
+      gap: 37px;
     }
   }
 
@@ -55,21 +116,21 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
-    padding: 64px;
+    padding: 64px 24px 64px 64px;
     min-height: 546px;
     width: 100%;
 
     @media (max-width: $desktop-width) {
-      padding: 44px;
+      padding: 44px 24px 44px 44px;
     }
 
     @media (max-width: $large-tablet-width) {
-      padding: 24px;
+      padding: 24px 24px 24px 24px;
       min-height: 446px;
     }
 
     @media (max-width: $tablet-width) {
-      padding: 24px 16px 0;
+      padding: 24px 16px;
       min-height: auto;
 
       &.text {
