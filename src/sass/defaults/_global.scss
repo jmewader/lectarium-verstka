@@ -1629,6 +1629,10 @@ button {
   position: relative;
   min-width: 290px;
 
+  &.limited {
+    width: fit-content;
+  }
+
   &.second {
     min-width: auto;
 
