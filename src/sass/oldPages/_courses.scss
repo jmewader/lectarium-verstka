@@ -593,7 +593,7 @@
   }
 
   .courses-page-title {
-    margin:  0 0 44px;
+    margin: 0 0 44px;
   }
 
   .add-to-cart-block {
@@ -1086,6 +1086,7 @@
               font-weight: 400;
               font-size: 15px;
               color: $dark-blue-color;
+              cursor: pointer;
 
               .remove-filter {
                 display: none;
