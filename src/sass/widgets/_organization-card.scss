@@ -170,8 +170,12 @@
           width: 20px;
           height: 20px;
 
-          svg path {
-            fill: #9aa3ad;
+          svg {
+            width: 16px;
+            height: 14px;
+            path {
+              fill: #9aa3ad;
+            }
           }
         }
       }
@@ -199,6 +203,7 @@
         font-size: 18px;
         line-height: 22px;
         min-height: 52px;
+        gap: 10px;
       }
     }
   }

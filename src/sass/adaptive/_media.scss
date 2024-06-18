@@ -5,6 +5,13 @@
   }
 }
 
+.visible-on-medium-mobile {
+  display: none;
+  @media (max-width: $medium-mobile-width) {
+    display: flex;
+  }
+}
+
 .visible-on-mobile {
   display: none;
   @media (max-width: $mobile-width) {
@@ -51,6 +58,13 @@
 .hidden-on-small-mobile {
   display: flex;
   @media (max-width: $small-mobile-width) {
+    display: none;
+  }
+}
+
+.hidden-on-medium-mobile {
+  display: flex;
+  @media (max-width: $medium-mobile-width) {
     display: none;
   }
 }

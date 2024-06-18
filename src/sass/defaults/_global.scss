@@ -1641,6 +1641,7 @@ button {
     color: $pale-blue-color;
     padding: 0 20px;
     font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
     background-color: #f7f8f9;
     min-height: 72px;
@@ -1650,13 +1651,21 @@ button {
     &_wrap {
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 12px;
+
+      @media (max-width: $medium-mobile-width) {
+        width: 100%;
+        justify-content: space-between;
+      }
     }
 
     &_icon {
       display: flex;
       align-items: center;
       flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      justify-content: center;
     }
 
     &.invalid {
