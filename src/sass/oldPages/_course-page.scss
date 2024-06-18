@@ -249,14 +249,17 @@
     }
 
     .course-head-items {
-      max-width: 1620px;
+      max-width: 1652px;
+      padding: 0 16px;
       margin: 64px auto 0;
-      display: flex;
       justify-content: space-between;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
 
       .course-head-item {
         display: flex;
-        width: 390px;
 
         .course-head-item-icon {
           width: 40px;
@@ -656,6 +659,7 @@
                 background: #fff;
                 border: 1px solid $light-grey-color;
                 color: $dark-blue-color;
+                text-decoration: none;
               }
             }
           }
