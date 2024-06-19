@@ -4,25 +4,14 @@
   align-items: center;
   width: 100%;
   margin: 24px 0 0;
+  gap: 13px;
 
   &-item {
     display: flex;
 
-    &:nth-child(1) .carousel__pagination-button {
-      width: 10px;
-      height: 10px;
-      margin: 0 13px 0 0;
-    }
-
-    &:nth-child(2) .carousel__pagination-button {
+    .carousel__pagination-button {
       width: 8px;
       height: 8px;
-      margin: 0 15px 0 0;
-    }
-
-    &:nth-child(3) .carousel__pagination-button {
-      width: 6px;
-      height: 6px;
     }
   }
 

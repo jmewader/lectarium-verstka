@@ -40,8 +40,11 @@
     justify-content: space-between;
     cursor: pointer;
     padding: 36px;
+    list-style: none;
 
+    &::-webkit-details-marker,
     &::marker {
+      display: none;
       content: "";
     }
 
