@@ -21,6 +21,7 @@
 
     .hero-mini__image {
       padding: 0 60px 0 0;
+      max-height: 546px;
 
       @media (max-width: $large-tablet-width) {
         padding: 0;

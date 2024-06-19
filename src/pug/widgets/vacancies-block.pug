@@ -34,6 +34,81 @@
                             li.custom-select__menu_item(data-value="7") Русский язык
                             li.custom-select__menu_item(data-value="8") st язык
                             li.custom-select__menu_item(data-value="9") Русский язык
+            .visible-on-mobile
+                button.cards__list_btn-filters.button-with-frame
+                    <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.15625 12.5859H5.32292" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.8229 3.42188H13.6562" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3203 12.5859H17.8203" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.65625 3.42188H1.15625" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.82031 15C6.4396 15 5.32031 13.8807 5.32031 12.5C5.32031 11.1192 6.4396 10 7.82031 10C9.20106 10 10.3203 11.1192 10.3203 12.5C10.3203 13.8807 9.20106 15 7.82031 15Z" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.1562 5.83594C12.537 5.83594 13.6562 4.71665 13.6562 3.33594C13.6562 1.95523 12.537 0.835938 11.1562 0.835938C9.7755 0.835938 8.65625 1.95523 8.65625 3.33594C8.65625 4.71665 9.7755 5.83594 11.1562 5.83594Z" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    | Фильтры
+            .modal-overlay
+                .modal
+                    button.modal__close-btn
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2873_18660)">
+                            <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath>
+                            <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    .modal__content
+                        h3.modal__title Фильтры
+                        .modal__list-wrap
+                            details.accordion
+                                summary.accordion__summary
+                                    | Роль
+                                    .accordion__summary_icon
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 1L5 5L1 1" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любая
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="18" height="18" rx="9" fill="#2554E7"/>
+                                                <path d="M6 6L12 12M12 6L6 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                    li.filters__item
+                                        button.filters__button Преподаватели
+                                    li.filters__item
+                                        button.filters__button Методисты
+                            details.accordion
+                                summary.accordion__summary
+                                    | Предмет
+                                    .accordion__summary_icon
+                                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 1L5 5L1 1" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                ul.filters
+                                    li.filters__item
+                                        button.filters__button.active
+                                            | Любой
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="18" height="18" rx="9" fill="#2554E7"/>
+                                                <path d="M6 6L12 12M12 6L6 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                                            </svg>
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                                    li.filters__item
+                                        button.filters__button Физика
+                    .modal__bottom
+                        button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                        button.main-button Применить
         ul.cards__list
             li.cards__list_item
                 .cards__list_header.russian
@@ -42,7 +117,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по русскому языку
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;русскому&nbsp;языку
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -92,7 +167,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по математике
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;математике
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -142,7 +217,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по химии
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;химии
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -192,7 +267,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по физике
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;физике
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -242,7 +317,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по информатике
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;информатике
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -292,7 +367,7 @@
                     .cards__list_header-content
                         ul.tags
                             li.tags__item.tags__item--white Активно
-                        h3.cards__list_item-title Куратор ОГЭ по обществознанию
+                        h3.cards__list_item-title Куратор ОГЭ по&nbsp;обществознанию
                 .cards__list_body
                     ul.tags-with-icons
                             li.tags-with-icons__item 
@@ -335,6 +410,7 @@
                                 <rect width="24" height="24" rx="12" fill="white"/>
                                 <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-
+        .visible-on-mobile
+            button.cards__list_btn.main-button Показать еще
 
 

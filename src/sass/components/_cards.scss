@@ -12,6 +12,13 @@
     margin: 70px 0;
   }
 
+  .tags-with-icons__item {
+    @media (max-width: $mobile-width) {
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
+
   &__title {
     margin: 0;
     &.main-subtitle {
@@ -26,7 +33,7 @@
     align-items: flex-end;
     width: 100%;
     justify-content: space-between;
-    margin: 0 0 36px;
+    margin: 0 0 64px;
     gap: 20px;
 
     @media (max-width: $desktop-width) {
@@ -44,6 +51,11 @@
     flex-direction: column;
     width: 100%;
     gap: 32px;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 24px;
+      gap: 18px;
+    }
   }
 
   &__list {
@@ -61,14 +73,16 @@
 
     @media (max-width: $mobile-width) {
       grid-template-columns: 1fr;
+      gap: 16px;
     }
 
     &_item {
       display: grid;
-      grid-template-rows: 266px 1fr;
+      grid-template-rows: minmax(238px, 1fr);
 
       @media (max-width: $mobile-width) {
-        grid-template-rows: 228px 1fr;
+        display: flex;
+        flex-direction: column;
       }
 
       &-title {
@@ -89,11 +103,12 @@
       border-radius: 24px 24px 0 0;
       position: relative;
       position: relative;
-      bottom: -28px;
+      margin: 0 0 -28px;
 
       @media (max-width: $mobile-width) {
         border-radius: 20px 20px 0 0;
-        bottom: -24px;
+        margin: 0 0 -32px;
+        min-height: 244px;
       }
 
       &-content {
@@ -132,6 +147,10 @@
       flex-direction: column;
       gap: 28px;
 
+      @media (max-width: $mobile-width) {
+        gap: 24px;
+      }
+
       &-prices {
         display: flex;
         flex-direction: column;
@@ -151,6 +170,11 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 13px;
+        line-height: 17px;
+      }
     }
 
     &_price {
@@ -166,7 +190,7 @@
 
     &_bg {
       display: flex;
-      width: 393px;
+      width: 100%;
       height: 324px;
       top: -20px;
       align-items: flex-end;
@@ -177,6 +201,21 @@
       img {
         object-fit: contain;
         height: 100%;
+      }
+    }
+
+    &_btn-filters {
+      &.button-with-frame {
+        min-height: 50px;
+      }
+    }
+
+    &_btn {
+      &.main-button {
+        min-height: 60px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 24px 0 0;
       }
     }
   }
