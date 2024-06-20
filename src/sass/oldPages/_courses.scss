@@ -710,7 +710,7 @@
             max-height: 353px;
             height: 100%;
             position: relative;
-            right: -100px;
+            right: -60px;
             z-index: 1;
 
             img {
@@ -904,6 +904,7 @@
             max-width: 650px;
             margin-bottom: 42px;
             margin-left: 1px;
+            word-break: break-word;
           }
 
           .courses-card-details-action {

@@ -735,13 +735,14 @@
             }
 
             .courses-card-details-advantages {
-              margin-bottom: 18px;
               gap: 12px;
-              overflow: auto;
+              overflow-y: hidden;
+              overflow-x: scroll;
               flex-wrap: nowrap;
               width: calc(100% + 44px);
-              margin: 0 -24px 18px;
+              margin: 0 -24px 16px;
               padding: 0 24px;
+              height: 20px;
 
               &.text-desktop {
                 display: none;
