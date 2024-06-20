@@ -518,6 +518,9 @@
         bottom: 0;
         left: 0;
         z-index: 1;
+        width: 43%;
+        display: flex;
+        justify-content: flex-end;
 
         img {
           vertical-align: bottom;

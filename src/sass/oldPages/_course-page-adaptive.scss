@@ -100,16 +100,11 @@
         "second fourth .";
     }
   }
-}
 
-@media screen and (max-width: 1530px) {
   .course-teacher {
     .container {
-      .course-teacher-back {
-        .course-teacher-image {
-          right: calc(50% - 50px);
-          left: auto;
-        }
+      .course-teacher-info {
+        max-width: 700px;
       }
     }
   }
@@ -169,7 +164,7 @@
 
         .course-teacher-info {
           margin-right: 0;
-          margin-bottom: 300px;
+          margin: 62px 36px 62px 0;
         }
       }
     }
@@ -352,6 +347,8 @@
           order: 2;
           position: static;
           margin-bottom: -64px;
+          width: 100%;
+          justify-content: center;
         }
 
         .course-teacher-info {
@@ -705,11 +702,12 @@
 
         .course-teacher-links {
           left: 16px;
+          right: 16px;
           bottom: 17px;
           padding: 18px;
-          max-width: 343px;
+          max-width: 100%;
           box-sizing: border-box;
-          width: 100%;
+          max-width: 343px;
 
           .course-teacher-links-text {
             .course-teacher-links-text-extra {
@@ -1664,6 +1662,16 @@
 }
 
 @media screen and (max-width: 430px) {
+  .course-teacher {
+    .container {
+      .course-teacher-back {
+        .course-teacher-links {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
   .course-head-back {
     .course-head-info {
       .course-head-info-text {
