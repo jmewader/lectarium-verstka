@@ -1210,7 +1210,7 @@ button {
       }
     }
   }
-  
+
   .color-accent-bg {
     background-color: $heliotrope-color;
   }
@@ -1433,6 +1433,125 @@ button {
         top: 103px;
         width: 120px;
         left: 246px;
+      }
+    }
+  }
+}
+
+.geography {
+  background-color: $aqua-color;
+}
+
+.geography-page {
+  .course-tariff {
+    .course-tariff-content {
+      &.tariff {
+        .course-tariff-items {
+          .course-tariff-item {
+            .course-tariff-item-info-items {
+              .course-tariff-item-info-item {
+                &::before {
+                  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%230076e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .color-accent-bg {
+    background-color: $aqua-color;
+  }
+
+  .color-accent-text {
+    color: $aqua-color;
+  }
+
+  .color-accent-icon {
+    svg path {
+      stroke: $aqua-color;
+    }
+  }
+
+  .color-accent-icon-fill {
+    svg path[fill] {
+      fill: $aqua-color;
+    }
+    svg path[stroke] {
+      stroke: $aqua-color;
+    }
+  }
+
+  .color-accent-icon-several-elements {
+    .accent {
+      fill: $aqua-color;
+    }
+    svg path[fill]:not(.accent):not(.circuit) {
+      fill: $white-color;
+    }
+    svg path[stroke]:not(.accent):not(.circuit) {
+      stroke: $white-color;
+    }
+  }
+
+  .course-head-back {
+    .geography-figures,
+    .geography-bg {
+      display: block;
+    }
+
+    .course-head-bg {
+      right: -293px;
+      bottom: -232px;
+
+      @media (max-width: $large-desktop-width) {
+        right: -270px;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        height: 1136px;
+        right: -335px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 619px;
+        right: -247px;
+        bottom: -139px;
+      }
+    }
+
+    .course-head-figures-one {
+      z-index: 2;
+      position: relative;
+      width: 297px;
+      top: 567px;
+      left: 4px;
+
+      @media (max-width: $mobile-width) {
+        top: 234px;
+        width: 142px;
+        left: 6px;
+      }
+    }
+
+    .course-head-figures-two {
+      position: relative;
+      left: 82px;
+      top: 40px;
+      z-index: 2;
+      width: 157px;
+
+      @media (max-width: $large-desktop-width) {
+        top: -108px;
+        left: 62px;
+      }
+
+      @media (max-width: $mobile-width) {
+        top: -26px;
+        width: 69px;
+        left: 30px;
       }
     }
   }
