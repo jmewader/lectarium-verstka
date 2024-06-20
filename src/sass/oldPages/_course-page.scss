@@ -907,6 +907,14 @@
               margin-bottom: 10px;
               display: flex;
               align-items: flex-start;
+              position: relative;
+
+              &::before {
+                // content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwOUMyNzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
+                position: absolute;
+                left: 0;
+                top: -5%;
+              }
 
               &.to-mobile {
                 display: none;
@@ -924,6 +932,7 @@
                 font-size: 18px;
                 line-height: 122%;
                 color: $dark-blue-color;
+                padding: 0 0 0 26px;
               }
 
               &:last-child {
@@ -1781,6 +1790,10 @@
 
     .course-faq-wrap {
       max-width: 520px;
+      position: sticky;
+      top: 70px;
+      width: 100%;
+      height: 100%;
 
       .course-faq-wrap-head {
         margin-bottom: 24px;
@@ -1814,6 +1827,7 @@
 
     .course-faq-questions {
       max-width: 800px;
+      width: 100%;
 
       .course-faq-question {
         margin-bottom: 20px;
