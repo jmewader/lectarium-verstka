@@ -39,6 +39,8 @@
   .courses-page {
     .courses-content {
       flex-direction: column;
+      display: flex;
+      gap: 0;
 
       .courses-cards {
         order: 2;

@@ -46,6 +46,18 @@
       width: 100%;
     }
   }
+
+  .course-head-image {
+    .course-head-image-img {
+      @media (max-width: $large-tablet-width) {
+        min-height: 779px;
+      }
+
+      @media (max-width: $mobile-width) {
+        min-height: auto;
+      }
+    }
+  }
 }
 
 .course-head .container .course-head-items {
@@ -103,8 +115,10 @@
 
   .course-teacher {
     .container {
-      .course-teacher-info {
-        max-width: 700px;
+      .course-teacher-back {
+        .course-teacher-info {
+          margin: 62px 0px 62px 0;
+        }
       }
     }
   }
@@ -164,7 +178,7 @@
 
         .course-teacher-info {
           margin-right: 0;
-          margin: 62px 36px 62px 0;
+          max-width: 672px;
         }
       }
     }
@@ -668,6 +682,8 @@
     margin-bottom: 70px;
 
     .container {
+      padding: 0;
+
       .course-head-back {
         border-radius: 25px;
 
@@ -690,6 +706,8 @@
     margin-bottom: 70px;
 
     .container {
+      padding: 0;
+
       .course-teacher-back {
         padding: 24px 16px 0;
         border-radius: 25px;

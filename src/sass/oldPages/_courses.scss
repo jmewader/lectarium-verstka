@@ -662,11 +662,12 @@
   }
 
   .courses-content {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 446px;
+    gap: 32px;
 
     .courses-cards {
-      margin-right: 32px;
+      width: 100%;
 
       .courses-card {
         padding: 24px 44px 24px 24px;
@@ -1019,8 +1020,8 @@
       box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
       background: #fff;
       box-sizing: border-box;
-      min-width: 446px;
-      width: 446px;
+      width: 100%;
+      height: fit-content;
 
       .courses-filter-title {
         display: none;

@@ -746,14 +746,6 @@ button {
       display: block;
     }
 
-    .course-head-image-img {
-      right: 55px;
-
-      @media (max-width: $large-tablet-width) {
-        right: 0;
-      }
-    }
-
     .course-head-bg {
       top: -79px;
       right: 5px;
@@ -796,12 +788,12 @@ button {
       width: 261px;
 
       @media (max-width: $large-desktop-width) {
-        left: 523px;
+        left: 485px;
         top: 329px;
       }
 
       @media (max-width: $mobile-width) {
-        top: 200px;
+        top: 161px;
         width: 118px;
         left: 248px;
       }
