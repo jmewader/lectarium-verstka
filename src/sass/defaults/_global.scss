@@ -32,21 +32,9 @@ button {
 }
 
 .chemistry-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwOUMyNzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwOUMyNzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
 
@@ -162,21 +150,9 @@ button {
 }
 
 .russian-materials-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
 
@@ -238,21 +214,9 @@ button {
 }
 
 .russian-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
 
@@ -361,23 +325,12 @@ button {
 }
 
 .mathematics-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
+
   .color-accent-bg {
     background-color: $bright-blue-color;
   }
@@ -467,21 +420,9 @@ button {
 }
 
 .mathematics-marathon-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
 
@@ -556,21 +497,9 @@ button {
 }
 
 .physics-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiM2YzVkZjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiM2YzVkZjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
     }
   }
 
@@ -687,21 +616,9 @@ button {
 }
 
 .biology-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%2300c19f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%2300c19f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
     }
   }
 
@@ -806,21 +723,9 @@ button {
 }
 
 .literature-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmZjk0NDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmZjk0NDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
     }
   }
 
@@ -934,21 +839,9 @@ button {
 }
 
 .history-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwMGFkZTMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwMGFkZTMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
     }
   }
 
@@ -1056,21 +949,9 @@ button {
 }
 
 .informatics-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNhMDY5ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNhMDY5ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
     }
   }
 
@@ -1185,21 +1066,9 @@ button {
 }
 
 .english-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNjNzgyZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNjNzgyZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
     }
   }
 
@@ -1312,21 +1181,9 @@ button {
 }
 
 .social-science-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%23fe7364' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%23fe7364' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
     }
   }
 
@@ -1435,21 +1292,9 @@ button {
 }
 
 .geography-page {
-  .course-tariff {
-    .course-tariff-content {
-      &.tariff {
-        .course-tariff-items {
-          .course-tariff-item {
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                &::before {
-                  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%230076e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-                }
-              }
-            }
-          }
-        }
-      }
+  .course-tariff-item-info-item {
+    &::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%230076e3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
     }
   }
 

@@ -891,63 +891,18 @@
               }
             }
           }
-
-          .course-tariff-item-info-add {
-            border-radius: 10px;
-            padding: 16px 18px;
-            background: #f7f8f9;
-            @include common-text;
-            font-size: 18px;
-            line-height: 122%;
-            color: $dark-blue-color;
-            margin-bottom: 10px;
-          }
-
-          .course-tariff-item-info-items {
-            width: 100%;
-            border-radius: 10px;
-            padding: 18px;
-            background: #f7f8f9;
-            box-sizing: border-box;
-
-            .course-tariff-item-info-item {
-              margin-bottom: 10px;
-              display: flex;
-              align-items: flex-start;
-              position: relative;
-
-              &::before {
-                // content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwOUMyNzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-                position: absolute;
-                left: 0;
-                top: -5%;
-              }
-
-              &.to-mobile {
-                display: none;
-              }
-
-              .item-icon {
-                width: 18px;
-                height: 18px;
-                margin-right: 8px;
-              }
-
-              span {
-                font-family: "TT Firs Neue", sans-serif;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 122%;
-                color: $dark-blue-color;
-                padding: 0 0 0 26px;
-              }
-
-              &:last-child {
-                margin-bottom: 0;
-              }
-            }
-          }
         }
+      }
+
+      .course-tariff-item-info-add {
+        border-radius: 10px;
+        padding: 16px 18px;
+        background: #f7f8f9;
+        @include common-text;
+        font-size: 18px;
+        line-height: 122%;
+        color: $dark-blue-color;
+        margin-bottom: 10px;
       }
 
       .course-tariff-action {
@@ -1143,6 +1098,51 @@
       &.month {
         display: none;
       }
+    }
+  }
+}
+
+.course-tariff-item-info-items {
+  width: 100%;
+  border-radius: 10px;
+  padding: 18px;
+  background: #f7f8f9;
+  box-sizing: border-box;
+
+  .course-tariff-item-info-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    &::before {
+      // content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwOUMyNzQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
+      position: absolute;
+      left: 0;
+      top: -5%;
+    }
+
+    &.to-mobile {
+      display: none;
+    }
+
+    .item-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+
+    span {
+      font-family: "TT Firs Neue", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 122%;
+      color: $dark-blue-color;
+      padding: 0 0 0 26px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

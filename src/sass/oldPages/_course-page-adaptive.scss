@@ -464,38 +464,6 @@
               }
             }
 
-            .course-tariff-item-info-add {
-              padding: 12px 18px;
-              margin-bottom: 6px;
-              font-size: 15px;
-              line-height: 133%;
-              letter-spacing: 0;
-            }
-
-            .course-tariff-item-info-items {
-              padding: 16px;
-
-              .course-tariff-item-info-item {
-                margin-bottom: 8px;
-
-                .item-icon {
-                  width: 16px;
-                  height: 16px;
-                  margin-right: 4px;
-
-                  svg {
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-
-                span {
-                  font-size: 15px;
-                  line-height: 133%;
-                }
-              }
-            }
-
             &.recommendation {
               margin-top: 11px;
               border: 0;
@@ -507,6 +475,38 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .course-tariff-item-info-add {
+    padding: 12px 18px;
+    margin-bottom: 6px;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0;
+  }
+
+  .course-tariff-item-info-items {
+    padding: 16px;
+
+    .course-tariff-item-info-item {
+      margin-bottom: 8px;
+
+      .item-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      span {
+        font-size: 15px;
+        line-height: 133%;
       }
     }
   }
@@ -1934,26 +1934,6 @@
 
   .course-tariff {
     .course-tariff-content {
-      .course-tariff-items {
-        .course-tariff-item {
-          .course-tariff-item-info-items {
-            .course-tariff-item-info-item {
-              &.to-desktop {
-                display: none;
-              }
-
-              &.to-mobile {
-                display: flex;
-              }
-
-              span {
-                max-width: 239px;
-              }
-            }
-          }
-        }
-      }
-
       &.month {
         .course-tariff-items {
           .product-card-rate {
@@ -1964,6 +1944,22 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .course-tariff-item-info-items {
+    .course-tariff-item-info-item {
+      &.to-desktop {
+        display: none;
+      }
+
+      &.to-mobile {
+        display: flex;
+      }
+
+      span {
+        max-width: 239px;
       }
     }
   }
@@ -2088,21 +2084,21 @@
                 }
               }
             }
-
-            .course-tariff-item-info-add {
-              padding: 16px;
-            }
-
-            .course-tariff-item-info-items {
-              .course-tariff-item-info-item {
-                span {
-                  br {
-                    display: none;
-                  }
-                }
-              }
-            }
           }
+        }
+      }
+    }
+  }
+
+  .course-tariff-item-info-add {
+    padding: 16px;
+  }
+
+  .course-tariff-item-info-items {
+    .course-tariff-item-info-item {
+      span {
+        br {
+          display: none;
         }
       }
     }
