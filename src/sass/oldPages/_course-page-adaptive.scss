@@ -60,6 +60,22 @@
   }
 }
 
+.course-head {
+  .container {
+    @media (max-width: $desktop-width) {
+      padding: 0 16px;
+    }
+  }
+}
+
+.course-teacher {
+  .container {
+    @media (max-width: $desktop-width) {
+      padding: 0 16px;
+    }
+  }
+}
+
 .course-head .container .course-head-items {
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
