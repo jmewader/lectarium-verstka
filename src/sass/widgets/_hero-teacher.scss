@@ -53,12 +53,11 @@
     gap: 40px;
 
     @media (max-width: $large-desktop-width) {
-      min-height: 492px;
+      min-height: 580px;
       padding: 44px 0 44px 44px;
     }
 
     @media (max-width: $desktop-width) {
-      min-height: 240px;
       padding: 24px 0 24px 24px;
       max-width: 380px;
     }

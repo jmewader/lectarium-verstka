@@ -29,14 +29,28 @@
     gap: 10px;
     min-width: fit-content;
 
-    @media (max-width: $mobile-width) {
-      gap: 6px;
-      font-size: 15px;
+    &-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       svg {
+        path {
+          stroke: $bright-blue-color;
+        }
+      }
+
+      @media (max-width: $mobile-width) {
         width: 18px;
         height: 18px;
       }
+    }
+
+    @media (max-width: $mobile-width) {
+      gap: 6px;
+      font-size: 15px;
     }
   }
 }
