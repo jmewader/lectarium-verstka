@@ -485,6 +485,9 @@
               color: $dark-blue-color;
               min-width: 121px;
               box-sizing: border-box;
+              display: flex;
+              width: 100%;
+              max-width: max-content;
             }
           }
         }

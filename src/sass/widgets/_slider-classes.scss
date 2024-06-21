@@ -133,6 +133,7 @@
         z-index: 3;
         gap: 34px;
         grid-template-rows: 216px 1fr;
+        text-decoration: none;
 
         @media (max-width: $mobile-width) {
           grid-template-rows: 160px 1fr;
@@ -146,6 +147,7 @@
         font-weight: 500;
         letter-spacing: -0.02em;
         margin: 0 0 16px;
+        color: $dark-blue-color;
 
         @media (max-width: $mobile-width) {
           font-size: 24px;
