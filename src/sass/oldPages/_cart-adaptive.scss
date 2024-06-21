@@ -971,10 +971,6 @@
       }
 
       .cart-extra {
-        .cart-extra-track {
-          height: 418px;
-        }
-
         .cart-extra-title {
           text-align: left;
         }
@@ -1000,7 +996,7 @@
             .cart-extra-card-info {
               width: 100%;
               padding: 24px;
-              height: 228px;
+              height: auto;
 
               .cart-extra-card-description {
                 .cart-extra-card-title {
