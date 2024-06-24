@@ -159,6 +159,7 @@
     background-color: transparent;
     cursor: pointer;
     width: fit-content;
+    color: $dark-blue-color;
 
     @media (max-width: $desktop-width) {
       font-size: 16px;

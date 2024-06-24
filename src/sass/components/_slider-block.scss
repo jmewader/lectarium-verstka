@@ -466,6 +466,7 @@
         border-radius: 10px;
         height: 1px;
       }
+      display: flex;
 
       gap: 17px;
       padding: 0px 0px 26px;
@@ -524,12 +525,14 @@
       @media (max-width: $mobile-width) {
         height: 123px;
         width: 123px;
+        min-width: 123px;
         border-radius: 12px;
       }
 
       @media (max-width: 500px) {
         height: 73px;
         width: 73px;
+        min-width: 73px;
         border-radius: 12px;
       }
     }
