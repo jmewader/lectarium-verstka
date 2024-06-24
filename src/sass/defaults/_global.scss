@@ -73,10 +73,34 @@ button {
     }
   }
 
+  &.single-marathon {
+    .course-head-back {
+      .chemistry-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $green-color;
+      }
+    }
+  }
+
   .course-head-back {
     .chemistry-bg,
     .chemistry-figures {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -150,6 +174,21 @@ button {
 }
 
 .russian-materials-page {
+  &.single-marathon {
+    .course-head-back {
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $red-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
@@ -187,6 +226,11 @@ button {
       display: block;
     }
 
+    .brief-info,
+    .course-head-arrows {
+      display: none;
+    }
+
     .course-head-image-img {
       right: 27px;
 
@@ -214,6 +258,25 @@ button {
 }
 
 .russian-page {
+  &.single-marathon {
+    .course-head-back {
+      .russian-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $red-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmMTQ1NDUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
@@ -259,6 +322,11 @@ button {
     .russian-bg,
     .russian-figures {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -325,6 +393,25 @@ button {
 }
 
 .mathematics-page {
+  &.single-marathon {
+    .course-head-back {
+      .mathematics-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $bright-blue-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
@@ -370,6 +457,11 @@ button {
     .mathematics-bg,
     .mathematics-figures {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-bg {
@@ -419,84 +511,30 @@ button {
   }
 }
 
-.mathematics-marathon-page {
-  .course-tariff-item-info-item {
-    &::before {
-      content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMyNTU0ZTciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
-    }
-  }
-
-  .color-accent-bg {
-    background-color: $bright-blue-color;
-  }
-
-  .color-accent-text {
-    color: $bright-blue-color;
-  }
-
-  .color-accent-icon {
-    svg path {
-      stroke: $bright-blue-color;
-    }
-  }
-
-  .color-accent-icon-fill {
-    svg path[fill] {
-      fill: $bright-blue-color;
-    }
-    svg path[stroke] {
-      stroke: $bright-blue-color;
-    }
-  }
-
-  .color-accent-icon-several-elements {
-    .accent {
-      fill: $bright-blue-color;
-    }
-    svg path[fill]:not(.accent):not(.circuit) {
-      fill: $white-color;
-    }
-    svg path[stroke]:not(.accent):not(.circuit) {
-      stroke: $white-color;
-    }
-  }
-
-  .course-head-back {
-    .mathematics-bg {
-      display: block;
-    }
-
-    .course-head-image-img {
-      right: 23px;
-
-      @media (max-width: $large-desktop-width) {
-        height: 753px;
-        right: -51px;
-      }
-
-      @media (max-width: $mobile-width) {
-        height: auto;
-        right: 0;
-      }
-    }
-
-    .course-head-bg {
-      @media (max-width: $large-tablet-width) {
-        height: 700px;
-      }
-
-      @media (max-width: $mobile-width) {
-        height: 435px;
-      }
-    }
-  }
-}
-
 .physics {
   background-color: $slate-blue;
 }
 
 .physics-page {
+  &.single-marathon {
+    .course-head-back {
+      .physics-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $slate-blue;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiM2YzVkZjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+");
@@ -542,6 +580,11 @@ button {
     .physics-figures,
     .physics-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -616,6 +659,25 @@ button {
 }
 
 .biology-page {
+  &.single-marathon {
+    .course-head-back {
+      .biology-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $turquoise-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%2300c19f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
@@ -661,6 +723,11 @@ button {
     .biology-figures,
     .biology-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-bg {
@@ -723,6 +790,25 @@ button {
 }
 
 .literature-page {
+  &.single-marathon {
+    .course-head-back {
+      .literature-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $orange-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNmZjk0NDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
@@ -768,6 +854,11 @@ button {
     .literature-figures,
     .literature-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-bg {
@@ -839,6 +930,25 @@ button {
 }
 
 .history-page {
+  &.single-marathon {
+    .course-head-back {
+      .history-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $blue-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiMwMGFkZTMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
@@ -884,6 +994,11 @@ button {
     .history-figures,
     .history-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -949,6 +1064,25 @@ button {
 }
 
 .informatics-page {
+  &.single-marathon {
+    .course-head-back {
+      .informatics-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $violet-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNhMDY5ZmEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
@@ -994,6 +1128,11 @@ button {
     .informatics-figures,
     .informatics-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -1066,6 +1205,25 @@ button {
 }
 
 .english-page {
+  &.single-marathon {
+    .course-head-back {
+      .english-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $heliotrope-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEwIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNC4zMzMzM0wzLjQ2MTU0IDdMOSAxIiBzdHJva2U9IiNjNzgyZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiAvPjwvc3ZnPgo=");
@@ -1111,6 +1269,11 @@ button {
     .english-figures,
     .english-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-image-img {
@@ -1181,6 +1344,25 @@ button {
 }
 
 .social-science-page {
+  &.single-marathon {
+    .course-head-back {
+      .social-science-figures {
+        display: none;
+      }
+
+      .brief-info,
+      .course-head-arrows {
+        display: flex;
+      }
+    }
+
+    .brief-info {
+      &__photo {
+        background-color: $coral-color;
+      }
+    }
+  }
+
   .course-tariff-item-info-item {
     &::before {
       content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8'%3E%3Cpath d='M1 4.33333L3.46154 7L9 1' stroke='%23fe7364' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
@@ -1226,6 +1408,11 @@ button {
     .social-science-figures,
     .social-science-bg {
       display: block;
+    }
+
+    .brief-info,
+    .course-head-arrows {
+      display: none;
     }
 
     .course-head-bg {
@@ -1339,6 +1526,11 @@ button {
       display: block;
     }
 
+    .brief-info,
+    .course-head-arrows {
+      display: none;
+    }
+
     .course-head-bg {
       right: -293px;
       bottom: -232px;
@@ -1389,6 +1581,25 @@ button {
         top: -26px;
         width: 69px;
         left: 30px;
+      }
+    }
+  }
+
+  &.single-marathon {
+    .course-head-back {
+      .geography-figures {
+        display: none;
+      }
+    }
+
+    .course-head-arrows {
+      display: flex;
+    }
+
+    .brief-info {
+      display: flex;
+      &__photo {
+        background-color: $aqua-color;
       }
     }
   }

@@ -17,6 +17,7 @@
     justify-content: center;
     max-width: 54%;
     width: 100%;
+    z-index: 1;
 
     .course-head-image-img {
       position: relative;
@@ -51,6 +52,109 @@
     img {
       height: 100%;
       vertical-align: bottom;
+    }
+  }
+
+  .course-head-arrows {
+    position: absolute;
+    top: 44px;
+    right: 44px;
+    z-index: 3;
+
+    @media (max-width: $desktop-width) {
+      top: 24px;
+      right: 24px;
+    }
+
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+  }
+
+  .brief-info {
+    position: absolute;
+    z-index: 3;
+    bottom: 64px;
+    right: 64px;
+    min-width: 374px;
+    background-color: $white-color;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    @media (max-width: $desktop-width) {
+      bottom: 24px;
+      right: 24px;
+    }
+
+    @media (max-width: $mobile-width) {
+      bottom: 16px;
+      right: 16px;
+      padding: 10px;
+      border-radius: 10px;
+      min-width: auto;
+      gap: 10px;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      bottom: 16px;
+      right: 16px;
+      left: 16px;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 100%;
+    }
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__photo {
+      position: relative;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      border-radius: 100%;
+      overflow: hidden;
+
+      @media (max-width: $mobile-width) {
+        width: 36px;
+        height: 36px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__name {
+      font-weight: 500;
+      color: $dark-blue-color;
+      font-size: 20px;
+      line-height: 24px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &__text {
+      color: #9aa3ad;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
+
+      @media (max-width: $mobile-width) {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 
