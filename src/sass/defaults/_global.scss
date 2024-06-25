@@ -1301,7 +1301,7 @@ button {
     .course-head-figures-one {
       z-index: 2;
       position: relative;
-      width: 276px;
+      width: 278px;
       top: 531px;
       left: 7px;
 
@@ -1600,6 +1600,141 @@ button {
       display: flex;
       &__photo {
         background-color: $aqua-color;
+      }
+    }
+  }
+}
+
+.multiple-marathon {
+  .course-head {
+    .container {
+      .course-head-back {
+        .course-head-info {
+          .course-head-info-action {
+            .course-head-info-action-extra {
+              .course-head-info-action-extra-price {
+                color: $dark-blue-color;
+              }
+            }
+
+            .button {
+              background: $dark-blue-color;
+              color: $white-color;
+
+              .button-icon {
+                svg {
+                  rect {
+                    fill: $white-color;
+                  }
+
+                  path {
+                    stroke: $dark-blue-color;
+                  }
+                }
+              }
+            }
+          }
+
+          .course-head-info-text {
+            .course-head-info-tab {
+              background: #0b1f3324;
+            }
+
+            .course-head-info-description {
+              .course-head-info-description-title {
+                color: $dark-blue-color;
+              }
+
+              .course-head-info-description-text {
+                color: $pale-blue-color;
+              }
+            }
+          }
+        }
+
+        &.chemistry {
+          background-color: $light-green-color;
+
+          .brief-info__photo {
+            background-color: $green-color;
+          }
+
+          .chemistry-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.mathematics {
+          background-color: $light-blue-color;
+
+          .brief-info__photo {
+            background-color: $bright-blue-color;
+          }
+
+          .mathematics-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.russian {
+          background-color: $light-red-color;
+
+          .brief-info__photo {
+            background-color: $red-color;
+          }
+
+          .russian-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.physics {
+          background-color: $light-slate-blue;
+
+          .brief-info__photo {
+            background-color: $slate-blue;
+          }
+
+          .physics-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.biology {
+          background-color: $light-turquoise-color;
+
+          .brief-info__photo {
+            background-color: $turquoise-color;
+          }
+
+          .biology-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.literature {
+          background-color: $light-orange-color;
+
+          .brief-info__photo {
+            background-color: $orange-color;
+          }
+
+          .literature-bg-marathon {
+            display: block;
+          }
+        }
+
+        &.history {
+          background-color: #00ade314;
+
+          .brief-info__photo {
+            background-color: $blue-color;
+          }
+
+          .history-bg-marathon {
+            display: block;
+          }
+        }
       }
     }
   }

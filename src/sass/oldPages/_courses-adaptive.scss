@@ -25,12 +25,23 @@
       top: 111px;
     }
   }
+  .course-head {
+    .add-to-cart-block {
+      right: 80px;
+      top: -18px;
+    }
+  }
 }
 
 @media screen and (max-width: $desktop-width) {
   .courses-page {
     .add-to-cart-block {
       right: 65px;
+    }
+  }
+  .course-head {
+    .add-to-cart-block {
+      right: 62px;
     }
   }
 }
@@ -61,6 +72,12 @@
     .add-to-cart-block {
       right: 43px;
       top: 80px;
+    }
+  }
+  .course-head {
+    .add-to-cart-block {
+      right: 44px;
+      top: -10px;
     }
   }
 }
@@ -468,11 +485,11 @@
 }
 
 @media screen and (max-width: 799px) {
-  .courses-page {
-    .add-to-cart-block {
-      display: none;
-    }
-  }
+  // .courses-page {
+  //   .add-to-cart-block {
+  //     display: none;
+  //   }
+  // }
 }
 
 @media screen and (max-width: 768px) {
@@ -690,7 +707,7 @@
             }
 
             .courses-card-image-img {
-              right: -65px;
+              // right: -65px;
               width: fit-content;
 
               img {
