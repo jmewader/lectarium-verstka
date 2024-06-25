@@ -103,14 +103,6 @@ button {
       display: none;
     }
 
-    .course-head-image-img {
-      right: 51px;
-
-      @media (max-width: $large-tablet-width) {
-        right: 0;
-      }
-    }
-
     .course-head-bg {
       right: 84px;
       bottom: -427px;
@@ -301,6 +293,7 @@ button {
     svg path[fill] {
       fill: $red-color;
     }
+
     svg path[stroke] {
       stroke: $red-color;
     }
@@ -327,14 +320,6 @@ button {
     .brief-info,
     .course-head-arrows {
       display: none;
-    }
-
-    .course-head-image-img {
-      right: 133px;
-
-      @media (max-width: $desktop-width) {
-        right: 0;
-      }
     }
 
     .course-head-bg {
@@ -585,14 +570,6 @@ button {
     .brief-info,
     .course-head-arrows {
       display: none;
-    }
-
-    .course-head-image-img {
-      right: 86px;
-
-      @media (max-width: $desktop-width) {
-        right: 0;
-      }
     }
 
     .course-head-bg {
@@ -1001,14 +978,6 @@ button {
       display: none;
     }
 
-    .course-head-image-img {
-      right: 86px;
-
-      @media (max-width: $desktop-width) {
-        right: 0;
-      }
-    }
-
     .course-head-bg {
       bottom: -115px;
       right: -75px;
@@ -1133,14 +1102,6 @@ button {
     .brief-info,
     .course-head-arrows {
       display: none;
-    }
-
-    .course-head-image-img {
-      right: 55px;
-
-      @media (max-width: $large-tablet-width) {
-        right: 0;
-      }
     }
 
     .course-head-bg {
@@ -1274,14 +1235,6 @@ button {
     .brief-info,
     .course-head-arrows {
       display: none;
-    }
-
-    .course-head-image-img {
-      right: 51px;
-
-      @media (max-width: $large-tablet-width) {
-        right: 0;
-      }
     }
 
     .course-head-bg {
@@ -1614,6 +1567,16 @@ button {
             .course-head-info-action-extra {
               .course-head-info-action-extra-price {
                 color: $dark-blue-color;
+
+                .old-price {
+                  color: $dark-blue-color;
+                }
+              }
+
+              @media (max-width: 430px) {
+                .discount-text {
+                  color: $dark-blue-color;
+                }
               }
             }
 
@@ -1651,90 +1614,316 @@ button {
             }
           }
         }
+      }
+    }
+  }
 
-        &.chemistry {
-          background-color: $light-green-color;
+  .course {
+    .course-head-figures {
+      display: none;
+    }
 
-          .brief-info__photo {
-            background-color: $green-color;
-          }
+    .course-head-back .brief-info {
+      display: flex;
+    }
 
-          .chemistry-bg-marathon {
-            display: block;
+    .course-head-back .course-head-arrows {
+      display: flex;
+
+      @media (max-width: $large-tablet-width) {
+        display: none;
+      }
+    }
+
+    &.chemistry-page {
+      background-color: transparent;
+
+      .chemistry-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-green-color;
+
+        .course-head-bg {
+          width: auto;
+          height: 100%;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .brief-info__photo {
+        background-color: $green-color;
+      }
+
+      .chemistry-bg-marathon {
+        display: block;
+      }
+    }
+
+    &.russian-page {
+      background-color: transparent;
+
+      .russian-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-red-color;
+
+        .course-head-bg {
+          width: auto;
+          height: 100%;
+          right: 0;
+        }
+      }
+
+      .brief-info__photo {
+        background-color: $red-color;
+      }
+
+      .russian-bg-marathon {
+        display: block;
+      }
+    }
+
+    &.mathematics-page {
+      background-color: transparent;
+
+      .mathematics-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-blue-color;
+
+        .course-head-bg {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      .brief-info__photo {
+        background-color: $bright-blue-color;
+      }
+
+      .mathematics-bg-marathon {
+        display: block;
+      }
+    }
+
+    &.physics-page {
+      background-color: transparent;
+
+      .physics-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-slate-blue;
+
+        .course-head-bg {
+          width: auto;
+          height: 100%;
+
+          img {
+            position: relative;
+            right: 0;
+            top: 0;
           }
         }
+      }
 
-        &.mathematics {
-          background-color: $light-blue-color;
+      .brief-info__photo {
+        background-color: $slate-blue;
+      }
 
-          .brief-info__photo {
-            background-color: $bright-blue-color;
-          }
+      .physics-bg-marathon {
+        display: block;
+      }
+    }
 
-          .mathematics-bg-marathon {
-            display: block;
-          }
+    &.biology-page {
+      background-color: transparent;
+
+      .biology-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-turquoise-color;
+
+        .course-head-bg {
+          bottom: 0;
+          top: 0;
+          right: 0;
+          height: 100%;
         }
+      }
 
-        &.russian {
-          background-color: $light-red-color;
+      .brief-info__photo {
+        background-color: $turquoise-color;
+      }
 
-          .brief-info__photo {
-            background-color: $red-color;
-          }
+      .biology-bg-marathon {
+        display: block;
+      }
+    }
 
-          .russian-bg-marathon {
-            display: block;
-          }
+    &.literature-page {
+      background-color: transparent;
+
+      .literature-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-orange-color;
+
+        .course-head-bg {
+          bottom: 0;
+          right: 0;
+          height: 100%;
+          width: auto;
         }
+      }
 
-        &.physics {
-          background-color: $light-slate-blue;
+      .brief-info__photo {
+        background-color: $orange-color;
+      }
 
-          .brief-info__photo {
-            background-color: $slate-blue;
-          }
+      .literature-bg-marathon {
+        display: block;
+      }
+    }
 
-          .physics-bg-marathon {
-            display: block;
-          }
+    &.history-page {
+      background-color: transparent;
+
+      .history-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: #00ade314;
+
+        .course-head-bg {
+          bottom: 0;
+          height: 100%;
+          right: 0;
         }
+      }
 
-        &.biology {
-          background-color: $light-turquoise-color;
+      .brief-info__photo {
+        background-color: $blue-color;
+      }
 
-          .brief-info__photo {
-            background-color: $turquoise-color;
-          }
+      .history-bg-marathon {
+        display: block;
+      }
+    }
 
-          .biology-bg-marathon {
-            display: block;
-          }
+    &.informatics-page {
+      background-color: transparent;
+
+      .informatics-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-violet-color;
+
+        .course-head-bg {
+          bottom: 0;
+          height: 100%;
+          right: 0;
         }
+      }
 
-        &.literature {
-          background-color: $light-orange-color;
+      .brief-info__photo {
+        background-color: $violet-color;
+      }
 
-          .brief-info__photo {
-            background-color: $orange-color;
-          }
+      .informatics-bg-marathon {
+        display: block;
+      }
+    }
 
-          .literature-bg-marathon {
-            display: block;
-          }
+    &.english-page {
+      background-color: transparent;
+
+      .english-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-heliotrope-color;
+
+        .course-head-bg {
+          bottom: 0;
+          right: 0;
+          height: 100%;
         }
+      }
 
-        &.history {
-          background-color: #00ade314;
+      .brief-info__photo {
+        background-color: $heliotrope-color;
+      }
 
-          .brief-info__photo {
-            background-color: $blue-color;
-          }
+      .english-bg-marathon {
+        display: block;
+      }
+    }
 
-          .history-bg-marathon {
-            display: block;
-          }
+    &.social-science-page {
+      background-color: transparent;
+
+      .social-science-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-coral-color;
+
+        .course-head-bg {
+          bottom: 0;
+          right: 0;
         }
+      }
+
+      .brief-info__photo {
+        background-color: $coral-color;
+      }
+
+      .social-science-bg-marathon {
+        display: block;
+      }
+    }
+
+    &.geography-page {
+      background-color: transparent;
+
+      .geography-bg {
+        display: none;
+      }
+
+      .course-head-back {
+        background-color: $light-aqua-color;
+
+        .course-head-bg {
+          bottom: 0;
+          right: 0;
+          height: 100%;
+        }
+      }
+
+      .brief-info__photo {
+        background-color: $aqua-color;
+      }
+
+      .geography-bg-marathon {
+        display: block;
       }
     }
   }
