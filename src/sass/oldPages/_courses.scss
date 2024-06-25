@@ -703,6 +703,32 @@
           }
 
           .courses-card-image-dots {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background-color: #0b1f3326;
+            border-radius: 10px;
+            padding: 4px;
+            margin: 0 0 12px;
+            width: 100%;
+            max-width: fit-content;
+            position: relative;
+            z-index: 10;
+
+            &__item {
+              width: 6px;
+              height: 6px;
+              display: flex;
+              align-items: center;
+              background-color: #ffffff4d;
+              border-radius: 100%;
+              border: none;
+              cursor: pointer;
+
+              &.active {
+                background-color: $white-color;
+              }
+            }
           }
 
           .courses-card-image-name {
