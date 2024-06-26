@@ -1,58 +1,58 @@
 
-section.slider-classes
+section.four-cards-block
     .main-container
-        .slider-classes__wrap
-            h2.slider-classes__title.main-subtitle
+        .four-cards-block__wrap
+            h2.four-cards-block__title.main-subtitle
                 | Что мы предлагаем
-            .slider-classes__arrows.visible
-                button.slider-classes__arrows_arrow.left.carousel__prev
+            .four-cards-block__arrows.visible
+                button.four-cards-block__arrows_arrow.left.carousel__prev
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                button.slider-classes__arrows_arrow.carousel__next
+                button.four-cards-block__arrows_arrow.carousel__next
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
         .carousel
             .carousel__viewport
-                ol.slider-classes__list.carousel__track
-                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev.slider-classes__list_item
-                        .slider-classes__list_item-bg
+                ol.four-cards-block__list.carousel__track
+                    li.four-cards-block__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev.four-cards-block__list_item
+                        .four-cards-block__list_item-bg
                             img(src="../img/green-bg.png", alt="background")
-                        .slider-classes__list_item-content
-                            .slider-classes__list_item-img
+                        .four-cards-block__list_item-content
+                            .four-cards-block__list_item-img
                                 img(src="../img/laptop.svg", alt="laptop")
-                            div
-                                h3.slider-classes__list_item-title Для 8 класса
-                                p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к ОГЭ
-                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--active.slider-classes__list_item
-                        .slider-classes__list_item-bg
+                            .four-cards-block__list_item-info
+                                h3.four-cards-block__list_item-title Удаленная работа
+                                p.four-cards-block__list_item-descriptions.main-descriptions Возможность работать из&nbsp;любой точки&nbsp;мира
+                    li.four-cards-block__list_item.carousel__slide.carousel__slide--visible.carousel__slide--active.four-cards-block__list_item
+                        .four-cards-block__list_item-bg
                             img(src="../img/orange-bg.png", alt="background")
-                        .slider-classes__list_item-content
-                            .slider-classes__list_item-img
+                        .four-cards-block__list_item-content
+                            .four-cards-block__list_item-img.book-position
                                 img(src="../img/notebook.svg", alt="notebook")
-                            div
-                                h3.slider-classes__list_item-title Для 9 класса
-                                p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
-                    li.slider-classes__list_item.carousel__slide.carousel__slide--visible.carousel__slide--next.slider-classes__list_item
-                        .slider-classes__list_item-bg
+                            .four-cards-block__list_item-info
+                                h3.four-cards-block__list_item-title Удобный гибкий график
+                                p.four-cards-block__list_item-descriptions.main-descriptions Самостоятельное планирование&nbsp;рабочего дня
+                    li.four-cards-block__list_item.carousel__slide.carousel__slide--visible.carousel__slide--next.four-cards-block__list_item
+                        .four-cards-block__list_item-bg
                             img(src="../img/blue-bg.png", alt="background")
-                        .slider-classes__list_item-content
-                            .slider-classes__list_item-img
+                        .four-cards-block__list_item-content
+                            .four-cards-block__list_item-img.rocket-position
                                 img(src="../img/rocket-blue.svg", alt="rocket")
-                            div
-                                h3.slider-classes__list_item-title Для 10 класса
-                                p.slider-classes__list_item-descriptions.main-descriptions Активно готовимся к&nbsp;ОГЭ и&nbsp;думаем&nbsp;кем хотим стать! Пройдем путь выбора профессии мечты и определимся с&nbsp;выбором траектории
-                    li.slider-classes__list_item.carousel__slide.slider-classes__list_item
-                        .slider-classes__list_item-bg
+                            .four-cards-block__list_item-info
+                                h3.four-cards-block__list_item-title Возможность карьерного&nbsp;роста
+                                p.four-cards-block__list_item-descriptions.main-descriptions Самореализация и&nbsp;рост&nbsp;внутри&nbsp;компании
+                    li.four-cards-block__list_item.carousel__slide.four-cards-block__list_item
+                        .four-cards-block__list_item-bg
                             img(src="../img/violet-bg.png", alt="background")
-                        .slider-classes__list_item-content
-                            .slider-classes__list_item-img
+                        .four-cards-block__list_item-content
+                            .four-cards-block__list_item-img
                                 img(src="../img/mosaic.svg", alt="mosaic")
-                            div
-                                h3.slider-classes__list_item-title Для 11 класса
-                                p.slider-classes__list_item-descriptions.main-descriptions Оценки станут лучше: расскажем, как подтянуть знания по&nbsp;предметам и&nbsp;подготовиться к&nbsp;ОГЭ
-        .visible-on-desktop
+                            .four-cards-block__list_item-info
+                                h3.four-cards-block__list_item-title Большая и дружная команда
+                                p.four-cards-block__list_item-descriptions.main-descriptions Молодая и&nbsp;дружная команда радостно примет тебя в&nbsp;наши ряды. В&nbsp;нашей школе 150+&nbsp;сотрудников
+        .visible-on-large-desktop
             ol.carousel__pagination
                 li.carousel__pagination-item
                     button.carousel__pagination-button

@@ -83,7 +83,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $large-desktop-width) {
       overflow-x: scroll;
       width: 100%;
       display: flex;
@@ -110,34 +110,42 @@
 
     &_item {
       display: grid;
-      background-color: #f4f8ff;
+      background-color: #edf2fe;
       border-radius: 24px;
       position: relative;
       grid-template-columns: 390px;
       justify-content: space-between;
-
-      @media (max-width: $large-desktop-width) {
-        grid-template-columns: 370px;
-      }
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
 
       @media (max-width: $mobile-width) {
         margin: 0 0 0 16px;
         border-radius: 20px;
-        grid-template-columns: 304px;
+        grid-template-columns: 329px;
+      }
+
+      &-info {
+        background-color: $white-color;
+        padding: 28px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: $mobile-width) {
+          padding: 24px;
+        }
       }
 
       &-content {
-        padding: 36px 32px 36px 36px;
         display: grid;
         position: relative;
         z-index: 3;
-        gap: 34px;
-        grid-template-rows: 216px 1fr;
+        grid-template-rows: 238px auto;
         text-decoration: none;
 
         @media (max-width: $mobile-width) {
-          grid-template-rows: 160px 1fr;
-          padding: 24px 22px 24px 24px;
+          grid-template-rows: 194px auto;
         }
       }
 
@@ -150,9 +158,9 @@
         color: $dark-blue-color;
 
         @media (max-width: $mobile-width) {
-          font-size: 24px;
-          line-height: 28px;
-          margin: 0 0 12px;
+          font-size: 20px;
+          line-height: 24px;
+          margin: 0 0 8px;
         }
       }
 
@@ -190,12 +198,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 28px 38px;
+        position: relative;
 
-        @media (max-width: $mobile-width) {
-          img {
-            width: 144px;
-            height: 144px;
+        &.rocket-position {
+          top: 28px;
+
+          @media (max-width: $mobile-width) {
+            top: 34px;
           }
+        }
+
+        &.book-position {
+          right: 17px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
