@@ -1,0 +1,336 @@
+.two-cards-slider {
+  display: flex;
+  flex-direction: column;
+  margin: 180px 0;
+
+  @media (max-width: $large-tablet-width) {
+    margin: 110px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 70px 0;
+  }
+
+  &__arrows {
+    position: absolute;
+    right: 36px;
+    bottom: 36px;
+
+    @media (max-width: $mobile-width) {
+      right: 16px;
+      bottom: 16px;
+    }
+
+    &.arrows {
+      gap: 8px;
+
+      @media (max-width: $mobile-width) {
+        gap: 4px;
+      }
+    }
+
+    .arrows__arrow {
+      width: 48px;
+      height: 48px;
+
+      @media (max-width: $mobile-width) {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 64px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @media (max-width: $large-tablet-width) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      gap: 16px;
+    }
+
+    &_item {
+      background-color: $white-color;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      border-radius: 40px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+
+      @media (max-width: $tablet-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        border-radius: 20px;
+      }
+
+      @media (max-width: $mobile-width) {
+        padding: 24px 16px 16px;
+        gap: 24px;
+      }
+
+      &-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 28px;
+        width: 100%;
+
+        @media (max-width: $mobile-width) {
+          gap: 8px;
+          padding: 0 8px;
+        }
+      }
+
+      &-title {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+
+        @media (max-width: $mobile-width) {
+          font-size: 22px;
+          line-height: 25px;
+          letter-spacing: -0.01em;
+        }
+      }
+
+      &-descriptions {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $pale-blue-color;
+
+        @media (max-width: $mobile-width) {
+          font-size: 15px;
+          line-height: 20px;
+          padding: 0 10px 0 0;
+        }
+      }
+
+      &-img {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 456px;
+        border-radius: 36px;
+        overflow: hidden;
+        background-color: #f4f8ff;
+        position: relative;
+
+        @media (max-width: 450px) {
+          height: 290px;
+          border-radius: 20px;
+        }
+
+        @media (max-width: $mobile-width) {
+          height: 240px;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 400px) {
+          height: 240px;
+        }
+
+        @media (max-width: $small-mobile-width) {
+          height: 194px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &__cards {
+    padding: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    @media (max-width: $desktop-width) {
+      padding: 40px 60px;
+    }
+
+    @media (max-width: $large-tablet-width) {
+      max-width: 900px;
+      padding: 40px 20px;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 30px 34px;
+      max-width: 571px;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      gap: 22px;
+    }
+
+    &_card {
+      background-color: $white-color;
+      z-index: 2;
+      padding: 20px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      width: 100%;
+      max-width: 327px;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+
+      @media (max-width: $large-tablet-width) {
+        max-width: 360px;
+      }
+
+      @media (max-width: $mobile-width) {
+        max-width: 200px;
+        padding: 8px;
+        border-radius: 6px;
+        gap: 5px;
+      }
+
+      @media (max-width: 400px) {
+        max-width: 139px;
+      }
+
+      &:nth-child(1) {
+        border-radius: 4px 14px 14px 14px;
+
+        @media (max-width: $mobile-width) {
+          border-radius: 2px 6px 6px 6px;
+        }
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 172px;
+        right: 81px;
+        z-index: 3;
+        border-radius: 14px 14px 4px 14px;
+
+        @media (max-width: $desktop-width) {
+          top: 164px;
+        }
+
+        @media (max-width: $mobile-width) {
+          top: 98px;
+          border-radius: 6px 6px 2px 6px;
+        }
+
+        @media (max-width: 400px) {
+          top: 93px;
+        }
+
+        @media (max-width: $small-mobile-width) {
+          top: 70px;
+          right: 35px;
+        }
+      }
+
+      &:nth-child(3) {
+        border-radius: 14px;
+
+        @media (max-width: $mobile-width) {
+          border-radius: 6px;
+        }
+      }
+
+      &-text {
+        font-size: 17px;
+        line-height: 21px;
+
+        @media (max-width: $mobile-width) {
+          font-size: 7px;
+          line-height: 9px;
+        }
+      }
+
+      &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @media (max-width: $mobile-width) {
+          gap: 5px;
+        }
+      }
+
+      &-photo {
+        width: 34px;
+        height: 34px;
+        background-color: $bright-blue-color;
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        @media (max-width: $mobile-width) {
+          width: 15px;
+          height: 15px;
+        }
+
+        img {
+          width: 80px;
+          height: 50px;
+          object-fit: contain;
+
+          @media (max-width: $mobile-width) {
+            width: 28px;
+            height: 23px;
+          }
+        }
+      }
+
+      &-name {
+        font-size: 14.5px;
+        line-height: 21px;
+
+        @media (max-width: $mobile-width) {
+          font-size: 6px;
+          line-height: 9px;
+        }
+      }
+    }
+  }
+}
