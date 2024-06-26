@@ -1,0 +1,240 @@
+.banner-career {
+  margin: 180px auto;
+
+  @media (max-width: $desktop-width) {
+    margin: 110px auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 70px auto;
+    min-height: 380px;
+  }
+
+  &.main-container {
+    @media (max-width: $mobile-width) {
+      padding: 0;
+    }
+  }
+  &__container {
+    display: flex;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    min-height: 548px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (max-width: $large-tablet-width) {
+      min-height: 375px;
+    }
+
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      border-radius: 25px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    max-width: 709px;
+    padding: 64px 0 64px 64px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: inherit;
+    gap: 40px;
+
+    @media (max-width: $large-desktop-width) {
+      padding: 44px 0 44px 44px;
+    }
+
+    @media (max-width: $large-tablet-width) {
+      max-width: 648px;
+    }
+
+    @media (max-width: $tablet-width) {
+      min-height: auto;
+      max-width: 100%;
+      padding: 24px 16px 0;
+      gap: 24px;
+    }
+  }
+
+  &__mark {
+    display: flex;
+    width: 100%;
+    margin: 0 0 44px;
+    color: $white-color;
+    background-color: #ffffff33;
+    width: fit-content;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+
+    @media (max-width: $large-desktop-width) {
+      margin: 0 0 24px;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 15px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      max-width: 323px;
+    }
+  }
+
+  &__title {
+    color: $white-color;
+    margin: 0 0 20px;
+
+    @media (max-width: $tablet-width) {
+      &.main-subtitle {
+        margin: 0 0 12px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 24px;
+    color: $white-color;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    width: 100%;
+    max-width: 500px;
+    opacity: 0.7;
+
+    @media (max-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      gap: 16px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  &__link {
+    min-height: 78px;
+    padding: 0 30px;
+    gap: 16px;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: $desktop-width) {
+      min-height: 68px;
+    }
+
+    @media (max-width: $tablet-width) {
+      &.light-button {
+        min-height: 54px;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      &.light-button {
+        min-height: 60px;
+        width: fit-content;
+        padding: 0px 20px;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+
+    img {
+      display: block;
+      object-fit: contain;
+    }
+
+    @media (max-width: $tablet-width) {
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+    }
+
+    @media (max-width: $mobile-width) {
+      min-height: 460px;
+
+      img {
+        max-height: 100%;
+        object-fit: contain;
+        height: 414px;
+        right: -131px;
+        width: auto;
+        bottom: 0;
+        position: absolute;
+      }
+    }
+  }
+
+  &__background {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    img {
+      object-fit: contain;
+      position: relative;
+      height: inherit;
+      display: flex;
+    }
+
+    @media (max-width: $tablet-width) {
+      height: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      height: fit-content;
+      justify-content: center;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      img {
+        height: 100%;
+        max-height: none;
+      }
+    }
+  }
+}

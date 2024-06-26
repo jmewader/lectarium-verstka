@@ -622,6 +622,7 @@
       align-items: flex-end;
       justify-content: space-between;
       overflow-x: hidden;
+      min-height: 680px;
 
       .course-teacher-image {
         position: absolute;
@@ -694,6 +695,7 @@
         row-gap: 28px;
         margin: 82px 36px 82px 0;
         max-width: 828px;
+        width: 100%;
 
         .course-teacher-info-icon {
           width: 64px;
