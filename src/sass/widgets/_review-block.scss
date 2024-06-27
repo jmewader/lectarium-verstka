@@ -7,9 +7,6 @@
     margin: 70px 0;
   }
 
-  &__title {
-  }
-
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -31,7 +28,9 @@
     }
 
     &_item {
-      min-width: 329px;
+      @media (max-width: $mobile-width) {
+        min-width: 329px;
+      }
 
       &:nth-child(1),
       &:nth-child(9) {
