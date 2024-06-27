@@ -2294,14 +2294,6 @@ button {
     color: $pale-blue-color;
   }
 
-  &.invalid {
-    border: 1px solid $red-color;
-
-    &::placeholder {
-      color: $red-color;
-    }
-  }
-
   &.white {
     min-height: 56px;
     border: 1px solid #cad0d6;
@@ -2311,6 +2303,54 @@ button {
     padding: 0 18px;
     border-radius: 10px;
   }
+
+  &.white-input {
+    border: 1px solid #cad0d6;
+    background-color: $white-color;
+
+    &:focus {
+      border: 1px solid $bright-blue-color;
+    }
+  }
+
+  &.invalid {
+    border: 1px solid $red-color;
+
+    &::placeholder {
+      color: $red-color;
+    }
+  }
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &__icon {
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+input.custom-input.white-input {
+  width: 100%;
+  padding-right: 40px;
 }
 
 .warning-text {
