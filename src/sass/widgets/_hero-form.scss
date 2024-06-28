@@ -28,8 +28,9 @@
 
     @media (max-width: $mobile-width) {
       padding: 0px;
-      min-height: auto;
+      min-height: 57vh;
       width: 100%;
+      justify-content: flex-start;
     }
   }
 

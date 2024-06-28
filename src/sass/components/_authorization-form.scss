@@ -7,14 +7,13 @@
   background-color: $white-color;
   position: relative;
   z-index: 100;
-  width: 100%;
-  max-width: 550px;
+  width: 550px;
 
   @media (max-width: $mobile-width) {
     background-color: transparent;
     border-radius: 0px;
     padding: 24px 16px;
-    max-width: 100%;
+    width: 100%;
     gap: 24px;
   }
 
