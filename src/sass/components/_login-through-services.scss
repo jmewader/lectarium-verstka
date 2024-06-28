@@ -1,9 +1,13 @@
 .login-through-services {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+    gap: 18px;
+  }
 
   &__title {
     position: relative;
@@ -12,12 +16,23 @@
     line-height: 20px;
     text-align: center;
 
+    span {
+      background-color: $white-color;
+      z-index: 2;
+      position: relative;
+      padding: 0 24px;
+
+      @media (max-width: $mobile-width) {
+        background-color: $some-white-color;
+      }
+    }
+
     &::before,
     &::after {
       content: "";
       position: absolute;
       top: 50%;
-      width: 35%;
+      width: 50%;
       height: 1px;
       background-color: #e7e9eb;
     }
@@ -36,14 +51,23 @@
     width: 100%;
     gap: 12px;
 
+    @media (max-width: $mobile-width) {
+      gap: 8px;
+    }
+
     &_item {
-      padding: 12px;
+      padding: 9px 12px;
+      min-height: 57px;
       display: grid;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
       cursor: pointer;
       transition: 0.25s;
+
+      @media (max-width: $mobile-width) {
+        min-height: 48px;
+      }
 
       &.google {
         background-color: #f7f8f9;

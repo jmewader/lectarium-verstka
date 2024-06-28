@@ -2315,6 +2315,7 @@ button {
 
   &.invalid {
     border: 1px solid $red-color;
+    color: $red-color;
 
     &::placeholder {
       color: $red-color;
@@ -2337,6 +2338,21 @@ button {
   background-color: transparent;
   border: none;
 
+  @media (max-width: $mobile-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.invalid {
+    svg path {
+      fill: $red-color;
+
+      &.line {
+        stroke: $red-color;
+      }
+    }
+  }
+
   &__icon {
     align-items: center;
     justify-content: center;
@@ -2344,6 +2360,13 @@ button {
 
     &.show {
       display: flex;
+    }
+
+    @media (max-width: $mobile-width) {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

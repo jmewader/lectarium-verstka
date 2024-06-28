@@ -8,13 +8,27 @@
   position: relative;
   z-index: 100;
   width: 100%;
-  min-width: 550px;
+  max-width: 550px;
+
+  @media (max-width: $mobile-width) {
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 24px 16px;
+    max-width: 100%;
+    gap: 24px;
+  }
 
   &__title {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: -0.02em;
     font-weight: 500;
+
+    @media (max-width: $mobile-width) {
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: -0.01em;
+    }
   }
 
   &__fields {
@@ -22,12 +36,30 @@
     flex-direction: column;
     gap: 12px;
 
+    @media (max-width: $mobile-width) {
+      gap: 10px;
+    }
+
     &_wrap {
       width: 100%;
       display: flex;
       align-items: center;
       gap: 12px;
+
+      @media (max-width: $mobile-width) {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
+  }
+
+  &__action {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
   }
 
   &__submit-btn {
@@ -36,6 +68,18 @@
       line-height: 22px;
       min-height: 73px;
       width: 100%;
+
+      @media (max-width: $mobile-width) {
+        min-height: 56px;
+        font-size: 16px;
+        line-height: 20px;
+        gap: 10px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
   }
 
@@ -49,5 +93,65 @@
 
   &__link {
     color: $bright-blue-color;
+    text-decoration: none;
+    border-bottom: 1px solid $bright-blue-color;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+    }
+  }
+
+  &__complete-list {
+    display: none;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+
+    &.visible {
+      display: grid;
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      @media (max-width: $mobile-width) {
+        gap: 4px;
+      }
+
+      &.active {
+        .authorization-form__complete-list_text {
+          color: $dark-blue-color;
+        }
+
+        .authorization-form__complete-list_icon {
+          svg path {
+            stroke: $bright-blue-color;
+          }
+        }
+      }
+    }
+
+    &_icon {
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_text {
+      color: #9aa3ad;
+      font-size: 15px;
+      line-height: 20px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
   }
 }
