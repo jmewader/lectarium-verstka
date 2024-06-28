@@ -17,6 +17,23 @@
     gap: 24px;
   }
 
+  &.modal {
+    padding: 0;
+    width: 100%;
+    margin: 28px 0 0;
+    height: 100%;
+
+    @media (max-width: $mobile-width) {
+      margin: 24px 0 0;
+    }
+
+    .login-through-services {
+      height: 100%;
+      justify-content: flex-end;
+      margin: 16px 0 0;
+    }
+  }
+
   &__title {
     font-size: 36px;
     line-height: 42px;
@@ -59,6 +76,10 @@
     justify-content: center;
     flex-direction: column;
     gap: 16px;
+
+    @media (max-width: $mobile-width) {
+      gap: 10px;
+    }
   }
 
   &__submit-btn {
@@ -88,12 +109,30 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+      gap: 7px;
+    }
   }
 
   &__link {
     color: $bright-blue-color;
     text-decoration: none;
     border-bottom: 1px solid $bright-blue-color;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+    }
+  }
+
+  &__link-text {
+    color: $bright-blue-color;
+    text-decoration: none;
     font-size: 16px;
     line-height: 20px;
 
