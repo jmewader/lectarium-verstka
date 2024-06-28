@@ -192,4 +192,25 @@
       }
     }
   }
+
+  &.sign-in {
+    display: none;
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &.password-recovery {
+    display: none;
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &.message {
+    display: none;
+    &.visible {
+      display: flex;
+    }
+  }
 }

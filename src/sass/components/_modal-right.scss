@@ -43,6 +43,22 @@
       }
     }
 
+    &__descriptions {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 12px 0 0;
+      color: #6d7985;
+      width: 100%;
+      padding: 0 80px 0 0;
+
+      @media (max-width: $mobile-width) {
+        padding: 0 42px 0 0;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 8px 0 0;
+      }
+    }
+
     &__header {
       width: 100%;
       display: flex;
@@ -107,5 +123,10 @@
     @media (max-width: $mobile-width) {
       border-radius: 20px 20px 0 0;
     }
+  }
+
+  &__actions {
+    width: 100%;
+    box-shadow: rgba(220, 231, 255, 0.16);
   }
 }
