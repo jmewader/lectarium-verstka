@@ -1,25 +1,77 @@
 .filters {
   display: flex;
-  gap: 8px;
   width: 100%;
   flex-wrap: wrap;
+  gap: 8px;
 
   &__button {
     display: flex;
     align-items: center;
-    gap: 10px;
     background-color: transparent;
     border: 1px solid $light-grey-color;
-    border-radius: 8px;
-    padding: 10px 12px;
     cursor: pointer;
+    font-weight: 400;
+    padding: 10px 15px;
     font-size: 15px;
     line-height: 19px;
-    font-weight: 400;
+    gap: 10px;
+    border-radius: 8px;
+
+    @media (max-width: $tablet-width) {
+      padding: 10px 12px;
+    }
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     &.active {
       border: 1px solid $bright-blue-color;
       color: $bright-blue-color;
     }
+  }
+}
+
+.filters-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  border-radius: 40px;
+  padding: 44px;
+  height: fit-content;
+  box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+  gap: 24px;
+
+  @media (max-width: 1399px) {
+    padding: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.filters-actions {
+  &__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    color: $bright-blue-color;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -4,7 +4,7 @@
   flex-direction: column;
 
   &__summary {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     display: flex;
     align-items: center;
@@ -13,6 +13,13 @@
     font-weight: 500;
     cursor: pointer;
     list-style: none;
+    letter-spacing: -0.02em;
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+    }
 
     &::-webkit-details-marker,
     &::marker {
@@ -36,7 +43,11 @@
 
   &[open] {
     .accordion__summary {
-      margin: 0 0 13px;
+      margin: 0 0 17px;
+
+      @media (max-width: $tablet-width) {
+        margin: 0 0 13px;
+      }
 
       ::after {
         content: "";
