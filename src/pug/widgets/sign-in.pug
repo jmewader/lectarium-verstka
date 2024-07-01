@@ -1,8 +1,10 @@
 .modal-right-overlay.modal-visible
-    .modal-right.medium
+    .modal-right.sign-in.medium
         .modal-right__content
             .modal-right__header
-                .modal-right__title Вход в личный кабинет
+                .modal-right__title.sign-in Вход в личный кабинет
+                .modal-right__title.password-recovery Сброс пароля
+                .modal-right__title.message Письмо отправлено
                 button.modal-right__close-btn
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="32" height="32" rx="16" fill="#F3F4F5"/>
@@ -16,7 +18,8 @@
                         </clipPath>
                         </defs>
                     </svg>
-            .modal-right__descriptions Введите почту, которая была указана при регистрации. Мы отправим на неё ссылку для сброса пароля.
+            .modal-right__descriptions.password-recovery Введите почту, которая была указана при регистрации. Мы отправим на неё ссылку для сброса пароля.
+            .modal-right__descriptions.message Введите почту, которая была указана при регистрации. Мы отправим на неё ссылку для сброса пароля.
             .authorization-form.modal.sign-in
                 form.authorization-form__fields
                     input.custom-input.white-input(type="text" id="phone" name="phone" placeholder="Телефон")
@@ -80,16 +83,38 @@
                 form.authorization-form__fields
                     input.custom-input.white-input(type="text" id="email" name="email" placeholder="Электронная почта")
                     .warning-text Введите почту
-                .authorization-form__action.modal-right__actions
-                    .authorization-form__submit-btn.main-button
+                .hidden-on-mobile
+                    button.authorization-form__submit-btn.main-button
                         | Отправить
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="0.5" width="24" height="24" rx="12" fill="white"/>
                             <path d="M10 8.5L14 12.5L10 16.5" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-            .authorization-form.modal.message.visible
+            .authorization-form.modal.message
                 ul.mailboxes
-                    li.mailboxes__item 1
+                    li.mailboxes__item
+                        a(href="")
+                            span.mailboxes__item_text Перейти в Яндекс Почту
+                            .mailboxes__item_icon
+                                img(src="../img/ymail.svg", alt="email")
+                    li.mailboxes__item
+                        a(href="")
+                            span.mailboxes__item_text Перейти в Gmail
+                            .mailboxes__item_icon
+                                img(src="../img/gmail.svg", alt="email")
+                    li.mailboxes__item
+                        a(href="")
+                            span.mailboxes__item_text Перейти в Mail.ru
+                            .mailboxes__item_icon
+                                img(src="../img/mailru.svg", alt="email")
+        .visible-on-mobile.password-recovery.modal-right__actions
+            button.authorization-form__submit-btn.main-button
+                | Отправить
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="24" height="24" rx="12" fill="white"/>
+                    <path d="M10 8.5L14 12.5L10 16.5" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                      
+
                 
         
 
