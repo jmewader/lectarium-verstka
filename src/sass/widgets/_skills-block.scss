@@ -42,6 +42,12 @@
     }
   }
 
+  &__arrows {
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

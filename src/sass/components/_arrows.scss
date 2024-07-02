@@ -3,6 +3,16 @@
   align-items: center;
   gap: 10px;
 
+  &.blue-arrows {
+    .arrows__arrow {
+      background-color: $light-blue-color;
+
+      svg path {
+        stroke: $bright-blue-color;
+      }
+    }
+  }
+
   &__arrow {
     width: 64px;
     height: 64px;

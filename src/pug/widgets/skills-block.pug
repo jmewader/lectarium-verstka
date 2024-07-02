@@ -1,8 +1,13 @@
 
+block skills-block
+    - var defaultSkillBlockTitle = 'В нашей команде приживаются'
+    - var skillBlockTitle = typeof(skillBlockTitle) !== 'undefined' ? skillBlockTitle : defaultSkillBlockTitle
+
 section.skills-block
     .main-container
         .skills-block__wrap
-            h2.skills-block__title.main-subtitle В нашей команде приживаются
+            h2.skills-block__title.main-subtitle 
+                | !{skillBlockTitle}
         .carousel
             .carousel__viewport
                 ol.skills-block__list.carousel__track
