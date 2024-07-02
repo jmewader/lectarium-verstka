@@ -1,0 +1,138 @@
+.modal-right-overlay.modal-visible
+    .modal-right.medium
+        .modal-right__content
+            .modal-right__header
+                .modal-right__title.main Регистрация
+                button.modal-right__close-btn
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="16" fill="#F3F4F5"/>
+                        <g clip-path="url(#clip0_4219_78149)">
+                        <path d="M11 11L21 21" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M21 11L11 21" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_4219_78149">
+                        <rect width="12" height="12" fill="white" transform="translate(10 10)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+            span.modal-right__subtitle Вебинар:
+            p.modal-right__descriptions.dark Самые страшные ошибки на&nbsp;экзаменах по&nbsp;математике. Как не&nbsp;потерять баллы?
+            .form.modal
+                ul.form__steps.padding-wrap
+                    li.form__steps_item
+                        .form__steps_number 1
+                        span.form__steps_title Данные
+                    li.form__steps_item.disabled
+                        .form__steps_number 2
+                        span.form__steps_title Выбор предмета
+                form(action="#" method="POST")
+                    .form__fields.visible
+                        div.form__field
+                            input.custom-input(type="text" id="name" name="name" placeholder="Ваше имя")
+                        div.form__field
+                            input.custom-input(type="email" id="email" name="email" placeholder="Электронная почта")
+                        div.form__field
+                            input.custom-input(type="tel" id="phone" name="phone" placeholder="Номер телефона")
+                        span.warning-text Пожалуйста, заполните все обязательные поля
+                    .form__fields
+                        .custom-select
+                            .custom-select__title.invalid Вы ученик, родитель или учитель?
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                            .custom-select__menu-wrap
+                                ul.custom-select__menu
+                                    li.custom-select__menu_item(data-value="4") bo язык
+                                    li.custom-select__menu_item(data-value="5") ja язык
+                                    li.custom-select__menu_item(data-value="1") kj язык
+                                    li.custom-select__menu_item(data-value="2") st язык
+                                    li.custom-select__menu_item(data-value="3") Русский язык
+                                    li.custom-select__menu_item(data-value="6") st язык
+                                    li.custom-select__menu_item(data-value="7") Русский язык
+                                    li.custom-select__menu_item(data-value="8") st язык
+                                    li.custom-select__menu_item(data-value="9") Русский язык
+                            .visible-on-tablet
+                                .modal-overlay
+                                    .modal
+                                        button.modal__close-btn
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2873_18660)">
+                                                <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                                <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath>
+                                                <rect width="12" height="12" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        .modal__content
+                                            h3.modal__title Вы ученик, родитель или учитель?
+                                        .modal__wrapper
+                                            .custom-radio
+                                                label.custom-radio
+                                                    input.custom-radio__input(type='radio', name='radio', checked)
+                                                    span.custom-radio__label Ученик
+                                                label.custom-radio
+                                                    input.custom-radio__input(type='radio', name='radio')
+                                                    span.custom-radio__label Родитель
+                                                label.custom-radio
+                                                    input.custom-radio__input(type='radio', name='radio')
+                                                    span.custom-radio__label Учитель
+                                        .modal__bottom
+                                            button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                                            button.main-button Применить  
+                        .custom-select
+                            .custom-select__title Предмет
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                            .custom-select__menu-wrap
+                                ul.custom-select__menu
+                                    li.custom-select__menu_item(data-value="4") bo язык
+                                    li.custom-select__menu_item(data-value="5") ja язык
+                                    li.custom-select__menu_item(data-value="1") kj язык
+                                    li.custom-select__menu_item(data-value="2") st язык
+                                    li.custom-select__menu_item(data-value="3") Русский язык
+                                    li.custom-select__menu_item(data-value="6") st язык
+                                    li.custom-select__menu_item(data-value="7") Русский язык
+                        .custom-select
+                            .custom-select__title Класс
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                            .custom-select__menu-wrap
+                                ul.custom-select__menu
+                                    li.custom-select__menu_item(data-value="4") bo язык
+                                    li.custom-select__menu_item(data-value="5") ja язык
+                                    li.custom-select__menu_item(data-value="1") kj язык
+                                    li.custom-select__menu_item(data-value="2") st язык
+                                    li.custom-select__menu_item(data-value="3") Русский язык
+
+                        span.warning-text.visible Пожалуйста, заполните все обязательные поля
+                    button.form__submit-btn.main-button(type="submit") 
+                        | Далее
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="white"/>
+                            <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    .form__agreements.padding-wrap
+                        .form__agreements_item.custom-checkbox-wrap
+                            input.custom-checkbox(type="checkbox" id="agreement")
+                            label(for="agreement") Я согласен(-на) на обработку персональных данных
+                        .form__agreements_item.custom-checkbox-wrap
+                            input.custom-checkbox(type="checkbox" id="agreement2")
+                            label(for="agreement2") Я хочу получать рекламную рассылку
+            .modal-right__image
+                img(src= "../img/russian-flyer.png", alt="image")
+            .modal-right__video.visible
+                img(src="../img/people-preview.jpg", alt="People")
+                button.review__video-preview_play
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="32" fill="white"/>
+                        <path d="M28.7852 35.4999V28.4964C28.7852 28.0835 29.2279 27.8217 29.5898 28.0207L35.9566 31.5224C36.3316 31.7287 36.3316 32.2676 35.9566 32.4739L29.5898 35.9757C29.2279 36.1747 28.7852 35.9129 28.7852 35.4999Z" fill="#0B1F33"/>
+                    </svg>
+        
+
+
+                            
+                    
+                

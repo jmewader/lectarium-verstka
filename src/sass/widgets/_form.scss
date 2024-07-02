@@ -29,6 +29,25 @@
     }
   }
 
+  &.modal {
+    padding: 0;
+    margin: 44px 0 0;
+    box-shadow: none;
+    grid-template-columns: 1fr;
+
+    .form__steps {
+      margin: 0 0 24px;
+    }
+
+    .form__agreements {
+      margin: 24px 0 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 24px 0 0;
+    }
+  }
+
   .disabled {
     .form__steps_number {
       background-color: #9aa3ad;
