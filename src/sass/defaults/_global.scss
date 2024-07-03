@@ -1889,6 +1889,10 @@ button {
         .course-head-bg {
           bottom: 0;
           right: 0;
+
+          @media (max-width: $mobile-width) {
+            height: auto;
+          }
         }
       }
 

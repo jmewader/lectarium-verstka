@@ -3,6 +3,10 @@
   padding: 100px 0;
   background: $dark-blue-color;
 
+  .custom-select.visible .custom-select__title {
+    border: none;
+  }
+
   .container {
     max-width: 1620px;
 
