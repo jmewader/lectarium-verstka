@@ -1,20 +1,34 @@
 .wide-container
-    section.hero-vacancy.light-blue
-        .hero-vacancy__background 
-            img(src= "../img/hero-articles-bg.png", alt="background")
+    section.hero-vacancy.marketing
+        .hero-vacancy__background
+            .hero-vacancy-marketing-bg
+                img(src= "../img/marketing-bg.png", alt="background")
+            .hero-vacancy-sales-bg
+                img(src= "../img/sales-bg.png", alt="background")
+            .hero-vacancy-support-bg
+                img(src= "../img/support-bg.png", alt="background")
+            .hero-vacancy-it-bg
+                img(src= "../img/it-bg.png", alt="background")
+            .hero-vacancy-finance-bg
+                img(src= "../img/finance-bg.png", alt="background")
+            .hero-vacancy-personnel-bg
+                img(src= "../img/personnel-bg.png", alt="background")
         .hero-vacancy__wrap
             .hero-vacancy__content
                 .hero-vacancy__text-block
                     h1.main-title.hero-vacancy__title
-                        | Карьера
-                        <br>
-                        | в&nbsp;Лектариум
-                    p.hero-vacancy__descriptions.main-descriptions Строим лучшую онлайн-школу. Стань частью команды!
+                        | Офис-менеджер
+                    .hero-vacancy__price
+                        span.hero-vacancy__price_icon
+                            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 10.5429V8.82857H1.25V7.54286H0V5.74286H1.25V0H5.5C6.91111 0 8.01111 0.354286 8.8 1.06286C9.6 1.77143 10 2.67429 10 3.77143C10 4.86857 9.6 5.77143 8.8 6.48C8.01111 7.18857 6.91111 7.54286 5.5 7.54286H3.16667V8.82857H7.16667V10.5429H3.16667V12H1.25V10.5429H0ZM3.16667 5.74286H5.5C7.16667 5.74286 8 5.08571 8 3.77143C8 2.45714 7.16667 1.8 5.5 1.8H3.16667V5.74286Z" fill="white"/>
+                            </svg>
+                        span.hero-vacancy__price_text От 50 000 ₽
                 .hero-vacancy__bottom
-                    a(href="").hero-vacancy__btn.main-button Смотреть вакансии
+                    a(href="").hero-vacancy__btn.dark-button Откликнуться
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" rx="12" fill="white"/>
-                            <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 8L14 12L10 16" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
             .hero-vacancy__image
                 img(src="../img/women.png", alt="img")             

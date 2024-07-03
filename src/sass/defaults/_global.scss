@@ -1943,19 +1943,23 @@ button {
   background-color: #853fea;
 }
 
-.pale-violet {
+.pale-violet,
+.it {
   background-color: #a069fa14;
 }
 
-.pale-turquoise {
+.pale-turquoise,
+.finance {
   background-color: $pale-turquoise-color;
 }
 
-.pale-red {
+.pale-red,
+.sales {
   background-color: #f2575714;
 }
 
-.pale-orange {
+.pale-orange,
+.personnel {
   background-color: #ff944614;
 }
 
@@ -1968,11 +1972,13 @@ button {
   }
 }
 
-.light-blue {
+.light-blue,
+.support {
   background-color: $light-blue-color;
 }
 
-.pale-blue {
+.pale-blue,
+.marketing {
   background-color: #00ade314;
 }
 
