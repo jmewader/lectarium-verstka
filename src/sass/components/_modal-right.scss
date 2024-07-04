@@ -56,6 +56,7 @@
     }
 
     &.password-recovery {
+      max-width: 540px;
       .modal-right__title.password-recovery,
       .modal-right__descriptions.password-recovery,
       .authorization-form.modal.password-recovery {
@@ -70,6 +71,7 @@
     }
 
     &.message {
+      max-width: 540px;
       .modal-right__title.message,
       .modal-right__descriptions.message,
       .authorization-form.modal.message {
@@ -195,6 +197,7 @@
       color: #333;
       width: 32px;
       height: 32px;
+      top: -5px;
 
       @media (max-width: $mobile-width) {
         width: 32px;

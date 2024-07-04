@@ -2353,6 +2353,7 @@ button {
   @media (max-width: $mobile-width) {
     width: 20px;
     height: 20px;
+    right: 18px;
   }
 
   &.invalid {
@@ -2399,8 +2400,8 @@ input.custom-input.white-input {
   }
 
   @media (max-width: $tablet-width) {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 

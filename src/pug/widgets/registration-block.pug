@@ -10,8 +10,10 @@
                     | личного кабинета
                 form.authorization-form__fields
                     .authorization-form__fields_wrap
-                        input.custom-input.white-input(type="text" id="name" name="name" placeholder="Ваше имя")
-                        input.custom-input.white-input(type="text" id="phone" name="phone" placeholder="Телефон")
+                        input.custom-input.white-input.invalid(type="text" id="name" name="name" placeholder="Ваше имя")
+                        input.custom-input.white-input.invalid(type="text" id="phone" name="phone" placeholder="Телефон")
+                    span.warning-text.visible Введите имя
+                    span.warning-text.visible Введите телефон
                     input.custom-input.white-input.invalid(type="text" id="email" name="email" placeholder="Электронная почта")
                     .warning-text.visible Введите почту
                     .password-wrapper
