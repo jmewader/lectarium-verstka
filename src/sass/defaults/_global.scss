@@ -27,6 +27,42 @@ button {
   }
 }
 
+.aside-block {
+  background-color: $light-blue-color;
+
+  .hero-teacher__aside-background {
+    display: flex;
+  }
+
+  .hero-teacher__background {
+    display: none;
+  }
+
+  .hero-teacher__btn {
+    background-color: $dark-blue-color;
+    color: $white-color;
+
+    svg {
+      rect {
+        fill: $white-color;
+      }
+
+      path {
+        stroke: $dark-blue-color;
+      }
+    }
+  }
+
+  .hero-teacher__mark {
+    background-color: rgba(11, 31, 51, 0.14);
+  }
+
+  .hero-teacher__title,
+  .hero-teacher__list-title {
+    color: $dark-blue-color;
+  }
+}
+
 .chemistry {
   background-color: $green-color;
 }
