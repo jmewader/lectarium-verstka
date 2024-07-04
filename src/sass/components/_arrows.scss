@@ -13,6 +13,18 @@
     }
   }
 
+  &.grey-arrows {
+    .arrows__arrow {
+      background-color: #f7f8f9;
+
+      &.disabled {
+        svg path {
+          stroke: #9aa3ad;
+        }
+      }
+    }
+  }
+
   &__arrow {
     width: 64px;
     height: 64px;
