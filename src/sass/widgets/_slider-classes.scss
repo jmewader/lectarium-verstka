@@ -79,14 +79,14 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 20px;
 
     @media (max-width: $desktop-width) {
-      overflow-x: scroll;
-      width: 100%;
-      display: flex;
+      // overflow-x: scroll;
+      // width: 100%;
+      // display: flex;
+      overflow: hidden;
 
       &::-webkit-scrollbar {
         height: 2px;
@@ -115,15 +115,18 @@
       position: relative;
       grid-template-columns: 390px;
       justify-content: space-between;
+      max-width: 390px;
 
       @media (max-width: $large-desktop-width) {
         grid-template-columns: 370px;
+        max-width: 370px;
       }
 
       @media (max-width: $mobile-width) {
         margin: 0 0 0 16px;
         border-radius: 20px;
         grid-template-columns: 304px;
+        max-width: 304px;
       }
 
       &-content {
