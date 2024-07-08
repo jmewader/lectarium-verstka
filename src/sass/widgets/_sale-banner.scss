@@ -109,11 +109,15 @@
       outline-offset: -5px;
       margin: 0 17px 0 -17px;
 
+      @media (max-width: $desktop-width) {
+        margin: 0 10px 0 -10px;
+      }
+
       @media (max-width: $tablet-width) {
         outline: 2px solid;
         border-radius: 8px;
         outline-offset: -4px;
-        margin: 0 9px 0 -9px;
+        margin: 0 6px 0 -6px;
       }
     }
 
@@ -158,6 +162,7 @@
       font-size: 16px;
       line-height: 20px;
       gap: 16px;
+      max-width: 469px;
     }
   }
 
@@ -170,11 +175,12 @@
       flex-direction: column;
       gap: 16px;
       width: 100%;
-      align-items: flex-start;
+      align-items: center;
+      max-width: max-content;
     }
 
     @media (max-width: $mobile-width) {
-      align-items: center;
+      max-width: 100%;
     }
   }
 
@@ -263,7 +269,6 @@
     }
 
     @media (max-width: $small-mobile-width) {
-
       img {
         right: -29px;
       }

@@ -101,9 +101,11 @@
       align-items: flex-end;
       border-radius: 18px;
       min-height: 320px;
+      max-height: 320px;
 
       @media (max-width: $tablet-width) {
         min-height: 228px;
+        max-height: 228px;
         border-radius: 20px;
       }
 
