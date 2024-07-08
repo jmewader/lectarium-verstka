@@ -12,6 +12,10 @@
       margin: 40px 0 70px;
       padding: 0;
     }
+
+    @media (max-width: $mobile-width) {
+      margin: 24px 0 70px;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -26,6 +30,16 @@
     position: relative;
     top: 0;
     gap: 70px;
+  }
+
+  &__btn-filters {
+    @media (max-width: $mobile-width) {
+      margin: 0 0 70px;
+
+      &.button-with-frame {
+        min-height: 50px;
+      }
+    }
   }
 
   &__bottom {
@@ -99,6 +113,10 @@
         .articles {
           margin: 0 0 16px;
         }
+      }
+
+      @media (max-width: $mobile-width) {
+        gap: 50px;
       }
     }
 

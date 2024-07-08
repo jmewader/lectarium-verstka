@@ -76,8 +76,8 @@ section.articles-columns.main-container
                                 </svg>
     .articles-columns__item.right
         .articles-columns__item_sticky
-            .visible-on-tablet
-                button.cards__list_btn-filters.button-with-frame
+            .visible-on-mobile
+                button.button-with-frame.articles-columns__btn-filters
                     <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.15625 12.5859H5.32292" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M17.8229 3.42188H13.6562" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -87,7 +87,7 @@ section.articles-columns.main-container
                         <path d="M11.1562 5.83594C12.537 5.83594 13.6562 4.71665 13.6562 3.33594C13.6562 1.95523 12.537 0.835938 11.1562 0.835938C9.7755 0.835938 8.65625 1.95523 8.65625 3.33594C8.65625 4.71665 9.7755 5.83594 11.1562 5.83594Z" stroke="#0B1F33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     | Фильтры
-            .filters-wrap  
+            .filters-wrap.column-wrap
                 details(open).accordion
                     summary.accordion__summary
                         | Предметы
@@ -157,6 +157,8 @@ section.articles-columns.main-container
                 div
                     h2.articles-columns__title Русский язык
                     include textbook-articles
+            - var titleSubscription = 'Подпишись на свежие новости от библиотеки знаний'
+            - var descriptionsSubscription = 'Полезные инструкции и бесплатные материалы раз в неделю в нашей рассылке!'
             include subscription
         .modal-overlay
             .modal

@@ -45,12 +45,28 @@
   box-shadow: 0 4px 10px 0 rgba(74, 58, 255, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
   gap: 24px;
 
+  @media (max-width: $desktop-width) {
+    &.column-wrap {
+      margin: 0 0 24px;
+    }
+  }
+
   @media (max-width: 1399px) {
     padding: 24px;
   }
 
   @media (max-width: $tablet-width) {
     display: none;
+
+    &.column-wrap {
+      display: flex;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &.column-wrap {
+      display: none;
+    }
   }
 }
 

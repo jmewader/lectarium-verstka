@@ -1,6 +1,12 @@
+block subscription-block
+    - var defaultTitle = 'Подпишись на свежие новости&nbsp;от нашего журнала'
+    - var titleSubscription = typeof(titleSubscription) !== 'undefined' ? titleSubscription : defaultTitle
+    - var defaultDescriptions = 'Полезные инструкции и бесплатные материалы раз в неделю в нашей рассылке'
+    - var descriptionsSubscription = typeof(descriptionsSubscription) !== 'undefined' ? descriptionsSubscription : defaultDescriptions
+
 aside.subscription
-    h3.subscription__title Подпишись на свежие новости&nbsp;от нашего журнала
-    p.subscription__descriptions.main-descriptions Полезные инструкции и бесплатные материалы раз в неделю в нашей рассылке
+    h3.subscription__title !{titleSubscription}
+    p.subscription__descriptions.main-descriptions !{descriptionsSubscription}
     form(action="#" method="POST")
         .subscription__actions
             .subscription__list
