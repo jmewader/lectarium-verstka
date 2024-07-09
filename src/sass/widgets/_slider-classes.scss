@@ -5,12 +5,13 @@
   position: relative;
 
   .carousel-classes {
-    ol {
+    ol:not(.carousel__pagination) {
       display: flex;
       gap: 20px;
 
       @media (max-width: $mobile-width) {
         gap: 0px;
+        padding: 0 0 0 16px !important;
       }
     }
   }
@@ -124,20 +125,13 @@
       background-color: #f4f8ff;
       border-radius: 24px;
       position: relative;
-      grid-template-columns: 390px;
       justify-content: space-between;
       max-width: 390px;
 
-      @media (max-width: $large-desktop-width) {
-        grid-template-columns: 370px;
-        // max-width: 370px;
-      }
-
       @media (max-width: $mobile-width) {
-        margin: 0 0 0 16px;
+        margin: 0px 16px 0px 0px;
         border-radius: 20px;
-        grid-template-columns: 304px;
-        max-width: 304px;
+        max-width: max-content;
       }
 
       &-content {
