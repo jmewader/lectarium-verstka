@@ -831,6 +831,8 @@
                 background: #f3f4f5;
                 border: 0;
                 align-items: center;
+                min-height: fit-content;
+                flex-direction: row;
 
                 .teacher-info-icon {
                   display: block;
@@ -914,12 +916,21 @@
 
                 .price-old {
                   font-family: "TT Firs Neue", sans-serif;
-                  font-weight: 500;
-                  font-size: 16px;
-                  letter-spacing: -0.01em;
                   text-decoration: line-through;
                   color: #9aa3ad;
                   margin-top: 2px;
+                }
+
+                .free {
+                  font-weight: 500;
+                  font-size: 16px;
+                  color: $bright-blue-color;
+                  background-color: #f3f4f5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0 12px;
+                  border-radius: 8px;
                 }
               }
 

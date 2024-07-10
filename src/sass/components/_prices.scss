@@ -1,0 +1,36 @@
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .accent {
+    color: $bright-blue-color;
+  }
+
+  &__price {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    .discount {
+      text-decoration: line-through;
+      color: #9aa3ad;
+      margin-top: 2px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__price-wrap {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: rgba(243, 244, 245, 1);
+    padding: 8px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+}
