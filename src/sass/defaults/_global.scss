@@ -1977,6 +1977,24 @@ button {
   .brief-info__photo {
     background-color: $red-color;
   }
+
+  .russian-bg{
+    display: flex;
+  }
+}
+
+.mathematics-page-pale {
+  .color-accent-bg {
+    background-color: $light-blue-color;
+  }
+
+  .brief-info__photo {
+    background-color: $bright-blue-color;
+  }
+
+  .mathematics-bg{
+    display: flex;
+  }
 }
 
 //
