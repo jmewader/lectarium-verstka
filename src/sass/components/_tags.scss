@@ -4,6 +4,23 @@
   gap: 6px;
   flex-wrap: wrap;
 
+  &.big {
+    gap: 8px;
+    .tags__item {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 9px 11px 9px;
+      border-radius: 8px;
+
+      @media (max-width: $tablet-width) {
+        font-size: 13px;
+        line-height: 17px;
+        border-radius: 6px;
+        padding: 8px 10px 7px;
+      }
+    }
+  }
+
   &__item {
     display: flex;
     align-items: center;

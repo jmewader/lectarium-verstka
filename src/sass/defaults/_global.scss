@@ -1969,6 +1969,16 @@ button {
   }
 }
 
+.russian-page-pale {
+  .color-accent-bg {
+    background-color: rgba(245, 232, 232, 1);
+  }
+
+  .brief-info__photo {
+    background-color: $red-color;
+  }
+}
+
 //
 
 .pink {
