@@ -1974,7 +1974,8 @@ button {
     background-color: rgba(245, 232, 232, 1);
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $red-color;
   }
 
@@ -1988,7 +1989,8 @@ button {
     background-color: $light-blue-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $bright-blue-color;
   }
 
@@ -2002,7 +2004,8 @@ button {
     background-color: $light-slate-blue;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $slate-blue;
   }
 
@@ -2016,7 +2019,8 @@ button {
     background-color: $light-turquoise-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $turquoise-color;
   }
 
@@ -2030,7 +2034,8 @@ button {
     background-color: $light-orange-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $orange-color;
   }
 
@@ -2044,7 +2049,8 @@ button {
     background-color: $light-aqua-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $aqua-color;
   }
 
@@ -2058,7 +2064,8 @@ button {
     background-color: $light-violet-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $violet-color;
   }
 
@@ -2072,7 +2079,8 @@ button {
     background-color: $light-heliotrope-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $heliotrope-color;
   }
 
@@ -2086,7 +2094,8 @@ button {
     background-color: $light-coral-color;
   }
 
-  .brief-info__photo {
+  .brief-info__photo,
+  .color-accent-photo-bg {
     background-color: $coral-color;
   }
 
@@ -2485,6 +2494,39 @@ button {
     &:focus {
       border: 1px solid $bright-blue-color;
     }
+  }
+
+  &.invalid {
+    border: 1px solid $red-color;
+    color: $red-color;
+
+    &::placeholder {
+      color: $red-color;
+    }
+  }
+}
+
+.custom-textarea {
+  border: 1px solid #cad0d6;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  min-height: 72px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-blue-color;
+  @include common-text;
+  background-color: #f7f8f9;
+  min-height: 114px;
+  resize: none;
+
+  &:focus {
+    border-color: $dark-blue-color;
+  }
+  &::placeholder {
+    color: $pale-blue-color;
   }
 
   &.invalid {

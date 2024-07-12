@@ -1,0 +1,18 @@
+.main-container
+    section.leave-a-comment
+        h2.leave-a-comment__title Оставьте комментарий
+        form(action="#" method="POST")
+            .form__fields.visible
+                div.form__field
+                    input.custom-input(type="text" id="name" name="name" placeholder="Ваше имя")
+                div.form__field
+                    textarea.custom-textarea(type="text" id="comment" name="comment" placeholder="Комментарий")
+                span.warning-text Пожалуйста, заполните все обязательные поля
+            .leave-a-comment__actions
+                button.form__submit-btn.main-button-small.leave-a-comment__btn(type="submit") 
+                    | Отправить
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="white"/>
+                        <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                span.leave-a-comment__text Нажимая на кнопку, вы выражаете Согласие с политикой конфиденциальности и Правилами обработки персональных данных

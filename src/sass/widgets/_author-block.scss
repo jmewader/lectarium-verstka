@@ -1,0 +1,123 @@
+.author-block {
+  background-color: $white-color;
+  border-radius: 40px;
+  padding: 24px;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6d7985;
+    max-width: 267px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  &__photo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__photo {
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 164px;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+
+    &_text {
+      position: absolute;
+      background-color: $white-color;
+      padding: 10px 12px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      font-size: 16px;
+      line-height: 20px;
+      bottom: -5px;
+      z-index: 2;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: 100%;
+      object-position: top;
+    }
+  }
+
+  &__list-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  &__list-wrap {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f8f9;
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 415px;
+    gap: 41px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &_item {
+      width: 100%;
+      padding: 0px 0px 16px;
+      margin: 0 0 16px;
+      border-bottom: 1px solid #e7e9eb;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: $dark-blue-color;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      &:last-child {
+        padding: 0;
+        margin: 0;
+        border-bottom: none;
+      }
+    }
+
+    &_icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
