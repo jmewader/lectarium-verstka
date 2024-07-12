@@ -5,6 +5,13 @@
   gap: 44px 32px;
   grid-template-areas: "main right";
 
+  &__arrows-wrap {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   &.main-container {
     margin: 80px auto 180px;
 

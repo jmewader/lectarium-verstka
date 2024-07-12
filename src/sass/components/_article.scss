@@ -21,6 +21,26 @@
     }
   }
 
+  &.flat {
+    grid-template-rows: auto;
+
+    .article__header {
+      box-shadow: none;
+      border-radius: 20px;
+      height: 260px;
+    }
+
+    .article__body {
+      background-color: #ffffff;
+      border-radius: 0px;
+      box-shadow: none;
+      top: auto;
+      height: 100%;
+      gap: 18px;
+      padding: 18px 12px;
+    }
+  }
+
   &__date {
     font-size: 15px;
     line-height: 20px;
@@ -117,6 +137,20 @@
       img {
         object-fit: cover;
         height: 100%;
+        width: 100%;
+      }
+    }
+
+    &_accent-bg {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: flex-end;
+      position: absolute;
+      justify-content: flex-end;
+
+      img {
+        object-fit: cover;
         width: 100%;
       }
     }

@@ -1,0 +1,60 @@
+.rating-block {
+  background-color: $white-color;
+  border-radius: 40px;
+  padding: 44px 26px 24px;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 44px;
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+    color: $dark-blue-color;
+  }
+
+  &__descriptions {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #6d7985;
+    margin: 0 0 24px;
+  }
+
+  &__scale {
+    display: flex;
+    align-items: center;
+    background-color: #f7f8f9;
+    border-radius: 18px;
+    padding: 16px;
+    justify-content: space-between;
+
+    &_hearts {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    &_heart {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.active {
+        svg path {
+          fill: #f25757;
+        }
+      }
+    }
+
+    &_number {
+      color: #9aa3ad;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
