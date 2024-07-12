@@ -1978,7 +1978,7 @@ button {
     background-color: $red-color;
   }
 
-  .russian-bg{
+  .russian-bg {
     display: flex;
   }
 }
@@ -1992,7 +1992,105 @@ button {
     background-color: $bright-blue-color;
   }
 
-  .mathematics-bg{
+  .mathematics-bg {
+    display: flex;
+  }
+}
+
+.physics-page-pale {
+  .color-accent-bg {
+    background-color: $light-slate-blue;
+  }
+
+  .brief-info__photo {
+    background-color: $slate-blue;
+  }
+
+  .physics-bg {
+    display: flex;
+  }
+}
+
+.biology-page-pale {
+  .color-accent-bg {
+    background-color: $light-turquoise-color;
+  }
+
+  .brief-info__photo {
+    background-color: $turquoise-color;
+  }
+
+  .biology-bg {
+    display: flex;
+  }
+}
+
+.literature-page-pale {
+  .color-accent-bg {
+    background-color: $light-orange-color;
+  }
+
+  .brief-info__photo {
+    background-color: $orange-color;
+  }
+
+  .literature-bg {
+    display: flex;
+  }
+}
+
+.geography-page-pale {
+  .color-accent-bg {
+    background-color: $light-aqua-color;
+  }
+
+  .brief-info__photo {
+    background-color: $aqua-color;
+  }
+
+  .geography-bg {
+    display: flex;
+  }
+}
+
+.informatics-page-pale {
+  .color-accent-bg {
+    background-color: $light-violet-color;
+  }
+
+  .brief-info__photo {
+    background-color: $violet-color;
+  }
+
+  .informatics-bg {
+    display: flex;
+  }
+}
+
+.english-page-pale {
+  .color-accent-bg {
+    background-color: $light-heliotrope-color;
+  }
+
+  .brief-info__photo {
+    background-color: $heliotrope-color;
+  }
+
+  .english-bg {
+    display: flex;
+  }
+}
+
+.social-science-page-pale {
+  .color-accent-bg {
+    background-color: $light-coral-color;
+  }
+
+  .brief-info__photo {
+    background-color: $coral-color;
+  }
+
+  .social-science-bg {
     display: flex;
   }
 }
