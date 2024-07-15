@@ -458,6 +458,14 @@
       }
     }
 
+    @media (max-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @media (max-width: $mobile-width) {
       &::-webkit-scrollbar {
         height: 1px;
@@ -507,6 +515,7 @@
 
       @media (max-width: 1659px) {
         width: 100%;
+        min-width: 308px;
       }
 
       &--wrap {
