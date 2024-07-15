@@ -10,6 +10,13 @@
     align-items: flex-start;
     width: 100%;
     justify-content: space-between;
+    padding: 5px 0;
+    margin: 30px 0 0;
+
+    .arrows {
+      top: -7px;
+      position: relative;
+    }
   }
 
   &.main-container {
@@ -22,6 +29,36 @@
 
     @media (max-width: $mobile-width) {
       margin: 24px 0 70px;
+    }
+  }
+
+  .textbook-container {
+    padding: 0 16px;
+    gap: 70px;
+    margin: 70px 0 36px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &.large {
+    margin: 120px auto;
+
+    @media (max-width: $desktop-width) {
+      margin: 70px 0 0px;
+      padding: 0;
+      gap: 16px;
+    }
+  }
+
+  &.large-wrap {
+    @media (max-width: $tablet-width) {
+      padding: 0;
+      gap: 0;
+      margin: 0;
     }
   }
 
@@ -101,12 +138,20 @@
       gap: 70px;
     }
 
+    &.small {
+      gap: 32px;
+
+      @media (max-width: $tablet-width) {
+        gap: 16px;
+      }
+    }
+
     &_sticky {
       display: flex;
       flex-direction: column;
       // position: sticky;
       // top: 20px;
-      gap: 20px;
+      gap: 24px;
 
       @media (max-width: $desktop-width) {
         position: relative;
@@ -170,6 +215,10 @@
 
       @media (max-width: $desktop-width) {
         padding: 0 16px;
+
+        &.textbook-wrap {
+          padding: 0;
+        }
       }
 
       @media (max-width: $mobile-width) {

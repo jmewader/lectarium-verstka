@@ -1,14 +1,22 @@
 
-section.articles-columns.main-container
-    .articles-columns__item.main
+section.articles-columns.main-container.large
+    .articles-columns__item.main.small
         include textbook-content
         include leave-a-comment
         include author-block
-    .articles-columns__item.right
+    .visible-on-desktop.block.main-container.rating-block-wrap
+        include rating-block
+    .visible-on-desktop
+        .textbook-container
+            include comments
+            include textbook-detailed-articles-slider
+    .articles-columns__item.right.textbook-wrap
         .articles-columns__item_sticky
             include info-and-social-block
-            include comments-block
-            include rating-block
+            .hidden-on-desktop.block
+                include comments-block
+            .hidden-on-desktop.block
+                include rating-block
          
 
         

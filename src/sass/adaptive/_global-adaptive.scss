@@ -63,6 +63,10 @@
 
   .main-container {
     padding: 0 16px;
+
+    &.full-width {
+      padding: 0;
+    }
   }
 
   .main-button {
