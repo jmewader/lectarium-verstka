@@ -239,6 +239,12 @@
       gap: 0;
     }
 
+    @media (max-width: $mobile-width) {
+      min-width: auto;
+      width: auto;
+      right: 16px;
+    }
+
     &_title {
       font-size: 36px;
       line-height: 42px;
@@ -252,7 +258,8 @@
 
       @media (max-width: $tablet-width) {
         font-size: 22px;
-        line-height: 36px;
+        line-height: 25px;
+        margin: 0 0 4px;
       }
     }
 
