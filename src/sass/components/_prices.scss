@@ -11,16 +11,29 @@
     font-size: 28px;
     line-height: 32px;
     font-weight: 500;
+    letter-spacing: -0.02em;
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 7px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: -0.01em;
+    }
 
     .discount {
       text-decoration: line-through;
       color: #9aa3ad;
-      margin-top: 2px;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 19px;
+      margin: 0 0 0 4px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+      }
     }
   }
 
@@ -32,5 +45,9 @@
     padding: 8px;
     border-radius: 8px;
     width: fit-content;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 }

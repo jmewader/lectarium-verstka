@@ -2,18 +2,25 @@
   width: 100%;
   align-items: center;
   position: sticky;
-  bottom: 44px;
+  bottom: 0;
   margin: 0 auto;
   display: none;
   z-index: 100;
-  max-width: 1250px;
-  padding: 0 16px;
+  max-width: 1620px;
 
   &.visible {
     display: flex;
+  }
 
-    @media (max-width: $tablet-width) {
-      display: none;
+  .main-button-small {
+    @media (max-width: $mobile-width) {
+      min-height: 50px;
+      gap: 12px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -22,9 +29,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 12px 12px 24px;
-    border-radius: 24px;
+    padding: 24px;
+    border-radius: 24px 24px 0 0;
     background-color: $white-color;
     box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      align-items: flex-start;
+    }
   }
 }

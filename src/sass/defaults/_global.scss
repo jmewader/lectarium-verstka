@@ -111,10 +111,6 @@ button {
 
   &.single-marathon {
     .course-head-back {
-      .chemistry-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -129,14 +125,18 @@ button {
   }
 
   .course-head-back {
-    .chemistry-bg,
-    .chemistry-figures {
+    .chemistry-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $green-color;
+      }
     }
 
     .course-head-bg {
@@ -154,44 +154,6 @@ button {
       @media (max-width: $mobile-width) {
         height: 934px;
         right: -220px;
-      }
-    }
-
-    .course-head-figures-one {
-      z-index: 1;
-      position: relative;
-      width: 154px;
-      top: 531px;
-      left: 27px;
-
-      @media (max-width: $large-desktop-width) {
-        left: -50px;
-        top: 467px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 206px;
-        width: 101px;
-        left: 14px;
-        z-index: 2;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 701px;
-      top: -19px;
-      z-index: 1;
-      width: 237px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 570px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: -26px;
-        width: 100px;
-        left: 257px;
       }
     }
   }
@@ -254,7 +216,6 @@ button {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
     }
@@ -288,10 +249,6 @@ button {
 .russian-page {
   &.single-marathon {
     .course-head-back {
-      .russian-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -348,14 +305,18 @@ button {
   }
 
   .course-head-back {
-    .russian-bg,
-    .russian-figures {
+    .russian-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $red-color;
+      }
     }
 
     .course-head-bg {
@@ -369,43 +330,6 @@ button {
         height: 489px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 254px;
-      top: 528px;
-      left: -82px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 90px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 234px;
-        width: 142px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 566px;
-      top: 364px;
-      z-index: 2;
-      width: 364px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 423px;
-        top: 399px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 160px;
-        width: 148px;
-        left: 228px;
-      }
-    }
   }
 }
 
@@ -416,10 +340,6 @@ button {
 .mathematics-page {
   &.single-marathon {
     .course-head-back {
-      .mathematics-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -475,14 +395,18 @@ button {
   }
 
   .course-head-back {
-    .mathematics-bg,
-    .mathematics-figures {
+    .mathematics-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $bright-blue-color;
+      }
     }
 
     .course-head-bg {
@@ -492,41 +416,6 @@ button {
 
       @media (max-width: $mobile-width) {
         height: 435px;
-      }
-    }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      top: 531px;
-      left: 24px;
-      width: 261px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 243px;
-        width: 120px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 665px;
-      top: 286px;
-      z-index: 1;
-      width: 229px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 542px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 125px;
-        width: 120px;
-        left: 244px;
       }
     }
   }
@@ -539,10 +428,6 @@ button {
 .physics-page {
   &.single-marathon {
     .course-head-back {
-      .physics-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -598,14 +483,18 @@ button {
   }
 
   .course-head-back {
-    .physics-figures,
     .physics-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $slate-blue;
+      }
     }
 
     .course-head-bg {
@@ -628,42 +517,6 @@ button {
         height: 528px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 256px;
-      top: 559px;
-      left: 46px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 243px;
-        width: 120px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 738px;
-      top: 230px;
-      z-index: 1;
-      width: 185px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 647px;
-        top: 180px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 89px;
-        width: 74px;
-        left: 298px;
-      }
-    }
   }
 }
 
@@ -674,10 +527,6 @@ button {
 .biology-page {
   &.single-marathon {
     .course-head-back {
-      .biology-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -733,14 +582,18 @@ button {
   }
 
   .course-head-back {
-    .biology-figures,
     .biology-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $turquoise-color;
+      }
     }
 
     .course-head-bg {
@@ -758,43 +611,6 @@ button {
         height: 489px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 127px;
-      top: 387px;
-      left: 10px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 154px;
-        width: 62px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 582px;
-      top: 349px;
-      z-index: 2;
-      width: 261px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 485px;
-        top: 329px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 161px;
-        width: 118px;
-        left: 248px;
-      }
-    }
   }
 }
 
@@ -805,10 +621,6 @@ button {
 .literature-page {
   &.single-marathon {
     .course-head-back {
-      .literature-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -864,14 +676,18 @@ button {
   }
 
   .course-head-back {
-    .literature-figures,
     .literature-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $orange-color;
+      }
     }
 
     .course-head-bg {
@@ -896,45 +712,6 @@ button {
         right: -336px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 200px;
-      top: 340px;
-      left: -50px;
-
-      @media (max-width: $large-desktop-width) {
-        left: -30px;
-        top: 320px;
-        width: 130px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 164px;
-        width: 60px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 581px;
-      top: 280px;
-      z-index: 2;
-      width: 348px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 423px;
-        top: 379px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 180px;
-        width: 148px;
-        left: 208px;
-      }
-    }
   }
 }
 
@@ -945,10 +722,6 @@ button {
 .history-page {
   &.single-marathon {
     .course-head-back {
-      .history-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -1004,14 +777,18 @@ button {
   }
 
   .course-head-back {
-    .history-figures,
     .history-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $blue-color;
+      }
     }
 
     .course-head-bg {
@@ -1020,45 +797,6 @@ button {
 
       @media (max-width: $mobile-width) {
         height: 500px;
-      }
-    }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 397px;
-      top: 566px;
-      left: 3px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-        width: 301px;
-        top: 566px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 264px;
-        width: 160px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 747px;
-      top: 189px;
-      z-index: 2;
-      width: 150px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 637px;
-        top: 214px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 71px;
-        width: 88px;
-        left: 284px;
       }
     }
   }
@@ -1071,10 +809,6 @@ button {
 .informatics-page {
   &.single-marathon {
     .course-head-back {
-      .informatics-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -1130,14 +864,18 @@ button {
   }
 
   .course-head-back {
-    .informatics-figures,
     .informatics-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $violet-color;
+      }
     }
 
     .course-head-bg {
@@ -1155,45 +893,6 @@ button {
         bottom: -136px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 292px;
-      top: 566px;
-      left: 4px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-        width: 301px;
-        top: 566px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 264px;
-        width: 160px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 701px;
-      top: 304px;
-      z-index: 2;
-      width: 186px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 570px;
-        top: 214px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 121px;
-        width: 88px;
-        left: 284px;
-      }
-    }
   }
 }
 
@@ -1204,10 +903,6 @@ button {
 .english-page {
   &.single-marathon {
     .course-head-back {
-      .english-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -1263,14 +958,18 @@ button {
   }
 
   .course-head-back {
-    .english-figures,
     .english-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $heliotrope-color;
+      }
     }
 
     .course-head-bg {
@@ -1286,45 +985,6 @@ button {
         right: -204px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 278px;
-      top: 531px;
-      left: 7px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 0px;
-        width: 301px;
-        top: 566px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 264px;
-        width: 160px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 741px;
-      top: 430px;
-      z-index: 2;
-      width: 209px;
-
-      @media (max-width: $large-desktop-width) {
-        left: 570px;
-        top: 344px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 121px;
-        width: 88px;
-        left: 284px;
-      }
-    }
   }
 }
 
@@ -1335,10 +995,6 @@ button {
 .social-science-page {
   &.single-marathon {
     .course-head-back {
-      .social-science-figures {
-        display: none;
-      }
-
       .brief-info,
       .course-head-arrows {
         display: flex;
@@ -1394,14 +1050,18 @@ button {
   }
 
   .course-head-back {
-    .social-science-figures,
     .social-science-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $coral-color;
+      }
     }
 
     .course-head-bg {
@@ -1420,44 +1080,6 @@ button {
         height: 728px;
         right: -166px;
         bottom: -173px;
-      }
-    }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 429px;
-      top: 379px;
-      left: -78px;
-
-      @media (max-width: $large-desktop-width) {
-        width: 349px;
-        left: -60px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 126px;
-        width: 160px;
-        left: -33px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 582px;
-      top: 93px;
-      z-index: 2;
-      width: 276px;
-
-      @media (max-width: $large-desktop-width) {
-        width: 233px;
-        top: 221px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: 103px;
-        width: 120px;
-        left: 246px;
       }
     }
   }
@@ -1510,14 +1132,18 @@ button {
   }
 
   .course-head-back {
-    .geography-figures,
     .geography-bg {
       display: block;
     }
 
-    .brief-info,
     .course-head-arrows {
       display: none;
+    }
+
+    .brief-info {
+      .brief-info__photo {
+        background-color: $aqua-color;
+      }
     }
 
     .course-head-bg {
@@ -1539,48 +1165,9 @@ button {
         bottom: -139px;
       }
     }
-
-    .course-head-figures-one {
-      z-index: 2;
-      position: relative;
-      width: 297px;
-      top: 567px;
-      left: 4px;
-
-      @media (max-width: $mobile-width) {
-        top: 234px;
-        width: 142px;
-        left: 6px;
-      }
-    }
-
-    .course-head-figures-two {
-      position: relative;
-      left: 82px;
-      top: 40px;
-      z-index: 2;
-      width: 157px;
-
-      @media (max-width: $large-desktop-width) {
-        top: -108px;
-        left: 62px;
-      }
-
-      @media (max-width: $mobile-width) {
-        top: -26px;
-        width: 69px;
-        left: 30px;
-      }
-    }
   }
 
   &.single-marathon {
-    .course-head-back {
-      .geography-figures {
-        display: none;
-      }
-    }
-
     .course-head-arrows {
       display: flex;
     }
@@ -1655,10 +1242,6 @@ button {
   }
 
   .course {
-    .course-head-figures {
-      display: none;
-    }
-
     .course-head-back .brief-info {
       display: flex;
     }
