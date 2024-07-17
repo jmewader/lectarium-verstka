@@ -208,8 +208,11 @@
 
 @media screen and (max-width: 1069px) {
   .popup {
-    &.popup-month {
+    &.popup-month,
+    &.popup-subjects {
       .popup-content {
+        max-height: 728px;
+        min-height: 500px;
         .popup-items {
           grid-template-columns: repeat(2, auto);
         }
@@ -256,7 +259,11 @@
       }
     }
 
-    &.popup-month {
+    &.popup-month,
+    &.popup-subjects {
+      align-items: flex-end;
+      min-height: 350px;
+
       &.small-month {
         align-items: flex-end;
 
@@ -285,21 +292,24 @@
 
       .popup-content {
         padding: 0;
+        width: 100%;
 
         .popup-head {
           .popup-title {
-            width: 225px;
+            // width: 225px;
           }
         }
 
         .popup-items {
           grid-template-columns: auto;
           grid-template-rows: repeat(4, 1fr);
-          gap: 15px;
+          gap: 10px;
           display: flex;
           width: 100%;
 
           .product-card-rate {
+            padding: 18px;
+
             .product-card-rate-info {
               .product-card-rate-info-head {
                 .product-card-rate-info-term {
@@ -375,9 +385,11 @@
 
       .popup-items {
         flex-direction: column;
-        padding: 0 16px;
         display: flex;
         width: 100%;
+        overflow: auto;
+        max-height: 478px;
+        padding: 0 16px 186px;
 
         .popup-item {
           width: 100%;
@@ -494,7 +506,8 @@
 
 @media screen and (max-width: 768px) {
   .popup {
-    &.popup-month {
+    &.popup-month,
+    &.popup-subjects {
       .popup-content {
         .popup-items {
           .product-card-rate {
@@ -957,7 +970,8 @@
       }
     }
 
-    &.popup-month {
+    &.popup-month,
+    &.popup-subjects {
       .popup-content {
         .popup-items {
           display: flex;

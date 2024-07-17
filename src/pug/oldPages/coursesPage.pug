@@ -33,11 +33,15 @@
             .popup-navigation
                 .popup-navigation-item.active
                     .popup-navigation-item-number 1
-                    .popup-navigation-item-text Выбор тарифа
+                    .popup-navigation-item-text Тарифы
                 .popup-navigation-line
                 .popup-navigation-item
                     .popup-navigation-item-number 2
-                    .popup-navigation-item-text Количество месяцев
+                    .popup-navigation-item-text Предметы
+                .popup-navigation-line
+                .popup-navigation-item
+                    .popup-navigation-item-number 3
+                    .popup-navigation-item-text Месяцы
         .popup-items
             .popup-item
                 .popup-item-head
@@ -299,7 +303,11 @@
                             span Личный наставник
             
         .popup-action
-            button.button.button-blue Применить
+            button.button.button-blue Далее
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" width="20" height="20" rx="10" fill="white"/>
+                    <path d="M8.5 6L12.5 10L8.5 14" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
 
 
 .popup.popup-tariff.small-tariffs
@@ -543,101 +551,318 @@
                     </clipPath>
                 </defs>
             </svg>
-        .popup-head
-            .popup-title Выберите количество месяцев
-            .popup-navigation
-                .popup-navigation-item
-                    .popup-navigation-item-number 1
-                    .popup-navigation-item-text Выбор тарифа
-                .popup-navigation-line
-                .popup-navigation-item.active
-                    .popup-navigation-item-number 2
-                    .popup-navigation-item-text Количество месяцев
-        .popup-items
-            .product-card-rate.rate-gray
-                .product-card-rate-info
-                    .product-card-rate-image
-                        img(src="images/courses/small-month-image1.png", alt="Рупор")
-                    .product-card-rate-info-head
-                        .product-card-rate-info-term 1 месяц
-                        .product-card-rate-info-text Разовая оплата
-                    .product-card-rate-info-items
-                        .product-card-rate-info-item.count
+        div
+            .popup-head
+                .popup-title Выберите время обучения
+                .popup-navigation
+                    .popup-navigation-item
+                        .popup-navigation-item-number 1
+                        .popup-navigation-item-text Тарифы
+                    .popup-navigation-line
+                    .popup-navigation-item.active
+                        .popup-navigation-item-number 2
+                        .popup-navigation-item-text Месяцы
+                    .popup-navigation-line
+                    .popup-navigation-item
+                        .popup-navigation-item-number 3
+                        .popup-navigation-item-text Предметы
+            .popup-items.month-with-discount
+                .product-card-rate.rate-gray
+                    .product-card-rate-info
+                        .product-card-rate-image
+                            img(src="images/courses/small-month-image1.png", alt="Рупор")
+                        .product-card-rate-info-head
+                            .product-card-rate-info-term 1 месяц
+                        .product-card-rate-info-body
+                            .product-card-rate-info-text Разовая оплата
+                .product-card-rate.rate-gray
+                    .product-card-rate-info
+                        .product-card-rate-image
+                            img(src="images/courses/small-month-image2.png", alt="Ракета")
+                        .product-card-rate-info-head
+                            .product-card-rate-info-term 3 месяцев
+                        .product-card-rate-info-body
+                            .product-card-rate-info-text При оплате в рассрочку на 24 месяца
+                            .product-card-rate-info-discount -14%
+                .product-card-rate.rate-gray
+                    .product-card-rate-info
+                        .product-card-rate-info-head
+                            .product-card-rate-info-term 6 месяцев
+                        .product-card-rate-info-body
+                            .product-card-rate-info-text При оплате в рассрочку на 24 месяца
+                            .product-card-rate-info-discount -15%
+                .product-card-rate.rate-gray
+                    .product-card-rate-info
+                        .product-card-rate-info-head
+                            .product-card-rate-info-term 12 месяцев
+                        .product-card-rate-info-body
+                            .product-card-rate-info-text При оплате в рассрочку на 24 месяца
+                            .product-card-rate-info-discount -18%
+            .months.visible
+                .months__wrap
+                    h3.months__title 2024 год
+                    ul.months__list
+                        li.months__list_item
+                            span.months__list_item-title Сентябрь
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Октябрь
+                            span.months__list_discount -24%
+                        li.months__list_item.action
+                            span.months__list_item-title Ноябрь
+                            span.months__list_discount -24%
+                        li.months__list_item.action
+                            span.months__list_item-title Декабрь
+                            span.months__list_discount -24%
+                .months__wrap
+                    h3.months__title 2025 год
+                    ul.months__list
+                        li.months__list_item.action
+                            span.months__list_item-title Январь
+                            span.months__list_discount -24%
+                        li.months__list_item.action
+                            span.months__list_item-title Февраль
+                            span.months__list_discount -24%
+                        li.months__list_item.action
+                            span.months__list_item-title Март
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Апрель
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Май
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Июнь
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Июль
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Август
+                            span.months__list_discount -24%
+                .months__wrap
+                    h3.months__title 2025 год
+                    ul.months__list
+                        li.months__list_item
+                            span.months__list_item-title Январь
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Февраль
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Март
+                            span.months__list_discount -24%
+                        li.months__list_item
+                            span.months__list_item-title Апрель
+                            span.months__list_discount -24%
+        .popup-actions
+            .popup-actions__wrap
+                .popup-actions__price-wrap
+                    .popup-actions__price 5 525 ₽/мес
+                    .popup-actions__price-grey Итого: 5 525 ₽/мес 
+                .popup-actions__price-wrap
+                    ul.tags-with-icons.popup-actions__tags
+                        li.tags-with-icons__item 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.67188 9.58594C1.67188 6.84637 1.67187 5.47659 2.42851 4.55463C2.56702 4.38585 2.72178 4.23109 2.89057 4.09257C3.81252 3.33594 5.18231 3.33594 7.92187 3.33594C10.6615 3.33594 12.0312 3.33594 12.9532 4.09257C13.122 4.23109 13.2767 4.38585 13.4152 4.55463C14.1719 5.47659 14.1719 6.84637 14.1719 9.58594V10.4193C14.1719 13.1589 14.1719 14.5286 13.4152 15.4506C13.2767 15.6194 13.122 15.7741 12.9532 15.9126C12.0312 16.6693 10.6615 16.6693 7.92187 16.6693C5.18231 16.6693 3.81252 16.6693 2.89057 15.9126C2.72178 15.7741 2.56702 15.6194 2.42851 15.4506C1.67187 14.5286 1.67188 13.1589 1.67188 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
-                                <path d="M14.1719 7.91617L14.7205 7.64186C16.342 6.83107 17.1529 6.42568 17.7457 6.79207C18.3385 7.15846 18.3385 8.06495 18.3385 9.87793V10.1211C18.3385 11.9341 18.3385 12.8405 17.7457 13.2069C17.1529 13.5733 16.342 13.1679 14.7205 12.3572L14.1719 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                <path d="M1.66406 9.57812C1.66406 6.83856 1.66406 5.46877 2.4207 4.54682C2.55921 4.37803 2.71397 4.22327 2.88275 4.08476C3.80471 3.32812 5.1745 3.32813 7.91406 3.32813C10.6536 3.32813 12.0234 3.32812 12.9454 4.08476C13.1141 4.22327 13.2689 4.37803 13.4074 4.54682C14.1641 5.46877 14.1641 6.83856 14.1641 9.57812V10.4115C14.1641 13.151 14.1641 14.5208 13.4074 15.4428C13.2689 15.6115 13.1141 15.7663 12.9454 15.9048C12.0234 16.6615 10.6536 16.6615 7.91406 16.6615C5.1745 16.6615 3.80471 16.6615 2.88275 15.9048C2.71397 15.7663 2.55921 15.6115 2.4207 15.4428C1.66406 14.5208 1.66406 13.151 1.66406 10.4115V9.57812Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                <path d="M14.1641 7.91617L14.7127 7.64186C16.3342 6.83107 17.1451 6.42568 17.7379 6.79207C18.3307 7.15846 18.3307 8.06495 18.3307 9.87793V10.1211C18.3307 11.9341 18.3307 12.8405 17.7379 13.2069C17.1451 13.5733 16.3342 13.1679 14.7127 12.3572L14.1641 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
                             </svg>
-                            span 8 занятий
-                        .product-card-rate-info-item.price
+                            | 48 занятий
+                        li.tags-with-icons__item 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.50521H17.5M5.83333 12.5052H7.5M5.16667 15.8385H14.8333C15.7667 15.8385 16.2335 15.8385 16.59 15.6569C16.9036 15.4971 17.1586 15.2421 17.3183 14.9285C17.5 14.572 17.5 14.1053 17.5 13.1719V6.83854C17.5 5.90512 17.5 5.43841 17.3183 5.08189C17.1586 4.76828 16.9036 4.51332 16.59 4.35353C16.2335 4.17187 15.7667 4.17188 14.8333 4.17188H5.16667C4.23325 4.17188 3.76653 4.17187 3.41002 4.35353C3.09641 4.51332 2.84144 4.76828 2.68166 5.08189C2.5 5.43841 2.5 5.90512 2.5 6.83854V13.1719C2.5 14.1053 2.5 14.572 2.68166 14.9285C2.84144 15.2421 3.09641 15.4971 3.41002 15.6569C3.76653 15.8385 4.23324 15.8385 5.16667 15.8385Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            span 373 ₽ за занятие
-                .product-card-button
-                    button.button 2 990 ₽/мес
-            .product-card-rate.rate-blue
-                .product-card-rate-info
-                    .product-card-rate-image
-                        img(src="images/courses/small-month-image2.png", alt="Ракета")
-                    .product-card-rate-info-head
-                        .product-card-rate-info-term 6 месяцев
-                        .product-card-rate-info-text 15 300 ₽ за 6 месяцев (сентябрь-февраль)
-                    .product-card-rate-info-items
-                        .product-card-rate-info-item.count
+                            | 318 ₽ за занятие 
+            .popup-actions__actions-wrap
+                .custom-select
+                    .custom-select__title.white Без рассрочки
+                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                    .custom-select__menu-wrap
+                        ul.custom-select__menu
+                            li.custom-select__menu_item(data-value="4") На 3 месяца
+                            li.custom-select__menu_item(data-value="5") На 6 месяцев
+                            li.custom-select__menu_item(data-value="1") На 12 месяцев
+                            li.custom-select__menu_item(data-value="2") На 24 месяца
+                    .visible-on-tablet
+                        .modal-overlay
+                            .modal
+                                button.modal__close-btn
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2873_18660)">
+                                        <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                        <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath>
+                                        <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                .modal__content
+                                    h3.modal__title Выберите период рассрочки
+                                .modal__wrapper
+                                    .custom-radio
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio', checked)
+                                            span.custom-radio__label Без рассрочки
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 3 месяца
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 6 месяцев
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 12 месяцев
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 24 месяца
+                                .modal__bottom
+                                    button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                                    button.main-button Применить  
+                .popup-actions__button
+                    button.main-button
+                        span Далее
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="20" height="20" rx="10" fill="white"/>
+                            <path d="M8.5 6L12.5 10L8.5 14" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+
+
+.popup.popup-subjects.show
+    .popup-content
+        .popup-close
+            <svg class="text-desktop" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.10938 7.1123L24.8872 24.8901" stroke="white" stroke-width="1.77778" stroke-linecap="round" />
+                <path d="M24.8906 7.1123L7.11285 24.8901" stroke="white" stroke-width="1.77778" stroke-linecap="round" />
+                </svg>
+            <svg class="text-mobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1004_15311)">
+                    <path d="M4 4L14 14" stroke="#9AA3AD" stroke-linecap="round" />
+                    <path d="M14 4L4 14" stroke="#9AA3AD" stroke-linecap="round" />
+                </g>
+                <defs>
+                    <clipPath>
+                    <rect width="12" height="12" fill="white" transform="translate(3 3)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        div
+            .popup-head
+                .popup-title Выберите время обучения
+                .popup-navigation
+                    .popup-navigation-item
+                        .popup-navigation-item-number 1
+                        .popup-navigation-item-text Тарифы
+                    .popup-navigation-line
+                    .popup-navigation-item
+                        .popup-navigation-item-number 2
+                        .popup-navigation-item-text Месяцы
+                    .popup-navigation-line
+                    .popup-navigation-item.active
+                        .popup-navigation-item-number 3
+                        .popup-navigation-item-text Предметы
+            .subjects
+                .subjects__wrap
+                    ul.subjects__list
+                        li.subjects__list_item
+                            span.subjects__list_item-title Выбрать все
+                        li.subjects__list_item
+                            span.subjects__list_item-title Биология
+                        li.subjects__list_item
+                            span.subjects__list_item-title Литература
+                        li.subjects__list_item
+                            span.subjects__list_item-title Русский язык
+                        li.subjects__list_item
+                            span.subjects__list_item-title История
+                        li.subjects__list_item
+                            span.subjects__list_item-title Информатика
+                        li.subjects__list_item
+                            span.subjects__list_item-title Английский язык
+                        li.subjects__list_item
+                            span.subjects__list_item-title Химия
+                        li.subjects__list_item
+                            span.subjects__list_item-title Математика (База)
+                        li.subjects__list_item.action
+                            span.subjects__list_item-title Математика (Профиль)
+                        li.subjects__list_item
+                            span.subjects__list_item-title Обществознание
+        .popup-actions
+            .popup-actions__wrap
+                .popup-actions__price-wrap
+                    .popup-actions__price 5 525 ₽/мес
+                    .popup-actions__price-grey Итого: 5 525 ₽/мес 
+                .popup-actions__price-wrap
+                    ul.tags-with-icons.popup-actions__tags
+                        li.tags-with-icons__item 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.67188 9.58594C1.67188 6.84637 1.67187 5.47659 2.42851 4.55463C2.56702 4.38585 2.72178 4.23109 2.89057 4.09257C3.81252 3.33594 5.18231 3.33594 7.92187 3.33594C10.6615 3.33594 12.0312 3.33594 12.9532 4.09257C13.122 4.23109 13.2767 4.38585 13.4152 4.55463C14.1719 5.47659 14.1719 6.84637 14.1719 9.58594V10.4193C14.1719 13.1589 14.1719 14.5286 13.4152 15.4506C13.2767 15.6194 13.122 15.7741 12.9532 15.9126C12.0312 16.6693 10.6615 16.6693 7.92187 16.6693C5.18231 16.6693 3.81252 16.6693 2.89057 15.9126C2.72178 15.7741 2.56702 15.6194 2.42851 15.4506C1.67187 14.5286 1.67188 13.1589 1.67188 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
-                                <path d="M14.1719 7.91617L14.7205 7.64186C16.342 6.83107 17.1529 6.42568 17.7457 6.79207C18.3385 7.15846 18.3385 8.06495 18.3385 9.87793V10.1211C18.3385 11.9341 18.3385 12.8405 17.7457 13.2069C17.1529 13.5733 16.342 13.1679 14.7205 12.3572L14.1719 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                <path d="M1.66406 9.57812C1.66406 6.83856 1.66406 5.46877 2.4207 4.54682C2.55921 4.37803 2.71397 4.22327 2.88275 4.08476C3.80471 3.32812 5.1745 3.32813 7.91406 3.32813C10.6536 3.32813 12.0234 3.32812 12.9454 4.08476C13.1141 4.22327 13.2689 4.37803 13.4074 4.54682C14.1641 5.46877 14.1641 6.83856 14.1641 9.57812V10.4115C14.1641 13.151 14.1641 14.5208 13.4074 15.4428C13.2689 15.6115 13.1141 15.7663 12.9454 15.9048C12.0234 16.6615 10.6536 16.6615 7.91406 16.6615C5.1745 16.6615 3.80471 16.6615 2.88275 15.9048C2.71397 15.7663 2.55921 15.6115 2.4207 15.4428C1.66406 14.5208 1.66406 13.151 1.66406 10.4115V9.57812Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                <path d="M14.1641 7.91617L14.7127 7.64186C16.3342 6.83107 17.1451 6.42568 17.7379 6.79207C18.3307 7.15846 18.3307 8.06495 18.3307 9.87793V10.1211C18.3307 11.9341 18.3307 12.8405 17.7379 13.2069C17.1451 13.5733 16.3342 13.1679 14.7127 12.3572L14.1641 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
                             </svg>
-                            span 48 занятий
-                        .product-card-rate-info-item.price
+                            | 48 занятий
+                        li.tags-with-icons__item 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.50521H17.5M5.83333 12.5052H7.5M5.16667 15.8385H14.8333C15.7667 15.8385 16.2335 15.8385 16.59 15.6569C16.9036 15.4971 17.1586 15.2421 17.3183 14.9285C17.5 14.572 17.5 14.1053 17.5 13.1719V6.83854C17.5 5.90512 17.5 5.43841 17.3183 5.08189C17.1586 4.76828 16.9036 4.51332 16.59 4.35353C16.2335 4.17187 15.7667 4.17188 14.8333 4.17188H5.16667C4.23325 4.17188 3.76653 4.17187 3.41002 4.35353C3.09641 4.51332 2.84144 4.76828 2.68166 5.08189C2.5 5.43841 2.5 5.90512 2.5 6.83854V13.1719C2.5 14.1053 2.5 14.572 2.68166 14.9285C2.84144 15.2421 3.09641 15.4971 3.41002 15.6569C3.76653 15.8385 4.23324 15.8385 5.16667 15.8385Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            span 318 ₽ за занятие
-                .product-card-button
-                    button.button.button-blue.button-with-icon
-                        span 2 550 ₽/мес
-                        span.discount -20%
-            .product-card-rate.rate-gray
-                .product-card-rate-info
-                    .product-card-rate-info-head
-                        .product-card-rate-info-term 12 месяцев
-                        .product-card-rate-info-text Разовая оплата
-                    .product-card-rate-info-items
-                        .product-card-rate-info-item.count
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.67188 9.58594C1.67188 6.84637 1.67187 5.47659 2.42851 4.55463C2.56702 4.38585 2.72178 4.23109 2.89057 4.09257C3.81252 3.33594 5.18231 3.33594 7.92187 3.33594C10.6615 3.33594 12.0312 3.33594 12.9532 4.09257C13.122 4.23109 13.2767 4.38585 13.4152 4.55463C14.1719 5.47659 14.1719 6.84637 14.1719 9.58594V10.4193C14.1719 13.1589 14.1719 14.5286 13.4152 15.4506C13.2767 15.6194 13.122 15.7741 12.9532 15.9126C12.0312 16.6693 10.6615 16.6693 7.92187 16.6693C5.18231 16.6693 3.81252 16.6693 2.89057 15.9126C2.72178 15.7741 2.56702 15.6194 2.42851 15.4506C1.67187 14.5286 1.67188 13.1589 1.67188 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
-                                <path d="M14.1719 7.91617L14.7205 7.64186C16.342 6.83107 17.1529 6.42568 17.7457 6.79207C18.3385 7.15846 18.3385 8.06495 18.3385 9.87793V10.1211C18.3385 11.9341 18.3385 12.8405 17.7457 13.2069C17.1529 13.5733 16.342 13.1679 14.7205 12.3572L14.1719 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
-                            </svg>
-                            span 8 занятий
-                        .product-card-rate-info-item.price
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            span 373 ₽ за занятие
-                .product-card-button
-                    button.button 2 990 ₽/мес
-            .product-card-rate.rate-gray
-                .product-card-rate-info
-                    .product-card-rate-info-head
-                        .product-card-rate-info-term 24 месяцев
-                        .product-card-rate-info-text Разовая оплата
-                    .product-card-rate-info-items
-                        .product-card-rate-info-item.count
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.67188 9.58594C1.67188 6.84637 1.67187 5.47659 2.42851 4.55463C2.56702 4.38585 2.72178 4.23109 2.89057 4.09257C3.81252 3.33594 5.18231 3.33594 7.92187 3.33594C10.6615 3.33594 12.0312 3.33594 12.9532 4.09257C13.122 4.23109 13.2767 4.38585 13.4152 4.55463C14.1719 5.47659 14.1719 6.84637 14.1719 9.58594V10.4193C14.1719 13.1589 14.1719 14.5286 13.4152 15.4506C13.2767 15.6194 13.122 15.7741 12.9532 15.9126C12.0312 16.6693 10.6615 16.6693 7.92187 16.6693C5.18231 16.6693 3.81252 16.6693 2.89057 15.9126C2.72178 15.7741 2.56702 15.6194 2.42851 15.4506C1.67187 14.5286 1.67188 13.1589 1.67188 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
-                                <path d="M14.1719 7.91617L14.7205 7.64186C16.342 6.83107 17.1529 6.42568 17.7457 6.79207C18.3385 7.15846 18.3385 8.06495 18.3385 9.87793V10.1211C18.3385 11.9341 18.3385 12.8405 17.7457 13.2069C17.1529 13.5733 16.342 13.1679 14.7205 12.3572L14.1719 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
-                            </svg>
-                            span 8 занятий
-                        .product-card-rate-info-item.price
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            span 373 ₽ за занятие
-                .product-card-button
-                    button.button 2 990 ₽/мес
-        .popup-action
-            button.button.button-blue Применить
+                            | 318 ₽ за занятие 
+            .popup-actions__actions-wrap
+                .custom-select
+                    .custom-select__title.white Без рассрочки
+                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                    .custom-select__menu-wrap
+                        ul.custom-select__menu
+                            li.custom-select__menu_item(data-value="4") На 3 месяца
+                            li.custom-select__menu_item(data-value="5") На 6 месяцев
+                            li.custom-select__menu_item(data-value="1") На 12 месяцев
+                            li.custom-select__menu_item(data-value="2") На 24 месяца
+                    .visible-on-tablet
+                        .modal-overlay
+                            .modal
+                                button.modal__close-btn
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2873_18660)">
+                                        <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                        <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath>
+                                        <rect width="12" height="12" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                .modal__content
+                                    h3.modal__title Выберите период рассрочки
+                                .modal__wrapper
+                                    .custom-radio
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio', checked)
+                                            span.custom-radio__label Без рассрочки
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 3 месяца
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 6 месяцев
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 12 месяцев
+                                        label.custom-radio
+                                            input.custom-radio__input(type='radio', name='radio')
+                                            span.custom-radio__label На 24 месяца
+                                .modal__bottom
+                                    button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                                    button.main-button Применить  
+                .popup-actions__button
+                    button.main-button
+                        span Далее
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="20" height="20" rx="10" fill="white"/>
+                            <path d="M8.5 6L12.5 10L8.5 14" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
 
 
 .popup.popup-month.small-month

@@ -296,6 +296,126 @@
       }
     }
 
+    .popup-actions {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 12px;
+      justify-content: space-between;
+      padding: 24px 0 0 0;
+
+      @media (max-width: 1037px) {
+        padding: 18px 16px 18px;
+        flex-direction: column;
+        gap: 18px;
+        box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+        position: fixed;
+        bottom: 0;
+        background-color: $white-color;
+        border-radius: 20px 20px 0 0;
+      }
+
+      &__actions-wrap {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 50%;
+
+        .custom-select__title {
+          min-height: 56px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .custom-select {
+          min-width: 275px;
+        }
+
+        @media (max-width: 1037px) {
+          width: 100%;
+        }
+      }
+
+      &__wrap {
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+        @media (max-width: 1037px) {
+          flex-direction: column;
+          width: 100%;
+          gap: 16px;
+        }
+      }
+
+      &__price-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media (max-width: 1037px) {
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      &__price {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+
+        @media (max-width: 1037px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      &__price-grey {
+        font-size: 18px;
+        line-height: 22px;
+        color: #6d7985;
+
+        @media (max-width: 1037px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &__button {
+        .main-button {
+          font-size: 16px;
+          line-height: 20px;
+          min-height: 56px;
+
+          @media (max-width: 500px) {
+            padding: 0 20px;
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &__tags {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        padding: 0 0 0 44px;
+        margin: 0 0 0 44px;
+        border-left: 1px solid #e7e9eb;
+
+        @media (max-width: 1037px) {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          border: none;
+          flex-direction: row;
+        }
+      }
+    }
+
     .popup-action {
       display: none;
       border-radius: 25px 25px 0 0;
@@ -314,6 +434,10 @@
         color: #fff;
         text-align: center;
         width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
       }
     }
   }
@@ -351,13 +475,123 @@
     }
 
     .popup-content {
-      padding: 44px 44px 108px;
+      padding: 44px 44px 24px;
+      min-height: 754px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .months {
+        display: none;
+        grid-template-columns: 1fr;
+        gap: 44px;
+        width: 100%;
+
+        @media (max-width: 1037px) {
+          overflow: auto;
+          max-height: 475px;
+          padding: 0 16px 195px;
+        }
+
+        @media (max-width: 650px) {
+          gap: 24px;
+        }
+
+        &.visible {
+          display: grid;
+        }
+
+        &__wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        &__list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 10px;
+
+          @media (max-width: 650px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+          }
+
+          &_item {
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid #e7e9eb;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            color: $dark-blue-color;
+
+            &.action {
+              border: 1px solid $bright-blue-color;
+              color: $bright-blue-color;
+            }
+
+            @media (max-width: 650px) {
+              padding: 12px;
+            }
+          }
+
+          &_item-title {
+            font-size: 18px;
+            line-height: 22px;
+
+            @media (max-width: 650px) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+
+          &_discount {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 6px;
+            border-radius: 5px;
+            background-color: #edf2fe;
+            color: #2554e7;
+            font-weight: 500;
+            width: fit-content;
+
+            @media (max-width: 1037px) {
+              font-size: 15px;
+              line-height: 15px;
+            }
+          }
+        }
+
+        &__title {
+          width: 100%;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: -0.02em;
+          font-weight: 500;
+
+          @media (max-width: 650px) {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
 
       .popup-items {
         display: grid;
-        grid-template-columns: repeat(2, 469px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 44px;
+        gap: 12px;
+
+        &.month-with-discount {
+          display: none;
+
+          &.visible {
+            display: grid;
+          }
+        }
 
         .product-card-rate {
           border: 1px solid $light-grey-color;
@@ -369,6 +603,10 @@
           gap: 20px;
 
           .product-card-rate-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
             .product-card-rate-image {
               display: none;
             }
@@ -377,7 +615,7 @@
               display: flex;
               align-items: flex-start;
               justify-content: space-between;
-              margin-bottom: 16px;
+              // margin-bottom: 16px;
 
               .product-card-rate-info-term {
                 font-family: "TT Firs Neue", sans-serif;
@@ -398,6 +636,37 @@
                 width: 172px;
 
                 .text-mobile {
+                }
+              }
+            }
+
+            .product-card-rate-info-body {
+              display: flex;
+              width: 100%;
+              align-items: center;
+              gap: 50px;
+
+              .product-card-rate-info-text {
+                @include common-text;
+                font-size: 16px;
+                line-height: 20px;
+                color: #6d7985;
+                width: 100%;
+              }
+
+              .product-card-rate-info-discount {
+                font-size: 18px;
+                line-height: 22px;
+                padding: 6px;
+                border-radius: 5px;
+                background-color: #edf2fe;
+                color: #2554e7;
+                font-weight: 500;
+                width: fit-content;
+
+                @media (max-width: 1037px) {
+                  font-size: 15px;
+                  line-height: 15px;
                 }
               }
             }
@@ -493,6 +762,79 @@
     }
   }
 
+  &.popup-subjects {
+    .popup-content {
+      padding: 44px;
+      min-height: 754px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .subjects {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 44px;
+        width: 100%;
+
+        @media (max-width: 1037px) {
+          overflow: auto;
+          max-height: 475px;
+          padding: 0 16px 195px;
+        }
+
+        &__list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 10px;
+
+          @media (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+
+          @media (max-width: 650px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+          }
+
+          &_item-title {
+            width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            @media (max-width: 650px) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+
+          &_item {
+            padding: 20px 18px;
+            border-radius: 10px;
+            border: 1px solid #e7e9eb;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            color: $dark-blue-color;
+
+            &.action {
+              border: 1px solid $bright-blue-color;
+              color: $bright-blue-color;
+            }
+
+            @media (max-width: 650px) {
+              padding: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
   &.about-teacher {
     .popup-content {
       display: flex;
