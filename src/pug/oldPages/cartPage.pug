@@ -1,5 +1,195 @@
 section.cart
     .container
+        .main-title Корзина
+        .cart-content
+            .cart-order
+                .cart-products
+                    .product-card
+                        button.product-card-close
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5281_36365)">
+                                <path d="M0.997559 1L10.9976 11" stroke="#9AA3AD" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M10.9995 1L0.999513 11" stroke="#9AA3AD" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_5281_36365">
+                                <rect width="12" height="12" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        .product-card-content
+                            .product-card-info
+                                .product-card-description
+                                    div
+                                        .product-card-title.desk Экспресс-подготовка
+                                        .product-card-title.mobile Экспресс-подготовка к экзамену
+                                        .product-card-tabs
+                                            .product-card-tab.tap-active 11 класс
+                                            .product-card-tab Русский язык
+                                            .product-card-tab Подготовка к ЕГЭ
+                                        .product-card-text
+                                            span
+                                                | Летний подготовительный курс для тех, кто стремится начать подготовку ранее: освоим основные темы предмета с самого начала
+                                            span.showed 
+                                                | Эффективный курс повторения материала: быстро обновим и система...
+                                                span Подробнее
+                                    ul.tags-with-icons
+                                        li.tags-with-icons__item 
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66406 9.58594C1.66406 6.84637 1.66406 5.47659 2.4207 4.55463C2.55921 4.38585 2.71397 4.23109 2.88275 4.09257C3.80471 3.33594 5.1745 3.33594 7.91406 3.33594C10.6536 3.33594 12.0234 3.33594 12.9454 4.09257C13.1141 4.23109 13.2689 4.38585 13.4074 4.55463C14.1641 5.47659 14.1641 6.84637 14.1641 9.58594V10.4193C14.1641 13.1589 14.1641 14.5286 13.4074 15.4506C13.2689 15.6194 13.1141 15.7741 12.9454 15.9126C12.0234 16.6693 10.6536 16.6693 7.91406 16.6693C5.1745 16.6693 3.80471 16.6693 2.88275 15.9126C2.71397 15.7741 2.55921 15.6194 2.4207 15.4506C1.66406 14.5286 1.66406 13.1589 1.66406 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                                <path d="M14.1641 7.91617L14.7127 7.64186C16.3342 6.83107 17.1451 6.42568 17.7379 6.79207C18.3307 7.15846 18.3307 8.06495 18.3307 9.87793V10.1211C18.3307 11.9341 18.3307 12.8405 17.7379 13.2069C17.1451 13.5733 16.3342 13.1679 14.7127 12.3572L14.1641 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                            </svg>
+                                            | 8 занятий
+                                        li.tags-with-icons__item 
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            | 373 ₽ за занятие
+                            .product-card-info
+                                .product-card-teacher-block
+                                    span.product-card-teacher-block__photo.russian
+                                        img(src="../img/teacher1.png" alt="teacher1")
+                                    .product-card-teacher-block__wrap
+                                        span.product-card-teacher-block__name Мария Армянинова
+                                        span.product-card-teacher-block__text Преподаватель
+                                ul.product-card-list
+                                    li.product-card-list__item
+                                        .product-card-list__wrap
+                                            span.product-card-list__subtitle Тариф
+                                            span.product-card-list__title Базовый
+                                        button.product-card-list__button Изменить
+                                    li.product-card-list__item
+                                        .product-card-list__wrap
+                                            span.product-card-list__subtitle Предметы
+                                            span.product-card-list__title 12 предметов
+                                        button.product-card-list__button Изменить
+                                    li.product-card-list__item
+                                        .product-card-list__wrap
+                                            span.product-card-list__subtitle Время
+                                            span.product-card-list__title 24 месяца
+                                        button.product-card-list__button Изменить
+                                .product-card-price
+                                    .product-card-price__wrap
+                                        .product-card-price__main-price 5 525 ₽/мес
+                                        .product-card-price__discount -30%
+                                    .product-card-price__grey-text Итого: 49 725 ₽ за 12 месяцев
+                    .product-card
+                        button.product-card-close
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5281_36365)">
+                                <path d="M0.997559 1L10.9976 11" stroke="#9AA3AD" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M10.9995 1L0.999513 11" stroke="#9AA3AD" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_5281_36365">
+                                <rect width="12" height="12" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        .product-card-content
+                            .product-card-info
+                                .product-card-description
+                                    div
+                                        .product-card-title.desk Курс подготовки к ЕГЭ с нуля по&nbsp;профильной математике
+                                        .product-card-title.mobile Экспресс-подготовка к экзамену
+                                        .product-card-tabs
+                                            .product-card-tab.tap-active 11 класс
+                                            .product-card-tab Русский язык
+                                            .product-card-tab Подготовка к ЕГЭ
+                                        .product-card-text
+                                            span
+                                                | Летний подготовительный курс для тех, кто стремится начать подготовку ранее: освоим основные темы предмета с самого начала
+                                            span.showed 
+                                                | Эффективный курс повторения материала: быстро обновим и система...
+                                                span Подробнее
+                                    ul.tags-with-icons
+                                        li.tags-with-icons__item 
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66406 9.58594C1.66406 6.84637 1.66406 5.47659 2.4207 4.55463C2.55921 4.38585 2.71397 4.23109 2.88275 4.09257C3.80471 3.33594 5.1745 3.33594 7.91406 3.33594C10.6536 3.33594 12.0234 3.33594 12.9454 4.09257C13.1141 4.23109 13.2689 4.38585 13.4074 4.55463C14.1641 5.47659 14.1641 6.84637 14.1641 9.58594V10.4193C14.1641 13.1589 14.1641 14.5286 13.4074 15.4506C13.2689 15.6194 13.1141 15.7741 12.9454 15.9126C12.0234 16.6693 10.6536 16.6693 7.91406 16.6693C5.1745 16.6693 3.80471 16.6693 2.88275 15.9126C2.71397 15.7741 2.55921 15.6194 2.4207 15.4506C1.66406 14.5286 1.66406 13.1589 1.66406 10.4193V9.58594Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                                <path d="M14.1641 7.91617L14.7127 7.64186C16.3342 6.83107 17.1451 6.42568 17.7379 6.79207C18.3307 7.15846 18.3307 8.06495 18.3307 9.87793V10.1211C18.3307 11.9341 18.3307 12.8405 17.7379 13.2069C17.1451 13.5733 16.3342 13.1679 14.7127 12.3572L14.1641 12.0828V7.91617Z" stroke="#2554E7" stroke-width="1.66667"/>
+                                            </svg>
+                                            | 8 занятий
+                                        li.tags-with-icons__item 
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 7.4974H17.5M5.83333 12.4974H7.5M5.16667 15.8307H14.8333C15.7667 15.8307 16.2335 15.8307 16.59 15.6491C16.9036 15.4893 17.1586 15.2343 17.3183 14.9207C17.5 14.5642 17.5 14.0975 17.5 13.1641V6.83073C17.5 5.89731 17.5 5.4306 17.3183 5.07408C17.1586 4.76047 16.9036 4.5055 16.59 4.34572C16.2335 4.16406 15.7667 4.16406 14.8333 4.16406H5.16667C4.23325 4.16406 3.76653 4.16406 3.41002 4.34572C3.09641 4.5055 2.84144 4.76047 2.68166 5.07408C2.5 5.4306 2.5 5.8973 2.5 6.83073V13.1641C2.5 14.0975 2.5 14.5642 2.68166 14.9207C2.84144 15.2343 3.09641 15.4893 3.41002 15.6491C3.76653 15.8307 4.23324 15.8307 5.16667 15.8307Z" stroke="#2554E7" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            | 373 ₽ за занятие
+                            .product-card-info
+                                .product-card-teacher-block
+                                    span.product-card-teacher-block__photo.russian
+                                        img(src="../img/teacher1.png" alt="teacher1")
+                                    .product-card-teacher-block__wrap
+                                        span.product-card-teacher-block__name Мария Армянинова
+                                        span.product-card-teacher-block__text Преподаватель
+                                ul.product-card-list
+                                    li.product-card-list__item
+                                        .product-card-list__wrap
+                                            span.product-card-list__subtitle Тариф
+                                            span.product-card-list__title Базовый
+                                        button.product-card-list__button Изменить
+                                    li.product-card-list__item
+                                        .product-card-list__wrap
+                                            span.product-card-list__subtitle Время
+                                            span.product-card-list__title 24 месяца
+                                        button.product-card-list__button Изменить
+                                .product-card-price
+                                    .product-card-price__wrap
+                                        .product-card-price__main-price 5 525 ₽/мес
+                                        .product-card-price__discount -30%
+                                    .product-card-price__grey-text Итого: 49 725 ₽ за 12 месяцев
+                    .product-card-add-button
+                        a.light-button(href="#")
+                            span Перейти в каталог
+                            svg(width="25", height="24", viewBox="0 0 25 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                rect(x="0.5", y="-0.00378418", width="24", height="24", rx="12", fill="#2554E7")
+                                path(d="M8.5 11.9962H16.5M12.5 7.99622V15.9962", stroke="white", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                        
+                        
+            .cart-payment-title Подробности заказа
+
+            .cart-payment
+                .cart-payment-info
+                    .cart-payment-info-item
+                        .cart-payment-info-name.first
+                            | Экспресс-подготовка к экзамену
+                        .cart-payment-price
+                            .cart-payment-price-value 2 990 ₽
+                            .cart-payment-price-term 1 месяц
+                    .cart-payment-info-item
+                        .cart-payment-info-name.second
+                            | Готовимся
+                            br.mobile
+                            |  с полного нуля
+                        .cart-payment-price
+                            .cart-payment-price-value 15 300 ₽
+                            .cart-payment-price-term 6 месяцев
+                    .cart-payment-info-item.discount
+                        .cart-payment-info-name Сумма скидки
+                        .cart-payment-price
+                            .cart-payment-price-value -3 440 ₽
+                    .cart-payment-info-item.total-price
+                        .cart-payment-info-name Итого
+                        .cart-payment-price
+                            .cart-payment-price-value 18 290 ₽
+                .cart-payment-checkbox
+                    label Оплатить в рассрочку
+                    .pretty.p-switch.p-fill
+                        input#another(type="checkbox")
+                        .state.p-primary
+                            label
+                .cart-payment-checkbox
+                    label Оплачивает другой человек
+                    .pretty.p-switch.p-fill
+                        input#another(type="checkbox")
+                        .state.p-primary
+                            label
+                .cart-payment-actions
+                    button.button.button-with-icon.button-blue
+                        span.pay Перейти к оплате
+                        svg(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                            rect(width="24", height="24", rx="12", fill="white")
+                            path(d="M10 8L14 12L10 16", stroke="#2554E7", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                    button.button.button-transparent У меня есть промокод
         .cart-extra
             h2.cart-extra-title Как ещё добиться ваших результатов
             .cart-extra-track
