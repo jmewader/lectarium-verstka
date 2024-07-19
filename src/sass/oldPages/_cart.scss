@@ -913,6 +913,106 @@
                 height: 100%;
               }
             }
+
+            &.chemistry {
+              .cart-extra-card-image-bg {
+                width: 603px;
+                height: 612px;
+                top: -179px;
+                right: -132px;
+                transform: rotate(198deg);
+              }
+            }
+
+            &.physics {
+              .cart-extra-card-image-bg {
+                width: 676px;
+                height: 677px;
+                top: -214px;
+                right: -151px;
+              }
+            }
+
+            &.mathematics {
+              .cart-extra-card-image-bg {
+                width: 733px;
+                height: 489px;
+                top: -167px;
+                right: -150px;
+              }
+            }
+
+            &.biology {
+              .cart-extra-card-image-bg {
+                width: 575px;
+                height: 451px;
+                top: -124px;
+                right: -92px;
+              }
+            }
+
+            &.russian {
+              .cart-extra-card-image-bg {
+                width: 372px;
+                height: 316px;
+                top: -76px;
+                right: -53px;
+              }
+            }
+
+            &.literature {
+              .cart-extra-card-image-bg {
+                width: 347px;
+                height: 315px;
+                top: -36px;
+                right: 14px;
+              }
+            }
+
+            &.history {
+              .cart-extra-card-image-bg {
+                width: 490px;
+                height: 285px;
+                top: -13px;
+                right: -60px;
+              }
+            }
+
+            &.geography {
+              .cart-extra-card-image-bg {
+                width: 525px;
+                height: 411px;
+                top: -76px;
+                right: -89px;
+              }
+            }
+
+            &.informatics {
+              .cart-extra-card-image-bg {
+                width: 525px;
+                height: 411px;
+                top: -76px;
+                right: -76px;
+              }
+            }
+
+            &.social-science {
+              .cart-extra-card-image-bg {
+                width: 525px;
+                height: 453px;
+                top: -105px;
+                right: -79px;
+              }
+            }
+
+            &.english {
+              .cart-extra-card-image-bg {
+                width: 491px;
+                height: 375px;
+                top: -105px;
+                right: -160px;
+              }
+            }
           }
 
           .cart-extra-card-info {

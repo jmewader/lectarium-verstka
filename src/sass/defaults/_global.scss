@@ -1687,6 +1687,21 @@ button {
   }
 }
 
+.history-page-pale {
+  .color-accent-bg {
+    background-color: #00ade314;
+  }
+
+  .brief-info__photo,
+  .color-accent-photo-bg {
+    background-color: $blue-color;
+  }
+
+  .history-bg {
+    display: flex;
+  }
+}
+
 //
 
 .pink {
