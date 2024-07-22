@@ -1,0 +1,59 @@
+.numbers-steps {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+  .disabled {
+    .numbers-steps__number {
+      background-color: #9aa3ad;
+    }
+
+    .numbers-steps__title {
+      color: #9aa3ad;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 1px;
+        background-color: $dark-blue-color;
+        margin-left: 10px;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &__number {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark-blue-color;
+    border-radius: 100%;
+    color: $white-color;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin: 0 8px 0 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+}

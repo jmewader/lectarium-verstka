@@ -1,0 +1,203 @@
+.modal-right-overlay
+    .modal-right.medium.order
+        .modal-right__content
+            .modal-right__header
+                .modal-right__title Оформление заказа
+                button.modal-right__close-btn
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="16" fill="#F3F4F5"/>
+                        <g clip-path="url(#clip0_4219_78149)">
+                        <path d="M11 11L21 21" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M21 11L11 21" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_4219_78149">
+                        <rect width="12" height="12" fill="white" transform="translate(10 10)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+            .modal-right__descriptions.order Заполните личные данные о себе
+            .modal-right__descriptions.banks Выберите тип рассрочки
+            ul.numbers-steps
+                    li.numbers-steps__item
+                        .numbers-steps__number 1
+                        span.numbers-steps__title Данные
+                    li.numbers-steps__item.disabled
+                        .numbers-steps__number 2
+                        span.numbers-steps__title Рассрочка
+            .authorization-form.modal.order
+                form.authorization-form__fields
+                    input.custom-input(type="text" id="name" name="name" placeholder="Ваше имя")
+                    input.custom-input(type="text" id="email" name="email" placeholder="Электронная почта")
+                    .warning-text Введите почту
+                    input.custom-input(type="text" id="phone" name="phone" placeholder="Номер телефона")
+                    .warning-text Введите телефон
+                .authorization-form__action
+                    .authorization-form__submit-btn.main-button
+                        | Далее
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="24" height="24" rx="12" fill="white"/>
+                            <path d="M10 8.5L14 12.5L10 16.5" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    .custom-checkbox-wrapper
+                        .custom-checkbox-wrap
+                            input.custom-checkbox(type="checkbox" id="1")
+                            label(for="1") Я согласен(-на) на обработку персональных данных
+                        .custom-checkbox-wrap
+                            input.custom-checkbox(type="checkbox" id="2")
+                            label(for="2") Я хочу получать рекламную рассылку
+            .authorization-form.modal.banks
+                form.banks-form
+                    ul.banks-list
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/sber.svg", alt="sber")
+                                span.banks-list__item_title Сбер
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/t-bank.svg", alt="t-bank")
+                                span.banks-list__item_title Т-Банк
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/lectarium.svg", alt="lectarium")
+                                span.banks-list__item_title Лектариум
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/mts.svg", alt="mts")
+                                span.banks-list__item_title МТС Банк
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/pochta-bank.svg", alt="pochta-bank")
+                                span.banks-list__item_title Почта Банк
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/podeli.svg", alt="podeli")
+                                span.banks-list__item_title Подели
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/dolyami.svg", alt="dolyami")
+                                span.banks-list__item_title Долями
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        li.banks-list__item.active
+                            .banks-list__item_wrap
+                                .banks-list__item_icon
+                                    img(src="../img/vsegda-da.svg", alt="vsegda-da")
+                                span.banks-list__item_title Всегда.Да
+                            ul.banks-list__item_sublist
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Рассрочка до 6 месяцев
+                                li.banks-list__item_sublist-item
+                                    .banks-list__item_sublist-icon
+                                        <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.800781 3.24132L2.77001 5.19688L7.20078 0.796875" stroke="#6D7985" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    span.banks-list__item_sublist-text Первый платеж через 1 месяц
+                        
+                    .authorization-form__action.fixed
+                        .authorization-form__submit-btn.main-button
+                            | Далее
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="24" height="24" rx="12" fill="white"/>
+                                <path d="M10 8.5L14 12.5L10 16.5" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>

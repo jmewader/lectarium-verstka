@@ -81,6 +81,15 @@
     flex-direction: column;
     gap: 16px;
 
+    &.fixed {
+      padding: 24px 0;
+      background-color: $white-color;
+
+      @media (max-width: $mobile-width) {
+        padding: 12px 0 0;
+      }
+    }
+
     @media (max-width: $mobile-width) {
       gap: 10px;
     }
@@ -200,7 +209,9 @@
 
   &.sign-in,
   &.password-recovery,
-  &.message {
+  &.message,
+  &.order,
+  &.banks {
     display: none;
   }
 }
