@@ -111,9 +111,9 @@
       grid-template-columns: 390px;
 
       @media (max-width: $mobile-width) {
-        grid-template-columns: 329px;
+        grid-template-columns: auto;
         grid-template-rows: 228px 1fr;
-        padding: 0 0 0 16px;
+        padding: 0 16px;
       }
 
       &-title {

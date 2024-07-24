@@ -156,6 +156,8 @@
     .popup-items {
       display: flex;
       gap: 44px;
+      width: 100%;
+      justify-content: center;
 
       .popup-item {
         width: 298px;
