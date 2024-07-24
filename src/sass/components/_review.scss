@@ -8,6 +8,10 @@
   gap: 32px;
   overflow: hidden;
 
+  @media (max-width: $tablet-width) {
+    overflow: inherit;
+  }
+
   &.video {
     padding: 0;
 

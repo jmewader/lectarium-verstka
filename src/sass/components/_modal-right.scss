@@ -32,6 +32,17 @@
 
     @media (max-width: $mobile-width) {
       height: 37vh;
+
+      .review__body {
+        display: block;
+        height: 400px;
+        overflow: auto;
+        padding: 0 0 24px;
+
+        .review__descriptions {
+          margin: 0 0 24px;
+        }
+      }
     }
 
     &.medium {
@@ -233,7 +244,7 @@
       }
 
       @media (max-width: $mobile-width) {
-        padding: 24px 16px;
+        padding: 24px 16px 0;
       }
     }
 
