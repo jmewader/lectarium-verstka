@@ -2229,6 +2229,13 @@ input.custom-input.white-input {
   position: relative;
   min-width: 290px;
 
+  &.open-top {
+    .custom-select__menu-wrap {
+      top: auto;
+      bottom: 60px;
+    }
+  }
+
   &.limited {
     width: fit-content;
   }

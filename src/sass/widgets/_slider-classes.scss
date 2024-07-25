@@ -59,8 +59,12 @@
     align-items: center;
     gap: 10px;
 
-    .visible {
+    &.visible {
       display: flex;
+
+      @media (max-width: $large-tablet-width) {
+        display: none;
+      }
     }
 
     @media (max-width: $desktop-width) {

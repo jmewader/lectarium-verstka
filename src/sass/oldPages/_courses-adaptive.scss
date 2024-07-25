@@ -243,9 +243,19 @@
     padding-top: 84px;
 
     &.popup-tariff {
+      width: 100%;
+      align-items: flex-end;
+
       .popup-content {
+        width: 100%;
+
         .popup-action {
           padding: 18px 16px;
+          margin-top: 0px;
+        }
+
+        .popup-items {
+          display: block;
         }
       }
     }
@@ -306,6 +316,19 @@
           gap: 10px;
           display: flex;
           width: 100%;
+          flex-direction: column;
+          width: 100%;
+          overflow: auto;
+          max-height: 478px;
+          padding: 0 16px 186px;
+
+          .popup-item {
+            width: 100%;
+
+            .popup-item-head {
+              height: auto;
+            }
+          }
 
           .product-card-rate {
             padding: 18px;
@@ -389,10 +412,15 @@
         width: 100%;
         overflow: auto;
         max-height: 478px;
-        padding: 0 16px 186px;
+        padding: 0 16px 0px;
 
         .popup-item {
           width: 100%;
+          margin: 0 0 28px;
+
+          :last-child {
+            margin: 0;
+          }
 
           .popup-item-head {
             height: auto;
@@ -863,6 +891,8 @@
                   .regular-text.icon {
                     align-items: center;
                     justify-content: center;
+                    display: flex;
+                    flex-shrink: 0;
 
                     svg {
                       width: 20px;

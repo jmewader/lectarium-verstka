@@ -235,6 +235,8 @@
 
               .regular-text {
                 &.icon {
+                  display: flex;
+                  flex-shrink: 0;
                   width: 24px;
                   height: 24px;
                 }
@@ -246,6 +248,7 @@
 
                 .selected-text {
                   display: block;
+                  color: #0b1f33;
                 }
 
                 .regular-text {
