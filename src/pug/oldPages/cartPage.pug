@@ -193,17 +193,15 @@ section.cart
                             .cart-payment-price
                                 .cart-payment-price-value 18 290 ₽
                     .cart-payment-checkbox
-                        label Оплатить в рассрочку
-                        .pretty.p-switch.p-fill
-                            input#another(type="checkbox")
-                            .state.p-primary
-                                label
+                        label.custom-switch-wrap(for="switch")
+                            input.custom-switch(type="checkbox" id="switch")
+                            .custom-switch-label
+                            span Оплатить в рассрочку
                     .cart-payment-checkbox
-                        label Оплачивает другой человек
-                        .pretty.p-switch.p-fill
-                            input#another(type="checkbox")
-                            .state.p-primary
-                                label
+                        label.custom-switch-wrap(for="switch2")
+                            input.custom-switch(type="checkbox" id="switch2")
+                            .custom-switch-label
+                            span Оплачивает другой человек
                     .cart-payment-actions
                         button.button.button-with-icon.button-blue
                             span.pay Перейти к оплате
