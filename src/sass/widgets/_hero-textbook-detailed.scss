@@ -118,6 +118,7 @@
     justify-content: space-between;
     min-height: inherit;
     gap: 40px;
+    z-index: 2;
 
     @media (max-width: $large-desktop-width) {
       padding: 44px 0 44px 44px;
