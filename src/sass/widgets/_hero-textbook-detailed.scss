@@ -7,6 +7,61 @@
   align-items: flex-end;
   justify-content: space-between;
 
+  &.aside-block {
+    .hero-textbook-detailed__image {
+      position: absolute;
+      width: auto;
+      right: 0;
+
+      @media (max-width: $large-desktop-width) {
+        width: 100%;
+        max-width: 800px;
+        max-height: inherit;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        max-width: 700px;
+        right: 0;
+      }
+
+      @media (max-width: $tablet-width) {
+        position: relative;
+        object-fit: cover;
+        max-width: 100%;
+
+        img {
+          width: auto;
+          max-height: 318px;
+        }
+      }
+    }
+
+    .hero-textbook-detailed__background {
+      @media (max-width: $medium-mobile-width) {
+        align-items: flex-end;
+        bottom: 0;
+        height: auto;
+
+        img {
+          align-items: flex-end;
+          width: 100%;
+        }
+      }
+    }
+
+    .hero-textbook-detailed__content {
+      max-width: 772px;
+
+      @media (max-width: $large-tablet-width) {
+        max-width: 547px;
+      }
+
+      @media (max-width: $tablet-width) {
+        max-width: 100%;
+      }
+    }
+  }
+
   @media (max-width: $large-desktop-width) {
     min-height: 475px;
   }
@@ -158,6 +213,13 @@
     position: absolute;
     justify-content: flex-end;
     right: 81px;
+
+    &.aside-block-bg {
+      display: flex;
+      right: 0;
+      align-items: normal;
+      justify-content: normal;
+    }
 
     @media (max-width: $tablet-width) {
       right: auto;
