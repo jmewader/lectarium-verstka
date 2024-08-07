@@ -121,15 +121,63 @@
                         .form__agreements_item.custom-checkbox-wrap
                             input.custom-checkbox(type="checkbox" id="agreement2")
                             label(for="agreement2") Я хочу получать рекламную рассылку
+            form(action="#" method="POST").subscription__form.hidden
+                .subscription__actions.form-wrap
+                    .subscription__list
+                        button.subscription__list_item.subscription__list_item--vk.active
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.966 24.0263C9.30469 24.0263 4.36247 18.0032 4.15625 7.97656H8.49403C8.63625 15.3366 11.8362 18.4512 14.3714 19.0948V7.97656H18.4602V14.3232C20.9598 14.0495 23.5909 11.1588 24.4762 7.97656H28.5687C27.886 11.8948 25.0345 14.789 23.0078 15.9766C25.0345 16.9401 28.2807 19.461 29.5145 24.0263H25.0202C24.0531 20.9757 21.6425 18.6112 18.4638 18.2912V24.0263H17.966Z" fill="#9AA3AD"/>
+                            </svg>
+                        button.subscription__list_item.subscription__list_item--email
+                            <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12L13.1749 17.45C15.0994 18.7329 16.0617 19.3745 17.1017 19.6238C18.0209 19.844 18.9791 19.844 19.8983 19.6238C20.9383 19.3745 21.9007 18.7329 23.8251 17.45L32 12M9.8 28.5H27.2C28.8801 28.5 29.7203 28.5 30.362 28.173C30.9265 27.8855 31.3854 27.4265 31.673 26.862C32 26.2203 32 25.3802 32 23.7V12.3C32 10.6198 32 9.77976 31.673 9.13803C31.3854 8.57354 30.9265 8.11459 30.362 7.82698C29.7203 7.5 28.8801 7.5 27.2 7.5H9.8C8.11985 7.5 7.27976 7.5 6.63803 7.82698C6.07354 8.11459 5.61459 8.57354 5.32698 9.13803C5 9.77976 5 10.6198 5 12.3V23.7C5 25.3802 5 26.2203 5.32698 26.862C5.61459 27.4265 6.07354 27.8855 6.63803 28.173C7.27976 28.5 8.11983 28.5 9.8 28.5Z" fill="#9AA3AD"/>
+                                <path d="M5 12L13.1749 17.45C15.0994 18.7329 16.0617 19.3745 17.1017 19.6238C18.0209 19.844 18.9791 19.844 19.8983 19.6238C20.9383 19.3745 21.9007 18.7329 23.8252 17.45L32 12M9.8 28.5H27.2C28.8801 28.5 29.7203 28.5 30.362 28.173C30.9265 27.8855 31.3854 27.4265 31.673 26.862C32 26.2203 32 25.3802 32 23.7V12.3C32 10.6198 32 9.77976 31.673 9.13803C31.3854 8.57354 30.9265 8.11459 30.362 7.82698C29.7203 7.5 28.8801 7.5 27.2 7.5H9.8C8.11985 7.5 7.27976 7.5 6.63803 7.82698C6.07354 8.11459 5.61459 8.57354 5.32698 9.13803C5 9.77976 5 10.6198 5 12.3V23.7C5 25.3802 5 26.2203 5.32698 26.862C5.61459 27.4265 6.07354 27.8855 6.63803 28.173C7.27976 28.5 8.11983 28.5 9.8 28.5Z" stroke="#F3F4F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        button.subscription__list_item.subscription__list_item--tg
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3069_32315)">
+                                <path d="M26.4371 4.87006C26.4371 4.87006 29.0273 3.86006 28.8114 6.31292C28.7395 7.32293 28.0919 10.8579 27.5883 14.6815L25.8615 26.008C25.8615 26.008 25.7176 27.6673 24.4225 27.9559C23.1273 28.2444 21.1847 26.9459 20.8249 26.6573C20.5371 26.4409 15.4287 23.1944 13.6299 21.6073C13.1263 21.1744 12.5507 20.3087 13.7019 19.2987L21.2567 12.0844C22.1201 11.2187 22.9835 9.19866 19.386 11.6515L9.31295 18.5051C9.31295 18.5051 8.16175 19.2265 6.00329 18.5773L1.3265 17.1344C1.3265 17.1344 -0.400307 16.0523 2.54965 14.9701C9.74468 11.5793 18.5945 8.11646 26.4371 4.87006Z" fill="#9AA3AD"/>
+                                </g>
+                                <defs>
+                                <clipPath>
+                                <rect width="32" height="32" fill="white" transform="translate(0.164062)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                    .subscription__field
+                        input.custom-input.white(type="text" id="email" name="email" placeholder="pochta@mail.ru")
+                    button.subscription__btn.grey-button
+                        | Подписаться
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12" fill="#2554E7"/>
+                            <path d="M10 8L14 12L10 16" stroke="#FAFCFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                .subscription__agreements
+                    .custom-checkbox-wrap
+                        input.custom-checkbox(type="checkbox" id="subscription")
+                        label(for="subscription") Я согласен(-на) на обработку персональных данных
+                    .custom-checkbox-wrap
+                        input.custom-checkbox(type="checkbox" id="subscription2")
+                        label(for="subscription2") Я хочу получать рекламную рассылку
             .modal-right__image
-                img(src= "../img/russian-flyer.png", alt="image")
-            .modal-right__video.visible
+                img(src= "../img/flyer2.png", alt="image")
+            .modal-right__video
                 img(src="../img/people-preview.jpg", alt="People")
                 button.review__video-preview_play
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="64" height="64" rx="32" fill="white"/>
                         <path d="M28.7852 35.4999V28.4964C28.7852 28.0835 29.2279 27.8217 29.5898 28.0207L35.9566 31.5224C36.3316 31.7287 36.3316 32.2676 35.9566 32.4739L29.5898 35.9757C29.2279 36.1747 28.7852 35.9129 28.7852 35.4999Z" fill="#0B1F33"/>
                     </svg>
+            .modal-right__teacher.visible
+                .modal-right__teacher_bg.informatics
+                    img(src="../img/code.png" alt="figure")
+                .modal-right__teacher_photo
+                    img(src="../img/teacher1.png" alt="teacher1")
+            .modal-right__picture
+                .modal-right__picture_bg.aside-block
+                    img(src="../img/bg-letter.png" alt="figure")
+                .modal-right__picture_photo
+                    img(src="../img/teenage.png" alt="picture")
         
 
 

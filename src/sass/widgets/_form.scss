@@ -35,6 +35,10 @@
     box-shadow: none;
     grid-template-columns: 1fr;
 
+    &.hidden {
+      display: none;
+    }
+
     .form__steps {
       margin: 0 0 24px;
     }

@@ -52,6 +52,7 @@
         max-width: 100%;
         height: auto;
         min-height: 410px;
+        max-height: 560px;
       }
     }
 
@@ -234,6 +235,7 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+      overflow: auto;
 
       &.with-a-picture {
         padding: 44px 44px 0;
@@ -293,15 +295,132 @@
     }
 
     &__image {
-      height: 100%;
+      height: 398px;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      margin: 44px 0 0;
+
+      @media (max-width: $mobile-width) {
+        min-height: 195px;
+        max-height: 195px;
+        margin: 24px 0 24px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      &.visible {
+        display: flex;
+      }
+    }
+
+    &__teacher {
+      min-height: 175px;
+      max-height: 269px;
       width: 100%;
       display: none;
       align-items: flex-end;
+      overflow: hidden;
+      border-radius: 16px;
+      position: relative;
+      margin: 44px 0 0px;
 
-      img {
+      @media (max-width: $mobile-width) {
+        min-height: 195px;
+        max-height: 195px;
+        margin: 24px 0 24px;
+      }
+
+      &_photo {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: 100%;
+
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &_bg {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 520px;
+          object-fit: contain;
+
+          @media (max-width: $mobile-width) {
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+      }
+
+      &.visible {
+        display: flex;
+      }
+    }
+
+    &__picture {
+      min-height: 175px;
+      max-height: 269px;
+      width: 100%;
+      display: none;
+      align-items: flex-end;
+      overflow: hidden;
+      border-radius: 16px;
+      position: relative;
+      margin: 44px 0 0px;
+
+      @media (max-width: $mobile-width) {
+        min-height: 195px;
+        max-height: 195px;
+        margin: 24px 0 24px;
+      }
+
+      &_photo {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &_bg {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 520px;
+          object-fit: contain;
+
+          @media (max-width: $mobile-width) {
+            height: 200px;
+            object-fit: cover;
+          }
+        }
       }
 
       &.visible {
@@ -311,17 +430,20 @@
 
     &__video {
       display: none;
-      height: 269px;
+      min-height: 175px;
+      max-height: 269px;
       overflow: hidden;
       width: 100%;
       border-radius: 16px;
       align-items: center;
       justify-content: center;
       margin: 44px 0 0;
+      position: relative;
 
       @media (max-width: $mobile-width) {
-        height: 195px;
-        margin: 24px 0 0;
+        min-height: 195px;
+        max-height: 195px;
+        margin: 24px 0 24px;
       }
 
       &.visible {

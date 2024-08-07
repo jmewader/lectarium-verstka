@@ -33,11 +33,21 @@
     }
   }
 
+  &__form {
+    &.hidden {
+      display: none;
+    }
+  }
+
   &__actions {
     margin: 24px 0 18px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    &.form-wrap {
+      margin: 44px 0 16px;
+    }
   }
 
   &__btn {
@@ -81,6 +91,9 @@
   &__agreements {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
     @media (max-width: $mobile-width) {
       label {
