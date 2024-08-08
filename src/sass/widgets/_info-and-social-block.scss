@@ -44,6 +44,11 @@
     padding: 0 0 24px;
     margin: 0 18px 24px;
 
+    &.wrapper {
+      border-bottom: none;
+      margin: 0;
+    }
+
     @media (max-width: $tablet-width) {
       margin: 0 0 18px;
       padding: 0 0 18px;
@@ -90,6 +95,15 @@
     width: 100%;
     justify-content: space-between;
     padding: 0 18px;
+
+    &.wrapper {
+      width: auto;
+      gap: 24px;
+
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
 
     @media (max-width: $tablet-width) {
       padding: 0;

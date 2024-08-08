@@ -1,0 +1,66 @@
+section.download-materials
+    .download-materials__wrap
+        .download-materials__img
+            img(src= "../img/docs.svg", alt="icon")
+        h2.download-materials__title Скачайте требования конкретного ВУЗа
+    .download-materials__actions
+        .custom-select
+            .custom-select__title Выберите ВУЗ
+                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M16 10L12 14L8 10" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+            .custom-select__menu-wrap
+                ul.custom-select__menu
+                    li.custom-select__menu_item(data-value="4") НИУ МЭИ
+                    li.custom-select__menu_item(data-value="5") МГТУ им. Баумана
+                    li.custom-select__menu_item(data-value="1") МГУ им. Ломоносова
+                    li.custom-select__menu_item(data-value="2") МТУСИ
+                    li.custom-select__menu_item(data-value="3") СПбГУ
+                    li.custom-select__menu_item(data-value="9") Всероссийский научно-исследовательский геологический институт (ВСЕ ГЕИ)
+            .visible-on-tablet
+                .modal-overlay
+                    .modal
+                        button.modal__close-btn
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2873_18660)">
+                                <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath>
+                                <rect width="12" height="12" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        .modal__content
+                            h3.modal__title Выберите ВУЗ
+                        .modal__wrapper
+                            .custom-radio
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio', checked)
+                                    span.custom-radio__label НИУ МЭИ
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio')
+                                    span.custom-radio__label МГТУ им. Баумана
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio')
+                                    span.custom-radio__label МГУ им. Ломоносова
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio')
+                                    span.custom-radio__label МТУСИ
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio')
+                                    span.custom-radio__label СПбГУ
+                                label.custom-radio
+                                    input.custom-radio__input(type='radio', name='radio')
+                                    span.custom-radio__label Всероссийский научно-исследовательский геологический институт (ВСЕ ГЕИ)
+                        .modal__bottom
+                            button.modal__bottom_btn-reset.button-with-frame Сбросить  
+                            button.main-button Применить  
+        button.main-button
+            | Скачать файл
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="12" fill="white"/>
+                <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+    

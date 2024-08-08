@@ -1,0 +1,23 @@
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 36px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: $dark-blue-color;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+}

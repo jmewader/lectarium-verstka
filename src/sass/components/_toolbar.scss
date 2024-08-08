@@ -41,4 +41,14 @@
       align-items: flex-start;
     }
   }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
 }

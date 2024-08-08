@@ -74,6 +74,28 @@
     font-weight: 500;
     position: relative;
     margin: 0 0 64px;
+    display: flex;
+    flex-direction: column;
+
+    .teacher {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+
+      img {
+        width: 54px;
+        height: 54px;
+        object-fit: cover;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+    }
 
     @media (max-width: $tablet-width) {
       font-size: 24px;

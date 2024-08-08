@@ -1881,6 +1881,14 @@ button {
   padding: 0 30px;
 }
 
+.main-button-medium {
+  @extend .main-button;
+  min-height: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 20px;
+}
+
 .dark-button {
   @extend .main-button;
   background-color: $dark-blue-color;
@@ -1904,6 +1912,7 @@ button {
   color: $bright-blue-color;
   gap: 12px;
   min-height: 50px;
+  padding: 0 20px;
 }
 
 .light-blue-button {
