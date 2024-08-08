@@ -935,6 +935,11 @@
   padding: 81px 0 119px;
   background: #fafcff;
 
+  .add-to-cart-block {
+    right: -4%;
+    top: -93px;
+  }
+
   .container {
     position: relative;
   }
@@ -1600,8 +1605,8 @@
 }
 
 .add-to-cart-block {
-  right: -70px;
-  top: -92px;
+  right: 4%;
+  top: 0px;
   position: absolute;
   padding: 18px;
   border-radius: 18px;
