@@ -116,9 +116,12 @@
         align-items: center;
         gap: 36px;
         justify-content: flex-end;
+        display: grid;
+        grid-template-columns: 1fr 1fr 150px;
 
         @media (max-width: $desktop-width) {
           justify-content: flex-start;
+          display: flex;
         }
 
         @media (max-width: $mobile-width) {
@@ -185,6 +188,8 @@
         display: flex;
         align-items: center;
         gap: 6px;
+        min-width: 94px;
+        justify-content: flex-end;
 
         a {
           display: flex;
