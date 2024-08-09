@@ -349,6 +349,36 @@
               justify-content: space-between;
               padding: 0 44px 0 0;
 
+              .product-card-actions {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                gap: 18px;
+
+                @media (max-width: $mobile-width) {
+                  flex-direction: column;
+                }
+
+                .custom-select {
+                  max-width: 250px;
+
+                  @media (max-width: $mobile-width) {
+                    max-width: 100%;
+                  }
+                }
+
+                .custom-select__title {
+                  font-size: 16px;
+                  line-height: 20px;
+                  min-height: 56px;
+
+                  @media (max-width: $mobile-width) {
+                    min-height: 50px;
+                  }
+                }
+              }
+
               .tags-with-icons {
                 flex-direction: column;
                 align-items: flex-start;
