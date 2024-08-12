@@ -6,8 +6,11 @@
     font-weight: 500;
     margin: 0 0 24px;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $desktop-width) {
       padding: 0 16px;
+    }
+
+    @media (max-width: $mobile-width) {
       font-size: 28px;
       line-height: 32px;
     }
