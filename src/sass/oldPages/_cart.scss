@@ -804,11 +804,19 @@
 
         .cart-payment-actions {
           .pay {
-            display: flex;
+            display: none;
+
+            &.visible {
+              display: flex;
+            }
           }
 
           .link {
             display: none;
+
+            &.visible {
+              display: flex;
+            }
           }
 
           .button {

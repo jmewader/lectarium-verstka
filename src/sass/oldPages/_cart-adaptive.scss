@@ -863,32 +863,9 @@
           padding: 24px;
           border-radius: 20px;
 
-          .cart-payment-info {
-            .cart-payment-info-item {
-              .cart-payment-info-name {
-              }
-            }
-          }
-
           .cart-payment-checkbox {
             .pretty.p-switch {
               min-width: 54px;
-            }
-          }
-
-          .cart-payment-actions {
-            .button {
-              &.button-with-icon {
-                span {
-                  &.link {
-                    display: block;
-                  }
-
-                  &.pay {
-                    display: none;
-                  }
-                }
-              }
             }
           }
         }
