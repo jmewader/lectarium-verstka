@@ -100,6 +100,8 @@
     .course-tariff-content {
       &.month {
         .course-tariff-items {
+          grid-template-columns: 1fr 1fr;
+
           .product-card-rate {
             .product-card-rate-info {
               .product-card-rate-image {
@@ -163,9 +165,6 @@
 
       &.month {
         .course-tariff-items {
-          max-width: 738px;
-          margin: 0 auto;
-
           .product-card-rate {
             .product-card-rate-info {
               .product-card-rate-image {
@@ -411,10 +410,7 @@
     margin-bottom: 70px;
 
     .course-tariff-content {
-      box-shadow: none;
-      background: none;
-      padding: 0;
-
+      padding: 24px;
       .course-tariff-head {
         margin-bottom: 24px;
       }
@@ -422,9 +418,11 @@
       &.tariff {
         .course-tariff-items {
           .course-tariff-item {
-            background: #fff;
             padding: 24px;
             width: 100%;
+            background-color: $white-color;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
 
             .course-tariff-item-head {
               height: auto;
@@ -600,6 +598,16 @@
       }
     }
   }
+
+  .course-tariff {
+    .course-tariff-content {
+      &.month {
+        .course-tariff-items {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 955px) {
@@ -688,6 +696,24 @@
 }
 
 @media screen and (max-width: 767px) {
+  .course-tariff {
+    .course-tariff-content {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+
+      &.month {
+        .course-tariff-items {
+          .product-card-rate {
+            background-color: $white-color;
+            box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
   .course-head-back.show {
     border-radius: 25px;
 
@@ -847,6 +873,9 @@
 
   .course-tariff {
     .course-tariff-content {
+      min-height: auto;
+      max-height: 100%;
+
       .course-tariff-head {
         .course-tariff-title {
           font-size: 32px;
@@ -865,10 +894,13 @@
         }
       }
 
-      &.month {
-        background: #fff;
-        padding: 24px 16px;
-        border-radius: 25px;
+      &.month,
+      &.subjects {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        gap: 24px;
       }
     }
   }
@@ -1601,17 +1633,16 @@
   .course-tariff {
     .course-tariff-content {
       &.month {
-        padding: 0;
-        background: none;
+        // padding: 18px;
 
         .course-tariff-items {
+          gap: 10px;
+
           .product-card-rate {
             background: #fff;
-            padding: 24px;
+            padding: 18px;
 
             .product-card-rate-info {
-              margin-bottom: 16px;
-
               .product-card-rate-info-head {
                 .product-card-rate-info-term {
                   font-size: 20px;
@@ -1619,10 +1650,12 @@
                   letter-spacing: -0.01em;
                 }
 
-                .product-card-rate-info-text {
-                  font-size: 13px;
-                  line-height: 131%;
-                  letter-spacing: 0;
+                .product-card-rate-info-body {
+                  .product-card-rate-info-text {
+                    letter-spacing: 0;
+                    min-width: min-content;
+                    text-align: left;
+                  }
                 }
               }
             }
