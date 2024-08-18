@@ -1,72 +1,282 @@
-.main-container
+.main-container.hero-video__container
     section.hero-video
-        .hero-video__video-block
-            .hero-video__video-block_preview.color-accent-bg
-                .hero-video__video-block_preview-bg
-                    img(src="../img/kremlin-light.png", alt="bg")
-                .hero-video__video-block_preview-img
-                    img(src="../img/women3.png", alt="People")
-                .hero-video__video-block_preview-content
-                    .hero-video__video-block_preview-header
-                        span.hero-video__video-block_preview-mark Лайфхаки
-                        span.hero-video__video-block_preview-time
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 4.25V8L9.875 6.875M14.75 8C14.75 11.728 11.728 14.75 8 14.75C4.27208 14.75 1.25 11.728 1.25 8C1.25 4.27208 4.27208 1.25 8 1.25C11.728 1.25 14.75 4.27208 14.75 8Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        .hero-video__header
+            .hero-video__video-block
+                .hero-video__video-block_preview.color-accent-bg
+                    .hero-video__video-block_preview-bg
+                        img(src="../img/kremlin-light.png", alt="bg")
+                    .hero-video__video-block_preview-img
+                        img(src="../img/women3.png", alt="People")
+                    .hero-video__video-block_preview-content
+                        .hero-video__video-block_preview-header
+                            span.hero-video__video-block_preview-mark Лайфхаки
+                            span.hero-video__video-block_preview-time
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 4.25V8L9.875 6.875M14.75 8C14.75 11.728 11.728 14.75 8 14.75C4.27208 14.75 1.25 11.728 1.25 8C1.25 4.27208 4.27208 1.25 8 1.25C11.728 1.25 14.75 4.27208 14.75 8Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                | 0:17:36
+                        .hero-video__video-block_preview-footer
+                            h1.hero-video__video-block_preview-title Количество бюджетных мест в ВУЗах будет сокращено до 60%
+                    button.hero-video__video-block_preview-play
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="50" fill="white"/>
+                            <path d="M44.0859 56.4528V43.5546C44.0859 42.7939 44.9014 42.3118 45.5679 42.6783L57.2936 49.1275C57.9844 49.5074 57.9844 50.5 57.2936 50.8799L45.5679 57.3291C44.9014 57.6956 44.0859 57.2134 44.0859 56.4528Z" fill="#0B1F33"/>
+                        </svg>
+            .hero-video__time-block
+                h3.hero-video__time-block_title Таймкоды
+                ul.hero-video__time-block_list
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:00
+                        span.hero-video__time-block_list-item-text Приветствие
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку
+                    li.hero-video__time-block_list-item.active
+                        span.hero-video__time-block_list-item-time 0:03:36
+                        span.hero-video__time-block_list-item-text Свойства степеней
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:05:42
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:18:09
+                        span.hero-video__time-block_list-item-text Свойства перемножения степеней
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:22:45
+                        span.hero-video__time-block_list-item-text Что такое ФИПИ и почему именно оттуда берутся задания для ЕГЭ?
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:05:42
+                        span.hero-video__time-block_list-item-text Свойства перемножения степеней
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:18:09
+                        span.hero-video__time-block_list-item-text Что такое ФИПИ и почему именно оттуда берутся задания для ЕГЭ?
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                    li.hero-video__time-block_list-item
+                        span.hero-video__time-block_list-item-time 0:00:45
+                        span.hero-video__time-block_list-item-text Система подготовки на любую оценку
+        .hero-video__footer
+            .hero-video__bottom
+                .hero-video__bottom_wrapper
+                    .hero-video__bottom_author
+                        .hero-video__bottom_author-photo.color-accent-photo-bg
+                            img(src="../img/women2.png", alt="img")   
+                        .hero-video__bottom_author-name Вероника Сорокина
+                    .hero-video__bottom_wrap
+                        .hero-video__bottom_views
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12Z" fill="#CAD0D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 13.6394 2.42496 14.1915 3.27489 15.2957C4.97196 17.5004 7.81811 20 12 20C16.1819 20 19.028 17.5004 20.7251 15.2957C21.575 14.1915 22 13.6394 22 12C22 10.3606 21.575 9.80853 20.7251 8.70433C19.028 6.49956 16.1819 4 12 4C7.81811 4 4.97196 6.49956 3.27489 8.70433C2.42496 9.80853 2 10.3606 2 12ZM12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25Z" fill="#CAD0D6"/>
                             </svg>
-                            | 0:17:36
-                    .hero-video__video-block_preview-footer
-                        h2.hero-video__video-block_preview-title Количество бюджетных мест в ВУЗах будет сокращено до 60%
-                button.hero-video__video-block_preview-play
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100" height="100" rx="50" fill="white"/>
-                        <path d="M44.0859 56.4528V43.5546C44.0859 42.7939 44.9014 42.3118 45.5679 42.6783L57.2936 49.1275C57.9844 49.5074 57.9844 50.5 57.2936 50.8799L45.5679 57.3291C44.9014 57.6956 44.0859 57.2134 44.0859 56.4528Z" fill="#0B1F33"/>
-                    </svg>
-        .hero-video__time-block
-            h3.hero-video__time-block_title Таймкоды
-            ul.hero-video__time-block_list
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:00
-                    span.hero-video__time-block_list-item-text Приветствие
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку
-                li.hero-video__time-block_list-item.active
-                    span.hero-video__time-block_list-item-time 0:03:36
-                    span.hero-video__time-block_list-item-text Свойства степеней
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:05:42
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:18:09
-                    span.hero-video__time-block_list-item-text Свойства перемножения степеней
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:22:45
-                    span.hero-video__time-block_list-item-text Что такое ФИПИ и почему именно оттуда берутся задания для ЕГЭ?
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:05:42
-                    span.hero-video__time-block_list-item-text Свойства перемножения степеней
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:18:09
-                    span.hero-video__time-block_list-item-text Что такое ФИПИ и почему именно оттуда берутся задания для ЕГЭ?
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
-                li.hero-video__time-block_list-item
-                    span.hero-video__time-block_list-item-time 0:00:45
-                    span.hero-video__time-block_list-item-text Система подготовки на любую оценку 
+                            | 1337 просмотров
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="2" fill="#CAD0D6"/>
+                        </svg>
+                        .hero-video__bottom_date 3 мая 2024
+                .hero-video__bottom_wrapper
+                    .hero-video__bottom_items
+                        .hero-video__bottom_items-item
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2762 19.8539L12.7341 20.7697C11.9605 22.0767 10.0435 22.0767 9.26985 20.7697L8.72774 19.8539C8.5103 19.4865 8.37317 19.2564 8.2518 19.0898C8.13967 18.936 8.07508 18.8857 8.02767 18.8582C7.98273 18.832 7.90594 18.7999 7.70783 18.7779C7.49582 18.7545 7.2177 18.7489 6.77861 18.7413C5.52333 18.7197 4.60649 18.6457 3.80152 18.3123C2.39261 17.7287 1.27323 16.6093 0.689643 15.2004C0.455183 14.6344 0.351453 14.0223 0.301263 13.2868C0.251947 12.564 0.25195 11.6693 0.251953 10.5281V10.5V9.5V9.46071C0.251947 7.8573 0.251942 6.60031 0.347423 5.59611C0.444743 4.57256 0.646523 3.73445 1.09927 2.99563C1.57339 2.22194 2.22389 1.57144 2.99758 1.09732C3.7364 0.64457 4.57451 0.44279 5.59806 0.34547C6.60227 0.249989 7.85925 0.249994 9.46267 0.25H9.50195H12.502H12.5412C14.1447 0.249994 15.4016 0.249989 16.4059 0.34547C17.4294 0.44279 18.2675 0.64457 19.0064 1.09732C19.7801 1.57144 20.4306 2.22194 20.9047 2.99563C21.3574 3.73445 21.5592 4.57256 21.6565 5.59611C21.752 6.60022 21.752 7.85707 21.752 9.46027V9.5V10.5V10.5275C21.752 11.6689 21.752 12.5639 21.7027 13.2868C21.6525 14.0223 21.5488 14.6344 21.3143 15.2004C20.7307 16.6093 19.6113 17.7287 18.2024 18.3123C17.3975 18.6457 16.4806 18.7197 15.2253 18.7413C14.7862 18.7489 14.5081 18.7545 14.2961 18.7779C14.098 18.7999 14.0212 18.832 13.9762 18.8582C13.9288 18.8857 13.8642 18.936 13.7521 19.0898C13.6307 19.2564 13.4936 19.4865 13.2762 19.8539Z" fill="#CAD0D6"/>
+                            </svg>
+                            | 8
+                        .hero-video__bottom_items-item
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2.06032C10.8671 1.92177 10.7202 1.77827 10.5597 1.63448C9.6945 0.859403 8.34498 0 6.6 0C4.70003 0 3.03124 0.646835 1.83468 1.85972C0.638125 3.07261 0 4.76418 0 6.69008C0 8.63265 0.917055 10.6644 2.62898 12.6769C4.34668 14.6962 6.93101 16.7779 10.4473 18.8491C10.789 19.0503 11.211 19.0503 11.5527 18.8491C15.0609 16.7827 17.6466 14.7485 19.3667 12.7508C21.0887 10.7509 22 8.71813 22 6.69008C22 4.76418 21.3619 3.07261 20.1653 1.85972C18.9688 0.646835 17.3 0 15.4 0C13.655 0 12.3055 0.859403 11.4403 1.63448C11.2798 1.77827 11.1329 1.92177 11 2.06032Z" fill="#F14545"/>
+                            </svg>
+                            | 5
+                    button.hero-video__bottom_link Некогда смотреть?
+            .hero-video__share
+                h3.hero-video__share_title Поделиться
+                ul.hero-video__share_list
+                    li.hero-video__share_list-item
+                        a(href="")
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="18" fill="white"/>
+                                <rect width="36" height="36" rx="18" fill="#FF0000" fill-opacity="0.08"/>
+                                <g clip-path="url(#clip0_4562_47515)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1896 20.3306V15.28C17.9826 16.1237 19.3712 16.9387 21.0136 17.8174C19.659 18.5686 17.9826 19.4115 16.1896 20.3306ZM26.1819 12.7681C25.8726 12.3606 25.3455 12.0434 24.7843 11.9384C23.1347 11.6251 12.8439 11.6243 11.1952 11.9384C10.7452 12.0228 10.3445 12.2267 10.0002 12.5435C8.54967 13.8898 9.0042 21.1097 9.35383 22.2792C9.50086 22.7854 9.69092 23.1505 9.93029 23.3901C10.2387 23.7069 10.6609 23.9251 11.1459 24.0229C12.5041 24.3038 19.5012 24.4609 24.7556 24.0651C25.2397 23.9807 25.6682 23.7556 26.0062 23.4253C27.3473 22.0843 27.2559 14.459 26.1819 12.7681Z" fill="#FF0000"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4562_47515">
+                                <rect width="18" height="18" fill="white" transform="translate(9 9)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                    li.hero-video__share_list-item
+                        a(href="")
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="18" fill="white"/>
+                                <rect width="36" height="36" rx="18" fill="#0077FF" fill-opacity="0.08"/>
+                                <path d="M18.7073 23.0155C13.2939 23.0155 10.2051 19.251 10.0762 12.9844H12.7873C12.8762 17.5844 14.8762 19.531 16.4606 19.9333V12.9844H19.0162V16.951C20.5784 16.7799 22.2228 14.9733 22.7762 12.9844H25.3339C24.9073 15.4333 23.1251 17.2422 21.8584 17.9844C23.1251 18.5866 25.1539 20.1622 25.9251 23.0155H23.1162C22.5117 21.1088 21.0051 19.631 19.0184 19.431V23.0155H18.7073Z" fill="#0077FF"/>
+                            </svg>
+                    li.hero-video__share_list-item
+                        a(href="")
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="36" height="36" rx="18" fill="white"/>
+                                <rect width="36" height="36" rx="18" fill="#397EFF" fill-opacity="0.08"/>
+                                <path d="M23.7803 11.7409C23.7803 11.7409 25.2373 11.1727 25.1158 12.5525C25.0754 13.1206 24.7111 15.109 24.4278 17.2598L23.4565 23.631C23.4565 23.631 23.3756 24.5643 22.6471 24.7266C21.9186 24.8889 20.8258 24.1585 20.6235 23.9962C20.4616 23.8744 17.5881 22.0483 16.5763 21.1555C16.293 20.9121 15.9692 20.4251 16.6167 19.857L20.8663 15.7989C21.352 15.312 21.8376 14.1757 19.814 15.5554L14.148 19.4106C14.148 19.4106 13.5004 19.8164 12.2863 19.4512L9.65558 18.6396C9.65558 18.6396 8.68425 18.0309 10.3436 17.4221C14.3908 15.5148 19.3689 13.567 23.7803 11.7409Z" fill="#397EFF"/>
+                            </svg>
+        .visible-on-tablet
+            .hero-video__footer-mobile_info
+                .hero-video__footer-mobile_date 3 мая 2024
+                h1.hero-video__footer-mobile_title Как сдать ЕГЭ по русскому языку на 80 баллов
+                .hero-video__bottom_author
+                    .hero-video__bottom_author-photo.color-accent-photo-bg
+                        img(src="../img/women2.png", alt="img")   
+                    .hero-video__bottom_author-name Вероника Сорокина
+                .hero-video__bottom_wrapper
+                    .hero-video__bottom_items
+                        .hero-video__bottom_items-item
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12Z" fill="#CAD0D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 13.6394 2.42496 14.1915 3.27489 15.2957C4.97196 17.5004 7.81811 20 12 20C16.1819 20 19.028 17.5004 20.7251 15.2957C21.575 14.1915 22 13.6394 22 12C22 10.3606 21.575 9.80853 20.7251 8.70433C19.028 6.49956 16.1819 4 12 4C7.81811 4 4.97196 6.49956 3.27489 8.70433C2.42496 9.80853 2 10.3606 2 12ZM12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25Z" fill="#CAD0D6"/>
+                            </svg>
+                            | 1337
+                        .hero-video__bottom_items-item
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2762 19.8539L12.7341 20.7697C11.9605 22.0767 10.0435 22.0767 9.26985 20.7697L8.72774 19.8539C8.5103 19.4865 8.37317 19.2564 8.2518 19.0898C8.13967 18.936 8.07508 18.8857 8.02767 18.8582C7.98273 18.832 7.90594 18.7999 7.70783 18.7779C7.49582 18.7545 7.2177 18.7489 6.77861 18.7413C5.52333 18.7197 4.60649 18.6457 3.80152 18.3123C2.39261 17.7287 1.27323 16.6093 0.689643 15.2004C0.455183 14.6344 0.351453 14.0223 0.301263 13.2868C0.251947 12.564 0.25195 11.6693 0.251953 10.5281V10.5V9.5V9.46071C0.251947 7.8573 0.251942 6.60031 0.347423 5.59611C0.444743 4.57256 0.646523 3.73445 1.09927 2.99563C1.57339 2.22194 2.22389 1.57144 2.99758 1.09732C3.7364 0.64457 4.57451 0.44279 5.59806 0.34547C6.60227 0.249989 7.85925 0.249994 9.46267 0.25H9.50195H12.502H12.5412C14.1447 0.249994 15.4016 0.249989 16.4059 0.34547C17.4294 0.44279 18.2675 0.64457 19.0064 1.09732C19.7801 1.57144 20.4306 2.22194 20.9047 2.99563C21.3574 3.73445 21.5592 4.57256 21.6565 5.59611C21.752 6.60022 21.752 7.85707 21.752 9.46027V9.5V10.5V10.5275C21.752 11.6689 21.752 12.5639 21.7027 13.2868C21.6525 14.0223 21.5488 14.6344 21.3143 15.2004C20.7307 16.6093 19.6113 17.7287 18.2024 18.3123C17.3975 18.6457 16.4806 18.7197 15.2253 18.7413C14.7862 18.7489 14.5081 18.7545 14.2961 18.7779C14.098 18.7999 14.0212 18.832 13.9762 18.8582C13.9288 18.8857 13.8642 18.936 13.7521 19.0898C13.6307 19.2564 13.4936 19.4865 13.2762 19.8539Z" fill="#CAD0D6"/>
+                            </svg>
+                            | 8
+                        .hero-video__bottom_items-item
+                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2.06032C10.8671 1.92177 10.7202 1.77827 10.5597 1.63448C9.6945 0.859403 8.34498 0 6.6 0C4.70003 0 3.03124 0.646835 1.83468 1.85972C0.638125 3.07261 0 4.76418 0 6.69008C0 8.63265 0.917055 10.6644 2.62898 12.6769C4.34668 14.6962 6.93101 16.7779 10.4473 18.8491C10.789 19.0503 11.211 19.0503 11.5527 18.8491C15.0609 16.7827 17.6466 14.7485 19.3667 12.7508C21.0887 10.7509 22 8.71813 22 6.69008C22 4.76418 21.3619 3.07261 20.1653 1.85972C18.9688 0.646835 17.3 0 15.4 0C13.655 0 12.3055 0.859403 11.4403 1.63448C11.2798 1.77827 11.1329 1.92177 11 2.06032Z" fill="#F14545"/>
+                            </svg>
+                            | 5
+                    button.hero-video__bottom_link Некогда смотреть?
+                .hero-video__footer-mobile_actions
+                    button.pale-blue-button
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74984 17.3332C13.3522 17.3332 17.0832 13.6022 17.0832 8.99984C17.0832 4.39746 13.3522 0.666504 8.74984 0.666504C4.14746 0.666504 0.416504 4.39746 0.416504 8.99984C0.416504 13.6022 4.14746 17.3332 8.74984 17.3332ZM7.66109 12.2047L11.5946 9.88234C12.246 9.49767 12.246 8.502 11.5946 8.11734L7.66109 5.79499C7.02793 5.42118 6.24984 5.90773 6.24984 6.67747V11.3222C6.24984 12.0919 7.02793 12.5785 7.66109 12.2047Z" fill="#2554E7"/>
+                        </svg>
+                        | Таймкоды   
+                    button.main-button-medium
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 0.25C11.4551 0.25 10 1.70507 10 3.5C10 3.69591 10.0173 3.88776 10.0506 4.07412L5.31991 7.38558C5.29587 7.4024 5.27312 7.42038 5.25168 7.43939C4.69993 7.00747 4.00503 6.75 3.25 6.75C1.45507 6.75 0 8.2051 0 10C0 11.7949 1.45507 13.25 3.25 13.25C4.00503 13.25 4.69993 12.9925 5.25168 12.5606C5.27312 12.5796 5.29587 12.5976 5.31991 12.6144L10.0506 15.9259C10.0173 16.1122 10 16.3041 10 16.5C10 18.2949 11.4551 19.75 13.25 19.75C15.0449 19.75 16.5 18.2949 16.5 16.5C16.5 14.7051 15.0449 13.25 13.25 13.25C12.1972 13.25 11.2613 13.7506 10.6674 14.5267L6.18806 11.3911C6.38809 10.9694 6.5 10.4978 6.5 10C6.5 9.5022 6.38809 9.0306 6.18806 8.6089L10.6674 5.4733C11.2613 6.24942 12.1972 6.75 13.25 6.75C15.0449 6.75 16.5 5.29493 16.5 3.5C16.5 1.70507 15.0449 0.25 13.25 0.25ZM11.5 3.5C11.5 2.5335 12.2835 1.75 13.25 1.75C14.2165 1.75 15 2.5335 15 3.5C15 4.4665 14.2165 5.25 13.25 5.25C12.2835 5.25 11.5 4.4665 11.5 3.5ZM3.25 8.25C2.2835 8.25 1.5 9.0335 1.5 10C1.5 10.9665 2.2835 11.75 3.25 11.75C4.2165 11.75 5 10.9665 5 10C5 9.0335 4.2165 8.25 3.25 8.25ZM13.25 14.75C12.2835 14.75 11.5 15.5335 11.5 16.5C11.5 17.4665 12.2835 18.25 13.25 18.25C14.2165 18.25 15 17.4665 15 16.5C15 15.5335 14.2165 14.75 13.25 14.75Z" fill="white"/>
+                        </svg>
+                        | Поделиться
+                .modal-overlay
+                    .modal
+                        button.modal__close-btn
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2873_18660)">
+                                <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath>
+                                <rect width="12" height="12" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        .modal__content
+                            h3.modal__title Поделиться
+                            ul.social-list
+                                li
+                                    a(href='').social-list__item
+                                        .social-list__icon
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="32" height="32" rx="16" fill="#0077FF" fill-opacity="0.08"/>
+                                                <path d="M16.6371 20.5202C11.7651 20.5202 8.98514 17.1322 8.86914 11.4922H11.3091C11.3891 15.6322 13.1891 17.3842 14.6151 17.7462V11.4922H16.9151V15.0622C18.3211 14.9082 19.8011 13.2822 20.2991 11.4922H22.6011C22.2171 13.6962 20.6131 15.3242 19.4731 15.9922C20.6131 16.5342 22.4391 17.9522 23.1331 20.5202H20.6051C20.0611 18.8042 18.7051 17.4742 16.9171 17.2942V20.5202H16.6371Z" fill="#0077FF"/>
+                                            </svg>
+                                        span ВКонтакте
+                                li
+                                    a(href='').social-list__item
+                                        .social-list__icon
+                                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="44" height="44" rx="22" fill="#FF7700" fill-opacity="0.08"/>
+                                                <path d="M25.3934 20.2339C24.9497 20.6826 24.4215 21.0388 23.8392 21.2819C23.2569 21.525 22.6322 21.6502 22.0013 21.6502C21.3703 21.6502 20.7456 21.525 20.1633 21.2819C19.581 21.0388 19.0528 20.6826 18.6092 20.2339C17.9404 19.5587 17.4855 18.7013 17.3014 17.7689C17.1173 16.8366 17.2122 15.8706 17.5742 14.9919C17.9362 14.1132 18.5492 13.3607 19.3366 12.8285C20.124 12.2964 21.0508 12.0082 22.0012 12C22.9533 12.0065 23.8823 12.2941 24.6715 12.8267C25.4608 13.3593 26.0751 14.1131 26.4375 14.9936C26.7998 15.8741 26.894 16.8421 26.7082 17.7759C26.5224 18.7097 26.0649 19.5679 25.3932 20.2427L25.3934 20.2339ZM21.9924 14.6312C21.4138 14.6339 20.8599 14.8657 20.4517 15.2757C20.0436 15.6858 19.8144 16.2409 19.8144 16.8194C19.8144 17.398 20.0436 17.953 20.4517 18.3631C20.8599 18.7732 21.4138 19.0049 21.9924 19.0077C22.571 19.0049 23.1249 18.7732 23.533 18.3631C23.9412 17.953 24.1703 17.398 24.1703 16.8194C24.1703 16.2409 23.9412 15.6858 23.533 15.2757C23.1249 14.8657 22.571 14.6339 21.9924 14.6312ZM27.0402 21.666L28.4453 23.5992C28.5169 23.6977 28.499 23.8319 28.4095 23.9035C27.2457 24.8525 25.8804 25.5229 24.4178 25.8635L27.1297 31.1259C27.1483 31.16 27.1578 31.1984 27.1571 31.2373C27.1564 31.2762 27.1456 31.3142 27.1257 31.3476C27.1058 31.3811 27.0776 31.4087 27.0437 31.4279C27.0099 31.4471 26.9716 31.4571 26.9328 31.457H24.024C23.9345 31.457 23.854 31.4033 23.8182 31.3228L22.0013 26.9821L20.1755 31.3228C20.1581 31.3628 20.1293 31.3968 20.0927 31.4207C20.0561 31.4446 20.0134 31.4572 19.9697 31.457H17.061C16.8909 31.457 16.7925 31.278 16.8641 31.1259L19.5848 25.8635C18.1528 25.5234 16.7745 24.879 15.5931 23.9035C15.5482 23.8681 15.5185 23.8169 15.5102 23.7603C15.5019 23.7037 15.5155 23.646 15.5484 23.5992L16.9625 21.675C16.981 21.6499 17.0043 21.6288 17.0311 21.6129C17.058 21.597 17.0877 21.5867 17.1186 21.5825C17.1495 21.5783 17.1809 21.5804 17.2109 21.5886C17.241 21.5968 17.2691 21.611 17.2936 21.6302C18.5873 22.8 20.2577 23.4669 22.0013 23.5097C23.7465 23.5097 25.3754 22.7758 26.7089 21.6302C26.7984 21.5407 26.9595 21.5586 27.0401 21.666L27.0402 21.666Z" fill="#FF7700"/>
+                                            </svg>
+                                        span Одноклассники
+                                li
+                                    a(href='').social-list__item
+                                        .social-list__icon
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="32" height="32" rx="16" fill="#179EDF" fill-opacity="0.08"/>
+                                                <path d="M21.7803 9.73306C21.7803 9.73306 23.2373 9.16493 23.1158 10.5447C23.0754 11.1128 22.7111 13.1012 22.4278 15.252L21.4565 21.6231C21.4565 21.6231 21.3756 22.5565 20.6471 22.7188C19.9186 22.8811 18.8258 22.1507 18.6235 21.9884C18.4616 21.8666 15.5881 20.0405 14.5763 19.1477C14.293 18.9042 13.9692 18.4173 14.6167 17.8491L18.8663 13.7911C19.352 13.3042 19.8376 12.1679 17.814 13.5476L12.148 17.4028C12.148 17.4028 11.5004 17.8086 10.2863 17.4434L7.65558 16.6317C7.65558 16.6317 6.68425 16.023 8.3436 15.4143C12.3908 13.507 17.3689 11.5592 21.7803 9.73306Z" fill="#179EDF"/>
+                                            </svg>
+                                        span Telegram
+                        .modal__bottom
+                            button.pale-blue-button
+                                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1H14C16.7614 1 19 3.23858 19 6C19 8.7614 16.7614 11 14 11H12M8 1H6C3.23858 1 1 3.23858 1 6C1 8.7614 3.23858 11 6 11H8M6 6H14" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                | Скопировать ссылку
+                .modal-overlay
+                    .modal
+                        button.modal__close-btn
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2873_18660)">
+                                <path d="M1 1L11 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                <path d="M11 1L1 11" stroke="#9AA3AD" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath>
+                                <rect width="12" height="12" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        .modal__content
+                            h3.modal__title Таймкоды
+                            ul.hero-video__time-list
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:00:00
+                                        span.hero-video__time-list_item-title Приветствие
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:00:45
+                                        span.hero-video__time-list_item-title Система подготовки на любую оценку
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:03:36
+                                        span.hero-video__time-list_item-title Свойства степеней
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:05:42
+                                        span.hero-video__time-list_item-title Свойства перемножения степеней
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:15:54
+                                        span.hero-video__time-list_item-title Что такое ФИПИ и почему именно оттуда берутся задания для ЕГЭ?
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:18:09
+                                        span.hero-video__time-list_item-title Заключение
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:00:00
+                                        span.hero-video__time-list_item-title Приветствие
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:00:00
+                                        span.hero-video__time-list_item-title Приветствие
+                                li
+                                    button.hero-video__time-list_item
+                                        span.hero-video__time-list_item-time 0:00:00
+                                        span.hero-video__time-list_item-title Приветствие
+
+
+
+
+        
+
+
+
+
 
