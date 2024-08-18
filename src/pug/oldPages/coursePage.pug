@@ -249,9 +249,12 @@
                                     .course-program-content-item-info-lesson-name-number 4
                                     .course-program-content-item-info-lesson-name-text Задания № 6 и № 10. Геометрические преобразования
                                 .course-program-content-item-info-lesson-date 5 июня, 9:00
+                .course-program-content-action
+                    button.button-with-shadow Показать ещё
+                        span.button-with-shadow-grey (6)
     section.course-tariff.tariff-block
         .container
-            .course-tariff-content.tariff.visible
+            .course-tariff-content.tariff
                 .course-tariff-head
                     h2.course-tariff-title Варианты подготовки
                     .course-tariff-navigation
@@ -384,7 +387,7 @@
                                     span Команда из 25-30 человек
                                 .course-tariff-item-info-item
                                     span Скрипты к занятиям
-            .course-tariff-content.month
+            .course-tariff-content.month.visible
                 .content
                     .course-tariff-close
                         svg.text-desktop(width="32", height="32", viewBox="0 0 32 32", fill="none", xmlns="http://www.w3.org/2000/svg")
@@ -411,12 +414,13 @@
                             .course-tariff-navigation-item
                                 .course-tariff-navigation-item-number 3
                                 .course-tariff-navigation-item-text Предметы
-                    .course-tariff-items
+                    .course-tariff-items.visible
                         .product-card-rate
                             .product-card-rate-info
                                 .product-card-rate-info-head.wrap
                                     .product-card-rate-info-term 1 месяц
-                                    .product-card-rate-info-text Разовая оплата
+                                        .product-card-rate-info-body
+                                            .product-card-rate-info-text Разовая оплата
                         .product-card-rate.action
                             .product-card-rate-info
                                 .product-card-rate-info-head.wrap

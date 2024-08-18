@@ -1936,6 +1936,22 @@ button {
   gap: 10px;
 }
 
+.button-with-shadow {
+  @extend .main-button;
+  min-height: 52px;
+  background-color: $white-color;
+  color: $dark-blue-color;
+  border: none;
+  box-shadow: 0 4px 10px 0 rgba(37, 84, 231, 0.05), 0 0 76px 0 rgba(220, 231, 255, 0.16);
+  gap: 4px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &-grey {
+    color: $bright-grey-color;
+  }
+}
+
 .custom-checkbox-wrapper {
   width: 100%;
   display: flex;
