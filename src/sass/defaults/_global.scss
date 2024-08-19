@@ -1952,6 +1952,54 @@ button {
   }
 }
 
+.custom-input-with-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .custom-input {
+    padding: 0 52px 0 22px;
+    min-height: 56px;
+    background-color: $white-color;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #e7e9eb;
+  }
+
+  &__button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cad0d6;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    right: 22px;
+
+    &_icon {
+      display: none;
+
+      &.visible {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.filled {
+      background-color: $bright-blue-color;
+    }
+
+    &.active {
+      background-color: #00d47b;
+    }
+  }
+}
+
 .custom-checkbox-wrapper {
   width: 100%;
   display: flex;

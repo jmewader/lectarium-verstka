@@ -305,7 +305,20 @@ section.cart
                             svg(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
                                 rect(width="24", height="24", rx="12", fill="white")
                                 path(d="M10 8L14 12L10 16", stroke="#2554E7", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
-                        button.button.button-transparent У меня есть промокод
+                        //- button.button.button-transparent У меня есть промокод
+                        .custom-input-with-btn
+                            input.custom-input(type="text" id="email" name="email" placeholder="Введите промокод")
+                            button.custom-input-with-btn__button
+                                .custom-input-with-btn__button_icon.visible
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L1 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                .custom-input-with-btn__button_icon
+                                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 3.99609L3.66667 6.99609L9 0.996094" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+
         .cart-extra
             h2.cart-extra-title Как ещё добиться ваших результатов
             .cart-extra-track

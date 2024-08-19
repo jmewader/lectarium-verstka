@@ -879,6 +879,16 @@
     }
   }
 }
+@media screen and (max-width: $mobile-width) {
+  .cart-payment {
+    .button-with-icon {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 485px) {
   .cart {
