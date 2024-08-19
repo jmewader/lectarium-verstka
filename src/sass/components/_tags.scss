@@ -209,6 +209,7 @@
     width: max-content;
     color: $dark-blue-color;
     letter-spacing: -0.02em;
+    text-decoration: none;
 
     @media (max-width: $tablet-width) {
       min-height: 50px;
