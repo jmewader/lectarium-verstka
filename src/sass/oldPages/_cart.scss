@@ -23,7 +23,7 @@
     .cart-content {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 120px;
+      margin-bottom: 114px;
       width: 100%;
       gap: 32px;
       justify-content: space-between;
@@ -221,7 +221,7 @@
 
               @media (max-width: $mobile-width) {
                 flex-direction: row;
-                padding: 12px;
+                padding: 10px 12px;
                 border-radius: 8px;
               }
             }
@@ -351,7 +351,7 @@
 
               .product-card-actions {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 width: 100%;
                 justify-content: space-between;
                 gap: 18px;
@@ -362,6 +362,7 @@
 
                 .custom-select {
                   max-width: 250px;
+                  min-width: max-content;
 
                   @media (max-width: $mobile-width) {
                     max-width: 100%;
@@ -372,6 +373,7 @@
                   font-size: 16px;
                   line-height: 20px;
                   min-height: 56px;
+                  padding: 0 18px;
 
                   @media (max-width: $mobile-width) {
                     min-height: 50px;
@@ -863,7 +865,7 @@
         font-size: 48px;
         letter-spacing: -0.02em;
         color: $dark-blue-color;
-        margin-bottom: 44px;
+        margin-bottom: 41px;
       }
 
       .cart-extra-cards {
@@ -1065,7 +1067,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 24px;
+            gap: 56px;
             margin-top: -40px;
 
             .cart-extra-card-description {

@@ -942,7 +942,7 @@
 
         .cart-extra-cards {
           .cart-extra-card {
-            grid-template-rows: 220px 1fr;
+            grid-template-rows: 230px 1fr;
 
             .cart-extra-card-image {
               width: 329px;
@@ -962,6 +962,7 @@
               width: 100%;
               padding: 24px;
               height: auto;
+              gap: 24px;
 
               .cart-extra-card-description {
                 .cart-extra-card-title {
