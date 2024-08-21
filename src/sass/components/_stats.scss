@@ -1,13 +1,11 @@
 .stats {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  gap: 44px;
+  justify-content: flex-start;
+  gap: 42px;
 
   @media (max-width: $large-desktop-width) {
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
   }
 

@@ -208,6 +208,14 @@
       grid-area: main;
     }
 
+    &.wrapper-top {
+      padding-top: 66px;
+
+      @media (max-width: $desktop-width) {
+        padding-top: 0px;
+      }
+    }
+
     &.right {
       display: flex;
       flex-direction: column;

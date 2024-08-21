@@ -1987,6 +1987,7 @@
   }
 
   .course-tariff-item-info-items {
+    max-height: 100%;
     .course-tariff-item-info-item {
       &.to-desktop {
         display: none;

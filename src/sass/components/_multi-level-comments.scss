@@ -155,7 +155,7 @@
     &_actions {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 16px;
 
       @media (max-width: $mobile-width) {
         gap: 16px;
