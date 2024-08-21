@@ -22,6 +22,11 @@
     gap: 20px;
 
     @media (max-width: $desktop-width) {
+      gap: 12px;
+    }
+
+    @media (max-width: $tablet-width) {
+      gap: 16px;
       grid-template-columns: 1fr;
     }
   }
@@ -33,6 +38,11 @@
 
     @media (max-width: $desktop-width) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (max-width: $tablet-width) {
+      grid-template-columns: 1fr;
     }
 
     @media (max-width: $mobile-width) {
@@ -121,8 +131,11 @@
         }
       }
 
-      @media (max-width: $mobile-width) {
+      @media (max-width: $desktop-width) {
         padding: 24px;
+      }
+
+      @media (max-width: $mobile-width) {
         border-radius: 20px;
 
         &:nth-child(n) {
@@ -191,10 +204,15 @@
       }
 
       @media (max-width: $desktop-width) {
-        width: 380px;
+        width: 317px;
         position: absolute;
-        bottom: 36px;
+        bottom: 400px;
         right: 36px;
+      }
+
+      @media (max-width: $tablet-width) {
+        width: 380px;
+        bottom: 36px;
       }
 
       @media (max-width: $mobile-width) {

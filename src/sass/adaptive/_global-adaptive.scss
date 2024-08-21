@@ -61,6 +61,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .custom-select {
+    min-width: 230px;
+  }
+
   .wide-container {
     padding: 0;
   }

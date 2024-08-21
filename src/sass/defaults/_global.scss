@@ -2302,6 +2302,7 @@ input.custom-input.white-input {
   flex-direction: column;
   position: relative;
   min-width: max-content;
+  min-width: 290px;
 
   &.open-top {
     .custom-select__menu-wrap {

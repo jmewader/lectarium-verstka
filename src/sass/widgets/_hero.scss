@@ -9,11 +9,11 @@
   justify-content: space-between;
 
   @media (max-width: $large-desktop-width) {
-    min-height: 580px;
+    // min-height: 580px;
   }
 
   @media (max-width: $desktop-width) {
-    min-height: 375px;
+    min-height: 380px;
   }
 
   @media (max-width: $tablet-width) {
@@ -33,22 +33,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 779px;
+    min-height: inherit;
     gap: 40px;
 
     @media (max-width: $large-desktop-width) {
-      min-height: 492px;
       padding: 44px 0 54px 44px;
     }
 
-    @media (max-width: $desktop-width) {
-      min-height: 240px;
-      padding: 24px 0 34px 24px;
-      max-width: 380px;
-    }
-
     @media (max-width: $tablet-width) {
-      min-height: auto;
       max-width: 100%;
       padding: 24px 16px 15px;
       gap: 32px;
@@ -77,11 +69,6 @@
       margin: 0 0 24px;
     }
 
-    @media (max-width: $desktop-width) {
-      font-size: 40px;
-      line-height: 44px;
-    }
-
     @media (max-width: $tablet-width) {
       font-size: 40px;
       line-height: 44px;
@@ -95,12 +82,7 @@
     color: $dark-blue-color;
     letter-spacing: -0.01em;
 
-    @media (max-width: $desktop-width) {
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width) {
       font-size: 16px;
       line-height: 20px;
       gap: 16px;
@@ -128,30 +110,22 @@
     justify-content: flex-end;
     height: 100%;
     z-index: 1;
+    height: 779px;
 
     img {
-      display: block;
-      max-height: 779px;
-    }
-
-    @media (max-width: $large-desktop-width) {
-      img {
-        max-height: 580px;
-      }
+      height: 100%;
+      object-fit: contain;
     }
 
     @media (max-width: $desktop-width) {
-      img {
-        max-height: 380px;
-      }
+      height: 546px;
+      right: 0;
     }
 
     @media (max-width: $tablet-width) {
       justify-content: center;
       width: 100%;
-      img {
-        max-height: 380px;
-      }
+      height: 462px;
     }
 
     @media (max-width: $small-mobile-width) {
