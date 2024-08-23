@@ -94,6 +94,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-shrink: 0;
 
       svg rect {
         fill: $white-color;
@@ -103,6 +104,12 @@
         svg rect {
           fill: $bright-blue-color;
         }
+      }
+    }
+
+    &_text {
+      @media (max-width: $large-desktop-width) {
+        display: none;
       }
     }
 
@@ -189,7 +196,7 @@
         color: #9aa3ad;
       }
 
-      @media (max-width: $desktop-width) {
+      @media (max-width: $large-desktop-width) {
         width: 244px;
       }
     }
@@ -265,10 +272,6 @@
 
         span {
           color: $dark-blue-color;
-
-          @media (max-width: $large-desktop-width) {
-            display: none;
-          }
         }
       }
     }
@@ -277,6 +280,15 @@
       display: none;
       align-items: center;
       margin: 0 0 0 44px;
+
+      &.wrapper {
+        margin: 0 0 0 24px;
+        display: flex;
+
+        .header__actions_authorization-cart {
+          margin: 5px 0 0 0;
+        }
+      }
 
       &.visible {
         display: flex;
