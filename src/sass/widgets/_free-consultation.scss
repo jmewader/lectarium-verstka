@@ -106,9 +106,9 @@
 
       @media (max-width: $tablet-width) {
         outline: 2px solid;
-        border-radius: 8px;
-        outline-offset: -4px;
-        margin: 0 0 0 3px;
+        border-radius: 9px;
+        outline-offset: -3px;
+        margin: 0px 0 0 7px;
       }
     }
 
@@ -243,19 +243,15 @@
     }
 
     @media (max-width: $mobile-width) {
-      min-height: 399px;
-      max-height: 450px;
+      min-height: 279px;
+      max-height: 292px;
 
       img {
         max-height: 100%;
         object-fit: contain;
         height: 100%;
-      }
-    }
-
-    @media (max-width: $small-mobile-width) {
-      img {
-        right: -29px;
+        position: relative;
+        right: -60px;
       }
     }
   }

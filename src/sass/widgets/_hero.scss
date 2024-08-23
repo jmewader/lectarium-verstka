@@ -128,10 +128,7 @@
       height: 462px;
     }
 
-    @media (max-width: $small-mobile-width) {
-      height: 100%;
-      justify-content: flex-end;
-    }
+ 
   }
 
   &__background {
