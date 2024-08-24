@@ -167,6 +167,12 @@
       font-size: 15px;
       line-height: 19px;
       min-height: 48px;
+
+      &-text {
+        @media (max-width: 1450px) {
+          display: none;
+        }
+      }
     }
 
     &_input-btn-icon {
@@ -199,6 +205,10 @@
       @media (max-width: $large-desktop-width) {
         width: 244px;
       }
+
+      @media (max-width: 1450px) {
+        width: 187px;
+      }
     }
 
     &_btn {
@@ -214,6 +224,10 @@
       svg {
         pointer-events: none;
       }
+
+      @media (max-width: 1450px) {
+        width: 43px;
+      }
     }
   }
 
@@ -221,6 +235,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 1450px) {
+      gap: 10px;
+    }
 
     @media (max-width: $large-tablet-width) {
       display: none;
@@ -252,7 +270,7 @@
       display: none;
       align-items: center;
       gap: 8px;
-      margin: 0 0 0 16px;
+      margin: 0 0 0 9px;
 
       &.visible {
         display: flex;
@@ -277,26 +295,24 @@
     }
 
     &_authorization {
-      display: none;
+      display: flex;
       align-items: center;
-      margin: 0 0 0 44px;
+      margin: 0 0 0 40px;
 
-      &.wrapper {
-        margin: 0 0 0 24px;
-        display: flex;
-
-        .header__actions_authorization-cart {
-          margin: 5px 0 0 0;
-        }
-      }
-
-      &.visible {
-        display: flex;
+      @media (max-width: 1450px) {
+        margin: 0 0 0 12px;
       }
 
       &-cart {
         position: relative;
-        margin: 5px 24px 0 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $large-tablet-width) {
+          margin: 0 24px 0 0;
+        }
 
         span {
           display: flex;
@@ -316,9 +332,18 @@
       }
 
       &-user {
-        display: flex;
+        display: none;
         align-items: center;
         cursor: pointer;
+        margin: 0 0 0 24px;
+
+        &.visible {
+          display: flex;
+
+          @media (max-width: $large-tablet-width) {
+            display: none;
+          }
+        }
 
         @media (max-width: $large-tablet-width) {
           display: none;
