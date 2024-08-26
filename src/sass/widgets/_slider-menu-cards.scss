@@ -1,0 +1,113 @@
+.slider-menu-cards {
+  &__arrows {
+    display: none;
+    align-items: center;
+    gap: 10px;
+
+    &.visible {
+      display: flex;
+
+      @media (max-width: $large-tablet-width) {
+        display: none;
+      }
+    }
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+
+    &_arrow {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light-blue-color;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      flex-shrink: 0;
+
+      &.left {
+        transform: rotate(180deg);
+      }
+
+      &.disabled {
+        svg {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  &__slider-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+
+    &_item {
+      border: 1px solid #e1e4e6;
+      border-radius: 16px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: 390px;
+      justify-content: space-between;
+      overflow: hidden;
+
+      &-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 250px;
+        flex-shrink: 0;
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 36px 36px 24px;
+        gap: 40px;
+        height: 100%;
+        justify-content: space-between;
+      }
+
+      &-title {
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        margin: 0 0 16px;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 24px;
+        color: #999999;
+      }
+
+      &-button {
+        width: 100%;
+
+        &.grey-button {
+          min-height: 70px;
+        }
+      }
+    }
+  }
+}

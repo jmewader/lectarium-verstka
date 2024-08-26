@@ -4,6 +4,7 @@
 @import "./defaults/global";
 @import "./defaults/header";
 @import "./defaults/footer";
+@import "./defaults/menu";
 
 @import "./components/slider-block";
 @import "./components/main-article";
@@ -90,6 +91,7 @@
 @import "./widgets/download-materials";
 @import "./widgets/free-consultation";
 @import "./widgets/hero-video";
+@import "./widgets/slider-menu-cards";
 
 @import "./adaptive/layout-adaptive";
 @import "./adaptive/global-adaptive";

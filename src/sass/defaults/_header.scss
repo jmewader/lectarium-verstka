@@ -5,6 +5,10 @@
   justify-content: space-between;
   width: 100%;
 
+  &.white {
+    background-color: $white-color;
+  }
+
   @media (max-width: $large-tablet-width) {
     padding: 16px 0;
   }
