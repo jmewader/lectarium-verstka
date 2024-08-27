@@ -1,290 +1,920 @@
-nav.menu
-    nav.menu__nav
-        ul.menu__list
-            li.menu__list_item.fill
-                a(href="") Личный кабинет
-            li.menu__list_item.fill
-                a(href="") Курсы
-            li.menu__list_item.active
-                a(href="") Проверка знаний
-            li.menu__list_item
-                a(href="") Полезные материалы
-            li.menu__list_item
-                a(href="") О школе
-            li.menu__list_item
-                a(href="") Контакты
-        .menu__wrapper
-            ul.menu__content.visible
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
-                                <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
-                            </svg>
-                        span.menu__content_item-title Для кого
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Весь список курсов
-                        li.menu__sublist_item
-                            a(href="") Для 7 класса
-                        li.menu__sublist_item
-                            a(href="") Для 8 класса
-                        li.menu__sublist_item
-                            a(href="") Для 9 класса
-                        li.menu__sublist_item
-                            a(href="") Для 10 класса
-                        li.menu__sublist_item
-                            a(href="") Для 11 класса
-                        li.menu__sublist_item
-                            a(href="") Для олимпиады
-                        li.menu__sublist_item
-                            a(href="") Для поступления
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M33 25.1101V7.00504C33 5.20504 31.53 3.87004 29.745 4.02004H29.655C26.505 4.29004 21.72 5.89504 19.05 7.57504L18.795 7.74004C18.36 8.01004 17.64 8.01004 17.205 7.74004L16.83 7.51504C14.16 5.85004 9.39 4.26004 6.24 4.00504C4.455 3.85504 3 5.20504 3 6.99004V25.1101C3 26.5501 4.17 27.9001 5.61 28.08L6.045 28.1401C9.3 28.5751 14.325 30.225 17.205 31.8L17.265 31.83C17.67 32.055 18.315 32.055 18.705 31.83C21.585 30.2401 26.625 28.5751 29.895 28.1401L30.39 28.08C31.83 27.9001 33 26.5501 33 25.1101Z" fill="#2554E7" stroke="#2554E7" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 8.23535V30.7353" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M11.625 12.7354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.75 17.2354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        span.menu__content_item-title Предмет
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Математика
-                        li.menu__sublist_item
-                            a(href="") Русский язык
-                        li.menu__sublist_item
-                            a(href="") Литература
-                        li.menu__sublist_item
-                            a(href="") Английский язык
-                        li.menu__sublist_item
-                            a(href="") Обществознание
-                        li.menu__sublist_item
-                            a(href="") Информатика
-                        li.menu__sublist_item
-                            a(href="") История
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.0762 3.79493L6.04625 9.68993C3.15125 11.5799 3.15125 15.8099 6.04625 17.6999L15.0762 23.5949C16.6962 24.6599 19.3662 24.6599 20.9862 23.5949L29.9712 17.6999C32.8512 15.8099 32.8512 11.5949 29.9712 9.70493L20.9862 3.80993C19.3662 2.72993 16.6962 2.72993 15.0762 3.79493Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <g opacity="0.4">
-                                    <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" fill="#2554E7"/>
-                                    <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <path opacity="0.4" d="M32.1016 22.5V13.5" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        span.menu__content_item-title Формат занятий
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Бесплатные
-                        li.menu__sublist_item
-                            a(href="") Разбор отдельных тем
-                        li.menu__sublist_item
-                            a(href="") Разбор теоретических блоков
-                        li.menu__sublist_item
-                            a(href="") Подготовка к ЕГЭ
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.5 33H22.5C30 33 33 30 33 22.5V13.5C33 6 30 3 22.5 3H13.5C6 3 3 6 3 13.5V22.5C3 30 6 33 13.5 33Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13.6484 18.0002V15.7802C13.6484 12.9152 15.6734 11.7602 18.1484 13.1852L20.0684 14.2952L21.9884 15.4052C24.4634 16.8302 24.4634 19.1702 21.9884 20.5952L20.0684 21.7052L18.1484 22.8152C15.6734 24.2402 13.6484 23.0702 13.6484 20.2202V18.0002Z" stroke="white" stroke-width="2.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        span.menu__content_item-title Занятия
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Пробные уроки
-                        li.menu__sublist_item
-                            a(href="") Бесплатный мини-курс
-                        li.menu__sublist_item
-                            a(href="") Марафоны
-            ul.menu__content
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.0762 3.79493L6.04625 9.68993C3.15125 11.5799 3.15125 15.8099 6.04625 17.6999L15.0762 23.5949C16.6962 24.6599 19.3662 24.6599 20.9862 23.5949L29.9712 17.6999C32.8512 15.8099 32.8512 11.5949 29.9712 9.70493L20.9862 3.80993C19.3662 2.72993 16.6962 2.72993 15.0762 3.79493Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <g opacity="0.4">
-                                    <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" fill="#2554E7"/>
-                                    <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <path opacity="0.4" d="M32.1016 22.5V13.5" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        span.menu__content_item-title Вид проверки
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Диагностика знаний
-                        li.menu__sublist_item
-                            a(href="") Пробные экзамены
-                        li.menu__sublist_item
-                            a(href="") Пробные экзамены
-                        li.menu__sublist_item
-                            a(href="") Узнай кто-ты
-                        li.menu__sublist_item
-                            a(href="") Собрать свой тест
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
-                                <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
-                            </svg>
-                        span.menu__content_item-title Для кого
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Для 7 класса
-                        li.menu__sublist_item
-                            a(href="") Для 8 класса
-                        li.menu__sublist_item
-                            a(href="") Для 9 класса
-                        li.menu__sublist_item
-                            a(href="") Для 10 класса
-                        li.menu__sublist_item
-                            a(href="") Для 11 класса
-                        li.menu__sublist_item
-                            a(href="") Для поступления
-                li.menu__content_item
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M33 25.1101V7.00504C33 5.20504 31.53 3.87004 29.745 4.02004H29.655C26.505 4.29004 21.72 5.89504 19.05 7.57504L18.795 7.74004C18.36 8.01004 17.64 8.01004 17.205 7.74004L16.83 7.51504C14.16 5.85004 9.39 4.26004 6.24 4.00504C4.455 3.85504 3 5.20504 3 6.99004V25.1101C3 26.5501 4.17 27.9001 5.61 28.08L6.045 28.1401C9.3 28.5751 14.325 30.225 17.205 31.8L17.265 31.83C17.67 32.055 18.315 32.055 18.705 31.83C21.585 30.2401 26.625 28.5751 29.895 28.1401L30.39 28.08C31.83 27.9001 33 26.5501 33 25.1101Z" fill="#2554E7" stroke="#2554E7" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 8.23535V30.7353" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M11.625 12.7354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.75 17.2354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        span.menu__content_item-title Предмет
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Математика
-                        li.menu__sublist_item
-                            a(href="") Русский язык
-                        li.menu__sublist_item
-                            a(href="") Литература
-                        li.menu__sublist_item
-                            a(href="") Английский язык
-                        li.menu__sublist_item
-                            a(href="") Обществознание
-                        li.menu__sublist_item
-                            a(href="") Информатика
-                        li.menu__sublist_item
-                            a(href="") История
-            ul.menu__slider
-                div
-                    .menu__content_item-wrap
-                        span.menu__content_item-icon
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
-                                <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
-                            </svg>
-                        span.menu__content_item-title Для кого
-                    ul.menu__sublist
-                        li.menu__sublist_item
-                            a(href="") Для родителей
-                        li.menu__sublist_item
-                            a(href="") Для учеников
-                        li.menu__sublist_item
-                            a(href="") Для учителей
-                div
-                    .slider-menu-cards__slider-wrap
-                        .slider-menu-cards__arrows.visible
-                            button.slider-menu-cards__arrows_arrow.left.carousel__prev.disabled
+.hidden-on-large-tablet
+    .menu
+        nav.menu__nav
+            ul.menu__list
+                li.menu__list_item.fill
+                    a(href="") Личный кабинет
+                li.menu__list_item.fill
+                    a(href="") Курсы
+                li.menu__list_item.active
+                    a(href="") Проверка знаний
+                li.menu__list_item
+                    a(href="") Полезные материалы
+                li.menu__list_item
+                    a(href="") О школе
+                li.menu__list_item
+                    a(href="") Контакты
+            .menu__wrapper
+                ul.menu__content.visible
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
+                                    <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
+                                </svg>
+                            span.menu__content_item-title Для кого
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Весь список курсов
+                            li.menu__sublist_item
+                                a(href="") Для 7 класса
+                            li.menu__sublist_item
+                                a(href="") Для 8 класса
+                            li.menu__sublist_item
+                                a(href="") Для 9 класса
+                            li.menu__sublist_item
+                                a(href="") Для 10 класса
+                            li.menu__sublist_item
+                                a(href="") Для 11 класса
+                            li.menu__sublist_item
+                                a(href="") Для олимпиады
+                            li.menu__sublist_item
+                                a(href="") Для поступления
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33 25.1101V7.00504C33 5.20504 31.53 3.87004 29.745 4.02004H29.655C26.505 4.29004 21.72 5.89504 19.05 7.57504L18.795 7.74004C18.36 8.01004 17.64 8.01004 17.205 7.74004L16.83 7.51504C14.16 5.85004 9.39 4.26004 6.24 4.00504C4.455 3.85504 3 5.20504 3 6.99004V25.1101C3 26.5501 4.17 27.9001 5.61 28.08L6.045 28.1401C9.3 28.5751 14.325 30.225 17.205 31.8L17.265 31.83C17.67 32.055 18.315 32.055 18.705 31.83C21.585 30.2401 26.625 28.5751 29.895 28.1401L30.39 28.08C31.83 27.9001 33 26.5501 33 25.1101Z" fill="#2554E7" stroke="#2554E7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 8.23535V30.7353" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.625 12.7354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.75 17.2354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            span.menu__content_item-title Предмет
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Математика
+                            li.menu__sublist_item
+                                a(href="") Русский язык
+                            li.menu__sublist_item
+                                a(href="") Литература
+                            li.menu__sublist_item
+                                a(href="") Английский язык
+                            li.menu__sublist_item
+                                a(href="") Обществознание
+                            li.menu__sublist_item
+                                a(href="") Информатика
+                            li.menu__sublist_item
+                                a(href="") История
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0762 3.79493L6.04625 9.68993C3.15125 11.5799 3.15125 15.8099 6.04625 17.6999L15.0762 23.5949C16.6962 24.6599 19.3662 24.6599 20.9862 23.5949L29.9712 17.6999C32.8512 15.8099 32.8512 11.5949 29.9712 9.70493L20.9862 3.80993C19.3662 2.72993 16.6962 2.72993 15.0762 3.79493Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g opacity="0.4">
+                                        <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" fill="#2554E7"/>
+                                        <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <path opacity="0.4" d="M32.1016 22.5V13.5" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            span.menu__content_item-title Формат занятий
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Бесплатные
+                            li.menu__sublist_item
+                                a(href="") Разбор отдельных тем
+                            li.menu__sublist_item
+                                a(href="") Разбор теоретических блоков
+                            li.menu__sublist_item
+                                a(href="") Подготовка к ЕГЭ
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 33H22.5C30 33 33 30 33 22.5V13.5C33 6 30 3 22.5 3H13.5C6 3 3 6 3 13.5V22.5C3 30 6 33 13.5 33Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.6484 18.0002V15.7802C13.6484 12.9152 15.6734 11.7602 18.1484 13.1852L20.0684 14.2952L21.9884 15.4052C24.4634 16.8302 24.4634 19.1702 21.9884 20.5952L20.0684 21.7052L18.1484 22.8152C15.6734 24.2402 13.6484 23.0702 13.6484 20.2202V18.0002Z" stroke="white" stroke-width="2.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            span.menu__content_item-title Занятия
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Пробные уроки
+                            li.menu__sublist_item
+                                a(href="") Бесплатный мини-курс
+                            li.menu__sublist_item
+                                a(href="") Марафоны
+                ul.menu__content
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0762 3.79493L6.04625 9.68993C3.15125 11.5799 3.15125 15.8099 6.04625 17.6999L15.0762 23.5949C16.6962 24.6599 19.3662 24.6599 20.9862 23.5949L29.9712 17.6999C32.8512 15.8099 32.8512 11.5949 29.9712 9.70493L20.9862 3.80993C19.3662 2.72993 16.6962 2.72993 15.0762 3.79493Z" fill="#2554E7" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g opacity="0.4">
+                                        <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" fill="#2554E7"/>
+                                        <path d="M8.44469 19.6201L8.42969 26.6551C8.42969 28.5601 9.89969 30.6001 11.6997 31.2001L16.4846 32.7901C17.3096 33.0601 18.6746 33.0601 19.5146 32.7901L24.2996 31.2001C26.0996 30.6001 27.5696 28.5601 27.5696 26.6551V19.6951" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <path opacity="0.4" d="M32.1016 22.5V13.5" stroke="#2554E7" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            span.menu__content_item-title Вид проверки
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Диагностика знаний
+                            li.menu__sublist_item
+                                a(href="") Пробные экзамены
+                            li.menu__sublist_item
+                                a(href="") Пробные экзамены
+                            li.menu__sublist_item
+                                a(href="") Узнай кто-ты
+                            li.menu__sublist_item
+                                a(href="") Собрать свой тест
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
+                                    <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
+                                </svg>
+                            span.menu__content_item-title Для кого
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Для 7 класса
+                            li.menu__sublist_item
+                                a(href="") Для 8 класса
+                            li.menu__sublist_item
+                                a(href="") Для 9 класса
+                            li.menu__sublist_item
+                                a(href="") Для 10 класса
+                            li.menu__sublist_item
+                                a(href="") Для 11 класса
+                            li.menu__sublist_item
+                                a(href="") Для поступления
+                    li.menu__content_item
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33 25.1101V7.00504C33 5.20504 31.53 3.87004 29.745 4.02004H29.655C26.505 4.29004 21.72 5.89504 19.05 7.57504L18.795 7.74004C18.36 8.01004 17.64 8.01004 17.205 7.74004L16.83 7.51504C14.16 5.85004 9.39 4.26004 6.24 4.00504C4.455 3.85504 3 5.20504 3 6.99004V25.1101C3 26.5501 4.17 27.9001 5.61 28.08L6.045 28.1401C9.3 28.5751 14.325 30.225 17.205 31.8L17.265 31.83C17.67 32.055 18.315 32.055 18.705 31.83C21.585 30.2401 26.625 28.5751 29.895 28.1401L30.39 28.08C31.83 27.9001 33 26.5501 33 25.1101Z" fill="#2554E7" stroke="#2554E7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 8.23535V30.7353" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.625 12.7354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.75 17.2354H8.25" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            span.menu__content_item-title Предмет
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Математика
+                            li.menu__sublist_item
+                                a(href="") Русский язык
+                            li.menu__sublist_item
+                                a(href="") Литература
+                            li.menu__sublist_item
+                                a(href="") Английский язык
+                            li.menu__sublist_item
+                                a(href="") Обществознание
+                            li.menu__sublist_item
+                                a(href="") Информатика
+                            li.menu__sublist_item
+                                a(href="") История
+                ul.menu__slider
+                    div
+                        .menu__content_item-wrap
+                            span.menu__content_item-icon
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M18.2437 16.305C18.0937 16.29 17.9137 16.29 17.7487 16.305C14.1787 16.185 11.3438 13.26 11.3438 9.66C11.3438 5.985 14.3137 3 18.0037 3C21.6787 3 24.6637 5.985 24.6637 9.66C24.6487 13.26 21.8137 16.185 18.2437 16.305Z" fill="#2554E7"/>
+                                    <path d="M10.7381 21.84C7.10813 24.27 7.10813 28.23 10.7381 30.645C14.8631 33.405 21.6281 33.405 25.7531 30.645C29.3831 28.215 29.3831 24.255 25.7531 21.84C21.6431 19.095 14.8781 19.095 10.7381 21.84Z" fill="#2554E7"/>
+                                </svg>
+                            span.menu__content_item-title Для кого
+                        ul.menu__sublist
+                            li.menu__sublist_item
+                                a(href="") Для родителей
+                            li.menu__sublist_item
+                                a(href="") Для учеников
+                            li.menu__sublist_item
+                                a(href="") Для учителей
+                    div
+                        .slider-menu-cards__slider-wrap
+                            .slider-menu-cards__arrows.visible
+                                button.slider-menu-cards__arrows_arrow.left.carousel__prev.disabled
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            .carousel
+                                .carousel__viewport
+                                    ol.slider-menu-cards__list.carousel__track
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture1.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Библиотека знаний
+                                                    .slider-menu-cards__list_item-text Здесь можно найти ответ на любой вопрос по 10 предметам! Рабочие тетради, конспекты, шпаргалки, чек-листы! Ты получишь все!
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture2.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Бесплатные вебинары
+                                                    .slider-menu-cards__list_item-text Можно учиться бесплатно и пройти всю учебную программу с нами
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture3.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Готовые ДЗ
+                                                    .slider-menu-cards__list_item-text Мы собрали все ДЗ с ответами здесь, чтобы не пришлось долго искать:)
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                .visible-on-large-tablet
+                                    ol.carousel__pagination
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button.carousel__pagination-button--active
+                            button.slider-menu-cards__arrows_arrow.carousel__next
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                        .carousel
-                            .carousel__viewport
-                                ol.slider-menu-cards__list.carousel__track
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture1.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Библиотека знаний
-                                                .slider-menu-cards__list_item-text Здесь можно найти ответ на любой вопрос по 10 предметам! Рабочие тетради, конспекты, шпаргалки, чек-листы! Ты получишь все!
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture2.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Бесплатные вебинары
-                                                .slider-menu-cards__list_item-text Можно учиться бесплатно и пройти всю учебную программу с нами
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture3.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Готовые ДЗ
-                                                .slider-menu-cards__list_item-text Мы собрали все ДЗ с ответами здесь, чтобы не пришлось долго искать:)
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                            .visible-on-large-tablet
-                                ol.carousel__pagination
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button.carousel__pagination-button--active
-                        button.slider-menu-cards__arrows_arrow.carousel__next
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-            ul.menu__slider.fill
-                div
-                    .slider-menu-cards__slider-wrap
-                        .slider-menu-cards__arrows.visible
-                            button.slider-menu-cards__arrows_arrow.left.carousel__prev.disabled
+                ul.menu__slider.fill
+                    div
+                        .slider-menu-cards__slider-wrap
+                            .slider-menu-cards__arrows.visible
+                                button.slider-menu-cards__arrows_arrow.left.carousel__prev.disabled
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            .carousel
+                                .carousel__viewport
+                                    ol.slider-menu-cards__list.carousel__track
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture4.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Процесс обучения
+                                                    .slider-menu-cards__list_item-text Как можно учиться на нашей платформе самостоятельно или в мини-группе с нашими преподавателями, кураторами
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture5.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Наша команда
+                                                    .slider-menu-cards__list_item-text Здесь Вы можете узнать все о наших преподавателях, кураторах, координаторах и всех сотрудниках компании
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture6.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Отзывы о нас
+                                                    .slider-menu-cards__list_item-text Можно учиться бесплатно и пройти всю учебную программу с нами
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                        li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                            .slider-menu-cards__list_item-img
+                                                img(src="../img/menu-picture7.svg", alt="img-preview")
+                                            .slider-menu-cards__list_item-wrap
+                                                div
+                                                    .slider-menu-cards__list_item-title Наши вакансии
+                                                    .slider-menu-cards__list_item-text Мы постоянно расширяемся и хотим собрать в свою команду лучших из лучших!
+                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                .visible-on-large-tablet
+                                    ol.carousel__pagination
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button.carousel__pagination-button--active
+                            button.slider-menu-cards__arrows_arrow.carousel__next
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                        .carousel
-                            .carousel__viewport
-                                ol.slider-menu-cards__list.carousel__track
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture4.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Процесс обучения
-                                                .slider-menu-cards__list_item-text Как можно учиться на нашей платформе самостоятельно или в мини-группе с нашими преподавателями, кураторами
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture5.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Наша команда
-                                                .slider-menu-cards__list_item-text Здесь Вы можете узнать все о наших преподавателях, кураторах, координаторах и всех сотрудниках компании
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture6.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Отзывы о нас
-                                                .slider-menu-cards__list_item-text Можно учиться бесплатно и пройти всю учебную программу с нами
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                                    li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
-                                        .slider-menu-cards__list_item-img
-                                            img(src="../img/menu-picture7.svg", alt="img-preview")
-                                        .slider-menu-cards__list_item-wrap
-                                            div
-                                                .slider-menu-cards__list_item-title Наши вакансии
-                                                .slider-menu-cards__list_item-text Мы постоянно расширяемся и хотим собрать в свою команду лучших из лучших!
-                                            button.grey-button.slider-menu-cards__list_item-button Подробнее
-                            .visible-on-large-tablet
-                                ol.carousel__pagination
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button
-                                    li.carousel__pagination-item
-                                        button.carousel__pagination-button.carousel__pagination-button--active
-                        button.slider-menu-cards__arrows_arrow.carousel__next
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>         
+.visible-on-large-tablet
+    .mobile-menu
+        .mobile-menu__wrap
+            .mobile-menu__header
+                a.mobile-menu__logo(href='')
+                    img(src="../img/logo.svg", alt="Logo")
+                .mobile-menu__close
+                    button.pale-blue-button
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5876_27583)">
+                            <path d="M1 1L11 11" stroke="#2554E7"/>
+                            <path d="M11 1L1 11" stroke="#2554E7"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_5876_27583">
+                            <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        | Меню
+            .custom-input-with-btn.mobile-menu__select
+                input.custom-input(type="text" id="email" name="email" placeholder="Я ищу..")
+                button.custom-input-with-btn__button
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.8938 12.8677L16.5 16.5M14.8333 8.16667C14.8333 11.8486 11.8486 14.8333 8.16667 14.8333C4.48477 14.8333 1.5 11.8486 1.5 8.16667C1.5 4.48477 4.48477 1.5 8.16667 1.5C11.8486 1.5 14.8333 4.48477 14.8333 8.16667Z" stroke="#0B1F33" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            .mobile-menu__auth
+                .mobile-menu__auth_item
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.75 16.2919C5.75 16.6286 5.75 16.797 5.76502 16.9433C5.88968 18.1583 6.76833 19.1618 7.95614 19.446C8.0992 19.4802 8.2661 19.5024 8.59978 19.5469L14.917 20.3893C16.7153 20.629 17.6145 20.7488 18.3122 20.4714C18.925 20.2278 19.4353 19.781 19.7578 19.2059C20.125 18.5508 20.125 17.6437 20.125 15.8296V7.171C20.125 5.35684 20.125 4.44975 19.7578 3.79471C19.4353 3.21959 18.925 2.77279 18.3122 2.52918C17.6145 2.25171 16.7153 2.37158 14.917 2.61135L8.59978 3.45366C8.26607 3.49815 8.09921 3.5204 7.95614 3.55462C6.76833 3.83876 5.88968 4.84234 5.76502 6.05729C5.75 6.20362 5.75 6.37196 5.75 6.70863M11.5 7.66696L15.3333 11.5003M15.3333 11.5003L11.5 15.3336M15.3333 11.5003H2.875" stroke="#0B1F33" stroke-width="1.91667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    | Войти
+                .mobile-menu__auth_item.visible
+                    a(href="").mobile-menu__auth_user
+                        .mobile-menu__auth_user-img
+                            img(src="../img/user.svg", alt="user")
+                        .mobile-menu__auth_user-name Евгений
+            button.mobile-menu__btn-back.visible
+                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 1L1 4L4 7" stroke="#0B1F33"/>
+                </svg>
+                | Назад
+            ul.mobile-menu__list
+                li.mobile-menu__list_item
+                    .mobile-menu__list_item-title Личный кабинет
+                    .mobile-menu__list_item-list-wrap
+                        details.mobile-menu__list_item-details
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Настройка кабинета
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.2193 15.75H4.78594C3.03594 15.75 2.33594 16.4967 2.33594 18.3517V23.065C2.33594 24.92 3.03594 25.6667 4.78594 25.6667H23.2193C24.9693 25.6667 25.6693 24.92 25.6693 23.065V18.3517C25.6693 16.4967 24.9693 15.75 23.2193 15.75Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M23.2193 2.33398H4.78594C3.03594 2.33398 2.33594 3.08065 2.33594 4.93565V9.64898C2.33594 11.504 3.03594 12.2506 4.78594 12.2506H23.2193C24.9693 12.2506 25.6693 11.504 25.6693 9.64898V4.93565C25.6693 3.08065 24.9693 2.33398 23.2193 2.33398Z" fill="#2554E7"/>
+                                    </svg>
+                                    | План обучения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 22.003H20.1133C19.18 22.003 18.2933 22.3646 17.64 23.018L15.645 24.9898C14.735 25.8881 13.2533 25.8881 12.3433 24.9898L10.3483 23.018C9.695 22.3646 8.79667 22.003 7.875 22.003H7C5.06333 22.003 3.5 20.4514 3.5 18.5381V5.80969C3.5 3.89636 5.06333 2.34473 7 2.34473H21C22.9367 2.34473 24.5 3.89636 24.5 5.80969V18.5381C24.5 20.4398 22.9367 22.003 21 22.003Z" fill="#2554E7"/>
+                                        <path d="M8.16406 10.6866C8.16406 9.60158 9.05073 8.71484 10.1357 8.71484C11.2207 8.71484 12.1074 9.60158 12.1074 10.6866C12.1074 12.8799 8.9924 13.1133 8.30406 15.2016C8.16406 15.6333 8.52573 16.0649 8.98073 16.0649H12.1074" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7121 16.0527V9.39107C18.7121 9.08774 18.5137 8.81934 18.2221 8.73767C17.9304 8.656 17.6154 8.77267 17.4521 9.02933C16.6121 10.3827 15.7021 11.9227 14.9087 13.2761C14.7804 13.4977 14.7804 13.7894 14.9087 14.0111C15.0371 14.2327 15.2821 14.3726 15.5504 14.3726H19.8321" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    | Помощь
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0331 6.85938H5.95645C3.96145 6.85938 2.32812 8.4927 2.32812 10.4877V23.7411C2.32812 25.4327 3.54146 26.1561 5.02312 25.3277L9.60811 22.7727C10.0981 22.5044 10.8915 22.5044 11.3698 22.7727L15.9548 25.3277C17.4365 26.1561 18.6498 25.4327 18.6498 23.7411V10.4877C18.6615 8.4927 17.0281 6.85938 15.0331 6.85938Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M25.6615 5.96133V19.2147C25.6615 20.9063 24.4481 21.618 22.9665 20.8013L18.6615 18.398V10.488C18.6615 8.493 17.0281 6.85967 15.0331 6.85967H9.32812V5.96133C9.32812 3.96633 10.9614 2.33301 12.9565 2.33301H22.0331C24.0281 2.33301 25.6615 3.96633 25.6615 5.96133Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Достижения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                li.mobile-menu__list_item
+                    .mobile-menu__list_item-title Курсы
+                    .mobile-menu__list_item-list-wrap
+                        details.mobile-menu__list_item-details
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Настройка кабинета
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.2193 15.75H4.78594C3.03594 15.75 2.33594 16.4967 2.33594 18.3517V23.065C2.33594 24.92 3.03594 25.6667 4.78594 25.6667H23.2193C24.9693 25.6667 25.6693 24.92 25.6693 23.065V18.3517C25.6693 16.4967 24.9693 15.75 23.2193 15.75Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M23.2193 2.33398H4.78594C3.03594 2.33398 2.33594 3.08065 2.33594 4.93565V9.64898C2.33594 11.504 3.03594 12.2506 4.78594 12.2506H23.2193C24.9693 12.2506 25.6693 11.504 25.6693 9.64898V4.93565C25.6693 3.08065 24.9693 2.33398 23.2193 2.33398Z" fill="#2554E7"/>
+                                    </svg>
+                                    | План обучения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 22.003H20.1133C19.18 22.003 18.2933 22.3646 17.64 23.018L15.645 24.9898C14.735 25.8881 13.2533 25.8881 12.3433 24.9898L10.3483 23.018C9.695 22.3646 8.79667 22.003 7.875 22.003H7C5.06333 22.003 3.5 20.4514 3.5 18.5381V5.80969C3.5 3.89636 5.06333 2.34473 7 2.34473H21C22.9367 2.34473 24.5 3.89636 24.5 5.80969V18.5381C24.5 20.4398 22.9367 22.003 21 22.003Z" fill="#2554E7"/>
+                                        <path d="M8.16406 10.6866C8.16406 9.60158 9.05073 8.71484 10.1357 8.71484C11.2207 8.71484 12.1074 9.60158 12.1074 10.6866C12.1074 12.8799 8.9924 13.1133 8.30406 15.2016C8.16406 15.6333 8.52573 16.0649 8.98073 16.0649H12.1074" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7121 16.0527V9.39107C18.7121 9.08774 18.5137 8.81934 18.2221 8.73767C17.9304 8.656 17.6154 8.77267 17.4521 9.02933C16.6121 10.3827 15.7021 11.9227 14.9087 13.2761C14.7804 13.4977 14.7804 13.7894 14.9087 14.0111C15.0371 14.2327 15.2821 14.3726 15.5504 14.3726H19.8321" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    | Помощь
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0331 6.85938H5.95645C3.96145 6.85938 2.32812 8.4927 2.32812 10.4877V23.7411C2.32812 25.4327 3.54146 26.1561 5.02312 25.3277L9.60811 22.7727C10.0981 22.5044 10.8915 22.5044 11.3698 22.7727L15.9548 25.3277C17.4365 26.1561 18.6498 25.4327 18.6498 23.7411V10.4877C18.6615 8.4927 17.0281 6.85938 15.0331 6.85938Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M25.6615 5.96133V19.2147C25.6615 20.9063 24.4481 21.618 22.9665 20.8013L18.6615 18.398V10.488C18.6615 8.493 17.0281 6.85967 15.0331 6.85967H9.32812V5.96133C9.32812 3.96633 10.9614 2.33301 12.9565 2.33301H22.0331C24.0281 2.33301 25.6615 3.96633 25.6615 5.96133Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Достижения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                    details.mobile-menu__list_item-details
+                        summary.mobile-menu__list_item-summary
+                            .mobile-menu__list_item-summary-wrap
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                    <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                </svg>
+                                | Настройка кабинета
+                            .mobile-menu__list_item-summary-icon
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        ul.mobile-menu__sublist
+                            li.mobile-menu__sublist_item
+                                a(href="") Программа обучения
+                            li.mobile-menu__sublist_item
+                                a(href="") Расписания занятий
+                            li.mobile-menu__sublist_item
+                                a(href="") Занятия
+                            li.mobile-menu__sublist_item
+                                a(href="") Домашние задания
+                            li.mobile-menu__sublist_item
+                                a(href="") Библиотека знаний
+                li.mobile-menu__list_item
+                    .mobile-menu__list_item-title Проверка знаний
+                    .mobile-menu__list_item-list-wrap
+                        details.mobile-menu__list_item-details
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Настройка кабинета
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.2193 15.75H4.78594C3.03594 15.75 2.33594 16.4967 2.33594 18.3517V23.065C2.33594 24.92 3.03594 25.6667 4.78594 25.6667H23.2193C24.9693 25.6667 25.6693 24.92 25.6693 23.065V18.3517C25.6693 16.4967 24.9693 15.75 23.2193 15.75Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M23.2193 2.33398H4.78594C3.03594 2.33398 2.33594 3.08065 2.33594 4.93565V9.64898C2.33594 11.504 3.03594 12.2506 4.78594 12.2506H23.2193C24.9693 12.2506 25.6693 11.504 25.6693 9.64898V4.93565C25.6693 3.08065 24.9693 2.33398 23.2193 2.33398Z" fill="#2554E7"/>
+                                    </svg>
+                                    | План обучения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 22.003H20.1133C19.18 22.003 18.2933 22.3646 17.64 23.018L15.645 24.9898C14.735 25.8881 13.2533 25.8881 12.3433 24.9898L10.3483 23.018C9.695 22.3646 8.79667 22.003 7.875 22.003H7C5.06333 22.003 3.5 20.4514 3.5 18.5381V5.80969C3.5 3.89636 5.06333 2.34473 7 2.34473H21C22.9367 2.34473 24.5 3.89636 24.5 5.80969V18.5381C24.5 20.4398 22.9367 22.003 21 22.003Z" fill="#2554E7"/>
+                                        <path d="M8.16406 10.6866C8.16406 9.60158 9.05073 8.71484 10.1357 8.71484C11.2207 8.71484 12.1074 9.60158 12.1074 10.6866C12.1074 12.8799 8.9924 13.1133 8.30406 15.2016C8.16406 15.6333 8.52573 16.0649 8.98073 16.0649H12.1074" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7121 16.0527V9.39107C18.7121 9.08774 18.5137 8.81934 18.2221 8.73767C17.9304 8.656 17.6154 8.77267 17.4521 9.02933C16.6121 10.3827 15.7021 11.9227 14.9087 13.2761C14.7804 13.4977 14.7804 13.7894 14.9087 14.0111C15.0371 14.2327 15.2821 14.3726 15.5504 14.3726H19.8321" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    | Помощь
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0331 6.85938H5.95645C3.96145 6.85938 2.32812 8.4927 2.32812 10.4877V23.7411C2.32812 25.4327 3.54146 26.1561 5.02312 25.3277L9.60811 22.7727C10.0981 22.5044 10.8915 22.5044 11.3698 22.7727L15.9548 25.3277C17.4365 26.1561 18.6498 25.4327 18.6498 23.7411V10.4877C18.6615 8.4927 17.0281 6.85938 15.0331 6.85938Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M25.6615 5.96133V19.2147C25.6615 20.9063 24.4481 21.618 22.9665 20.8013L18.6615 18.398V10.488C18.6615 8.493 17.0281 6.85967 15.0331 6.85967H9.32812V5.96133C9.32812 3.96633 10.9614 2.33301 12.9565 2.33301H22.0331C24.0281 2.33301 25.6615 3.96633 25.6615 5.96133Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Достижения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                li.mobile-menu__list_item.visible
+                    .mobile-menu__list_item-title Полезные материалы
+                    .mobile-menu__list_item-list-wrap.slider
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Для кого
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Для родителей
+                                li.mobile-menu__sublist_item
+                                    a(href="") Для учеников
+                                li.mobile-menu__sublist_item
+                                    a(href="") Для учителей
+                            .slider-menu-cards__slider-wrap
+                                .carousel
+                                    .carousel__viewport
+                                        ol.slider-menu-cards__list.carousel__track
+                                            li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                                .slider-menu-cards__list_item-img
+                                                    img(src="../img/menu-picture4.svg", alt="img-preview")
+                                                .slider-menu-cards__list_item-wrap
+                                                    div
+                                                        .slider-menu-cards__list_item-title Процесс обучения
+                                                        .slider-menu-cards__list_item-text Как можно учиться на нашей платформе самостоятельно или в мини-группе с нашими преподавателями, кураторами
+                                                    button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                            li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                                .slider-menu-cards__list_item-img
+                                                    img(src="../img/menu-picture5.svg", alt="img-preview")
+                                                .slider-menu-cards__list_item-wrap
+                                                    div
+                                                        .slider-menu-cards__list_item-title Наша команда
+                                                        .slider-menu-cards__list_item-text Здесь Вы можете узнать все о наших преподавателях, кураторах, координаторах и всех сотрудниках компании
+                                                    button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                            li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                                .slider-menu-cards__list_item-img
+                                                    img(src="../img/menu-picture6.svg", alt="img-preview")
+                                                .slider-menu-cards__list_item-wrap
+                                                    div
+                                                        .slider-menu-cards__list_item-title Отзывы о нас
+                                                        .slider-menu-cards__list_item-text Можно учиться бесплатно и пройти всю учебную программу с нами
+                                                    button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                            li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
+                                                .slider-menu-cards__list_item-img
+                                                    img(src="../img/menu-picture7.svg", alt="img-preview")
+                                                .slider-menu-cards__list_item-wrap
+                                                    div
+                                                        .slider-menu-cards__list_item-title Наши вакансии
+                                                        .slider-menu-cards__list_item-text Мы постоянно расширяемся и хотим собрать в свою команду лучших из лучших!
+                                                    button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                    ol.carousel__pagination
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button
+                                        li.carousel__pagination-item
+                                            button.carousel__pagination-button.carousel__pagination-button--active
+                li.mobile-menu__list_item
+                    .mobile-menu__list_item-title О школе
+                    .mobile-menu__list_item-list-wrap
+                        details.mobile-menu__list_item-details
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Настройка кабинета
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.2193 15.75H4.78594C3.03594 15.75 2.33594 16.4967 2.33594 18.3517V23.065C2.33594 24.92 3.03594 25.6667 4.78594 25.6667H23.2193C24.9693 25.6667 25.6693 24.92 25.6693 23.065V18.3517C25.6693 16.4967 24.9693 15.75 23.2193 15.75Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M23.2193 2.33398H4.78594C3.03594 2.33398 2.33594 3.08065 2.33594 4.93565V9.64898C2.33594 11.504 3.03594 12.2506 4.78594 12.2506H23.2193C24.9693 12.2506 25.6693 11.504 25.6693 9.64898V4.93565C25.6693 3.08065 24.9693 2.33398 23.2193 2.33398Z" fill="#2554E7"/>
+                                    </svg>
+                                    | План обучения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 22.003H20.1133C19.18 22.003 18.2933 22.3646 17.64 23.018L15.645 24.9898C14.735 25.8881 13.2533 25.8881 12.3433 24.9898L10.3483 23.018C9.695 22.3646 8.79667 22.003 7.875 22.003H7C5.06333 22.003 3.5 20.4514 3.5 18.5381V5.80969C3.5 3.89636 5.06333 2.34473 7 2.34473H21C22.9367 2.34473 24.5 3.89636 24.5 5.80969V18.5381C24.5 20.4398 22.9367 22.003 21 22.003Z" fill="#2554E7"/>
+                                        <path d="M8.16406 10.6866C8.16406 9.60158 9.05073 8.71484 10.1357 8.71484C11.2207 8.71484 12.1074 9.60158 12.1074 10.6866C12.1074 12.8799 8.9924 13.1133 8.30406 15.2016C8.16406 15.6333 8.52573 16.0649 8.98073 16.0649H12.1074" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7121 16.0527V9.39107C18.7121 9.08774 18.5137 8.81934 18.2221 8.73767C17.9304 8.656 17.6154 8.77267 17.4521 9.02933C16.6121 10.3827 15.7021 11.9227 14.9087 13.2761C14.7804 13.4977 14.7804 13.7894 14.9087 14.0111C15.0371 14.2327 15.2821 14.3726 15.5504 14.3726H19.8321" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    | Помощь
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0331 6.85938H5.95645C3.96145 6.85938 2.32812 8.4927 2.32812 10.4877V23.7411C2.32812 25.4327 3.54146 26.1561 5.02312 25.3277L9.60811 22.7727C10.0981 22.5044 10.8915 22.5044 11.3698 22.7727L15.9548 25.3277C17.4365 26.1561 18.6498 25.4327 18.6498 23.7411V10.4877C18.6615 8.4927 17.0281 6.85938 15.0331 6.85938Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M25.6615 5.96133V19.2147C25.6615 20.9063 24.4481 21.618 22.9665 20.8013L18.6615 18.398V10.488C18.6615 8.493 17.0281 6.85967 15.0331 6.85967H9.32812V5.96133C9.32812 3.96633 10.9614 2.33301 12.9565 2.33301H22.0331C24.0281 2.33301 25.6615 3.96633 25.6615 5.96133Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Достижения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                li.mobile-menu__list_item
+                    .mobile-menu__list_item-title Контакты
+                    .mobile-menu__list_item-list-wrap
+                        details.mobile-menu__list_item-details
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M14.1947 12.6862C14.0781 12.6746 13.9381 12.6746 13.8097 12.6862C11.0331 12.5929 8.82812 10.3179 8.82812 7.51789C8.82812 4.65956 11.1381 2.33789 14.0081 2.33789C16.8664 2.33789 19.1881 4.65956 19.1881 7.51789C19.1764 10.3179 16.9714 12.5929 14.1947 12.6862Z" fill="#2554E7"/>
+                                        <path d="M8.35188 16.9821C5.52854 18.8721 5.52854 21.9521 8.35188 23.8304C11.5602 25.9771 16.8219 25.9771 20.0302 23.8304C22.8535 21.9404 22.8535 18.8604 20.0302 16.9821C16.8335 14.8471 11.5719 14.8471 8.35188 16.9821Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Настройка кабинета
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.2193 15.75H4.78594C3.03594 15.75 2.33594 16.4967 2.33594 18.3517V23.065C2.33594 24.92 3.03594 25.6667 4.78594 25.6667H23.2193C24.9693 25.6667 25.6693 24.92 25.6693 23.065V18.3517C25.6693 16.4967 24.9693 15.75 23.2193 15.75Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M23.2193 2.33398H4.78594C3.03594 2.33398 2.33594 3.08065 2.33594 4.93565V9.64898C2.33594 11.504 3.03594 12.2506 4.78594 12.2506H23.2193C24.9693 12.2506 25.6693 11.504 25.6693 9.64898V4.93565C25.6693 3.08065 24.9693 2.33398 23.2193 2.33398Z" fill="#2554E7"/>
+                                    </svg>
+                                    | План обучения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 22.003H20.1133C19.18 22.003 18.2933 22.3646 17.64 23.018L15.645 24.9898C14.735 25.8881 13.2533 25.8881 12.3433 24.9898L10.3483 23.018C9.695 22.3646 8.79667 22.003 7.875 22.003H7C5.06333 22.003 3.5 20.4514 3.5 18.5381V5.80969C3.5 3.89636 5.06333 2.34473 7 2.34473H21C22.9367 2.34473 24.5 3.89636 24.5 5.80969V18.5381C24.5 20.4398 22.9367 22.003 21 22.003Z" fill="#2554E7"/>
+                                        <path d="M8.16406 10.6866C8.16406 9.60158 9.05073 8.71484 10.1357 8.71484C11.2207 8.71484 12.1074 9.60158 12.1074 10.6866C12.1074 12.8799 8.9924 13.1133 8.30406 15.2016C8.16406 15.6333 8.52573 16.0649 8.98073 16.0649H12.1074" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7121 16.0527V9.39107C18.7121 9.08774 18.5137 8.81934 18.2221 8.73767C17.9304 8.656 17.6154 8.77267 17.4521 9.02933C16.6121 10.3827 15.7021 11.9227 14.9087 13.2761C14.7804 13.4977 14.7804 13.7894 14.9087 14.0111C15.0371 14.2327 15.2821 14.3726 15.5504 14.3726H19.8321" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    | Помощь
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний
+                        details.mobile-menu__list_item-details.visible
+                            summary.mobile-menu__list_item-summary
+                                .mobile-menu__list_item-summary-wrap
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.0331 6.85938H5.95645C3.96145 6.85938 2.32812 8.4927 2.32812 10.4877V23.7411C2.32812 25.4327 3.54146 26.1561 5.02312 25.3277L9.60811 22.7727C10.0981 22.5044 10.8915 22.5044 11.3698 22.7727L15.9548 25.3277C17.4365 26.1561 18.6498 25.4327 18.6498 23.7411V10.4877C18.6615 8.4927 17.0281 6.85938 15.0331 6.85938Z" fill="#2554E7"/>
+                                        <path opacity="0.4" d="M25.6615 5.96133V19.2147C25.6615 20.9063 24.4481 21.618 22.9665 20.8013L18.6615 18.398V10.488C18.6615 8.493 17.0281 6.85967 15.0331 6.85967H9.32812V5.96133C9.32812 3.96633 10.9614 2.33301 12.9565 2.33301H22.0331C24.0281 2.33301 25.6615 3.96633 25.6615 5.96133Z" fill="#2554E7"/>
+                                    </svg>
+                                    | Достижения
+                                .mobile-menu__list_item-summary-icon
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L13 1" stroke="#0B1F33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            ul.mobile-menu__sublist
+                                li.mobile-menu__sublist_item
+                                    a(href="") Программа обучения
+                                li.mobile-menu__sublist_item
+                                    a(href="") Расписания занятий
+                                li.mobile-menu__sublist_item
+                                    a(href="") Занятия
+                                li.mobile-menu__sublist_item
+                                    a(href="") Домашние задания
+                                li.mobile-menu__sublist_item
+                                    a(href="") Библиотека знаний           
+        .mobile-menu__footer
+            .mobile-menu__contacts
+                ul.mobile-menu__social
+                    li
+                        a(href="").mobile-menu__social_item
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="44" height="44" rx="22" fill="#F1F5FF"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5979 11.0069C19.9901 11.1633 18.7777 11.5103 17.4627 12.1901C15.4553 13.228 13.8343 14.8795 12.8321 16.9082C12.447 17.6876 12.2655 18.1653 12.0643 18.9297C11.8106 19.893 11.7367 20.4787 11.7344 21.5445C11.7333 22.0752 11.7552 22.6511 11.7851 22.8752C12.0121 24.5789 12.5472 26.0472 13.442 27.4218L13.7403 27.88L13.0777 29.8332C12.7133 30.9075 12.4209 31.7922 12.4279 31.7992C12.435 31.8063 13.3465 31.5227 14.4535 31.1691C15.5605 30.8155 16.481 30.5262 16.4991 30.5262C16.5172 30.5262 16.6881 30.6231 16.8788 30.7414C17.0696 30.8599 17.4693 31.0731 17.767 31.2154C20.4592 32.5021 23.5368 32.6122 26.2934 31.5206C29.4168 30.2836 31.8159 27.5777 32.6722 24.3257C32.9345 23.3297 33.001 22.7837 33.001 21.6277C33.001 20.4717 32.9345 19.9257 32.6722 18.9297C31.6676 15.1147 28.6056 12.1492 24.7417 11.2494C24.0925 11.0982 23.417 11.0216 22.5973 11.0063C22.1392 10.9977 21.6895 10.9979 21.5979 11.0069ZM19.0583 15.9411C19.1272 15.9768 19.2239 16.078 19.273 16.166C19.3972 16.3882 20.4095 18.823 20.439 18.9703C20.4767 19.1587 20.2922 19.479 19.8783 19.9437C19.4463 20.4286 19.3535 20.5843 19.392 20.7591C19.4618 21.0764 20.4248 22.3518 21.0181 22.9126C21.9388 23.7829 23.3305 24.6094 23.9506 24.654C24.2694 24.677 24.3857 24.5869 24.8734 23.9386C25.0946 23.6446 25.3306 23.3491 25.3977 23.282C25.5584 23.1216 25.7968 23.0876 26.0642 23.187C26.4072 23.3145 28.5039 24.3341 28.6511 24.445L28.7921 24.5512L28.7688 24.9918C28.7091 26.1229 28.3118 26.7102 27.261 27.2209C26.262 27.7064 25.48 27.6931 23.949 27.1647C21.8951 26.4558 20.8049 25.7786 19.3276 24.2942C18.5884 23.5514 18.0631 22.9234 17.4623 22.0643C16.4722 20.6486 16.0925 19.5554 16.2056 18.4459C16.2962 17.5563 16.6075 16.8996 17.2362 16.2718C17.5403 15.968 17.9383 15.843 18.5373 15.8629C18.7915 15.8714 18.9778 15.8993 19.0583 15.9411Z" fill="#2554E7"/>
+                            </svg>
+                    li
+                        a(href="").mobile-menu__social_item
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="44" height="44" rx="22" fill="#F1F5FF"/>
+                                <path d="M11.8166 21.403C11.8166 21.403 20.9766 17.5061 24.1534 16.1339C25.3713 15.585 29.5012 13.8286 29.5012 13.8286C29.5012 13.8286 31.4073 13.0602 31.2484 14.9263C31.1955 15.6948 30.7719 18.3842 30.3483 21.2933C29.7129 25.4098 29.0246 29.9105 29.0246 29.9105C29.0246 29.9105 28.9187 31.173 28.0186 31.3925C27.1185 31.6121 25.6359 30.6241 25.3713 30.4045C25.1594 30.2399 21.4002 27.7699 20.0235 26.5624C19.6529 26.2331 19.2293 25.5745 20.0764 24.8061C21.9826 22.9948 24.2593 20.7444 25.6359 19.3174C26.2713 18.6587 26.9067 17.1218 24.2593 18.988C20.5001 21.6775 16.7937 24.2023 16.7937 24.2023C16.7937 24.2023 15.9465 24.7511 14.3581 24.2571C12.7696 23.7632 10.9165 23.1045 10.9165 23.1045C10.9165 23.1045 9.64579 22.2812 11.8166 21.403Z" fill="#2554E7"/>
+                            </svg>
+                .mobile-menu__phone
+                    a(href="tel:+74993253723") +7 499 325 37-23
+            a(href="").mobile-menu__btn.dark-button Начните учиться бесплатно
+    
+
+
+        
