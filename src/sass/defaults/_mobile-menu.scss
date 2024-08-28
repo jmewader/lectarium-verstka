@@ -4,7 +4,7 @@
   flex-direction: column;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 99999;
   min-height: 100vh;
   background-color: $white-color;
   justify-content: space-between;
