@@ -63,6 +63,7 @@
         grid-column: span 2;
         display: grid;
         grid-template-columns: 373px 1fr;
+        gap: 36px;
 
         @media (max-width: $desktop-width) {
           grid-template-columns: 1fr;
@@ -86,6 +87,7 @@
       &-img {
         position: relative;
         width: 100%;
+        display: flex;
 
         img {
           width: 100%;

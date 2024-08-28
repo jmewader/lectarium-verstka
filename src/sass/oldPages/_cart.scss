@@ -389,6 +389,16 @@
                 @media (max-width: $mobile-width) {
                   flex-direction: row;
                   margin: 18px -24px 0;
+                  gap: 12px;
+
+                  &.scroll {
+                    padding: 0 20px;
+                  }
+
+                  svg {
+                    width: 18px;
+                    height: 18px;
+                  }
                 }
               }
 
@@ -1067,7 +1077,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 56px;
+            gap: 60px;
             margin-top: -40px;
 
             .cart-extra-card-description {
@@ -1077,6 +1087,7 @@
                 font-family: "TT Firs Neue", sans-serif;
                 font-weight: 500;
                 font-size: 24px;
+                line-height: 28px;
                 letter-spacing: -0.02em;
                 color: $dark-blue-color;
                 margin-bottom: 8px;
@@ -1135,7 +1146,6 @@
                 line-height: 117%;
                 letter-spacing: -0.02em;
                 color: $dark-blue-color;
-                margin-top: 1px;
               }
 
               .button {
