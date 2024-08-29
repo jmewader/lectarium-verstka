@@ -1,6 +1,10 @@
+block review-block
+    - var defaultTitleDesktop = 'Отзывы о Лектариуме'
+    - var reviewTitleDesktop = typeof(reviewTitleDesktop) !== 'undefined' ? reviewTitleDesktop : defaultTitleDesktop
+
 .main-container
     section.review-block
-        .main-subtitle Отзывы о Лектариуме
+        .main-subtitle !{reviewTitleDesktop}
         .carousel
             .carousel__viewport
                 ul.review-block__list.carousel__track

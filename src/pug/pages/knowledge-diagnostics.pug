@@ -1,0 +1,9 @@
+extends ../layout/layout
+
+block title
+    title Диагностика знаний
+
+block content
+    - var reviewTitleDesktop = 'Что говорят наши ученики'
+    include ../widgets/review-block
+    include ../widgets/scrollspy-list-knowledge-diagnostics
