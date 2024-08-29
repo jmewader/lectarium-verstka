@@ -1,0 +1,225 @@
+.scrollspy-list {
+  display: flex;
+  flex-direction: column;
+  margin: 180px 0;
+
+  @media (max-width: $large-tablet-width) {
+    margin: 110px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 70px 0;
+  }
+
+  &__title {
+    margin: 0 0 64px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap: 24px;
+      min-height: 424px;
+      justify-content: space-between;
+      padding: 20px;
+
+      @media (max-width: $tablet-width) {
+        padding: 0px;
+        min-height: auto;
+      }
+    }
+
+    &_item {
+      background-color: $white-color;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      border-radius: 24px;
+      padding: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+
+      @media (max-width: $large-tablet-width) {
+        padding: 24px;
+      }
+
+      @media (max-width: $tablet-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 20px;
+      }
+
+      &.accent-card {
+        background-color: $bright-blue-color;
+
+        .scrollspy-list__list_title,
+        .scrollspy-list__list_text {
+          color: $white-color;
+        }
+
+        .scrollspy-list__list_step {
+          background-color: #ffffff26;
+          color: $white-color;
+        }
+      }
+    }
+
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      max-width: 607px;
+      width: 100%;
+
+      @media (max-width: $mobile-width) {
+        gap: 12px;
+      }
+    }
+
+    &_step {
+      background-color: $light-blue-color;
+      border-radius: 6px;
+      padding: 8px 10px;
+      color: $bright-blue-color;
+      font-size: 15px;
+      line-height: 20px;
+      width: fit-content;
+
+      @media (max-width: $mobile-width) {
+        margin: 0 0 12px;
+        font-size: 13px;
+        line-height: 17px;
+        padding: 7px 11px;
+        border-radius: 5px;
+      }
+    }
+
+    &_title {
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: -0.02em;
+      font-weight: 500;
+
+      @media (max-width: $large-tablet-width) {
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      @media (max-width: $mobile-width) {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+      }
+    }
+
+    &_text {
+      color: $pale-blue-color;
+      font-size: 20px;
+      line-height: 24px;
+
+      @media (max-width: $large-tablet-width) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      @media (max-width: $mobile-width) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+
+    &_button {
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &_img {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border-radius: 24px;
+      overflow: hidden;
+      background-color: #f7f8f9;
+      width: 100%;
+      max-width: 756px;
+
+      @media (max-width: $desktop-width) {
+        max-width: 568px;
+      }
+
+      @media (max-width: $tablet-width) {
+        max-width: 100%;
+      }
+
+      @media (max-width: $mobile-width) {
+        border-radius: 12px;
+      }
+
+      &-header {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        background-color: #f7f8f9;
+        width: 100%;
+        height: 44px;
+        padding: 16px;
+
+        @media (max-width: $mobile-width) {
+          height: 20px;
+          padding: 7px;
+        }
+      }
+
+      &-dots {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @media (max-width: $mobile-width) {
+          gap: 7px;
+        }
+
+        &-item {
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+
+          @media (max-width: $mobile-width) {
+            width: 5px;
+            height: 5px;
+          }
+
+          &.red {
+            background-color: #f55451;
+          }
+
+          &.yellow {
+            background-color: #f5b73f;
+          }
+
+          &.green {
+            background-color: #35c928;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
