@@ -123,6 +123,22 @@
             border-bottom: 1px solid #314157;
             margin-bottom: 20px;
 
+            &.visible-list {
+              flex-direction: column;
+              width: 100%;
+
+              .footer-navigation-subject-items {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 24px 0 0;
+              }
+
+              .footer-navigation-icon {
+                transform: rotate(180deg);
+              }
+            }
+
             &.studies {
               padding-top: 20px;
               border-top: 1px solid #314157;
@@ -133,6 +149,10 @@
                 letter-spacing: -0.02em;
                 color: #fff;
                 margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
               }
             }
 
@@ -144,6 +164,10 @@
                 letter-spacing: -0.02em;
                 color: #fff;
                 margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
               }
             }
 
@@ -208,6 +232,7 @@
 
         .footer-info {
           margin-bottom: 32px;
+          width: 100%;
 
           .footer-logo {
             margin-bottom: 32px;
@@ -227,7 +252,8 @@
         }
 
         .footer-navigation {
-          grid-template-columns: 379px;
+          grid-template-columns: 1fr;
+          width: 100%;
         }
       }
 
@@ -240,6 +266,7 @@
 
         .footer-bottom-content {
           flex-direction: column;
+          width: 100%;
 
           .footer-copyright {
             margin-bottom: 20px;
@@ -301,9 +328,6 @@
     .container {
       .footer-top {
         width: auto;
-        .footer-info {
-          width: auto;
-        }
 
         .footer-navigation {
           grid-template-columns: auto;
@@ -345,9 +369,6 @@
 
       .footer-top {
         width: auto;
-        .footer-info {
-          width: auto;
-        }
 
         .footer-navigation {
           grid-template-columns: 300px;
