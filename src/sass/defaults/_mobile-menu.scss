@@ -222,6 +222,11 @@
         font-weight: 400;
         letter-spacing: -0.02em;
         padding: 0 16px;
+
+        a {
+          text-decoration: none;
+          color: $dark-blue-color;
+        }
       }
 
       &-list-wrap {

@@ -6,16 +6,16 @@
                     a(href="") Личный кабинет
                 li.menu__list_item.fill
                     a(href="") Курсы
-                li.menu__list_item.active
+                li.menu__list_item
                     a(href="") Проверка знаний
                 li.menu__list_item
                     a(href="") Полезные материалы
-                li.menu__list_item
+                li.menu__list_item.visible
                     a(href="") О школе
                 li.menu__list_item
                     a(href="") Контакты
             .menu__wrapper
-                ul.menu__content.visible
+                ul.menu__content
                     li.menu__content_item
                         .menu__content_item-wrap
                             span.menu__content_item-icon
@@ -234,7 +234,7 @@
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#2554E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                ul.menu__slider.fill
+                ul.menu__slider.fill.visible
                     li
                         .slider-menu-cards__slider-wrap
                             .slider-menu-cards__arrows.visible
@@ -252,7 +252,7 @@
                                                 div
                                                     .slider-menu-cards__list_item-title Процесс обучения
                                                     .slider-menu-cards__list_item-text Как можно учиться на нашей платформе самостоятельно или в мини-группе с нашими преподавателями, кураторами
-                                                button.grey-button.slider-menu-cards__list_item-button Подробнее
+                                                a(href="").grey-button.slider-menu-cards__list_item-button Подробнее
                                         li.slider-menu-cards__list_item.carousel__slide.carousel__slide--visible.carousel__slide--prev
                                             .slider-menu-cards__list_item-img
                                                 img(src="../img/menu-picture5.svg", alt="img-preview")
