@@ -1,0 +1,22 @@
+.wide-container
+    section.reservation-block
+        .reservation-block__banner
+            .reservation-block__background 
+                img(src=desktopBgSrc || "../img/bg-letter3.png", alt="background")
+            .reservation-block__image
+                picture
+                    source(srcset=tabletImageSrc || "../img/other11.png", type="image/png", media="(max-width: 1560px)")
+                    img(src=desktopImageSrc || "../img/other10.png", alt="People")
+            .reservation-block__content
+                .reservation-block__text-block
+                    h2.main-title.reservation-block__subtitle Кто хотел бы из 1000 тем определить 5-7, которые дадут результат конкретно в вашей ситуации и улучшат оценки?
+                    p.reservation-block__descriptions.main-descriptions Таким решением является индивидуальный разбор
+                a(href="").reservation-block__btn.main-button Забронировать участие
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill="white"/>
+                        <path d="M10 8L14 12L10 16" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            
+
+
+
