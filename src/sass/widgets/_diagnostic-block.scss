@@ -1,0 +1,245 @@
+.diagnostic-block {
+  display: flex;
+  background-color: $light-blue-color;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  min-height: 788px;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @media (max-width: $large-desktop-width) {
+    min-height: 720px;
+  }
+
+  @media (max-width: $desktop-width) {
+    min-height: 380px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 25px;
+  }
+
+  &__icon {
+    @media (max-width: $mobile-width) {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    max-width: 906px;
+    padding: 64px 0 64px 64px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: inherit;
+    gap: 30px;
+
+    @media (max-width: $large-desktop-width) {
+      padding: 44px 0 44px 44px;
+    }
+
+    @media (max-width: $tablet-width) {
+      max-width: 100%;
+      padding: 24px 16px 15px;
+      gap: 32px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+      gap: 24px;
+    }
+
+    @media (max-width: $small-mobile-width) {
+      max-width: 323px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 4px;
+    }
+  }
+
+  &__mark {
+    background-color: $white-color;
+    padding: 18px 18px 18px 24px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 620px;
+
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      left: 16px;
+      width: auto;
+      z-index: 5;
+      max-width: 100%;
+      flex-direction: column;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    &_text {
+      font-size: 20px;
+      line-height: 24px;
+      width: 100%;
+      max-width: 337px;
+
+      @media (max-width: $mobile-width) {
+        max-width: 100%;
+      }
+    }
+
+    &_numbers {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 500;
+      background-color: #edf2fe;
+      border-radius: 16px;
+      padding: 18px 24px;
+      letter-spacing: -0.02em;
+      color: $bright-blue-color;
+      white-space: nowrap;
+
+      @media (max-width: $large-tablet-width) {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 18px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &__text {
+    color: #9aa3ad;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    max-width: 236px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+
+    @media (max-width: $mobile-width) {
+      gap: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+
+    @media (max-width: $large-desktop-width) {
+      margin: 0;
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    z-index: 1;
+    height: 788px;
+    padding: 0 17px 2px 0;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: $large-desktop-width) {
+      height: 720px;
+    }
+
+    @media (max-width: $desktop-width) {
+      height: 476px;
+      right: 0;
+    }
+
+    @media (max-width: $tablet-width) {
+      justify-content: center;
+      width: 100%;
+      height: 498px;
+    }
+  }
+
+  &__background {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: flex-end;
+
+    img {
+      object-fit: contain;
+      position: relative;
+      height: 100%;
+      max-height: 100%;
+      width: 100%;
+      display: flex;
+
+      @media (max-width: $large-tablet-width) {
+        width: auto;
+      }
+    }
+  }
+}
