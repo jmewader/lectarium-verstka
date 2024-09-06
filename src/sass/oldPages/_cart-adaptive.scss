@@ -229,6 +229,7 @@
 
               .cart-payment-info-name {
                 font-size: 16px;
+                line-height: 20px;
               }
 
               .cart-payment-price {
@@ -242,6 +243,7 @@
               &.total-price {
                 .cart-payment-info-name {
                   font-size: 20px;
+                  line-height: 24px;
                 }
 
                 .cart-payment-price {
@@ -882,6 +884,7 @@
 @media screen and (max-width: $mobile-width) {
   .cart-payment {
     .button-with-icon {
+      min-height: 56px;
       svg {
         width: 20px;
         height: 20px;

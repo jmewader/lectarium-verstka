@@ -62,7 +62,7 @@
       &:nth-child(4) {
         grid-column: span 2;
         display: grid;
-        grid-template-columns: 373px 1fr;
+        grid-template-columns: 370px 1fr;
         gap: 36px;
 
         @media (max-width: $desktop-width) {
