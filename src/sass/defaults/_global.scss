@@ -1567,6 +1567,21 @@ button {
   }
 }
 
+.chemistry-page-pale {
+  .color-accent-bg {
+    background-color: $light-green-color;
+  }
+
+  .brief-info__photo,
+  .color-accent-photo-bg {
+    background-color: $green-color;
+  }
+
+  .chemistry-bg {
+    display: flex;
+  }
+}
+
 .mathematics-page-pale {
   .color-accent-bg {
     background-color: $light-blue-color;
