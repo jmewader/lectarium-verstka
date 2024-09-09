@@ -184,6 +184,11 @@
         min-height: 54px;
         padding: 0 18px;
       }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -275,7 +280,7 @@
         border-radius: 16px;
 
         @media (max-width: $tablet-width) {
-          gap: 12px;
+          gap: 16px;
           padding: 16px;
           align-items: flex-start;
         }
@@ -290,7 +295,7 @@
 
         @media (max-width: $tablet-width) {
           width: 18px;
-          height: 18px;
+          height: 27px;
         }
       }
 

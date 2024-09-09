@@ -152,6 +152,10 @@
         align-items: center;
         gap: 12px;
 
+        &:empty {
+          width: 100%;
+        }
+
         a {
           color: $dark-blue-color;
           text-decoration: none;

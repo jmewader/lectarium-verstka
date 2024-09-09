@@ -4,7 +4,7 @@
             img(src=desktopBgSrc || "../img/background-quote.png", alt="background")
         .diagnostic-block__content
             .diagnostic-block__text-block
-                h2.main-title.diagnostic-block__title Ученики признаются, что&nbsp;не&nbsp;получили бы высокие баллы на&nbsp;ОГЭ и&nbsp;ЕГЭ, без&nbsp;нашей диагностики!
+                h2.main-title.diagnostic-block__title Ученики признаются, что&nbsp;не&nbsp;получили бы высокие баллы на&nbsp;ОГЭ и&nbsp;ЕГЭ, без нашей диагностики!
                 .diagnostic-block__wrapper
                     .diagnostic-block__icon
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,4 +26,6 @@
                 p.diagnostic-block__mark_text Рост среднего балла на экзаменах после нашей диагностики
                 .diagnostic-block__mark_numbers 30-100%
         .diagnostic-block__image
-            img(src=desktopImageSrc || "../img/women1-clean.png", alt="People")
+            picture
+                source(srcset=mobileImageSrc || "../img/women2-mobile.png", type="image/png", media="(max-width: 450px)")
+                img(src=desktopImageSrc || "../img/women1-clean.png", alt="People")

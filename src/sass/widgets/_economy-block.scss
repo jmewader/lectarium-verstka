@@ -161,6 +161,12 @@
         min-height: 54px;
         padding: 0 18px;
       }
+      gap: 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
