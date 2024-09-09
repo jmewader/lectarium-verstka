@@ -59,7 +59,7 @@
         }
       }
 
-      
+
     }
   }
 
@@ -127,6 +127,7 @@
         opacity: 0.4;
         transition: 0.25s;
 
+        &.active,
         &:hover {
           opacity: 1;
         }

@@ -29,6 +29,11 @@
     gap: 10px;
     min-width: fit-content;
 
+    &-svg svg {
+      max-width: 20px;
+      max-height: 20px;
+    }
+
     &-icon {
       width: 20px;
       height: 20px;

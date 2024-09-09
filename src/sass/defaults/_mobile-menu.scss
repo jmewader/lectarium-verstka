@@ -186,6 +186,10 @@
         text-decoration: none;
         color: $dark-blue-color;
         opacity: 0.6;
+
+        &.active {
+          opacity: 1;
+        }
       }
     }
   }
