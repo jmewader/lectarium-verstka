@@ -887,7 +887,17 @@
                   padding: 15px 18px;
                   height: 54px;
 
-                  .selected-text.icon,
+                  .selected-text.icon {
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+
+                    svg {
+                      width: 20px;
+                      height: 20px;
+                    }
+                  }
+
                   .regular-text.icon {
                     align-items: center;
                     justify-content: center;

@@ -143,10 +143,15 @@
       }
 
       @media (max-width: $tablet-width) {
-        height: 100%;
-        width: auto;
-        right: 0;
+        // height: 100%;
+        // width: auto;
+        // right: 0;
         position: relative;
+
+        height: 521px;
+        width: auto;
+        right: 0px;
+        bottom: 200px;
       }
     }
 
