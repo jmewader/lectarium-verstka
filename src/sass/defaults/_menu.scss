@@ -23,12 +23,16 @@
   &__list {
     display: flex;
     align-items: center;
-    padding: 24px 32px;
+    padding: 24px 0px;
     position: relative;
-    max-width: 1681px;
+    max-width: 1617px;
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
+
+    @media (max-width: $large-desktop-width) {
+      padding: 24px 32px;
+    }
 
     &_item {
       font-weight: 500;
@@ -58,8 +62,6 @@
           opacity: 1;
         }
       }
-
-
     }
   }
 
@@ -100,7 +102,7 @@
     display: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 1920px;
-    padding: 44px 32px;
+    padding: 44px 60px;
     width: 100%;
     margin: 0 auto;
 
