@@ -1,0 +1,35 @@
+.breadcrumbs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 32px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+
+    &_item {
+      font-size: 15px;
+      line-height: 20px;
+      color: #6d7985;
+      font-weight: 400;
+      text-decoration: none;
+      cursor: pointer;
+
+      &.active {
+        color: $dark-blue-color;
+      }
+
+      &:not(:last-child)::after {
+        display: inline-block;
+        margin: 0 14px;
+        content: "/";
+        color: #6d7985;
+      }
+    }
+  }
+}
