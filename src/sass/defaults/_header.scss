@@ -233,6 +233,38 @@
         width: 43px;
       }
     }
+
+    &_list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 74px;
+      background-color: $white-color;
+      z-index: 3;
+      padding: 18px 24px;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      border-radius: 10px;
+      gap: 18px;
+
+      &.visible {
+        display: flex;
+      }
+
+      &-item {
+        button {
+          background-color: transparent;
+          border: none;
+          font-size: 18px;
+          line-height: 22px;
+          cursor: pointer;
+          transition: 0.25s;
+
+          &:hover {
+            color: $bright-blue-color;
+          }
+        }
+      }
+    }
   }
 
   &__contacts {
