@@ -1,11 +1,33 @@
 .search {
   background-color: $white-color;
   z-index: 3;
-  padding: 24px;
+  padding: 18px 8px 0 24px;
   border-radius: 12px;
   position: absolute;
   box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
   top: 72px;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    max-height: 610px;
+    overflow: auto;
+    padding: 0 10px 24px 0;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $light-grey-color;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $dark-blue-color !important;
+      border-radius: 10px !important;
+    }
+  }
 
   &__filters {
     display: flex;
@@ -34,12 +56,10 @@
 
     &_item {
       position: relative;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       width: 100%;
-      overflow: hidden;
-      border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 13px 13px;
+      display: grid;
+      grid-template-rows: 103px 1fr;
 
       &-image {
         position: absolute;
@@ -59,10 +79,11 @@
       &-bg {
         display: flex;
         position: relative;
-        height: 123px;
+        height: 103px;
         align-items: flex-end;
         width: 100%;
         overflow: hidden;
+        border-radius: 10px 10px 0 0;
 
         &-img {
           width: 100%;
@@ -74,19 +95,54 @@
       }
 
       &-title {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        margin: 0 0 4px;
       }
 
       &-grey-text {
+        font-size: 13px;
+        line-height: 17px;
+        color: #9aa3ad;
+        margin: 0 0 8px;
+        display: flex;
       }
 
       &-wrap {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+        padding: 12px;
+        border-radius: 10px;
+        background-color: $white-color;
+        gap: 12px;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
       }
 
       &-mark {
+        color: $dark-blue-color;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 500;
+        padding: 6px 8px;
+        background-color: #f3f4f5;
+        border-radius: 6px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
       }
 
       &-btn {
         width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 48px;
+        font-size: 13px;
+        line-height: 17px;
       }
     }
   }
