@@ -140,10 +140,6 @@
     padding: 2px;
     border-radius: 10px;
 
-    svg path {
-      stroke: $bright-blue-color;
-    }
-
     @media (max-width: $large-tablet-width) {
       display: none;
     }
@@ -227,6 +223,10 @@
 
       svg {
         pointer-events: none;
+      }
+
+      svg path {
+        stroke: $bright-blue-color;
       }
 
       @media (max-width: 1450px) {
