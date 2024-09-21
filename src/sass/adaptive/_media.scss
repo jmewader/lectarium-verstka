@@ -21,6 +21,15 @@
 
 .visible-on-tablet {
   display: none;
+
+  &.block {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
   }
@@ -28,6 +37,15 @@
 
 .visible-on-large-tablet {
   display: none;
+
+  &.block {
+    display: none;
+
+    @media (max-width: $large-tablet-width) {
+      display: block;
+    }
+  }
+
   @media (max-width: $large-tablet-width) {
     display: flex;
   }
@@ -78,6 +96,15 @@
 
 .hidden-on-tablet {
   display: flex;
+
+  &.block {
+    display: block;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -85,6 +112,15 @@
 
 .hidden-on-large-tablet {
   display: flex;
+
+  &.block {
+    display: block;
+
+    @media (max-width: $large-tablet-width) {
+      display: none;
+    }
+  }
+
   @media (max-width: $large-tablet-width) {
     display: none;
   }
