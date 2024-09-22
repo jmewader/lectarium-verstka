@@ -24,6 +24,19 @@
     width: 100%;
     position: relative;
 
+    &__select-option {
+      background-color: transparent;
+      border: none;
+      color: $bright-blue-color;
+      font-size: 18px;
+      line-height: 22px;
+      gap: 8px;
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin: 0 0 0 6px;
+    }
+
     &__list-wrap {
       display: flex;
       flex-direction: column;
@@ -38,7 +51,7 @@
       flex-direction: column;
       margin: 0;
       overflow: auto;
-      max-height: 500px;
+      height: 80vh;
       padding: 0 0 24px;
     }
 
@@ -55,6 +68,11 @@
       font-weight: 500;
       margin: 0 0 20px;
       padding: 0 20px 0 0;
+
+      &.center {
+        display: flex;
+        justify-content: center;
+      }
     }
 
     &__content {

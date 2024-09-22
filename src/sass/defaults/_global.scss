@@ -1967,6 +1967,56 @@ button {
   }
 }
 
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $light-blue-color;
+  border-radius: 10px;
+  padding: 2px;
+  height: 46px;
+
+  &__input {
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 0 12px;
+    height: 42px;
+    color: #6d737a;
+    @include common-text;
+
+    &::placeholder {
+      font-size: 15px;
+      line-height: 20px;
+      color: #9aa3ad;
+    }
+  }
+
+  &__btn {
+    width: 52px;
+    height: 46px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      pointer-events: none;
+    }
+
+    svg path {
+      stroke: $bright-blue-color;
+    }
+  }
+}
+
 .custom-input-with-btn {
   width: 100%;
   display: flex;
