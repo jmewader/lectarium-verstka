@@ -1,0 +1,112 @@
+.assistant-chat {
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 32px;
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 18px;
+      padding: 0 16px;
+    }
+
+    &_lektarik {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @media (max-width: $mobile-width) {
+        gap: 12px;
+      }
+    }
+
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      @media (max-width: $mobile-width) {
+        gap: 2px;
+      }
+    }
+
+    &_name {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      font-weight: 500;
+
+      @media (max-width: $mobile-width) {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+      }
+    }
+
+    &_info {
+      color: #9aa3ad;
+      font-size: 18px;
+      line-height: 22px;
+
+      @media (max-width: $mobile-width) {
+        font-size: 13px;
+        line-height: 17px;
+      }
+    }
+
+    &_image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+      overflow: hidden;
+      border-radius: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &_button {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      background-color: transparent;
+      border: 1px solid #e7e9eb;
+      border-radius: 12px;
+      min-height: 68px;
+      padding: 0 30px;
+      gap: 16px;
+      cursor: pointer;
+
+      @media (max-width: $mobile-width) {
+        border-radius: 8px;
+        min-height: 44px;
+        padding: 0 14px;
+        gap: 0px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 22px;
+
+        @media (max-width: $mobile-width) {
+          display: none;
+        }
+      }
+    }
+  }
+}
