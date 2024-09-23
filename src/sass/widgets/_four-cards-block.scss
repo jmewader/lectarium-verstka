@@ -4,6 +4,29 @@
   margin: 180px 0;
   position: relative;
 
+  .offers-carousel {
+    ol:not(.carousel__pagination) {
+      display: flex;
+      gap: 0;
+      width: calc(100% - 60px) !important;
+      margin: 0 -10px;
+
+      @media (max-width: $desktop-width) {
+        width: calc(100% - 50px) !important;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        width: calc(100% - 32px) !important;
+        margin: 0 -8px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100% !important;
+        margin: 0;
+      }
+    }
+  }
+
   .main-container {
     width: 100%;
 
@@ -111,16 +134,17 @@
     &_item {
       display: grid;
       background-color: #edf2fe;
-      border-radius: 24px;
+      border-radius: 24px 24px 50px 50px;
       position: relative;
-      grid-template-columns: 390px;
+      grid-template-columns: 1fr;
       justify-content: space-between;
       box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      margin: 0 10px;
 
       @media (max-width: $mobile-width) {
-        margin: 0 0 0 16px;
-        border-radius: 20px;
-        grid-template-columns: 329px;
+        border-radius: 20px 20px 50px 50px;
+        margin: 0 16px 16px;
+        max-width: fit-content;
       }
 
       &-info {
