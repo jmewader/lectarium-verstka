@@ -25,6 +25,12 @@
     width: 100%;
     max-width: 438px;
     word-wrap: break-word;
+    color: $dark-blue-color;
+
+    a {
+      color: $dark-blue-color;
+      text-decoration: none;
+    }
   }
 
   &__content {
@@ -108,6 +114,7 @@
       border-radius: 6px;
       bottom: 16px;
       right: 16px;
+      color: $dark-blue-color;
     }
 
     &-play {

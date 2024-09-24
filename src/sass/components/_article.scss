@@ -64,6 +64,11 @@
     max-width: 438px;
     word-wrap: break-word;
 
+    a {
+      color: $dark-blue-color;
+      text-decoration: none;
+    }
+
     @media (max-width: $mobile-width) {
       font-size: 22px;
       line-height: 25px;

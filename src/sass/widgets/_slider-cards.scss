@@ -4,6 +4,29 @@
   margin: 180px 0;
   position: relative;
 
+  .teacher-courses-carousel {
+    ol:not(.carousel__pagination) {
+      display: flex;
+      gap: 0;
+      width: calc(100% - 66px) !important;
+      margin: 0 -10px;
+
+      @media (max-width: $desktop-width) {
+        width: calc(100% - 50px) !important;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        width: calc(100% - 33px) !important;
+        margin: 0 -8px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100% !important;
+        margin: 0;
+      }
+    }
+  }
+
   .main-container {
     width: 100%;
 
@@ -108,12 +131,13 @@
     &_item {
       display: grid;
       grid-template-rows: 266px 1fr;
-      grid-template-columns: 390px;
+      margin: 0 10px;
+      height: 100%;
 
       @media (max-width: $mobile-width) {
         grid-template-columns: auto;
         grid-template-rows: 228px 1fr;
-        padding: 0 16px;
+        margin: 0 16px;
       }
 
       &-title {
