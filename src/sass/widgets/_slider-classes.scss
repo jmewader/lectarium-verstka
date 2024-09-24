@@ -20,7 +20,11 @@
         margin: 0 -8px;
       }
 
-      @media (max-width: $mobile-width) {
+      @media (max-width: $tablet-width) {
+        width: calc(100% - 60px) !important;
+      }
+
+      @media (max-width: 700px) {
         width: 100% !important;
         margin: 0;
       }
