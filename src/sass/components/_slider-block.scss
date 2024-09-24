@@ -139,7 +139,7 @@
     grid-template-columns: 527px 2fr;
     gap: 20px;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $large-tablet-width) {
       grid-template-columns: 1fr;
     }
 
@@ -583,7 +583,7 @@
       bottom: 0;
 
       img {
-        width: 100%;
+        width: auto;
         height: 100%;
         position: relative;
         object-fit: contain;

@@ -175,10 +175,8 @@
     flex-shrink: 0;
     height: 546px;
     z-index: 1;
-    padding: 0 70px 0 0;
 
     @media (max-width: $large-desktop-width) {
-      padding: 0;
       height: 100%;
     }
 
@@ -195,9 +193,17 @@
     }
 
     img {
-      width: 100%;
       height: 100%;
       object-fit: contain;
+      bottom: 0;
+      position: absolute;
+      right: 70px;
+
+      @media (max-width: $large-desktop-width) {
+        right: 0px;
+        position: relative;
+        width: 100%;
+      }
     }
   }
 

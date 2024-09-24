@@ -130,6 +130,7 @@
         @media (max-width: $tablet-width) {
           font-size: 15px;
           line-height: 20px;
+          max-width: 100%;
         }
       }
 
@@ -225,6 +226,7 @@
         right: auto;
         bottom: auto;
         order: 1;
+        margin: 0 auto;
       }
     }
 

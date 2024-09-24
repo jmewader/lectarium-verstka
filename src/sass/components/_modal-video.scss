@@ -31,8 +31,8 @@
 
     &__close-btn {
       position: absolute;
-      right: 0px;
-      top: 0px;
+      right: -40px;
+      top: -40px;
       background: none;
       border: none;
       cursor: pointer;
@@ -44,17 +44,10 @@
       align-items: center;
       flex-shrink: 0;
 
-      // @media (max-width: $desktop-width) {
-      //   right: 20px;
-      //   top: 20px;
-      // }
-
-      // @media (max-width: $mobile-width) {
-      //   width: 18px;
-      //   height: 18px;
-      //   right: 16px;
-      //   top: 16px;
-      // }
+      @media (max-width: $tablet-width) {
+        right: 0px;
+        top: -40px;
+      }
     }
 
     &__preview {
@@ -70,10 +63,6 @@
 
         @media (max-width: $tablet-width) {
           max-height: 413px;
-        }
-
-        @media (max-width: 480px) {
-          max-height: 213px;
         }
       }
 
