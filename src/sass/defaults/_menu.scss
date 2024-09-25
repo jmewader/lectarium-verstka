@@ -106,6 +106,10 @@
     width: 100%;
     margin: 0 auto;
 
+    @media (max-width: $large-desktop-width) {
+      padding: 24px 32px;
+    }
+
     &.visible {
       display: grid;
     }
@@ -116,6 +120,11 @@
       border-right: 1px solid #e1e4e6;
       padding: 0 60px 0 0;
       margin: 0 60px 0 0;
+
+      @media (max-width: $large-desktop-width) {
+        padding: 0 44px 0 0;
+        margin: 0 44px 0 0;
+      }
 
       &:nth-child(4) {
         border-right: none;
@@ -141,6 +150,11 @@
         width: 36px;
         height: 36px;
         flex-shrink: 0;
+
+        @media (max-width: $large-desktop-width) {
+          width: 30px;
+          height: 30px;
+        }
       }
 
       &-wrap {
@@ -148,12 +162,21 @@
         align-items: center;
         margin: 0 0 36px;
         gap: 16px;
+
+        @media (max-width: $large-desktop-width) {
+          margin: 0 0 24px;
+        }
       }
 
       &-title {
         font-weight: 500;
         font-size: 24px;
         line-height: 30px;
+
+        @media (max-width: $large-desktop-width) {
+          font-size: 18px;
+          line-height: 22px;
+        }
       }
     }
   }

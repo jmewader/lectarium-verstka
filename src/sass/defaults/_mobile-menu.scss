@@ -40,6 +40,14 @@
     }
   }
 
+  &__btn {
+    &.dark-button {
+      @media (max-width: $tablet-width) {
+        width: 100%;
+      }
+    }
+  }
+
   &__select {
     display: flex;
     align-items: center;
