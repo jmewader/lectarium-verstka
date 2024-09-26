@@ -2023,6 +2023,12 @@ button {
   align-items: center;
   position: relative;
 
+  &.with-icon {
+    .custom-input {
+      padding: 0 70px 0 70px;
+    }
+  }
+
   .custom-input {
     padding: 0 52px 0 22px;
     min-height: 56px;
@@ -2044,6 +2050,11 @@ button {
     border: none;
     border-radius: 100%;
     right: 22px;
+
+    &_icon-left {
+      position: absolute;
+      left: 30px;
+    }
 
     &_icon {
       display: none;

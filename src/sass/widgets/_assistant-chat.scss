@@ -116,11 +116,10 @@
 
   &__chat {
     display: flex;
+    flex-direction: column;
     max-height: 700px;
     background-color: #edf2fe;
     border-radius: 40px;
-    overflow: auto;
-    padding: 64px;
 
     &_bg {
       position: absolute;
@@ -140,6 +139,12 @@
       position: relative;
       z-index: 1;
       width: 100%;
+      padding: 64px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
 
       &-item {
         display: flex;
@@ -151,13 +156,194 @@
         font-size: 20px;
         line-height: 24px;
         max-width: 663px;
+        box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
 
         &.answer {
           background-color: $bright-blue-color;
           color: $white-color;
           align-self: end;
+          box-shadow: none;
+        }
+
+        &.buttons {
+          align-self: end;
+          background-color: transparent;
+          max-width: 708px;
+          display: none;
+
+          &.visible {
+            display: flex;
+          }
         }
       }
+    }
+  }
+
+  &__buttons-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &_row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    &_item {
+      button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 24px;
+        border-radius: 16px;
+        background-color: $white-color;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: 0.25s;
+
+        &:hover {
+          border: 1px solid $bright-blue-color;
+          color: $bright-blue-color;
+        }
+      }
+    }
+  }
+
+  &__contacts-block {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 64px 40px;
+
+    &_wrap {
+      width: 100%;
+      background-color: $white-color;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+    }
+
+    &_buttons {
+      display: none;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      gap: 24px;
+
+      &.visible {
+        display: grid;
+      }
+    }
+
+    &_input-block {
+      display: none;
+      grid-template-columns: 544px 1fr;
+      gap: 24px;
+
+      .custom-input {
+        min-height: 68px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &.visible {
+        display: grid;
+      }
+    }
+
+    &_btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &.active {
+        svg {
+          rect {
+            fill: $bright-blue-color;
+          }
+          path {
+            stroke: $white-color;
+          }
+        }
+      }
+    }
+
+    &_input {
+      display: none;
+      width: 100%;
+
+      &.visible {
+        display: flex;
+      }
+    }
+
+    &_social {
+      display: none;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      &.visible {
+        display: flex;
+      }
+    }
+
+    &_social-list {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &-item {
+        width: 68px;
+        height: 68px;
+        display: flex;
+        background-color: #f7f8f9;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.active {
+          border: 1px solid #0077FF;
+
+          svg {
+            path {
+              fill: #0077FF;
+            }
+          }
+        }
+      }
+    }
+
+    &_item {
+      display: flex;
+      align-items: center;
+      background-color: #f7f8f9;
+      border: none;
+      width: 100%;
+      padding: 22px;
+      border-radius: 12px;
+      cursor: pointer;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    &_icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+    }
+
+    &_title {
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 }
