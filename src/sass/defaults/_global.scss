@@ -2017,6 +2017,50 @@ button {
   }
 }
 
+.input-with-paper-clip {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+
+  .custom-input {
+    padding: 0 70px 0 92px;
+    min-height: 92px;
+    background-color: $white-color;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid transparent;
+  }
+
+  &__button {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    right: 18px;
+    background-color: transparent;
+
+    &_icon-left {
+      position: absolute;
+      left: 36px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .custom-input-with-btn {
   width: 100%;
   display: flex;
