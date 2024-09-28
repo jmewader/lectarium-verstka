@@ -21,6 +21,71 @@ button {
   @include common-text;
 }
 
+@keyframes dot-keyframes {
+  0% {
+    opacity: 0.2;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: scale(1, 1);
+  }
+}
+
+.loading-dots {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @media (max-width: $mobile-width) {
+    gap: 6px;
+  }
+
+  &__dot {
+    animation: dot-keyframes 1.5s infinite ease-in-out;
+    background-color: $dark-blue-color;
+    border-radius: 100%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+
+    @media (max-width: $mobile-width) {
+      height: 8px;
+      width: 8px;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+      height: 8px;
+      width: 8px;
+
+      @media (max-width: $mobile-width) {
+        height: 6px;
+        width: 6px;
+      }
+    }
+
+    &:nth-child(3) {
+      animation-delay: 1s;
+      height: 6px;
+      width: 6px;
+
+      @media (max-width: $mobile-width) {
+        height: 4px;
+        width: 4px;
+      }
+    }
+  }
+}
+
 .color-accent-icon-several-elements {
   .white {
     fill: $white-color;
@@ -2023,6 +2088,7 @@ button {
   align-items: center;
   position: relative;
   box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+  flex-direction: column;
 
   .custom-input {
     padding: 0 70px 0 92px;
@@ -2031,6 +2097,73 @@ button {
     font-size: 18px;
     line-height: 22px;
     border: 1px solid transparent;
+
+    &:focus {
+      border-color: transparent;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__files {
+    width: 100%;
+    padding: 0 96px 18px;
+    display: none;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    &.visible {
+      display: flex;
+    }
+
+    &_text {
+      font-size: 18px;
+      line-height: 22px;
+      color: #f14545;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 0 8px;
+
+      &.visible {
+        display: flex;
+      }
+    }
+
+    &_item {
+      display: flex;
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &-close {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: $white-color;
+        border-radius: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        border: none;
+        right: 4px;
+        top: 4px;
+      }
+    }
   }
 
   &__button {
@@ -2045,12 +2178,37 @@ button {
     right: 18px;
     background-color: transparent;
 
+    &.active {
+      .input-with-paper-clip__button_icon {
+        svg {
+          rect {
+            fill: $bright-blue-color;
+          }
+
+          path {
+            stroke: $white-color;
+          }
+        }
+      }
+    }
+
     &_icon-left {
       position: absolute;
       left: 36px;
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      span {
+        background-color: $bright-blue-color;
+        color: $white-color;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        top: -5px;
+        right: -13px;
+      }
     }
 
     &_icon {

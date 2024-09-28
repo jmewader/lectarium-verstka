@@ -120,6 +120,12 @@
     max-height: 700px;
     background-color: #edf2fe;
     border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: $tablet-width) {
+      border-radius: 25px;
+    }
 
     &_bg {
       position: absolute;
@@ -127,7 +133,6 @@
       justify-content: flex-end;
 
       img {
-        width: 100%;
         height: 100%;
       }
     }
@@ -142,8 +147,89 @@
       padding: 64px;
       overflow: auto;
 
+      @media (max-width: $large-tablet-width) {
+        padding: 44px;
+      }
+
+      @media (max-width: $tablet-width) {
+        padding: 24px 16px 16px;
+        gap: 18px;
+      }
+
       &::-webkit-scrollbar {
         width: 0;
+      }
+
+      &-files {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        @media (max-width: $mobile-width) {
+          gap: 6px;
+        }
+
+        &-item {
+          display: flex;
+          width: 120px;
+          height: 120px;
+          border-radius: 16px;
+          overflow: hidden;
+          position: relative;
+
+          @media (max-width: $mobile-width) {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+          }
+
+          &.large {
+            width: 215px;
+            height: 215px;
+
+            @media (max-width: $mobile-width) {
+              width: 64px;
+              height: 64px;
+            }
+
+            &:first-child {
+              margin: 0 0 0 5px;
+
+              @media (max-width: $mobile-width) {
+                margin: 0;
+              }
+            }
+          }
+
+          &.medium {
+            width: 159px;
+            height: 159px;
+
+            @media (max-width: $mobile-width) {
+              width: 64px;
+              height: 64px;
+            }
+          }
+
+          &.small {
+            width: 87px;
+            height: 87px;
+
+            @media (max-width: $mobile-width) {
+              width: 64px;
+              height: 64px;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
 
       &-item {
@@ -158,6 +244,13 @@
         max-width: 663px;
         box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
 
+        @media (max-width: $mobile-width) {
+          padding: 18px;
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
         &.answer {
           background-color: $bright-blue-color;
           color: $white-color;
@@ -170,10 +263,24 @@
           background-color: transparent;
           max-width: 708px;
           display: none;
+          padding: 0;
+          box-shadow: none;
+          flex-direction: row;
 
           &.visible {
             display: flex;
           }
+        }
+
+        &.files {
+          align-self: end;
+          background-color: transparent;
+          max-width: 760px;
+          display: flex;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+          margin: 8px 0 0;
         }
       }
     }
@@ -181,15 +288,13 @@
 
   &__buttons-block {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 12px;
+    justify-content: flex-end;
+    width: 100%;
 
-    &_row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      justify-content: flex-end;
+    @media (max-width: $mobile-width) {
+      gap: 6px;
     }
 
     &_item {
@@ -208,6 +313,13 @@
         border: 1px solid transparent;
         transition: 0.25s;
 
+        @media (max-width: $mobile-width) {
+          padding: 18px;
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+
         &:hover {
           border: 1px solid $bright-blue-color;
           color: $bright-blue-color;
@@ -218,9 +330,21 @@
 
   &__input-block {
     display: none;
+    width: 100%;
+    padding: 0 64px 40px 64px;
+    position: relative;
+    z-index: 1;
 
     &.visible {
       display: block;
+    }
+
+    &_content {
+      box-shadow: 0px 4px 10px 0px rgba(37, 84, 231, 0.05);
+      background-color: $white-color;
+      border-radius: 24px;
+      width: 100%;
+      display: flex;
     }
   }
 
