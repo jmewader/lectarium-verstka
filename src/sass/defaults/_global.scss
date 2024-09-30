@@ -2098,6 +2098,13 @@ button {
     line-height: 22px;
     border: 1px solid transparent;
 
+    @media (max-width: $tablet-width) {
+      min-height: 60px;
+      padding: 0 40px 0 62px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     &:focus {
       border-color: transparent;
     }
@@ -2115,6 +2122,11 @@ button {
     display: none;
     gap: 12px;
     flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: $tablet-width) {
+      padding: 0 54px 18px;
+    }
 
     &.visible {
       display: flex;
@@ -2125,12 +2137,17 @@ button {
       line-height: 22px;
       color: #f14545;
       display: none;
-      align-items: center;
+      align-items: flex-start;
       gap: 12px;
       margin: 0 0 0 8px;
 
       &.visible {
         display: flex;
+      }
+
+      @media (max-width: $tablet-width) {
+        font-size: 15px;
+        line-height: 20px;
       }
     }
 
@@ -2141,6 +2158,12 @@ button {
       border-radius: 12px;
       overflow: hidden;
       position: relative;
+
+      @media (max-width: $tablet-width) {
+        width: 52px;
+        height: 52px;
+        border-radius: 8px;
+      }
 
       img {
         width: 100%;
@@ -2162,6 +2185,11 @@ button {
         border: none;
         right: 4px;
         top: 4px;
+
+        @media (max-width: $tablet-width) {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -2177,6 +2205,11 @@ button {
     border: none;
     right: 18px;
     background-color: transparent;
+
+    @media (max-width: $tablet-width) {
+      width: 44px;
+      height: 44px;
+    }
 
     &.active {
       .input-with-paper-clip__button_icon {
@@ -2199,6 +2232,12 @@ button {
       border: none;
       cursor: pointer;
 
+      @media (max-width: $tablet-width) {
+        left: 16px;
+        width: 18px;
+        height: 18px;
+      }
+
       span {
         background-color: $bright-blue-color;
         color: $white-color;
@@ -2215,6 +2254,11 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: $tablet-width) {
+        width: 44px;
+        height: 44px;
+      }
     }
   }
 }
@@ -2256,6 +2300,11 @@ button {
     &_icon-left {
       position: absolute;
       left: 30px;
+      display: flex;
+
+      @media (max-width: $mobile-width) {
+        left: 10px;
+      }
     }
 
     &_icon {
