@@ -312,7 +312,7 @@
 
 
 
-.popup.popup-month.show
+.popup.popup-month
     .popup-content
         .popup-close
             <svg class="text-desktop" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -800,7 +800,42 @@ section.courses-page
     .add-to-cart-block
       .add-to-cart-block-text Курс “Готовимся с полного нуля” добавлен в корзину
       a.button.button-blue(href="#") Перейти в корзину
-    h1.main-subtitle.courses-page-title Курсы Лектариума
+
+    .breadcrumbs
+        ul.breadcrumbs__list
+            li.breadcrumbs__list_item Главная
+            li.breadcrumbs__list_item Витрина курсов
+            li.breadcrumbs__list_item.active Корзина
+    .courses-page-wrap
+        .courses-page-result 32 результатов
+        h1.main-subtitle.courses-page-title Курсы Лектариума
+    .courses-page-filters
+        .tabs__slider-wrap.visible-arrow-right
+            button.tabs__slider-arrow.left
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#0B1F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            ul.tabs.full
+                li
+                    button.tabs__tab Сотрудничество
+                li
+                    button.tabs__tab Новости ЕГЭ
+                li
+                    button.tabs__tab Поступление
+                li
+                    button.tabs__tab.action Подготовка к ЕГЭ
+                li
+                    button.tabs__tab Сотрудничество
+                li
+                    button.tabs__tab Новости ЕГЭ
+                li
+                    button.tabs__tab Поступление
+                li
+                    button.tabs__tab Подготовка к ЕГЭ
+            button.tabs__slider-arrow.right
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9H17M17 9L9 1M17 9L9 17" stroke="#0B1F33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
     .courses-content
         .filter-button
             button.button.button-with-icon.button-transparent(type="button")
@@ -1291,6 +1326,38 @@ section.courses-page
                                         <rect y="-0.00378418" width="24" height="24" rx="12" fill="white"/>
                                         <path d="M8 11.9962H16M12 7.99622V15.9962" stroke="#2554E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
+            .articles-columns__bottom
+                button.articles-columns__btn.main-button Показать еще
+                .pagination
+                    ul.pagination__list
+                        li.pagination__list_item
+                            button(disabled).pagination__list_item--number.active 
+                                span 1
+                        li.pagination__list_item
+                            button.pagination__list_item--number
+                                span 2
+                        li.pagination__list_item
+                            button.pagination__list_item--number
+                                span 3
+                        li.pagination__list_item
+                            button.pagination__list_item--number
+                                span 4
+                        li.pagination__list_item
+                            button.pagination__list_item--number
+                                span 5
+                        li.pagination__list_item
+                            .pagination__list_item-group
+                                button.pagination__list_item
+                                    span 6
+                                button.pagination__list_item--dots ...
+                                button.pagination__list_item
+                                    span 10
+                        li.pagination__list_item.text
+                            button.pagination__list_item
+                                span Следующая страница
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.33203 12.3359L6.66536 7.0026L1.33203 1.66927" stroke="#0B1F33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
         .filters-wrap  
             details(open).accordion
                 summary.accordion__summary

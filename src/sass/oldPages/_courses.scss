@@ -778,12 +778,12 @@
 }
 
 .courses-page {
-  padding: 81px 0 119px;
+  padding: 36px 0 119px;
   background: #fafcff;
 
   .add-to-cart-block {
     right: -4%;
-    top: -93px;
+    top: -48px;
   }
 
   .container {
@@ -791,7 +791,26 @@
   }
 
   .courses-page-title {
-    margin: 0 0 44px;
+    margin: 0 0 32px;
+  }
+
+  .courses-page-filters {
+    width: 100%;
+    margin: 0 0 48px;
+    overflow: hidden;
+  }
+
+  .courses-page-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .courses-page-result {
+    font-size: 15px;
+    line-height: 20px;
+    color: #6d7985;
   }
 
   .text-mobile {
