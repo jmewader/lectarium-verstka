@@ -845,6 +845,30 @@
         display: flex;
         margin-bottom: 20px;
 
+        &.article {
+          box-shadow: none;
+          height: fit-content;
+          position: relative;
+          z-index: 1;
+
+          .courses-card-image {
+            height: 204px;
+
+            &::before {
+              background: none;
+            }
+
+            .courses-card-image-bg img {
+              height: auto;
+            }
+
+            .courses-card-image-img {
+              object-fit: cover;
+              justify-content: center;
+            }
+          }
+        }
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -1016,6 +1040,20 @@
             top: 24px;
             left: 24px;
             text-decoration: none;
+          }
+
+          .courses-card-image-play {
+            display: flex;
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+            background: $white-color;
+            border-radius: 100%;
+            bottom: 24px;
+            right: 24px;
           }
 
           .courses-card-image-dots {
