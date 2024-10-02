@@ -6,6 +6,32 @@
     padding: 0px;
   }
 
+  .comments_carousel {
+    ol:not(.carousel__pagination) {
+      display: flex;
+      gap: 0;
+      width: calc(100% - 60px) !important;
+      margin: 0 -10px;
+
+      @media (max-width: $desktop-width) {
+        width: calc(100% - 50px) !important;
+      }
+
+      @media (max-width: $large-tablet-width) {
+        width: calc(100% - 32px) !important;
+        margin: 0 -8px;
+      }
+
+      @media (max-width: $tablet-width) {
+        width: calc(100% - 60px) !important;
+      }
+
+      @media (max-width: 700px) {
+        width: 100% !important;
+        margin: 0;
+      }
+    }
+  }
   &__title {
     font-size: 32px;
     line-height: 38px;

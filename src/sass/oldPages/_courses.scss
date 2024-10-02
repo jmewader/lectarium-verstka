@@ -690,6 +690,7 @@
     .popup-content {
       display: flex;
       width: 1162px;
+      height: fit-content;
 
       .popup-teacher-info-title {
         display: none;
@@ -781,6 +782,20 @@
   padding: 36px 0 119px;
   background: #fafcff;
 
+  .regular-text {
+    &.icon {
+      display: flex;
+    }
+  }
+
+  .articles-columns__bottom {
+    margin: 44px 0 0;
+  }
+
+  .breadcrumbs {
+    margin: 0 0 24px;
+  }
+
   .add-to-cart-block {
     right: -4%;
     top: -48px;
@@ -854,6 +869,10 @@
           .courses-card-image {
             height: 204px;
 
+            @media (max-width: $mobile-width) {
+              height: 214px;
+            }
+
             &::before {
               background: none;
             }
@@ -865,6 +884,12 @@
             .courses-card-image-img {
               object-fit: cover;
               justify-content: center;
+
+              img {
+                @media (max-width: $mobile-width) {
+                  width: auto;
+                }
+              }
             }
           }
         }
@@ -1354,6 +1379,7 @@
                   &.icon {
                     width: 24px;
                     height: 24px;
+                    display: flex;
                   }
                 }
 

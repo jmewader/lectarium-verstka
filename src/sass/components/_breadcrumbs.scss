@@ -20,6 +20,11 @@
       text-decoration: none;
       cursor: pointer;
 
+      a {
+        text-decoration: none;
+        color: #6d7985;
+      }
+
       &.active {
         color: $dark-blue-color;
       }

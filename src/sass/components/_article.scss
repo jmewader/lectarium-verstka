@@ -63,11 +63,8 @@
     width: 100%;
     max-width: 438px;
     word-wrap: break-word;
-
-    a {
-      color: $dark-blue-color;
-      text-decoration: none;
-    }
+    color: $dark-blue-color;
+    text-decoration: none;
 
     @media (max-width: $mobile-width) {
       font-size: 22px;
