@@ -50,6 +50,7 @@
     font-size: 15px;
     line-height: 20px;
     background-color: $white-color;
+    color: $dark-blue-color;
   }
 
   &__time {
@@ -73,6 +74,7 @@
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+    text-decoration: none;
 
     &_header {
       display: flex;

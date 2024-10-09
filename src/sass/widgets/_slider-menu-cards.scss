@@ -3,7 +3,13 @@
     margin: 0 auto;
     position: relative;
     max-width: 1617px;
-    width: 100%;
+    width: 100% !important;
+
+    .carousel__prev,
+    .carousel__next {
+      transform: none;
+      top: auto;
+    }
 
     ol:not(.carousel__pagination) {
       display: flex;
@@ -32,6 +38,7 @@
     display: none;
     align-items: center;
     gap: 10px;
+    position: absolute;
 
     &.visible {
       display: flex;
@@ -92,6 +99,11 @@
       justify-content: space-between;
       overflow: hidden;
       margin: 0 10px;
+      min-width: 390px;
+
+      @media (max-width: $large-desktop-width) {
+        min-width: auto;
+      }
 
       @media (max-width: $mobile-width) {
         margin: 0 16px;

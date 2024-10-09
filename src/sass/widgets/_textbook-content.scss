@@ -51,6 +51,42 @@
     }
   }
 
+  button {
+    background-color: #f3f4f5;
+    color: $dark-blue-color;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    min-height: 60px;
+    padding: 0 26px;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+
+    @media (max-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      gap: 10px;
+      width: 100%;
+    }
+
+    &::after {
+      content: url("../img/white-arrow.svg");
+      width: 24px;
+      height: 24px;
+      background-color: $bright-blue-color;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   ul {
     list-style: disc;
   }
